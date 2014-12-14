@@ -1,0 +1,461 @@
+====================
+     12-13-2014
+====================
+
+[1m   * android/[m
+f32ebc4 Track CM Browser :) Added Materialized style so not need my repo anymore!
+
+[1m   * bionic/[m
+67f322a Merge remote-tracking branch 'upstream/cm-12.0' into cm-12.0
+
+[1m   * build/[m
+d0077b1 Merge remote-tracking branch 'upstream/cm-12.0' into HEAD
+599a693 build: Fix QCOM_BSP_LEGACY cflags
+
+[1m   * device/motorola/msm8226-common/[m
+12a4ba4 remove "powerDecoupleAutoSuspendModeFromDisplay"
+
+[1m   * external/ffmpeg/[m
+0207ea6 Update Android build for FFMPEG 2.5
+
+[1m   * external/sepolicy/[m
+00e4df3 sepolicy: New type sdcard_posix for labeled filesystems
+
+[1m   * external/stagefright-plugins/[m
+68f3936 stagefright-plugins: Updates for FFMPEG 2.5
+
+[1m   * frameworks/av/[m
+b8326f7 Fix compile error after I9cd4316ce19b15baabf12b78b992498ce48e2697
+965f538 libstagefright: Fix QCOM_BSP_LEGACY cflags
+fc477e0 stagefright: Fix metadata/message conversion issues
+
+[1m   * frameworks/base/[m
+bf3f70a SystemUI: add Weather display to status bar header
+1ddde28 Merge remote-tracking branch 'upstream/cm-12.0' into HEAD
+3a9325a Fix layout indicator for NetworkTrafficMetter
+d2b03e3 SystemUI: kill MSim logspew
+0d057bc Revert "camera2-legacy: Workaround max jpeg/preview size AR mismatch"
+b575b8c Download: use "control" column to mark paused/resumed status
+bfe8449 DocumentsUI: Fix download status was displayed incompletely
+0f7840f audio: fix unresolved link error for javadoc
+3aafaaf Revert "MediaMuxer: handle expection for add track"
+79d2b7f Move media player list management to Audioservice
+be613aa VideoView: Add logs for video start/stop profiling
+da8c721 Battery text mode: fix MSim crash
+8e50658 base: ListView Animation (2/2)
+f40cb31 missing changes :c
+9206493 base: improve some class in jni
+1e61e6d updates
+3cdcb9e fix build
+f38ac15 fix tiped +
+3fa1918 base: Material for Settings
+aebc01e Add xperience Utils
+2648f14 Settings: AM/PM Indicator (2/2)
+7f02fe4  base: network traffic indicator support (1/2)
+9ffae82 base: network traffic indicator support (1/2)
+6ddece9 Show carrier label and custom (2/2)
+8723fb5 Revert "Add CM PlatLogo (1/2)"
+d784df0 Revert "Update the ADB status bar icon"
+221a882 removed stock wallpapers
+97a001b Update color dependent items when reusing notifications.
+aa7e289 framework: add blacklist disconnect cause
+
+[1m   * frameworks/native/[m
+7c38f6b native: Fix QCOM_BSP_LEGACY cflags
+
+[1m   * frameworks/opt/telephony/[m
+2b55b73 Merge remote-tracking branch 'upstream/cm-12.0' into HEAD
+3567b72 telephony: pick correct APN for MSim
+d8147eb Merge remote-tracking branch 'upstream/cm-12.0' into HEAD
+e54a015 Telephony : Add TRANSPORT_TYPE_COUNT_COLUMN column
+
+[1m   * hardware/qcom/media-caf/msm8974/[m
+2abb33e Merge branch 'LA.BF.1.1_rb1.14' of git://codeaurora.org/platform/hardware/qcom/media into cm-12.0
+
+[1m   * packages/apps/Browser/[m
+de8dca8 Browser: Fix layouts
+
+[1m   * packages/apps/Calculator/[m
+298b03a calculator: add hex/binary mode
+
+[1m   * packages/apps/Calendar/[m
+6f6b887 Support sharing calendar events as .vcs files to MMS.
+
+[1m   * packages/apps/Eleven/[m
+78e67f2 Merge "Eleven: Fix crash when launching a song from file manager" into cm-12.0
+c39e47d Merge "Update Notification background color" into cm-12.0
+a2c4102 Eleven: Fix default art color in notification
+c32971b Merge "EqualizerView: don't compute log(0)" into cm-12.0
+fe29ab1 Fix IndexOutOfBoundsException.
+980e8fe Update Notification background color
+
+[1m   * packages/apps/Mms/[m
+d80dc8b mms: fix crash when deselecting all conversations
+90beefa Mms : Add ability to delete sms/mms individually
+05788cd Mms : Fix templates
+
+[1m   * packages/apps/Settings/[m
+99a458b Revert "Revert "Move CAF strings""
+d1fc5cd fix FC deviceinfoSettings
+a036638 Revert "Move CAF strings"
+9c3a822 Merge remote-tracking branch 'upstream/cm-12.0' into HEAD
+e5f812c Settings: add a way to open blacklist settings externally
+
+[1m   * packages/apps/Trebuchet/[m
+c321997 Fix invisible voice search
+57cf82a Default show unread count to true
+
+[1m   * packages/providers/TelephonyProvider/[m
+a90e022 MmsProvider : Add ability to query types in a conversation thread
+fdf517e MmsProvider : Add ability to delete mms given a thread id
+
+[1m   * packages/services/Telecomm/[m
+333a5f4 Telecomm: update blacklist activity name
+
+[1m   * system/vold/[m
+62ff432 vold: Mount ext4/f2fs sdcards with sdcard_posix context
+
+[1m   * vendor/XPe/[m
+fd7ae51 Merge remote-tracking branch 'upstream/cm-12.0' into HEAD
+ebc1c94 selinux: Downgrade CMFM's domain
+d553a9f cm: sepolicy: Remove vold external sdcard rules, moved to main sepolicy
+66e2bc5 cm: Remove prebuilt Term.apk
+
+====================
+     12-12-2014
+====================
+
+[1m   * bionic/[m
+36dee3b libc: Add memchr for cortex-a53
+
+[1m   * device/qcom/sepolicy/[m
+e04329d sepolicy: Rule for CM's mpdecision extension
+
+[1m   * external/ffmpeg/[m
+a1ab3ec Android porting for ffmpeg 2.1 release
+
+[1m   * external/koush/Superuser/[m
+2b782d1 Fix security, tighter str comparison, fix warnings
+c2ec204 su: Fix verification fails when the client isn't setuid
+
+[1m   * external/sepolicy/[m
+3126224 sepolicy: allow system apps to access ASEC
+
+[1m   * external/skia/[m
+64ae5e4 Clean skia intermediates for "NEON optimized blitter S32_Opaque_D32_filter_DX"
+5c4182f external/skia: Update QC hooks
+d29be05 SkDraw::drawRect  optimization
+fe5bd66 NEON optimized blitter S32_Opaque_D32_filter_DX
+d9c9fb8 SkBlitter_RGB16: Add device-specific optimization hooks
+5933685 external/skia Hooks for optimized blitting
+
+[1m   * frameworks/av/[m
+396b737 stagefright: Allocate only what is needed for FLAC decoding
+45e9380 stagefright: Revert patches which should not have carried over
+97d303e AudioTrack: Reject offloading for non-music streams
+
+[1m   * frameworks/base/[m
+7a57a13 platform/framework/base: Fix Half Blank screen issue in Wallpaper
+a3531ba Status bar: Add HSPA+ icons
+e3a5a49 Revert "SystemUI: Add data type and signal icons"
+0407211 Battery text mode (1/2)
+a890901 frameworks/base: Fix key remapping after toggling navigationbar.
+1065674 frameworks/base: Don't report existing menu key if it was remapped.
+693832f Move CAF strings
+
+[1m   * frameworks/native/[m
+6faaa94 dumpstate: Squash fixes from CM 10.0
+
+[1m   * frameworks/opt/datetimepicker/[m
+553e5e6 DateTimePicker : Add facilities to customize MonthView's appearance.
+
+[1m   * packages/apps/AudioFX/[m
+f248386 AudioFX: Move the layout from res/layout-sw330dp to res/layout
+
+[1m   * packages/apps/Calculator/[m
+ccd6fff calculator: drag down on display to reveal history
+
+[1m   * packages/apps/Calendar/[m
+7b8ac44 Calendar : Adding Year View
+
+[1m   * packages/apps/ContactsCommon/[m
+e486a7f Fix checkmarks being displayed stretched for contact pictures.
+
+[1m   * packages/apps/Eleven/[m
+a621a14 EqualizerView: don't compute log(0)
+42ed49a Eleven: Fix crash when launching a song from file manager
+40030b0 Merge "Add improved localized sorting (similar to contacts sorting) to Eleven" into cm-12.0
+7124d4f Add improved localized sorting (similar to contacts sorting) to Eleven
+aa02c18 ELeven: Show notifications only when outside music app and have a linger timer
+fdd2957 Merge "Eleven: fix default image not showing up in queue fragment" into cm-12.0
+ee21d50 Eleven: Make the Equalizer button a bit smarter
+5b9caa2 Eleven: Fix exception when leaving Eleven with nothing in the queue
+
+[1m   * packages/apps/Mms/[m
+f9ba58b Mms: Move CAF strings
+4c0ef29 Fix orientation change behaviour of SelectRecipientsList.
+
+[1m   * packages/apps/Settings/[m
+853405b Battery text mode (2/2)
+2b5ad16 Settings: fix MSim package names
+f318cf2 Settings: Remove Wallpaper selection from Display
+7ce9b33 Settings: Cleanup display settings code
+4fa0ba4 Accessibility settings: Convert checkboxes to switches
+4909742 Settings: Remove screen rotation from accessibility
+34c855b Settings - Button settings: CheckBoxes to Switches
+29f58c7 Revert "settings: Fix warnings"
+7e6abd3 Move CAF strings
+
+[1m   * packages/apps/Stk/[m
+d1f5ba1 Stk: Make the text a little smaller
+5d7fdd9 Stk: Move CAF strings
+
+[1m   * packages/services/Telecomm/[m
+14cb7dc Telecom: mark the Call as blacklisted
+
+[1m   * vendor/XPe/[m
+03555ad Sepolicy: Add theme service as system service
+eab1fbb Add Bulsatcom APN
+20114d6 cm: add sepolicy entry for lockscreen wallpaper
+
+====================
+     12-11-2014
+====================
+
+[1m   * device/motorola/msm8226-common/[m
+2bd6189 Update xpe.dependencies
+527885a motorola vendor
+8d6b937 revert FM
+
+[1m   * device/qcom/sepolicy/[m
+2177774 thermal-engine: Fix socket re-creation perms
+
+[1m   * frameworks/av/[m
+ecc16ea stagefright: Increase raw codec buffer size
+cb950e2 stagefright: Fix FFMPEG catchall decoders
+
+[1m   * frameworks/base/[m
+1f77af9 frameworks: add keyguard wallpaper functionality to WallpaperManager
+f325f87 frameworks: allow last app action to be assigned to hardware keys
+d9ad9af SystemUI: make long pressing recent switch to last app
+ccb215c SettingsProvider: Migrate STATS_COLLECTION to secure.
+
+[1m   * frameworks/opt/telephony/[m
+48a9501 Correctly provide the technology to setup data connection
+
+[1m   * hardware/qcom/audio-caf/msm8960/[m
+54a87c6 Invert ANC Headset.
+
+[1m   * hardware/qcom/audio-caf/msm8974/[m
+8e7004b hal: Be specific about supported offload formats
+5958d60 hal: Remove samplerate checks for speaker
+
+[1m   * hardware/qcom/gps/[m
+5bd867e build: Only include this for qcom platforms
+
+[1m   * packages/apps/AudioFX/[m
+274fba6 AudioFX: Hide icon from actionbar
+
+[1m   * packages/apps/CMFileManager/[m
+fb34059 CMFileManager: Allow for sorting by mime type in search.
+
+[1m   * packages/apps/Contacts/[m
+36db90b Clean up multi picker activity.
+0e85548 Import feature - auto prompt for importing SIM contacts
+
+[1m   * packages/apps/ContactsCommon/[m
+5d3fe79 Add a checkable QuickContactBadge.
+
+[1m   * packages/apps/DeskClock/[m
+1d5af43 DeskClock: Make settings consistent
+
+[1m   * packages/apps/Eleven/[m
+9725f3f Eleven: fix default image not showing up in queue fragment
+
+[1m   * packages/apps/Mms/[m
+06cb616 Revert "Mms: Dispaly wrong text message limit for per conversation"
+99e2e77 Modernize recipient selection activity.
+e79c286 Use CheckableContactBadge.
+
+[1m   * packages/apps/Settings/[m
+b6ec7ca Merge remote-tracking branch 'upstream/cm-12.0' into HEAD
+fe407ed Settings: last app action in long press
+6473406 Settings: Fix blacklist settings crash
+
+[1m   * packages/services/Telephony/[m
+91e66c9 Telephony: fix MSim package names
+
+[1m   * vendor/XPe/[m
+df2273e Overlay for stats collection on cm.
+4df29e0 selinux: Workaround for devices with PR_SET_NO_NEW_PRIVS enforcement
+7cd6983 Revert "SELinux: su: update policies"
+
+====================
+     12-10-2014
+====================
+
+[1m   * android/[m
+0573279 Goodbye! DSP , HELLO AudioFX
+ac72822 Good bye! apollo hello ELEVEN
+
+[1m   * device/motorola/msm8226-common/[m
+5b057ca removed prebuilt chromium (avoid posible bugs)
+
+[1m   * frameworks/av/[m
+382b0f6 stagefright: Adjust confidence threshold for extended sniffers
+e57c024 Include more Samsung decoders to set native color format
+6911d4f Camera: Support obtaining camera memory from MemoryHeapIon
+
+[1m   * frameworks/base/[m
+3440a67 media: Scan FLV files, because why not?
+44aed9f framework: fix screenshot and rotation animation for devices with abnormal hw rotation
+8348851 [2/2] AppOps: Add alarm wakeup op
+a60d5cd Frameworks: Redirect appops strings to string references
+9c8d4b1 Fix getPrivacyGuardSettingForPackage()
+582dcac ProfileManager: fix coding style
+a41a500 telephony: SignalStrengh: Don't calculate a LTE snr if the srq is invalid
+82bb89b appops: Fix an off-by-one error that causes the location icon to stay on
+
+[1m   * frameworks/native/[m
+1ec0623 surfaceflinger: Unbreak the ABI
+a326311 Squashed fixes for additional hwrotation
+46b7e32 exynos4: getphys implementation on buffermanager for samsung omx
+122f3e2 Support forcing all screenshots into a CPU consumer
+
+[1m   * frameworks/opt/mms/[m
+d666022 Fix warnings
+
+[1m   * frameworks/opt/net/wifi/[m
+51e9cb0 WifiController: fix high perf lock sometimes not respected
+
+[1m   * frameworks/opt/telephony/[m
+46af060 Merge remote-tracking branch 'upstream/cm-12.0' into HEAD
+75f40a9 Implement UICC TLV Data decoding.
+
+[1m   * hardware/qcom/audio-caf/msm8974/[m
+5bc6114 hal: Kill useless logspam
+
+[1m   * packages/apps/AudioFX/[m
+521ae44 Add Notice and Apache2 Module
+
+[1m   * packages/apps/CMFileManager/[m
+2876921 CMFileManager: Fix force close when sharing more than one file at a time
+58395bb CMFileManager: Add mimetype to search result.
+
+[1m   * packages/apps/Eleven/[m
+757f286 Use L's new notification and media session API.
+4547a6d Add Notice and Apache2 Module
+71810eb Update Eleven headers and namespace for open source
+f199f98 Eleven: Switch default artist and album to a more colorful version
+cb83a72 Eleven: Make album art show up more consistently in shuffle and not repeat
+ad606c2 Eleven: Add Lyric (srt) support
+
+[1m   * packages/apps/Mms/[m
+528eb0c Add filtering by SIM for mms conversations (2/2)
+4e4d356 Mms: Allow text input field to expand up to 9 lines for long SMS messages
+
+[1m   * packages/apps/Settings/[m
+a1e5ca5 settings: Fix warnings
+49635f6 Merge remote-tracking branch 'upstream/cm-12.0' into HEAD
+715e43a Settings: fix appops delete sms string
+7213dfe [1/2] Settings: Add support for OP_ALARM_WAKEUP
+39cfc92 Settings - Display Rotation: Checkboxes to Switches
+2d983c0 ProtectedAppsReceiver: fix NPE when components are null
+
+[1m   * packages/providers/TelephonyProvider/[m
+97bc135 Add filtering by SIM for mms conversations (1/2)
+
+[1m   * packages/services/Telephony/[m
+a4ae7ba telephony: Fix package name warnings
+
+[1m   * vendor/XPe/[m
+b610598 Merge remote-tracking branch 'upstream/cm-12.0' into HEAD
+cb72c72 add posibility to build with changelog and change build state
+06ec585 sepolicy: More rules for recovery
+c4f6b97 cm: Enable AudioFX
+fd3b0e5 cm: Turn it up to Eleven
+
+====================
+     12-09-2014
+====================
+
+[1m   * build/[m
+4a32cb0 Merge remote-tracking branch 'upstream/cm-12.0' into HEAD
+
+[1m   * device/motorola/smi/[m
+8281b5c add some missing flags
+caaea50 not necesary anymore
+ecfa3fb Rename xpe. to xpe.dependencies
+158cb42 Add Intel dependencies
+424cf04 XPerienced!
+c469f19 Enable disable of Houdini
+8b46e83 Fix GPS
+
+[1m   * frameworks/av/[m
+500356a libstagefright: ifdef the audio_defs.h include for QCOM_DIRECTTRACK
+
+[1m   * frameworks/opt/telephony/[m
+9e2646f Merge remote-tracking branch 'upstream/cm-12.0' into HEAD
+
+[1m   * packages/apps/Browser/[m
+7bd77ce Browser: Materialize
+
+[1m   * packages/apps/CMUpdater/[m
+e77f0b8 Add RECOVERY permission
+
+[1m   * packages/apps/ContactsCommon/[m
+735ed91 Import feature - auto prompt for importing SIM contacts
+
+[1m   * packages/apps/DeskClock/[m
+40f2ace DeskClock: Fixup summary texts for shake and flip actions
+
+[1m   * packages/apps/Eleven/[m
+1f86c57 Eleven: Fix playlist reordering not working after awhile
+8274981 Eleven: Add equalizer visualization
+
+[1m   * packages/apps/Mms/[m
+a1f05a9 Mms: Misc MMS fixes.
+c5949c4 Mms: Fix read report display "unread".
+8987897 Mms: Fix flash "SIM1 sending" when send SIM2 MMS with audio attachment.
+c6c8855 Mms: Handle NPE in TransactionService
+2be8b52 Mms: Fix force close when MT SMS to SIM card continuous
+5884760 Mms: Only save one long massage to phone when SIM card is full
+70f7824 Fix copy SIM message to phone success if phone's full.
+96191c9 MMS: Fix display session mode after send message
+c5175fe Mms: Fix crash when delete more 1000 messages.
+eca3686 Mms: Fix force close once during MTBF test.
+f2e75f6 Mms: Fix no SIM card insert still could copy message to SIM card.
+e960729 Mms:Fix can't pop up slot selection when send a new SMS
+b206377 MMS: Fix Can't play audio or picture in MMS
+a222187 Mms: Put the AudioInfoView below the ImageView
+c06f4e2 Mms: Fix MMS notification isn't disappeared.
+bcdc707 MMS: Fixed Can't forward the MMS in folder mode
+dbbf10e MMS: The delivery report display send failed
+6c5fadb MMS: Add config showing retry error toast or not
+ee50d67 Mms: Fix notification on status bar not disappear.
+a4d4950 Mms: Fix Slideshow display white screen after dismiss alert
+cf27b9c Mms: Fix can't update the draft on widget timely
+42aacd7 Mms: Dispaly wrong text message limit for per conversation
+58cebeb MMS: Fix Screen is not smooth when scroll to read long MMS
+61346b6 MMS: Fix can't show send or receive time
+2d3d872 Mms: Fix can not search message via subject
+5421dc6 Mms: Fix the vcf's name is not correct.
+3bb3ab5 Mms: Do not show tips again when replace any attachment with Contact vCard
+d7a869b Mms: The SIM message interface cannot refresh when SMS arrived
+18c4c21 Mms: Fix crash when adding an audio from external audio
+97d66a1 Mms: Fix can't refresh receipent name
+d3dd3b6 Mms : Fix MessageWidget title doesn't update in RemoteView
+c0b2357 Mms: Fix send icon display gray after delete subject
+61db5f7 Mms: Fix full subject notification can't prompt if input to limitation
+c169a5c Mms: Fix can't cancel downloading MMS when tap "OK"in confirm box.
+1f5ad91 Mms: Fix can not select MMS when attach with audio/video/sildeshow.
+15afcfe Mms: Fix will disable "delete old message" when restore default setting
+98759ee Mms: Fix Can't check delivery report from msg list
+e29b1c0 Mms: No delivery check-mark if both delivery and read report enabled
+
+[1m   * packages/apps/Settings/[m
+78a69b5 Revert "Revert "Settings: add "Show weather" toggle for status bar""
+c7617b8 Merge remote-tracking branch 'upstream/cm-12.0' into HEAD
+65e770e Settings: fix profile triggers not showing up for RTL languages
+dfdfe95 Settings: materialize Blacklist settings
+
