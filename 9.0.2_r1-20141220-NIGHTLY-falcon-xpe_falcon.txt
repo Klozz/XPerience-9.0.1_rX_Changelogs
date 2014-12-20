@@ -1,0 +1,456 @@
+====================
+     12-20-2014
+====================
+
+[1m   * android/[m
+2150d01 Merge tag 5.0.1_r1---> 5.0.2_r1
+
+[1m   * bionic/[m
+078f43e Merge remote-tracking branch 'upstream/xpe9' into xpe
+
+[1m   * bootable/recovery/[m
+90b91f3 recovery: Gracefully terminate sideload
+76183de recovery: Provide caching for sideload files
+
+[1m   * build/[m
+28b2975 Merge remote-tracking branch 'upstream/cm-12.0' into HEAD
+705c2df Merge tag 'android-5.0.2_r1' into HEAD
+8d5cc63 Merge remote-tracking branch 'upstream/xpe9' into HEAD
+
+[1m   * device/motorola/msm8226-common/[m
+e9423f0 changed audio formats and addded some missings AAC formats
+65dcb7b Suppress userspace undefined instructions logs
+
+[1m   * external/bluetooth/bluedroid/[m
+4f904be Fix compile when BTM_WBS_INCLUDED true and BLUETOOTH_QTI_SW false
+ad404f2 bluedroid: Disable the test interface
+
+[1m   * external/chromium_org/[m
+c0e6c54 Merge tag 'android-5.0.2_r1' into HEAD
+
+[1m   * frameworks/base/[m
+a31f546 Merge remote-tracking branch 'upstream/xpe9' into HEAD
+6c7ef4f Adding back pdf_printer_media_sizes for values-zh-rCN to accomodate mediasize_default
+7a88673 Merge tag 'android-5.0.2_r1' into HEAD
+db84eac Merge remote-tracking branch 'upstream/xpe9' into HEAD
+b5fa064 Correct the lockscreen carrier text alignment and text color
+93b4217 Bluetooth: Sync Bluetooth Adapter and Manager Service.
+49d5ce3 Bluetooth: Enforce BT state check during GATT close/disconnect
+fbc6c35 Bluetooth: Change userhandle to current from ALL
+1699bd7 Bluetooth: Adds check to verify Bluetooth adapter state
+dfccf47 Bluetooth-Wipower: Enable dynamic logging for A4WP
+
+[1m   * frameworks/opt/telephony/[m
+924a300 Merge remote-tracking branch 'upstream/xpe9' into HEAD
+
+[1m   * kernel/motorola/msm8226/[m
+217c004 Revert "msm: kgsl: Device mutex lock for kgsl_cancel_event"
+af43841 power: qpnp-bms: always limit soc to [0, 100]
+072a20f msm: kgsl: Device mutex lock for kgsl_cancel_event
+41ca19c dtc: add integer overflow checks in fdt header
+3e0115e msm: kgsl: Disable index reg dump during snapshot
+
+[1m   * packages/apps/Eleven/[m
+657192d Eleven: Add missing metadata keys for Avrcp.
+5223eb7 Improve notification UX.
+
+[1m   * packages/apps/Email/[m
+f11382a email: start handshake before hostname verification
+926cb23 email: add support for Server Name Indication (SNI)
+
+[1m   * packages/apps/Settings/[m
+7a22fd9 Add changelog support and Donators
+1f8c782 Added changelog into new XPerience-AOSP
+13c7f89 Merge remote-tracking branch 'upstream/xpe9' into HEAD
+0a10a1a Cleanup battery style code
+a9c50e5 Settings: remove misplaced "Filter Notif" setting under Battery Saver
+42dbf0f Revert "su: Remove the superuser app"
+6c137d0 Revert "su: Add Root access app-ops control"
+
+[1m   * system/core/[m
+89c14eb adb: Fix host build
+4648a5a adb: host: Provide better sideload status
+
+[1m   * system/vold/[m
+d64f822 vold: Respect board flags in minivold
+
+[1m   * vendor/XPe/[m
+ef75477 Add support for donators, updated changelog :)
+c47c9c5 Merge remote-tracking branch 'upstream/cm-12.0' into HEAD
+
+====================
+     12-19-2014
+====================
+
+[1m   * bionic/[m
+ad2a371 Implement <pty.h>.
+
+[1m   * build/[m
+2768fe9 Merge remote-tracking branch 'upstream/cm-12.0' into HEAD
+44e0825 releasetools: allow devices to specify a custom make_recovery_patch
+
+[1m   * device/motorola/msm8226-common/[m
+638b90e remove somethings if you not builded chromium
+
+[1m   * external/bluetooth/bluedroid/[m
+4be49cd Merge branch 'LA.BF.1.1_rb1.16' of git://codeaurora.org/platform/external/bluetooth/bluedroid into cm-12.0
+
+[1m   * frameworks/av/[m
+783c794 audio_policy: Fix for overwrite of ULL flags on record concurrency
+bceea1b libstagefright: Ensure cache prefetch in underrun
+06ed7b9 NuPlayer : Fix wrong time stamp update for offload playback
+
+[1m   * frameworks/base/[m
+2c109e4 SystemUI: Update WiFi indicator drawable sizes
+0e31558 Forward port battery icon options [1/2]
+b37fe88 Feature : Volume adjust sound preference 1/2
+96203c8 Forward port Samsung STK support (frameworks/base)
+77cbc6b Merge remote-tracking branch 'upstream/xpe9' into HEAD
+cdafde2 frameworks: fix make updateapi for weather setting
+
+[1m   * frameworks/opt/telephony/[m
+85d1282 Forward port Samsung STK support (frameworks/opt/telephony)
+b5f01a2 Merge remote-tracking branch 'upstream/cm-12.0' into HEAD
+7f3b180 SubscriptionController: do not return info for invalid slot id
+
+[1m   * hardware/qcom/bt/[m
+6b25302 Merge branch 'LA.BF.1.1_rb1.16' of git://codeaurora.org/platform/hardware/qcom/bt into cm-12.0
+
+[1m   * hardware/qcom/wlan/[m
+11b4457 wcnss_qmi: Allow targets to provide custom libwcnss_qmi
+
+[1m   * kernel/motorola/msm8226/[m
+1c7fab1 Bump to xpe 22
+430899a fix swp{b} use is deprecated for ARMv6 and ARMv7
+0e78538 PM / devfreq: Check for GPU busy time before sending the sample
+de1427e power: msm_battery: Increase battery check interval from 5 seconds to 15 seconds.
+
+[1m   * packages/apps/Bluetooth/[m
+73b826f Merge branch 'LA.BF.1.1_rb1.16' of git://codeaurora.org/platform/packages/apps/Bluetooth into cm-12.0
+
+[1m   * packages/apps/BluetoothExt/[m
+7d74f34 Bluetooth-Wipower: MTP continues advertising WPT UUID post connection.
+6f9f3b6 Merge branch 'LA.BF.1.1_rb1.16' of git://codeaurora.org/quic/la/platform/vendor/qcom-opensource/bluetooth into cm-12.0
+
+[1m   * packages/apps/CMUpdater/[m
+036057a CMUpdater: use html extension for changelog
+
+[1m   * packages/apps/Calendar/[m
+0916375 Add action_import menu item to all all_in_one_title_bar menus
+
+[1m   * packages/apps/Gallery2/[m
+fbf6346 Gallery2: Make grids scroll vertically by default
+
+[1m   * packages/apps/Mms/[m
+fde0ae9 Revert "Mms: Enable smsc preference by default."
+fa5658f Remove unnecessary import in MessageUtils
+fa87821 Do not show send email option if no activities can handle mailto
+
+[1m   * packages/apps/Settings/[m
+bc8b9a4 Bluetooth: Add Manifest configure to fix settings crash issue.
+1b9fa93 Bluetooth: GAP: Handled Null pointer deference in unregisterReceiver
+8652b02 Bluetooth: Security: Add Null check during pairing cancel intent.
+459e662 Bluetooth: Refresh UI after checkbox is Unchecked.
+485e855 Bluetooth: GAP: Reset Alias name during virtual unplug
+88d045c Bluetooth: Enable Page and Inquiry Scan.
+146cea4 Bluetooth: Don't Initiate Connection if UUID not updated
+f7377fc Bluetooth: GAP: Handled scan mode during first time BT On
+d0335cf su: Add Root access app-ops control
+8544093 su: Remove the superuser app
+ba62228 Forward port battery icon option [2/2]
+598b1c3 Feature : Volume adjust sound preference 2/2
+f84f8e4 Merge remote-tracking branch 'upstream/cm-12.0' into HEAD
+27de971 Buttons: Forward port Recents button configuration
+640a9b3 Protected Apps: Increase hit target of the launch app button
+
+[1m   * packages/services/Telecomm/[m
+f9da638 Bluetooth: NPE found in static anaysis.
+9cd5692 BT: Send proper updates to headset for call swap.
+6581ae8 Reset the connection pending flag when SCO is disconnected
+8432d95 Bluetooth: Send default value for CNUM.
+
+====================
+     12-18-2014
+====================
+
+[1m   * bootable/recovery/[m
+a488a78 Fix broken progress bar rendering.
+
+[1m   * frameworks/av/[m
+7b03ec5 pre-kitkat audio policy blobs re-activated.
+2ea2912 media: Various fixes and cleanups
+23632c7 RTSP: check MPEG4 DP in RTSP
+aa70e41 DO NOT MERGE - audio policy: fix inifinite loop in clearAudioPatches()
+
+[1m   * frameworks/base/[m
+89773f1 National roaming info for yesss! in Austria
+b21dcd6 Settings: Forward Port Volume Long Press Skip Tracks (1/2)
+f4bf533 SystemUI: add Weather display to status bar header
+
+[1m   * frameworks/native/[m
+8157110 libs: binder: MemoryHeapIon: ifdef ION_EXYNOS_VIDEO_MASK
+
+[1m   * frameworks/opt/net/wifi/[m
+61f48ba wifi: Allow building without Wifi HAL
+
+[1m   * frameworks/wilhelm/[m
+8263734 Beef up the test cases for different formats
+ed9d968 opensles: Add more sample rates
+
+[1m   * packages/apps/CMFileManager/[m
+d629b5a CMFileManager:  - Use Environment function to be more compatible.  - Take into account the directory sizes  - Fix usage dialog jumping on first open.  - Fix Java DiskUsageCommand to return correct DiskUsage based on MountPoint
+
+[1m   * packages/apps/Calculator/[m
+43d8cac calculator: visual fixes
+0e73256 calculator: allow pasting into an empty display
+
+[1m   * packages/apps/Gallery2/[m
+5a5691a Gallery : Remove DialogPicker theme in v21
+83f96bd Gallery2: More material for filtershow
+
+[1m   * packages/apps/Mms/[m
+5eb28bb Mms: Enable smsc preference by default.
+
+[1m   * packages/apps/Settings/[m
+06e237b Settings: add "Show weather" toggle for status bar
+3ff414f Protected Apps: Show state by component instead of by app
+
+[1m   * packages/apps/Trebuchet/[m
+0b7b1db Update Gallery activity component name in default workspace xml files
+
+[1m   * packages/providers/TelephonyProvider/[m
+7b71b1a TelephonyProvider: compile files under src
+
+[1m   * system/core/[m
+f4e12b9 healthd: Detect power supply type for all charger devices
+403b632 set /system/etc/init.d/* permissions
+
+[1m   * system/media/[m
+cd37382 sndfile: Allow 24-bit packed samples
+
+[1m   * vendor/XPe/[m
+96ff95e cm: Remove obsolete persist.sys.dalvik.multithread property
+f786721 Update Reliance RTel APN's.
+
+====================
+     12-17-2014
+====================
+
+[1m   * bootable/recovery/[m
+8d490ec Add clean step for voldclient after recent changes
+68d6a00 recovery: Fix sideload cancel
+bac5728 recovery: Fix install from local storage
+cb4a7ea sr: Remove unused image
+6660ccd recovery: Do not wipe cache when backing out of file browser
+a701d03 recovery: Allow 'mm' and friends to work
+a3faefb recovery: Always include ext4 stuff
+61a74d3 sr: Allow device-specific recovery modules
+
+[1m   * build/[m
+fce5fee Enabling sdiv support in ART
+ce2cf24 Improve cmremote
+73b697d Allow repopick to cherry-pick a specific patch set
+b73e5c9 LRX22G
+4ec657f build: Remove unused qcom CFLAG
+
+[1m   * external/ffmpeg/[m
+8f08176 avutil: Use _SC_NPROCESSORS_CONF
+
+[1m   * external/sepolicy/[m
+149ccab sepolicy: allow vold to mount ext4 sdcard
+
+[1m   * external/stagefright-plugins/[m
+12909a5 stagefright-plugins: Enable multithreaded decoding
+
+[1m   * frameworks/av/[m
+eb96c88 audio: Fix PCM offload selection for 16-bit and 24-bit
+223d131 NuPlayer: Implement pre-roll for poor network conditions
+cde7d89 audioflinger: Increase Client heap size
+9ecef05 frameworks/av: Use QC parser for aac audio only in MPEG4 container
+8f76e9e DOLBY UDC fixes for JOC
+29dc9cf libstagefright: Add support for JOC format to stagefright.
+1354902 libstagefright: use extended extractor for AC3/EAC3 formats
+ee493b9 libstagefright: Fix incall camcorder crash
+01c4636 libmedia: Add support to offload Audio Track
+d3fb2e5 libstagefright: remove duplicate call
+47fb239 libstagefright: print file name in nuplayer playback path
+9f95022 stagefright: Remove unnecessary QCOM_BSP flag
+fa66b84 Revert "libstagefright: Fix QCOM_BSP_LEGACY cflags"
+
+[1m   * frameworks/base/[m
+4ae256f SystemUI: Silence verbose NetworkController logging
+e09c82d frameworks: disable loading notification groups in System profiles
+ff127d8 KeyGuard: fixed strings warnings
+0ac9664 Fix bad alarm delivery
+1ea8103 input: add workaround for broken hardware keyboard support
+2296c2d core: Fix typos in AOSP EN resources
+2fed6c4 make switch to last app animation snappier
+
+[1m   * frameworks/native/[m
+a3f1c0e frameworks/native: Remove unnecessary QCOM_BSP defines
+55dd657 Revert "native: Fix QCOM_BSP_LEGACY cflags"
+
+[1m   * frameworks/opt/net/wifi/[m
+6c984ff Fixed logging format
+
+[1m   * hardware/qcom/audio-caf/msm8974/[m
+0459c69 hal: Check for multiple offload usecases
+b605ac6 hal: fix null pointer de-reference
+
+[1m   * packages/apps/CMFileManager/[m
+486c19a CMFileManager: add usage stats by mime type
+
+[1m   * packages/apps/CMUpdater/[m
+30cd73b CMUpdater: Materialize
+
+[1m   * packages/apps/Calculator/[m
+fa860e1 fix tablet mode
+
+[1m   * packages/apps/Calendar/[m
+ce5b4a4 Calendar : Add ability to import/export from sdcard
+
+[1m   * packages/apps/Eleven/[m
+62225e8 Merge "Eleven: Remove tracks that give problems from the queue and warn" into cm-12.0
+25a2d27 Eleven: Remove tracks that give problems from the queue and warn
+
+[1m   * packages/apps/Exchange/[m
+36a8df0 exchange: use the port returned by autodiscover response
+
+[1m   * packages/apps/Gallery2/[m
+e2a3543 Add clean step after recent changes
+3848c13 Gallery2: Fix filtershow renderscript for lollipop
+41fd3ab Gallery2: Materialization
+
+[1m   * packages/apps/Mms/[m
+2e9b30d Add support for sharing vCalendar events over MMS.
+00c5df6 Mms: Add missing mdpi/hdpi drawables
+6206283 Fix FC when multi-selecting messages from SIM card
+c8485b3 Mms : Import/Export sms
+28e09c8 Add warning to opening URLs from messages
+
+[1m   * packages/apps/Settings/[m
+d4c0b5c Settings: Add stats collection preference to privacy.
+649390b Settings: disable report button for system apps
+
+[1m   * packages/apps/Trebuchet/[m
+a7aa8b8 Trebuchet: Fix Scrolling Wallpaper toggle
+6d6e0a3 Delay reloading Dynamic grid after size change till onResume or settings panel collapses
+
+[1m   * system/core/[m
+b8a3b73 Healthd: charger: allow override of LED/BACKLIGHT paths
+
+====================
+     12-16-2014
+====================
+
+[1m   * build/[m
+7ff848a build: Add QCOM flags to Clang CFLAGS
+269ab19 build: Clean up QCOM flag definitions
+
+[1m   * frameworks/av/[m
+7c4b01b stagefright: Fix QCOM_BSP ifdef
+6504fe3 NuPlayer: Disable widevine flag for L3 content
+ce23be4 Fix video/audio sync issue when audio track is changed
+b77cc31 stagefright: Cleanup of PCM offload checks
+c2c3af5 stagefright: Allow deep buffer mode for audio-only playback
+3639fa8 libstagefright: Fixed PCM Offload format check
+07b2edf Stagefright: use get(Input/Output)Buffer in async mode
+e60f757 libstagefright: Fix heap corruption from AudioSource
+5154aa7 Fix AAC recording issue
+15731d0 Truncate file before recording into it.
+157932d Prevent ANR when AudioTrack is paused or re-routed
+4f10760 audio: Force audio to Speaker if requested during VOIP call
+f66f6ed libstagefright: Small buffer hint for PCM offload
+a271c04 stagefright: extendedstats: Synchronize logging mechanism
+3fb677b stagefright: Add more latency profiling
+0bd3c55 audio: Fixup BT A2DP for QCOM A-family
+
+[1m   * frameworks/base/[m
+95152e9 Vectone UK (MNC01) considered non-roaming on T-Mobile (MNC30)
+d303d86 add MVNO info for tele2 in croatia per CYAN-5178
+2f4739d Lycamobile (MNC04) considered non-roaming on Vodafone (MNC01)
+a7a3ae6 Vectone/Delight (MNC07) considered non-roaming on NOS (MNC03)
+d79cba7 Virgin Mobile (MNC07) considered non-roaming on Movistar (MNC02)
+5051dc1 Noverca (MNC07) considered non-romaing on TIM (MNC01)
+1b43d32 Tele2 considered non-roaming on T-Mo
+4256450 Saunalahti considered non-roaming on Elisa
+d7d9f0b National Roaming: Allow T-Mobile AT (MNC03) to roam on 3 AT (MNC10) in Austria
+e411857 Allow 3 AT (mnc05) to roam on T-Mobile in Austria
+e02f1b4 Added Non-Roaming for carrier BSNL in UP East and WEST INDIA
+edcd0f0 National roaming for Telfort in the Netherlands
+454ffe5 core: added national roaming info for Spring Mobil in Sweden...
+fec731a core: added national roaming info for Bob in Austria.
+1df7d95 core: added national roaming info for Tesco Mobile in Ireland.
+539a9bd National roaming info for 3 in Ireland
+13568eb National roaming info for yesss! in Austria
+cbcebc7 National roaming info for Drei in Austria
+0a32a22 base: added national roaming info for Play in Poland
+
+[1m   * frameworks/ex/[m
+f3d1d5b camera2: Fix null pointer exception while initializing max zoom ratio
+
+[1m   * frameworks/native/[m
+018f67f surfaceflinger: Fix QCOM_BSP ifdef
+f989035 surfaceflinger: Add more ifdefs for secure display query
+
+[1m   * hardware/qcom/display-caf/msm8960/[m
+fca4398 display: Add flag to allow legacy allocations from MM heap
+3e7635c gralloc: Add workaround for Jellybean camera drivers
+
+[1m   * packages/apps/Gallery2/[m
+a209c6c Gallery2: Change method for Filter compare
+b5e9170 Gallery2: Fix undo button enable condition
+04e41ae Gallery2: fix app crash when there is no map app
+c606d95 Gallery2: Displayed titles in ActionBar during video playback
+7be87f7 Gallery2: Set default value for server timeout
+98b9fb0 Revert "Gallery2: reduce post delay time"
+c7fd565 Gallery2: Fix photo widget display black when no picutures.
+7bc38aa Gallery2: don't pause background music perminently
+34f0f73 Gallery2: Fix file exist in SD card when delete from Gallery
+4b7fae3 Gallery2: Sign SIM card number for Mobile Data to Setting
+565a333 Gallery2: reduce post delay time
+e507b92 Gallery2: add extra mimetypes to gallery manifest
+55c5d65 MoviePlayer: Flush UI display after suspend/resume
+7710def Gallery2: Add audio output switcher between headset/speaker
+345afa5 Gallery2: Prompt inf does not translate to Chinese.
+21a8074 Gallery2: The settings in the gallery is blank.
+19054ff Gallery2: Make forward/rewind button grey when stopVideo
+8f0280c Gallery2: Fix the border name display abnormally
+518e890 Gallery2: fix time text display issue
+60be863 Gallery2: fix can not add gallery widget to home screen
+7cdee29 Gallery2: Make icon display completely.
+17fbdae Gallery2: Cropped video seek bar pointer.
+4494017 Gallery2: Reginal requirement for RTL
+da6c9f8 Gallery2: Reginal requirement for RTL
+ef94003 Gallery2: Fix Gallery crash when exit playing gif pic.
+20ce397 Gallery2: Fix the original picture not display after edit.
+2961e38 Gallery2: Fix FC while editing streaming settings in Gallery
+b7d350e Gallery2: suppress proguard false alarm
+d9e892e Gallery2: Fix batches of issues in movie effects
+6f657f4 Gallery2: Customize features for regional package
+d51a99e Gallery2: add some video features
+2ef3af4 Gallery2: add some video features
+f299f66 Gallery2: support live streaming and bookmarks
+a1c3cf0 Gallery2: support live streaming and bookmarks
+3108428 Gallery2: support stereo/single track play mode
+2c01c91 Gallery2: support stereo/single track play mode
+7937630 Gallery2: support loop/single video play mode
+bc669ec Gallery2: support audio effects during video play.
+f4df1e6 Gallery2: support GIF animation
+6caab05 Gallery2: support GIF animation
+185d353 Gallery2: Support HSCI screencolor settings use
+977f8f1 Gallery2: support loop/single video play mode
+
+[1m   * packages/apps/Mms/[m
+636a56d Mms: fix copying sim messages from sim to phone with single sim
+ac99403 Mms: fix Manage Sim Messages crash
+cb05103 Fix a crash when scrolling while a SMS is delayed.
+
+[1m   * packages/apps/Settings/[m
+355b882 Profiles: update text style to match Settings
+46d042f Settings: Added a missing FR translation
+98ebb25 Revert "Revert "settings: Fix warnings""
+
+[1m   * system/netd/[m
+f6e43fc Revert "Revert "SOFTAP: Notificate the STA (dis)connect message""
+
