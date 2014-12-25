@@ -1,0 +1,224 @@
+====================
+     12-24-2014
+====================
+
+[1m   * android/[m
+f95961b OPT Telephony Go to CM repo
+
+[1m   * bootable/recovery/[m
+641b7a1 libvoldclient: Do not use the kernel headers
+
+[1m   * build/[m
+fbc2bbf Merge remote-tracking branch 'upstream/xpe9' into HEAD
+
+[1m   * device/qcom/common/[m
+78644ab power: Fix arm64 build
+
+[1m   * frameworks/base/[m
+0a29d789 Fix spirt patch: RecentsConfiguration.java: hide search bar from recent apps
+36b4cde  [1/2] base: add CPU info overlay
+2c20291 Merge remote-tracking branch 'upstream/xpe9' into HEAD
+5abba38 Merge pull request #1 from xpirt/cm-12.0
+
+[1m   * hardware/qcom/audio-caf/msm8916/[m
+05674d2 hal : Fix for SA+ app type selection for PCM Capture usecase
+d175695 hal : Overwrite the APP type for PCM RX and TX path
+d9387d2 hal: add support for low-latency capture
+b402101 hal: Port fixes and features to msm8916 HAL
+
+[1m   * packages/apps/Settings/[m
+08e1b0f Fix launch of SuperSU
+ea37bbd Fix Settings: hide search bar from recent apps (2/2)
+7446a4b  Launch SuperSU from Settings
+99a5e0d 2/2] settings: add CPU info overlay
+f269d44 Settings - Status Bar Carrier - Checkboxes to Switches Original autor: x10f
+845a2aa Merge remote-tracking branch 'upstream/xpe9' into HEAD
+2a0a24a Merge pull request #1 from xpirt/cm-12.0
+
+[1m   * vendor/XPe/[m
+f89ee80 Merge remote-tracking branch 'upstream/xpe9' into HEAD
+
+====================
+     12-23-2014
+====================
+
+[1m   * android/[m
+8ce03ed Use SVOX repository at AOSP due to DMCA takedown
+a9f1cc2 Add 8916 QCOM HALs
+
+[1m   * bootable/recovery/[m
+fc02a2f minivold: Report vold connect fail only if retries exhausted
+d93ec37 recovery: Move icon_info.png to res-specific dirs
+
+[1m   * build/[m
+8443d6d releasetools: clean up residual targetfiles-* dirs in /tmp/
+99deacf envsetup: new function cmka
+
+[1m   * device/qcom/common/[m
+9449297 common: update enum value for sched perflocks
+fc9c1ca common: update enum value for disabling PC
+deee448 cryptfs_hw: Add support for wipe_key routine
+8e7f17c cryptfs_hw: libcryptfs_hw doesn't go in vendor/lib/hw
+352ecbb Fix multiarch builds
+
+[1m   * external/e2fsprogs/[m
+01d77b9 exfat/f2fs: Fix arm64 builds
+
+[1m   * frameworks/av/[m
+e557bb3 nuplayer: Always copy duration to output format message
+
+[1m   * frameworks/base/[m
+4c5902b SystemUI: MSim: hide subs label on KeyGuard
+
+[1m   * hardware/qcom/audio-caf/msm8916/[m
+3c3ab2e hal: Fix glitch in audio playback during device switch
+3cfe58d hal: bug fixes for PCM offload
+3e98fd7 hal: Fix progress bar issue during compress offload playback
+1f10f55 hal: use 0 as default return value for out_get_render_position
+341ab35 hal: Fix issues with app type config during device verification
+2a168d1 hal: Support config selection for playback on speaker
+ddf721e hal: add all compressed formats for app type selection
+991706e hal: Invert standard build flags
+971b95b hal: Squashed collection of fixes
+
+[1m   * hardware/qcom/display-caf/msm8916/[m
+8ebdf61 msm8916 wants venus color formats, too!
+
+[1m   * kernel/motorola/msm8226/[m
+9127f17 Fix build of intellimm and some bugfixes on Alessa_plug
+dfb6087 add intellimm to device config
+afc807f fix some freq's
+7921604 Add support for MSM8226 board [FALCON]
+92090af Initial porting of Intellimm from nexus devices Autor : Faux123
+24cac95 Add Alessa plug my own plug
+
+[1m   * packages/apps/Eleven/[m
+04f294b Eleven: Add some caching logic to BitmapWithColors for perf optimization
+
+[1m   * packages/apps/Mms/[m
+45efdfe Fix hint text color in quick popup with light theme
+959789b Mms: Add close button for removing subject as a new UX path instead of relying on the depracated onKeyListener
+
+[1m   * packages/apps/Settings/[m
+f56288f Revert "Bluetooth: Add Manifest configure to fix settings crash issue."
+7e93b42 Settings: Fix AOSP WiFi AP translations
+2af53f5 Settings: Fix the failing strings
+fb6c191 Settings: EL AOSP translation fixes
+
+[1m   * packages/apps/Trebuchet/[m
+99840f4 Trebuchet : Fix search bar icon/text disapearing
+aed0878 Workspace: Custom default screen
+
+[1m   * system/core/[m
+a8555c6 libsysutils: Do not use the kernel headers
+bad5a07 libcutils: Do not use the kernel headers
+
+====================
+     12-22-2014
+====================
+
+[1m   * build/[m
+ff636a4 build: fix dopush for SystemUI
+bd0c010 roomservice: Improve new device retrieval
+92dfb36 recovery: set 18x32 on 560dpi as well
+
+[1m   * frameworks/av/[m
+2face62 nuplayer: Fix build
+6ffb297 pre kitkat audio legacy poliy fix for hotword (ok google)
+
+[1m   * frameworks/base/[m
+2d11cf6 SystemUI: various fixes to data type display
+
+[1m   * frameworks/opt/telephony/[m
+40126c0 Telephony: DcTracker: Fix CDMA APN Data issues.
+31b4840 DCTracker: HACK Fix eHRPD/LTE data connection.
+
+[1m   * hardware/qcom/audio-caf/msm8916/[m
+7333252 CM12vification
+
+[1m   * hardware/qcom/display-caf/msm8916/[m
+3cc8537 CM12vification
+
+[1m   * hardware/qcom/media-caf/msm8916/[m
+c8b6d5c CM12vification
+
+[1m   * packages/apps/Settings/[m
+cd04c2a Settings: fix custom SIM name lost on reboot
+ead5fbc Settings: hide search bar from recent apps (2/2)
+7c8c8e7 Settings: fix FC viewing 'running' detail
+
+[1m   * system/core/[m
+533f279 fastboot: Add missing fastboot USB IDs
+3572bc6 init: create symlinks to mtd block device nodes
+e9af679 set /system/etc/init.d/* permissions
+
+[1m   * vendor/XPe/[m
+90d2f8c Change roaming protocol for "telenor.smart" to IPv4
+038fba3 sepolicy: remove stray + in type statement
+
+====================
+     12-21-2014
+====================
+
+[1m   * frameworks/base/[m
+f178578 RecentsConfiguration.java: hide search bar from recent apps (1/2)
+a000cdc Allow adjusting progress on touch events.
+
+[1m   * packages/apps/Mms/[m
+04dde4f Revert "WIP - fix SMS quick reply for MultiSim devices."
+120a9e5 WIP - fix SMS quick reply for MultiSim devices.
+
+[1m   * packages/apps/Settings/[m
+b1e5197 Remove QuickBoot preference if package isn't available
+
+[1m   * packages/services/Telephony/[m
+e93230b Telephony: GSM: remove 'Carrier Settings' regardless of csp_enabled
+
+====================
+     12-20-2014
+====================
+
+[1m   * android/[m
+2150d01 Merge tag 5.0.1_r1---> 5.0.2_r1
+
+[1m   * build/[m
+28b2975 Merge remote-tracking branch 'upstream/cm-12.0' into HEAD
+
+[1m   * frameworks/base/[m
+7bbc6eb Cleanup button wake settings (2/2)
+fcbbb25 SystemUI: fix MediaProjection cast crash
+8e8f843 SystemUI: fix battery icon patch for MSim
+a31f546 Merge remote-tracking branch 'upstream/xpe9' into HEAD
+6c7ef4f Adding back pdf_printer_media_sizes for values-zh-rCN to accomodate mediasize_default
+7a88673 Merge tag 'android-5.0.2_r1' into HEAD
+
+[1m   * hardware/qcom/audio-caf/msm8974/[m
+a2f3a06 platform-info: Fix fixing error messages...
+ae757b9 audio-caf-msm8974: Fix log message
+869e076 platform-info: Fix error messages
+
+[1m   * kernel/motorola/msm8226/[m
+217c004 Revert "msm: kgsl: Device mutex lock for kgsl_cancel_event"
+af43841 power: qpnp-bms: always limit soc to [0, 100]
+072a20f msm: kgsl: Device mutex lock for kgsl_cancel_event
+41ca19c dtc: add integer overflow checks in fdt header
+3e0115e msm: kgsl: Disable index reg dump during snapshot
+
+[1m   * packages/apps/Calculator/[m
+60d0ea2 fix calculation error for ',' as decimal point
+
+[1m   * packages/apps/Eleven/[m
+0107486 Eleven: Make sure we have vibrant colors for all default colors
+
+[1m   * packages/apps/Email/[m
+f11382a email: start handshake before hostname verification
+926cb23 email: add support for Server Name Indication (SNI)
+
+[1m   * packages/apps/Settings/[m
+8b47234 Cleanup button wake settings (1/2)
+7a22fd9 Add changelog support and Donators
+
+[1m   * vendor/XPe/[m
+ef75477 Add support for donators, updated changelog :)
+c47c9c5 Merge remote-tracking branch 'upstream/cm-12.0' into HEAD
+
