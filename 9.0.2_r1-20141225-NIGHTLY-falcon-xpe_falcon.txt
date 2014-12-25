@@ -15,7 +15,7 @@ fbc2bbf Merge remote-tracking branch 'upstream/xpe9' into HEAD
 78644ab power: Fix arm64 build
 
 [1m   * frameworks/base/[m
-0a29d789 Fix spirt patch: RecentsConfiguration.java: hide search bar from recent apps
+0a29d789 Fix xpirt patch: RecentsConfiguration.java: hide search bar from recent apps
 36b4cde  [1/2] base: add CPU info overlay
 2c20291 Merge remote-tracking branch 'upstream/xpe9' into HEAD
 5abba38 Merge pull request #1 from xpirt/cm-12.0
