@@ -2,6 +2,23 @@
      01-10-2015
 ====================
 
+short
+[*] Wifi tethering fixed
+[*] VoIP issues fixed
+[*] Netflix issues fixed
+[*] Added the new form of SuperUser from CM
+[*] Dual sim support fixed [I need more test so pls test for me /a friend tested and work but I lost the screenshots  ]
+[*] Updated bluetooth to acording to lollipop
+[*] PCM Offload 16 and 24bits
+[*] Radio FM fixes and added mixer to FM Tx
+[*] Eleven: Music app crashes fixed
+[*] DRM Issues Fixed
+[*] Address batt_health denials for SELinux
+[*] Camera: Issues fixed [Related to new api]
+[*] Headphones issues fixed 
+
+================
+
    * build/
 9da4292 Merge remote-tracking branch 'upstream/xpe9' into HEAD
 cb23d42 Allow finer control over how product variables are inherited.
