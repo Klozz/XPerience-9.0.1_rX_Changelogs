@@ -1,0 +1,340 @@
+====================
+     01-10-2015
+====================
+
+   * build/
+9da4292 Merge remote-tracking branch 'upstream/xpe9' into HEAD
+cb23d42 Allow finer control over how product variables are inherited.
+d83e625 Update copyright year :)
+0754268 releasetools: Store the build.prop file in the OTA zip
+
+   * device/motorola/msm8226-common/
+2b135d8 msm8226-common: proprietary-files: Add radish
+611fbba msm8226-common: proprietary-files: Don't link libtime_genoff
+
+   * device/qcom/sepolicy/
+01a24c6 common: remove duplicate
+b68d772 Fix access to crypto/DRM firmware
+
+   * frameworks/base/
+7384dbe Revert "Clean up keyguard carrier text handling."
+4a7c863 Merge remote-tracking branch 'upstream/cm-12.0' into HEAD
+1f75e63 MountService: support UMS on any volume
+c4b16ea Clean up keyguard carrier text handling.
+71f5743 Keyguard: Forward port lockscreen quick unlock (1/2)
+95e30ee Allow setting a per-device default configuration for STATUS_BAR_BATTERY_STYLE
+
+   * frameworks/opt/datetimepicker/
+37381bd [1/2] DateTimePicker: Add ability to set Month Title layout offset.
+
+   * packages/apps/Calendar/
+a517fd2 Calendar - Added provisions to show/hide Floating Action Button.
+
+   * packages/apps/DeskClock/
+22dbd3d DeskClock: Fix text size and color of CM additions
+
+   * packages/apps/Settings/
+7a93e12 fix bad heads
+a44af6e Merge remote-tracking branch 'upstream/xpe9' into HEAD
+fd2447e fix devsettings
+eb4d123 USB Settings: Show menu if device has mass storage
+7beac4e USB Settings: Warn before enabling UMS mode
+00f9fad Keyguard: Forward port lockscreen quick unlock (2/2)
+
+   * packages/apps/Trebuchet/
+3037abb Update workspace grid after toggling settings.
+
+   * vendor/motorola/
+6321e70 Merge pull request #2 from TheMuppets/cm-12.0
+41abb2f moto_msm8960_jbbl: Use prebuilt qcom/media
+bc5dae5 Revert "moto_msm8960_jbbl: Use prebuilt libOmxVdec/enc from cm-11"
+adc0596 Revert "moto_msm8960_jbbl: Use prebuilt gps from cm-11"
+
+====================
+     01-09-2015
+====================
+
+   * bootable/recovery/
+1585db4 minui: graphics_fbdev: Fix BGRA panels regardless of depth
+6541d94 recovery: Use ro.product.device instead of ro.build.product
+46752b5 sr: Allow mounting of F2FS volumes
+
+   * hardware/qcom/bt/
+1d0d45d Fix up building with TARGET_2ND_ARCH
+
+   * hardware/qcom/display/
+cae99f7 copybit: Fix type conversion error for GCC 4.7
+68cee49 copybit: Fix type conversion error for GCC 4.7
+
+   * hardware/qcom/keymaster/
+7600f09 keymaster: Set HEAP_MASK_COMPATIBILITY by platform for QCOM_HARDWARE
+
+   * packages/apps/Camera2/
+aa9b875 Camera2: Samsung 4k Camera workaround.
+
+   * packages/apps/DeskClock/
+5190917 DeskClock: Cleanup CAF strings
+b84a1bb Fix incorrect World Clock city names and timezones
+dfb1ea6 DeskClock: Add back Kiev to World Clock
+
+   * packages/apps/Dialer/
+c57eee1 Dialer: Remove Chinese CAF translations
+35a62c6 Dialer: Improve CAF strings
+
+   * packages/apps/Gallery2/
+5b3edb5 Gallery2: Modify AOSP EL translations
+94552b0 Gallery2: Remove Chinese CAF translations
+613c095 Gallery2: Set untranslatable
+54a6da3 Gallery2: Remove unused strings
+126b63c Gallery2: Improve strings
+
+   * packages/apps/Mms/
+22429e1 Mms:Better Android Wearable support including sending text reply from notification without main device interaction
+
+   * packages/apps/PhoneCommon/
+94c2157 PhoneCommon: Set untranslatable
+
+   * packages/apps/Settings/
+1ef6091 MSIM: identify SIM slot id on preferences dropdowns
+2c8936e Update strings (mostly "cellular data" -> "mobile data")
+d988a74 MSIM: Display Carrier Name instead of SIM name
+
+   * packages/apps/Stk/
+005c8de Stk: EL AOSP translation modification
+
+   * packages/apps/Trebuchet/
+f64eac8 Trebuchet: Remove unused strings
+
+   * packages/services/Telecomm/
+dbf5ca0 Telecomm: Improve CAF strings
+
+   * system/extras/su/
+785aaf8 su: Get rid of LD_LIBRARY_PATH
+6006c0e su: Fix for 64-bit archs
+
+   * vendor/motorola/
+0598a3c msm8226-common: Add radish
+85341ec msm8226-common: Don't link libtime_genoff
+
+====================
+     01-08-2015
+====================
+
+   * device/motorola/msm8226-common/
+dc78f6c Revert "msm8226-common: Disable kernel modules"
+3ed7a1a msm8226-common: Disable kernel modules
+b0e2811 add again FM package
+bfa932c  msm8226-common: Remove audio_policy package
+0ce652f msm8226-common: Update rild services for lollipop
+439bab7 msm8226-common: sepolicy: Adjust for gyroscope denial
+0d824c6 msm8226-common: Address batt_health denials
+0d4c418 msm8226-common: Clean up unneeded FM files
+d84e003 msm8226-common: Set the no firmware download flag instead.
+5ad7ec6 Revert "msm8226-common: Bring back FM feature"
+0d3b641  msm8226-common: Update audio policy
+
+   * packages/apps/Settings/
+a9cbe16 Fix checkboxpreferences fc and on the fly add the change on showsearchbar on recents
+521cb87 Settings: Fix FC
+
+====================
+     01-07-2015
+====================
+
+   * android/
+8b3a96c return bionic to xperienced one
+6ffcb8a :D
+
+   * build/
+cda27bf Merge remote-tracking branch 'upstream/xpe9' into HEAD
+
+   * device/motorola/falcon/
+b5c60db Falcon: Remove ril class for now
+fffc559 falcon: Update finger print for GPE and XT1033 versions
+11ab24e falcon: Increase zRAM size
+
+   * device/motorola/msm8226-common/
+c9cbe42 revert: "msm8226: No more SELinux permissive "
+7cb54de msm8226-common: Remove charger packages
+67f764a msm8226: Reenable this :)
+5ee31f2 msm8226-common: Remove redundant filesystem tools
+8c1edb6 msm8226-common: bluetooth: Update for lollipop Bring in-line with LA.BF.1.1.2_rb1.10.
+200157f msm8226: audio: New audio formats for PCM Offload - Add new formats 16/24 bit PCM offload formats
+730f442 msm8226: audio: Add FM_RX and FM_RX_A2DP to attached input device list - FM_RX and FM_RX_A2DP are not physically connected/disconnected from a device runtime. - Hence if a device supports these devices, add them to attached input device list.
+be04813 msm8226-common: Bring back FM feature
+610adf6 msm8226-common: Disable secure discard * Flashing an update is painfully slow without this * Remove deprecated suppress emmc wipe flag which basically   had the same effect
+34c0993 msm8226-common: Configure and enable KSM
+d6a52e4 msm8226-common: Do not create legacy directory * This is meant to be a symlink Autor: Ethan chen
+c3fd5d9 msm8226-common: Update DRM library list
+a95f72e msm8226: No  more SELinux permissive
+9f45ab3 msm8226-common: overlay: update hardware key configuration
+75f5bf9 msm8226-common: include: update filesystem config header
+b82e7a4 msm8226-common: Add platform-specific SELinux policy
+ae48923 msm8226-common: Don't use separate VOIP
+
+   * frameworks/base/
+96ce637 Merge remote-tracking branch 'upstream/xpe9' into HEAD
+
+   * packages/apps/Settings/
+b13fc34 Settings: Fix build I forget change updateCheckbox to updateSwitch
+5bda515 Settings: Fix build coz i'm forked settings from CM but It not have anymore superUser and im have my own performance app :)
+f6b47df Settings: Change CheckBoxPreference to SwitchPreference
+7efb4f0 fix coding x_x bad else if
+8ebc7fd remove superUser in dash categories
+
+   * vendor/XPe/
+71ce71c Vendor: Fix Music app add Eleven again and musicFX
+e80e66c fix extraneous endif
+5c7449b Merge remote-tracking branch 'upstream/xpe9' into HEAD
+
+   * vendor/motorola/
+20e1b46 Merge pull request #1 from TheMuppets/cm-12.0
+0b7db1b moto_msm8960_jbbl: Use prebuilt libOmxVdec/enc from cm-11
+0b7221a moto_msm8960_jbbl: Use prebuilt gps from cm-11
+65a474e moto_msm8960_jbbl: Update for organizing proprietary-files.txt
+357f460 moto_msm8960: Move non-shared files up from qcom-common
+
+====================
+     01-06-2015
+====================
+
+   * build/
+bfc11df build: Add an option to block non-enforcing builds
+
+   * frameworks/base/
+74b461b Add global scramble pin layout setting.
+eb16253 Keyguard: Add option to scramble pin layout when unlocking (2/2).
+26abdab Allow disabling Search/Recents button wake (2/2)
+dbab953 Add system setting for t9 search input locale
+8841987 Wake Keys: enforce the wake keys overlay
+c3e7230 Revert "Buttons: set HOME wake key defaults as disabled [2/2]"
+
+   * frameworks/native/
+f166831 sensorservice: add fusion sensors if all events are supported
+
+   * packages/apps/Dialer/
+ccaa531 Dialer: Fix T9 for Hebrew
+86c9b69 Return match positions to enable highlighting for CN smart dial
+1f62ee2 Add setting for t9 search input locale
+fe57f36 Read option for t9 search input locale and refresh smart dial db when locale changes
+7d23a38 Dialer: Refactor SmartDial for additional languages
+b559010 Add Korean smart dial map
+016c0d4 Hebrew T9 for Dialer
+d1b8942 Dialer: Add Greek T9 support
+3b0062e Russian T9 for Dialer
+
+   * packages/apps/Mms/
+1b1c50b Mms : Update chips if contacts updated
+
+   * vendor/XPe/
+9f026a6 Add Japanese APNs (DMM mobile, UQ mobile)
+
+====================
+     01-05-2015
+====================
+
+   * android/
+b3dce66 use terminal from CM for now , I work to fix my own terminal.
+7d97cfc Replace app-based superuser with the PG version
+
+   * build/
+d6c5626  roomservice: Fix search of devices forked to XPe
+dc2f6e0 Merge remote-tracking branch 'upstream/xpe9' into HEAD
+
+   * external/bluetooth/bluedroid/
+34d5b98 a2dp: kill more logspam
+
+   * frameworks/av/
+06f0b85 HLSCustom: Bandwidth switching improvement in HLS
+1ea977c httplive: Support embedded images in audio-only playlist
+22f6020 HLSCustom: Fix compilation issues and support for dual HLS stack
+0778792 HLSCustom: Copying KK-mr2 files from httplive to httplivecustom
+6da6ace nuplayer: Don't assume audio streams have metadata
+
+   * frameworks/base/
+4d8c54e BroadcastReceiver : Get sender of broadcasts
+5c76460 Smooth Spinners: Makes the loading "spinner" animation smoother in non-holo apps
+9203171 Cleanup battery style code
+a02d17f Merge remote-tracking branch 'upstream/xpe9' into HEAD
+
+   * frameworks/native/
+2f179cb libgui: Add pre-MR2-compatible symbol for setPosition
+a40cfcf libbinder: Add legacy MemoryDealer constructor for old Nvidia OMX adaptor
+
+   * frameworks/opt/telephony/
+0b6b063 ModemPolicy: fix NPE
+
+   * frameworks/webview/
+1139f1f Webview: chromium: update icon
+
+   * hardware/broadcom/libbt/
+cac0bdf libbt: Add support for using two stop bits
+68c58d0 libbt: Add prepatch support
+
+   * packages/apps/Calculator/
+5bcfdcb Crash fix: deal with ClassCastException
+
+   * packages/apps/Dialer/
+0aa14c9 Separate blacklist from missed filter in history/stats
+5406f45 Merge code and add CallStats in multi sim
+
+   * packages/apps/Eleven/
+5ff35e3 Eleven: Fix equalizer not pausing, action bar hiding and 1px equalizer on xxhdpi
+
+   * packages/apps/PhoneCommon/
+0a94eaa Refactor dialpad layout to support t9 search in multiple languages
+
+   * packages/apps/Settings/
+8c4e543 Merge remote-tracking branch 'upstream/xpe9' into HEAD
+fadda7b fixed bad dashboard
+
+   * packages/apps/Terminal/
+704921b Allow access to external storage
+
+   * vendor/XPe/
+cd54ddf Add profiles to the default power menu
+e6a352f CM Legal - use https
+
+   * vendor/motorola/
+ba93d1a msm8226-common: Update Widevine libraries
+
+====================
+     01-04-2015
+====================
+
+   * frameworks/base/
+30a9dbe IMS : Incoming Call Barring
+b6f3583 IMS OMA-DM Intent and ImsReasonInfo Additions
+
+   * frameworks/native/
+798798a surfaceflinger: Track the last surfaceview frame for latency dumps
+
+   * frameworks/opt/net/ims/
+ea1948e IMS : Incoming Call Barring
+
+   * frameworks/opt/telephony/
+14aa80f IMS: Incoming Call Barring
+3291314 Revert "Revert "Fix the roaming searching text display in standby screen""
+8eb697b GsmSST: Disregard any invalid verbose values for timezones in NITZ requests
+
+   * hardware/qcom/bt/
+a8f7a4f Revert "Bluetooth: Compilation Fix for BT bring up"
+
+   * packages/apps/CMUpdater/
+209bcff CMUpdater: Never show older updates
+
+   * packages/apps/Exchange/
+465752c Exchange: Update icon to Material
+
+   * packages/providers/TelephonyProvider/
+af7e476 TelephonyProvider: Update icon to Material
+
+   * packages/services/Telecomm/
+7ca5fbd Telecomm: Update icon to Material
+
+   * system/extras/
+1b287ea Extras: gitignore su
+
+   * system/extras/su/
+a1229fc su: Don't set root access as a default fallback option.
+b2ffaf2 Remove hardwired uids
