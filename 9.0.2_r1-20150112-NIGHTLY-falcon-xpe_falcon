@@ -1,0 +1,64 @@
+short
+[*] Wifi tethering fixed
+[*] VoIP issues fixed
+[*] Netflix issues fixed
+[*] Added the new form of SuperUser from CM
+[*] Dual sim support fixed [I need more test so pls test for me /a friend tested and work but I lost the screenshots ]
+[*] Updated bluetooth to acording to lollipop
+[*] PCM Offload 16 and 24bits
+[*] Radio FM fixes and added mixer to FM Tx
+[*] Eleven: Music app crashes fixed
+[*] DRM Issues Fixed
+[*] Address batt_health denials for SELinux
+[*] Camera: Issues fixed [Related to new api]
+[*] Headphones issues fixed 
+[*] Camera issues 
+
+
+====================
+     01-12-2015
+====================
+
+   * device/motorola/falcon/
+11554e2 falcon: update properties * ro.product.model is always the same on all variants * ro.build.product should be the same as ro.product.device
+74d26ce falcon: Updated props to allow dual sim
+
+   * device/motorola/msm8226-common/
+8d2d4b3 msm8226: init: Add thermal file socket creation into init Add thermal file socket creation into target init. This change is required for SEAndroid so that thermal socket context are not overridden by init.
+1a24a52 msm8226: Update codec capabilities info in media_codecs.xml Add video encode/decode capabilities for 8226
+0474b20 msm8226: Test Reverse stereo on speakers/earphones
+695ee1a msm8226-common: Increase camcorder mic volume
+b7d3a32 msm8226-common: Address mpdecision denials
+69d5fe2 msm8226-common: Add charge only USB mode
+
+   * vendor/motorola/
+20015f3fd msm8226: Update blobs from gpe of motorola 
+
+====================
+     01-11-2015
+====================
+
+   * build/
+9da4292 Merge remote-tracking branch 'upstream/xpe9' into HEAD
+cb23d42 Allow finer control over how product variables are inherited.
+d83e625 Update copyright year :)
+
+   * device/motorola/msm8226-common/
+2b135d8 msm8226-common: proprietary-files: Add radish
+611fbba msm8226-common: proprietary-files: Don't link libtime_genoff
+
+   * device/qcom/sepolicy/
+01a24c6 common: remove duplicate
+
+   * frameworks/base/
+7384dbe Revert "Clean up keyguard carrier text handling."
+4a7c863 Merge remote-tracking branch 'upstream/xpe9' into HEAD
+
+   * packages/apps/Settings/
+7a93e12 fix bad heads
+a44af6e Merge remote-tracking branch 'upstream/xpe9' into HEAD
+fd2447e fix devsettings
+
+   * vendor/motorola/
+131d2a9 msm8960dt-common: Create msm8960dt-common from ghost
+41abb2f moto_msm8960_jbbl: Use prebuilt qcom/media
