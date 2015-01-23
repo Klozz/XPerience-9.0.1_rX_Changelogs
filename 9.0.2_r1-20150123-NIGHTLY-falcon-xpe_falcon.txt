@@ -1,0 +1,541 @@
+====================
+     01-22-2015
+====================
+
+   * android/
+39e1785 cmupdater is neverused I don't know how to edit to use by my self otas
+e182d96 add vendor cyngn
+
+====================
+     01-21-2015
+====================
+
+   * android/
+a58b1ab Track own Eleven app
+
+   * bootable/recovery/
+1965c23 Revert "minui: graphics_fbdev: Fix BGRA panels regardless of depth"
+5e6490b Allow f2fs to reserve bytes for footer when formatting
+60bd079 recovery:updater: Changes to support 32->64 bit upgrades
+
+   * build/
+1990287 Update copyright date
+612332c Merge remote-tracking branch 'upstream/xpe9' into HEAD
+d545dc3 build: releasetools: ota: Add support for 32-64 bit upgrades
+
+  * frameworks/base/
+8490382 SystemUI: Added new Battery support Battery Bar support
+e8a4546 Merge remote-tracking branch 'upstream/xpe9' into HEAD
+88b8fb2 [1/3]frameworks/base: add "Accept all files" option for incoming files via BT
+
+   * frameworks/native/
+f489ba3 frameworks/native: surfaceflinger: Add Group cache
+8437d5c sf: Enable tilerender feature only if needed
+
+   * hardware/qcom/audio-caf/msm8974/
+536d2e7 Revert "hal: Fix setting of backend samplerate"
+
+   * packages/apps/Bluetooth/
+ff411b7 [2/3]Bluetooth: add "Accept all files" option for incoming files
+
+   * packages/apps/CMFileManager/
+a083297 CMFileManager: Add some simplified chinese translations
+89fed52 File Manager: Add additional supported filetypes.
+
+   * packages/apps/Calculator/
+d8e8418 Calculator: Remove unused strings
+cfdbfbb Add some simplified chinese translations
+
+   * packages/apps/DeskClock/
+4656dc9 DeskClock: Add some simplified chinese translations
+
+   * packages/apps/Eleven/
+056c3d3 Eleven: Fix stupid typo from me :(
+3504164 Eleven: Improve Material UI
+2f61459 Eleven: add Sleep Mode support
+
+   * packages/apps/Mms/
+b07ad37 Mms: cleanup resources
+9e979ea Change multi sim selection button height to wrap_content.
+
+   * packages/apps/Settings/
+422aa1f Settings:add color picker add battery bar style [2/2]
+98c0ccd Settings: Remove duplicated option
+6365671 Merge remote-tracking branch 'upstream/xpe9' into HEAD
+290daa7 [3/3]Settings: add "Accept all files" option for incoming files via BT
+28132df Settings: cleanup resources
+c33baab Cleanup and fix QS tile implementation
+1029da5 Settings: Enforce non-blank profile names
+
+   * packages/apps/ThemeChooser/
+c099c04 Clean up string resources
+
+   * system/vold/
+9968ebe Revert "vold: cryptfs: Disable HW fde for msm8939 64bit"
+
+   * vendor/XPe/
+7c6a724 Merge remote-tracking branch 'upstream/xpe9' into HEAD
+
+====================
+     01-20-2015
+====================
+
+   * frameworks/base/
+81b63d0 SystemUI: reset timeout when expanding volume panel
+a3e72b3 Hide GlowPadView warnings
+8509a09 SettingsProvider : Add functions for delimited strings
+608a575 Status Bar Clock: rewrite for lollipop and add left clock (1/2)
+225d388 Themes: Restructure resource cache [1/2]
+b2682d1 Revert "Keyguard: Create lockscreen weather, move weatherimpl to utils."
+09dcc10 Revert "SystemUI: Remove redundant and broken setText on temperture view."
+92d4646 storage: Don't list removed volumes in storage list
+2af169b frameworks/base : testNoManagedUsersIfLowRamDevice failure
+dd83eac Fix null pointer exception in KeyguardUpdateMonitor.
+9b5ff5e SystemUI: Fix the wrong speech in TalkBack application.
+7668e75 OBEX: Include NameHeader in final PUT Server Response
+3b6609d frameworks/base: Add HVGA camcorder profile
+a4c8b62 AppOps: fix "contact" delete ops check failed
+b7870c5 Keyguard: Avoid null pointer exception
+a817ee6 Move qs brightness slider setting to secure.
+0499887 SystemUI: Update SystemUI to point to new QS secure setting.
+b69b55b Migrate QS_TILES to Settings.Secure
+25020a6 Delay Explicit GC from the SystemServer.
+
+   * frameworks/native/
+5691207 Themes: Restructure resource cache [2/2]
+08fce5f Conditionally revert "Revert "sf: Make sure HWC_BLENDING_NONE is set for opaque layer""
+
+   * packages/apps/CMFileManager/
+ac44c19 Inform the user if copy/move fails with no space remaining.
+
+   * packages/apps/Contacts/
+757e19f Contacts: fix exporting SIM contacts the first time
+
+   * packages/apps/Nfc/
+d95fea4 Revert "nfc jni: allow bypassing of switching power states"
+
+   * packages/apps/Settings/
+f373b80 Status Bar Clock: rewrite for lollipop and add left clock (2/2)
+13f4da0 Settings : Update UsageStats reference
+69c39f5 Settings: Move qs brightness slider option to secure
+
+
+
+====================
+     01-19-2015
+====================
+
+   * build/
+3d29d65 build: kernel: Fix stray "@"
+7ef3b2b Merge remote-tracking branch 'upstream/xpe9.0' into HEAD
+
+====================
+     01-19-2015
+====================
+
+   * build/
+c918506 Fix kernel.mk if SELINUX or VARIANT_DEFCONFIG is defined
+87a1a5b Add support for OSX up to 10.10 and CLI Tools
+
+   * device/motorola/msm8226-common/
+3d89000 msm8226-common: Remove disable LOGD and Remove Legacy MMAP for camera :)
+
+   * external/ffmpeg/
+a9534c4 Get ffmpeg building for emulatorx86
+
+   * external/stagefright-plugins/
+4d92c98 stagefright-plugins: Set default target sample format from codec
+
+   * frameworks/av/
+ebfaafc ACodec: Initialize numChannels and sampleRate for flac codec
+e42e5aa NuPlayer : send the correct streaming info while opening audio sink
+a92052b NuPlayer : Ignore the INVALID_OPERATION error during resume.
+6e2ed02 NuPlayer: Fix for audio mute after call termination
+91b8b1c Media: Make media support DRM file's playing
+c1d0d36 NuPlayer: add implementations of suspend/resume APIs
+d23e63b libstagefright: Add missing check for software encoder
+7daf035 nuplayer: Fixes for PCM offload
+aac30c9 stagefright: Fix AC3 playback
+7ddd36e stagefright: More bit depth plumbing
+
+   * frameworks/base/
+1511e96 SystemUI: Remove redundant and broken setText on temperture view.
+e783d83 SystemUI: fix nav button ripple getting stuck
+7eb82f2 Merge remote-tracking branch 'upstream/xpe9.0' into HEAD
+d855e46 Keyguard: Create lockscreen weather, move weatherimpl to utils.
+d0fb64b Camera2 legacy: retry EGL config without EGL_RECORDABLE_ANDROID
+1dd8fbd Phone: Sprint MWI Quirk: Phantom message wait indicator workaround (1/2)
+
+   * hardware/qcom/audio-caf/msm8974/
+703bd57 hal: Fix setting of backend samplerate
+
+   * packages/apps/CMFileManager/
+c21b4b7 Hide unmounted or removed media from the navigation drawer.
+
+   * packages/apps/DeskClock/
+0f8b4f3 DeskClock: Fix behavior when setting external media file for alarm tone
+
+   * packages/apps/Eleven/
+7573c03 Eleven: Fix crash in LetterTileDrawable
+
+   * packages/apps/Mms/
+30a2d74 Make sure sim filter spinner is visible when empty layout is showing
+f5590ba Mms: Fix Msim behavior with QuickReply.
+
+   * packages/apps/Settings/
+ac604eb Settings: Update QS_TILES to point at secure settings.
+36d70e0 Merge remote-tracking branch 'upstream/xpe9.0' into HEAD
+43975bc Settings: Show SAR on Regulatory Info (from CM11)
+8e49b03 settings: check if ime switcher pref was remove previously
+755faad Fix NPE in HighTouchSensivity
+
+   * packages/apps/Trebuchet/
+cc34251 Adding manage apps shortcut to Settings panel
+3549b0c Fix bug with toggling SearchBar off:
+
+   * packages/services/Telephony/
+90a94de Phone: Sprint MWI Quirk: Phantom message wait indicator workaround (2/2)
+
+====================
+     01-18-2015
+====================
+
+   * build/
+c918506 Fix kernel.mk if SELINUX or VARIANT_DEFCONFIG is defined
+87a1a5b Add support for OSX up to 10.10 and CLI Tools
+
+   * frameworks/av/
+ba618dd audiopolicy: Fix for device selection during concurrent audio playback
+ed6be67 nuplayer: Fix audio glitch heard in non-offload path
+
+   * frameworks/base/
+b702239 Fix warning
+
+   * hardware/qcom/audio-caf/msm8974/
+bd66ae2 8084: Add define for ES705 codecs.
+3a45e74 Bring up voice on apq8084 targets.
+
+   * packages/apps/CMFileManager/
+41e0d74 Add special case for Gallery2 when opening image files.
+
+   * packages/apps/Settings/
+5985de7 privacyguard: Add Superuser summary
+4539716 Quick settings: Option to disable brightness slider (2/2)
+
+   * packages/inputmethods/LatinIME/
+4beced1 Fix ALL the keys for QWERTZ keyboards
+
+   * packages/services/Telephony/
+9e142f7 Telephony: Use toasts instead of alert dialogs for contact operations
+
+   * system/core/
+4ec3924 init: Don't wreck things if androidboot.bootdevice isn't set
+1f01e5f Fix building on modern versions of Xcode and OS X.
+
+====================
+     01-17-2015
+====================
+
+   * external/f2fs-tools/
+f87bee2 Modifications to reserve space for encrypted filesystem support
+
+   * external/vim/
+65cd352 vim: Update to 7.4.568
+
+   * frameworks/av/
+1e0e7b1 libstagefright: Allocate cached camera buffers for sw encoders
+b4cc511 ToneGenerator.h: Add C++11 workaround for static const float member initialization
+42da2fd libmedia: Add HVGA camcorder quality
+32f18d8 libstagefright: Fix SDK compilation issues
+b273c02 libstagefright: Avoid fallback to software encoders
+801682e audioflinger: clear effect buffers for duplicating output
+
+   * frameworks/base/
+448e72d Prevent copyNativeLib of package scanning to reduce booting time.
+b87d386 SystemUI: Fix system ui crash while continuously click flash light tile issue
+97b7db8 SystemUI: Fix user profile activity overlapped by status bar panel issue
+56c67c0 Framework: Fix GSM signal strength
+4d86952 USB: AppOps: always show "USB connection" when usb connected
+9faca97 Quick settings: Option to disable brightness slider (1/2)
+
+   * packages/apps/AudioFX/
+f6e304f AudioFX: materialize
+
+   * packages/apps/Bluetooth/
+dac5f53 Bluetooth: Improve CAF strings
+
+   * packages/apps/DeskClock/
+94925a5 DeskClock: Set default world clocks per row to 1
+
+   * packages/apps/Mms/
+9def1d9 Fix for loading URLs from mms subject
+
+   * packages/apps/Settings/
+1f4f129 Improve settings menu
+5e473b9 Settings: Add HighTouchSensitivity support
+62c224a apn: Update the add actionbar icon
+c5ff71f Settings: MSim: fix carrier name display
+
+   * packages/inputmethods/LatinIME/
+0535655 LatinIME: Enable Greek spell checking
+d1bd024 LatinIME: Enable spellchecker for additional languages
+c61d0b5 LatinIME: Fix dicttool build
+5d8bc63 LatinIME: Add Hungarian to the available languages for spell check
+
+   * packages/providers/TelephonyProvider/
+7e4b031 TelephonyProvider: allow specifying a protocol for preferred apn
+
+   * packages/services/Telephony/
+1078f34 Revert "Add Managed Roaming feature support."
+
+   * vendor/XPe/
+cc589d9 Added Digicel Trinidad to apns-conf.xml
+
+
+====================
+     01-15-2015
+====================
+
+   * build/
+35b7259 Merge remote-tracking branch 'upstream/xpe9' into HEAD
+
+   * device/motorola/falcon/
+112da81 falcon: Update CDMA property's
+
+   * device/motorola/msm8226-common/
+f7e891b msm8226: Remove KSM make some issues with Stock camera libs (Blobs)
+08d6f51 msm8226: remove mm-pp-daemon
+4f10f16 msm8226: Clean up the repo
+b910d23 msm8226-common: Remove unused services, proprietary files
+398ee9b update qcom.rc for lollipop
+37fd05f msm8226-common: Update proprietary libs for lollipop
+f7e891b msm8226: Remove KSM make some issues with Stock camera libs (Blobs)
+
+   * device/qcom/sepolicy/
+6cd495b netd: Fix creation of hostapd sockets dir
+
+   * frameworks/base/
+284d0af Improve HeadsUp [1/2]
+014b096 Activity: Add an helper to get its handler instance
+8d1f48c OnTheSpot: Forward implement infrastructure [1/2]
+13707bc  ColorFade: Cleanup changes for memory leak patch
+368554f  ColorFade: Fix memory leak (2 of 2)
+207932e SystemUI: This TODO can be solved actually
+7062404 SystemUI: Materialize volume panel in/out animation
+d907923 SystemUI: Tiny expanding improvement
+e3c742c Merge remote-tracking branch 'upstream/xpe9' into HEAD
+3c081ac appops: Disassociate appops requests from notification broadcasts
+
+   * frameworks/native/
+a1a4f7a Themes: Port to CM12 [2/6]
+
+   * frameworks/opt/telephony/
+30be0b7 opt-telephony : fixing boo boo .. compilation error (referencing a static context)
+e6acd94 SmsUsageMonitor: update SMS limits with ContentObserver
+
+   * kernel/motorola/msm8226/
+19e5a57 wake_timeout:Disabled by default and add the file forged on last patch
+900b03e3 intput: dt2w/s2w: disable s2w/dt2w after timeout
+373ec4b mm: ksm: Optimize
+0c7746e input: declare variables dependant on s2w/dt2w when the features are disabled
+337306e proximity: power off the sensor if dt2w/s2w is disabled
+d4c041f s2w/dt2w: separate PocketMode and more fixes
+1998a24 bumpt to 23
+7ab7700 s2w/dt2w: Some implementations for make a usable in Deep  sleep
+3a2ec4d dt2w: improve accuracy of single touch detection and bus CPU improvements
+692eb2a Doubletap2wake/sweep2wake
+
+   * packages/apps/Calendar/
+b044a3a Calendar: toggle on delete events overlay to delete multiple events
+
+   * packages/apps/Mms/
+42cdf4b Mms: add tint to mms_play_btn drawable
+
+   * packages/apps/Settings/
+9f7c819 fix typo
+9910066 Improve HeadsUp [2/2]
+6c4f62a OnTheSpot: Forward implement infrastructure [2/2]
+64dc9ee Merge remote-tracking branch 'upstream/xpe9' into HEAD
+
+   * kernel/motorola/msm8226/
+704b779 wketimeout: add bool pwrkey_pressed = false;
+406fe2c doubletap2wake:fix typo
+2938334 ct406: Fix typos and Sweep2wake remove duplicated things
+995cf32 Merge https://github.com/XPerience-AOSP-Lollipop/android_kernel_motorola_msm8226 into HEAD
+2db1995 fix typos
+f604a15 Wake_timeout: Allow longer time out duration and fix ct406 fixes Change-Id: Ifd24cd6ae4c4230fdb104d1bb406c6ad51212a78 Signed-off-by: klozz <xxx.reptar.rawrr.xxx@gmail.com>
+ae0c967 Wake_timeout: Allow longer time out duration
+f70d56e Fix missing ; on mdss_dsi from my last patch about lcd_notify
+19047bd fix wake_timeout build
+6140c31 lcd_notify makefile
+99ebe6d msm: mdss: Adding lcd notifier
+19e5a57 wake_timeout:Disabled by default and add the file forged on last patch
+900b03e3 intput: dt2w/s2w: disable s2w/dt2w after timeout
+373ec4b mm: ksm: Optimize
+0c7746e input: declare variables dependant on s2w/dt2w when the features are disabled
+337306e proximity: power off the sensor if dt2w/s2w is disabled
+d4c041f s2w/dt2w: separate PocketMode and more fixes
+1998a24 bumpt to 23
+7ab7700 s2w/dt2w: Some implementations for make a usable in Deep  sleep
+3a2ec4d dt2w: improve accuracy of single touch detection and bus CPU improvements
+692eb2a Doubletap2wake/sweep2wake
+====================
+     01-14-2015
+====================
+
+   * build/
+97ce074 core: More flexible kernel configuration
+16fc650 build: fix darwin compile
+db420bd roomservice: Improve error handling on search
+
+   * external/vim/
+71a51b1 vim: Tone down FORTIFY_SOURCE for 64 bits
+
+   * frameworks/base/
+fa9580d ConnectionSettings: Add 4g as connection options for profiles (1/2)
+283fb54 SystemUI: Create expandable volume panel.
+20af04c Implement linked volumes and add upgrade path.
+7c3472d Allow granting permissions based on signature in <allow-permission/>
+2e68cb6 ProcessList: Handle invalid state when computing next PSS Time
+8ec5d18 Update RemoteController on Session update
+
+   * packages/apps/DeskClock/
+a8ad225 Fix picking music for alarms not working
+
+   * packages/apps/Dialer/
+ba26c2b Port "filter by date range" from call stats page to call log
+
+   * packages/apps/Mms/
+5d15220 QuickMessage: bring back mark as read
+
+   * packages/apps/Settings/
+106d487 Profiles: Add 4g as connection options for profiles (2/2)
+6198b0a Settings: Create unlinked and linked notification & ring volume options.
+
+   * packages/services/Telephony/
+a6c4e12 Port network mode toggle from CM11
+7549afa MSIM: Replace the "SUB" string
+2ea4109 BugFix: importing the SwitchPreference class
+66b20a3 Change string "Cellular" to "Mobile"
+52b9ec7 Add compatibility code with mainline's configuration options for unlock
+0feb80d TeleService: switches for checkboxes
+
+====================
+     01-13-2015
+====================
+
+   * build/
+0050955 build: Only set capabilities if provided
+37c39e7 build: ota: Support for install tools in /tmp/install
+
+   * frameworks/av/
+7083256 fix memory leak in PatchPanel
+20a096d Fix wrong int argument of FOURCC.
+1c9182f Don't signal an error at the end of a short file
+5d6eb16 Stagefright: Fix unused variables, functions, values
+506f4d1 Cast int64_t values to long long before print.
+9350982 libstagefright: Handle EOS for audio in A/V clips
+937f22c audio : Fixed usage of QTI_FLAC_DECODER
+991bf3d audio: execute setVoiceVolume for USB device during inCall usecase
+58f016d Revert "Track volume should be maintained even if track is restored"
+
+   * hardware/qcom/audio-caf/msm8974/
+5c4b37f audio: Reject incall record request when mode is not IN_CALL
+04912dd audio: Fixed input device check
+
+   * packages/apps/CMFileManager/
+ac0280f CMFileManager: Include sort by type
+
+   * packages/apps/Calculator/
+ff61bbf Retain keyboard layout and expression formatting for base when switching from portrait to landscape
+
+   * packages/apps/DeskClock/
+6eeeab6 Do not disable alarm list when adding new alarm
+
+   * packages/apps/Mms/
+a417d17 mms: markAllAsUnread is never called
+939f203 Implement SMS mark for unread (Cyan-348)
+3990c5c MMS: Do not show export option when there are no SMS to backup
+f2f22c3 MMS - allow copying text from MMS
+
+   * packages/apps/Settings/
+7920296 System Profiles: Do not allow user to delete active profile
+377a062 Do not show phone-related stuff if there's no subs
+5544e5f MSIM: behave as single SIM when appropriate
+3313c6c MSIM: use index as tab key
+3825cd4 MSIM - SIM card status: name "SUB x" now "SIM x"
+
+   * packages/apps/Trebuchet/
+d762349 Add default wallpaper to launcher
+
+   * packages/services/Telephony/
+3a73db9 Revert "Fix for ArrayIndexOutOfBoundException"
+93e8fb1 Telephony: Fix translatability of network modes
+
+   * vendor/motorola/
+d06dcb8 missed a few things and cleaning up
+
+====================
+     01-12-2015
+====================
+
+   * device/motorola/falcon/
+11554e2 falcon: update properties * ro.product.model is always the same on all variants * ro.build.product should be the same as ro.product.device
+74d26ce falcon: Updated props to allow dual sim
+
+   * device/motorola/msm8226-common/
+8d2d4b3 msm8226: init: Add thermal file socket creation into init Add thermal file socket creation into target init. This change is required for SEAndroid so that thermal socket context are not overridden by init.
+1a24a52 msm8226: Update codec capabilities info in media_codecs.xml Add video encode/decode capabilities for 8226
+0474b20 msm8226: Test Reverse stereo on speakers/earphones
+695ee1a msm8226-common: Increase camcorder mic volume
+b7d3a32 msm8226-common: Address mpdecision denials
+69d5fe2 msm8226-common: Add charge only USB mode
+
+   * frameworks/base/
+cb22900 Changed profile selection to single-tap action
+f54744a Power menu customizations [1/2]
+
+   * frameworks/opt/telephony/
+a6b724c MSIM: be more inteligent in giving the SIM a name
+
+   * packages/apps/CMFileManager/
+010d820 CMFileManager: Add sort by size
+
+   * packages/apps/InCallUI/
+af0ed82 InCallUI: Use correct string for blacklist menu action
+
+   * packages/apps/Mms/
+5980a41 Mms: fix crash when replying on MSim
+
+   * packages/apps/Settings/
+0e1baa2 MSIM: Data Usage: data connection switch visibility
+baa40b0 MSIM: Data Usage: use the SIM name if available
+85832d4 Settings: Add missing up navigation in menus
+9c6e9e2 Update profiles actionbar delete icon
+29dcfeb Update privacy guard reset icon
+b86d3d8 Power menu customizations [2/2]
+
+   * vendor/motorola/
+da4be53 Update Camera libs missed out in last build
+9d9dca6 Merge https://github.com/TheMuppets/proprietary_vendor_motorola into cm-12.0
+04bb233 msm8960-common: Deunify and setup device specific directories
+
+====================
+     01-11-2015
+====================
+
+   * frameworks/av/
+883dbe7 libstagefright: Make it possible to skip OMX buffer reallocation (2)
+
+   * frameworks/base/
+7384dbe Revert "Clean up keyguard carrier text handling."
+
+   * packages/apps/DeskClock/
+2f337a6 DeskClock: Fix actionbar icons in world clock
+
+   * packages/apps/Settings/
+7a93e12 fix bad heads
+
+   * vendor/motorola/
+d1b7c2a Updated to GPE 5.0.1 /Fixed RIL for dual Sim
+131d2a9 msm8960dt-common: Create msm8960dt-common from ghost
