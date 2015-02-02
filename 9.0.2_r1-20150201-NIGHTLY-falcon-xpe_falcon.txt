@@ -1,0 +1,247 @@
+====================
+     02-01-2015
+====================
+
+
+   * build/
+5a6e88d Merge remote-tracking branch 'upstream/xpe9' into HEAD
+
+   * frameworks/av/
+134f9f6 nuplayer: Fix CTS issues in NuPlayer
+9b7c146 Wrong format used in seamless check
+33a4c90 Flush the audio sink if NuPlayerRenderer is paused during a flush
+3aad113 RTSP: Continue setupTrack even if the other track creation fails
+97e2c88 RTSP: Add NULL check before accessing mHandler
+e77455d ATSParser: Don't discard TS packet if payloadstartindicator is set
+
+   * frameworks/base/
+049dec6 Merge remote-tracking branch 'upstream/xpe9' into HEAD
+f3bc496 Boot up optimization for phoneprocess
+f216ee6 systemui: Only enable visualizer if a session is active
+65ff6fb SystemUI/Keyguard: Improve strings
+12aadbb IMS: Definition of error code for answered elsewhere
+e4598a0 core: String improvements from cm-11.0
+
+   * frameworks/native/
+f1a5742 surfaceflinger: Fix the "Fix the opaque check"
+
+   * frameworks/opt/net/ims/
+9612e33 IMS : UT Service Capability
+
+   * kernel/motorola/msm8226/
+4441fee lib/int_sqrt.c: optimize square root algorithm
+96f08cc HARDCODE: VFP
+114789c Revamp spinlock ASM code
+d6bfe1d Updatetorch configs acording to last kk kernel
+e0108ea Change wlan to powersuspend instead os earlysuspend
+
+   * packages/apps/Settings/
+11029e3 Merge remote-tracking branch 'upstream/xpe9' into HEAD
+a12fc03 add xperience OTA
+5399430 Settings: Fix expanded desktop string
+cb4d3e2 Profiles: remove unused code
+8f3f325 Profiles: add triggers only for connections supported.
+c967bb9 Settings: String consistency
+
+   * packages/apps/Terminal/
+bb02e26 Terminal: Fix build by pointing to the correct string
+
+   * system/vold/
+9690265 Revert "vold: cryptfs: Disable HW fde for msm8939 64bit"
+
+   * vendor/XPe/
+4c208e2 remove deprecated files
+6d6f4ae sepolicy: Fix policy for keyhandler
+4608502 sepolicy: Let drmserver scan themes
+0219ad2 apn: New Tuenti (Spain) APN.
+554a02b Update Cellcom Israel
+9a637a2 apn: Changes for LT apn's
+a01b633 Tap & Pay - Give 'learn more' a URL
+0308079 vendor:cm: Australian English dictionary
+26a67c6 Add Luxembourgish spellchecking dictionary
+
+====================
+     01-31-2015
+====================
+
+
+   * frameworks/av/
+3450ac3 rtsp: improvement for rtsp connection
+78456cd Nuplayer: Fix no image or image will be delay issue
+525c59e nuplayer: Synchronize video and audio decoders configuration
+6efd740 nuplayer: Fix incorrect audio resume time during seek
+43e0c55  audio: Fix ringtone mute issue
+9942a56 libstagefright: Explicitly disconnect HTTP connection
+9e666a5 libmedia: Fix mismatched state
+4d7023d Revert "Fix id3 parser crash"
+
+   * frameworks/base/
+1269441 WindowManager: Upper level changes to expose blur effect
+291401d SystemUI: Fix screen timeout tile title
+37fcc7f SystemUI: make AudioFX tile not translatable
+f099e1c SystemUI : NavigationBar fixes
+
+   * frameworks/native/
+50a66fd SurfaceFlinger: Native changes to add blur effect
+be46a59 surfaceflinger: Fix the opaque check
+
+   * packages/apps/Calculator/
+f4c9b0b Calculator: Set untranslatables
+
+   * packages/apps/InCallUI/
+028e39a InCallUI: Fix untranslatable
+
+   * packages/apps/Settings/
+b60b8e3 Settings: Set untranslatable
+3c471cb Settings: make AudioFX tile not translatable
+
+   * packages/apps/Terminal/
+d5b0d9b Terminal: Convert CheckBoxPreference to SwitchPreference
+dbc907d Terminal: Cleanup duplicate strings
+
+   * packages/services/Telephony/
+42f46ab Telephony: Fix string
+
+====================
+     01-30-2015
+====================
+
+
+   * build/
+db29830 Merge remote-tracking branch 'upstream/xpe9' into HEAD
+
+   * frameworks/base/
+9345a22 watermark: Place watermark in the bottom-right when both deltax and deltaty are 0
+fba0995 protected SMS [1/4]
+f0db07b Make people lookup default overlay
+89f6655 Ignore certain overlaid sms-sending packages [1/2]
+0763660 Revert "[ActivityManager] Improve task order of getRunningTasks."
+5f2f330 Fix wrap property creation when truncating.
+22140b5 Merge remote-tracking branch 'upstream/xpe9' into HEAD
+487ee1e Revert "Revert "[ActivityManager] Set appropriate relation of task to home""
+340e956 SystemUI: add left and right virtual buttons while typing
+6b090c6 Add SMS Middleware layer.
+cff6633 Add ACTION_NEW_OUTGOING_SMS
+
+   * frameworks/opt/telephony/
+fb9b369 Telephony: If no wrapped message, originating address is null
+a545a57 Telephony: Always allow ignored sms packages for premium sms.
+12d1242 Telephony: Find creator package if sms is sent from systemuid.
+ffd7847 Telephony: Fall back on deprecated createFromPdu.
+93251ef Telephony: Hide new helper method.
+f5f5e1a protected SMS [4/4]
+5fddf7c Generate transaction Ids for RetrieveConf - This is required to be able to backup and restore received MMS
+a615da7 Ignore certain sms-sending packages [2/2]
+
+   * hardware/qcom/audio-caf/msm8916/
+8159c34 audio: implement backend platform parser
+3881734 audio: add fm playback to usecase map
+
+   * packages/apps/CMFileManager/
+25e803b CM File Manager : Populate results as they are found while searching
+
+   * packages/apps/DeskClock/
+3191a91 DeskClock: add playlist CN translation
+
+   * packages/apps/Settings/
+8f5e59a Settings: Fix inflate exception on search. Dynamically replace nested fragment.
+1547840 Settings: Clarify where weather status appears.
+e6aa221 Settings: add navigation bar arrow keys toggle
+
+====================
+     01-29-2015
+====================
+
+
+   * external/bluetooth/bluedroid/
+5e78adc bluedroid: Fix warning caused by commit f9f2dbcca4263188df5efe28b1a5bcb0ce906b6f
+
+   * frameworks/base/
+13a7879 SystemUI: Visualizer tile improvements
+39bbfda base: Add theme support to Ringtone and Profile pickers activities
+77eaeba Revert "[ActivityManager] Set appropriate relation of task to home"
+982eebd SystemUI : NavigationBar Customization
+
+   * hardware/qcom/audio-caf/msm8916/
+0072fbf audio: implement additional platform info xml tags
+5f8e880 audio: Extend platform parser to allow device name aliasing
+
+   * packages/apps/DeskClock/
+5658fd5 DeskClock: consolidate Alarm picker to one dialog
+
+   * packages/apps/Mms/
+4fa8c38 Mms: Adding backup MMS feature with existing backup SMS
+72d96cb Mms: Use tel mimetype for call button on notification
+b919b51 Mms: Improve ui for sms compose with chips
+2433bfe Fix a ui bugs where an overrided layout shows white on white
+
+   * packages/apps/Settings/
+b10f073 Settings: Re-add whisperpush settings.
+39f5672 Settings : Add back navigation bar customization.
+95b3de6 Expose hardcoded and @android colors from layouts
+3acaea8 Skip Misc/Overcounted battery stats in builds
+
+   * packages/apps/Trebuchet/
+edbea0a DynamicGrid: tuning the icon size for some device
+b5f816d Make workspace during preview larger
+
+   * packages/providers/MediaProvider/
+0714ad9 mediaprovider: Add theme support to Ringtone activity
+
+====================
+     01-28-2015
+====================
+
+
+   * build/
+feeeb74 Performance improvement for whole static libs
+fc7ae19 build: Remove OpenWnn IME from target config
+
+   * frameworks/base/
+c46f74b SystemUI : Add screen timeout tile
+37ba0e1 Fix bad exclude region in landscape
+04ebe11 Avoid overwriting EGL14.EGL_NO_SURFACE
+814ae6f [ActivityManager] Fix activity always visible.
+ce635e3 Prevent system server dump stuck by pipe buffer full.
+40e3a8b [ActivityManager] Distinguish FG or BG receiver finished
+08ed844 [ActivityManager] Fix process record leakage.
+0896b98 [ActivityManager] Prevent application holding AMS lock
+889c018 [ActivityManager] Set appropriate relation of task to home
+b7a922f [ActivityManager] Fix adjust to wrong focused stack
+3d1e116 [AppOps] Fix lost op state when upgrading to L.
+d46f12b Avoid deadlock between ActivityManagerService and ProcessStatsService.
+b98529e [ActivityManager] Reduce report wrong anr activity
+b135f00 [ActivityManager] Avoid orphan ContentProviderRecord.
+9ebefe1 [ActivityManager] Fix index out of bounds when updating next pss time.
+676a5b4 [ActivityManager] Improve task order of getRunningTasks.
+6e4e03e [ActivityManager] Ensure provider external access count will be released.
+63da282 Don't enable screen until keyguard is ready
+afb4b1b Correct the bitmap copy to preserve already drawn area
+20e8d63 Fix for half blank screen during App resume
+f845d18 Prevent calling GL functions with an invalid surface
+a775f0f Fast loadInverse() implementation for the common case
+0e4c53e [HWUI] fix texture cache can't be removed for recycled bitmap
+ca271ea SystemUI: clean up Location tile
+
+   * frameworks/native/
+e0d7c63 Fix for corruption when numFds or numInts is too large.
+3250a13 Surface: Ensure synchronisation of copyBlt
+e7e6006 Surface: Always consume fence fd in queueBuffer
+
+   * frameworks/opt/chips/
+9677961 Chips: Add more logic to dismiss selection dialog
+
+   * packages/apps/Settings/
+c29262e Settings: Add new gesture vector drawable.
+4862b56 Settings : Add screen timeout
+e195fbf Settings: Fix off-by-one SectionIndexer in PrivacyGuard.
+2218200 Settings: Fix off-by-one SectionIndexer in Expanded Desktop.
+
+   * packages/apps/ThemeChooser/
+feb1890 Update notification icon to new paint bucket
+
+   * packages/services/Telephony/
+792ea8e protected SMS [2/4]
+
+   * system/core/
+13d53a4 fs_mgr: Allow ext2/3/4 to mount as ext4
