@@ -1,0 +1,209 @@
+====================
+     02-08-2015
+====================
+
+
+   * android/
+83aed55 Update default.xml
+8ec5818 removed unused things
+a3ed29e fix malformed xml
+18fb773 fix aosp remote
+
+   * bootable/recovery/
+3331804 Merge remote-tracking branch 'xpe9' into HEAD
+
+   * frameworks/base/
+ef121b9  Increase available volume levels
+ab5d8ce Release SQLite page cache as much as it can
+
+   * kernel/motorola/msm8226/
+b06d603 add support to ntfs :3
+77d64af  readahead: make context readahead more conservative
+1133b63 int_sqrt: Improve 3x faster integer sqrt.
+a73da35 soc: msm: reduce min period count for voip
+e1a02e4 Set Republic Wireless channel ID to sprint string
+b7e4970  msm: wlan: 2.4 GHz Channel Range for Mexico
+793aa71 disable alessa
+f75b89a support of alessa plug
+bbd3afa intelliplug
+
+   * system/vold/
+ba1ad39 Revert "vold: cryptfs: Disable HW fde for msm8939 64bit"
+
+   * vendor/XPe/
+0574d56 Tweaking for falcon device
+
+====================
+     02-07-2015
+====================
+
+
+   * android/
+9a901c5 fix manifest
+74c747d add revision="refs/tags/android-5.0.2_r1" />
+edc37c0 reformed manifest and added new things from cm
+
+   * bionic/
+6bbb858 Merge remote-tracking branch 'upstream/xpe9' into HEAD
+
+   * build/
+b3c6b80 Merge remote-tracking branch 'upstream/xpe9' into HEAD
+
+   * frameworks/av/
+af1e08e libmediaplayerservice: Use default buffer size for Audiocache with Awesomplayer
+be9d7d9 nuplayer: Modify seek and resume latency calculation
+
+   * frameworks/base/
+e5526b8 Merge remote-tracking branch 'upstream/xpe9.0' into HEAD
+7a66f84 (?)
+
+   * packages/apps/Eleven/
+4f3acea Merge remote-tracking branch 'upstream/XPerience' into XPerience
+
+   * packages/apps/Settings/
+9c4cc08 Merge remote-tracking branch 'upstream/xpe9' into HEAD
+
+   * vendor/XPe/
+4220556 APN: Changes for MT:S Serbia APNs
+690c8ac sepolicy: actually include mediaserver.te
+9f4dcce  cm: add torch service sepolicy entry
+
+====================
+     02-06-2015
+====================
+
+
+   * external/bluetooth/bluedroid/
+a3b5028 Fix error when BLE_PRIVACY_SPT is not defined
+
+   * external/whispersystems/WhisperPush/
+fdb6548 WhisperPush: Protect against possible NPE on TextWatcher.
+0b0d9e3 WhisperPush : Fix crash when going in background
+
+   * frameworks/base/
+b832c0d VolumePanel : Check if StreamControl is null
+674bd13 Themes: Add tm command line tool
+5220513 Msim: Use SIM display name
+264a86b SystemUI: improve lockscreen tile behavior
+7f59eb0 lowmemorykiller: Fix high min-free values
+01dc884 Themes: Pass themePackageName to createApplicationContext()
+9b76292 SystemUI : Move navring app loading to background tasks
+0a326da SystemUI : Make navbar back,recent not re-assignable
+
+   * frameworks/opt/telephony/
+84e5a23 Telephony: Leverage UiccSmsController.
+
+   * packages/apps/Settings/
+4690cf9 Settings : Fix profiles crash
+a81a07c Settings: merge sim enabler and sim cards preference
+88a0a99 Settings: Performance: fix mix/max cpu frequency
+db8d88f Settings : Disable edit mode for navring if pause/destroy
+
+====================
+     02-05-2015
+====================
+
+
+   * build/
+250b736 repopick: Allow the github fetch to fail
+
+   * external/ffmpeg/
+ed22941 Add configuration for silvermont CPU based on Atom.
+
+   * frameworks/base/
+0ebc286 Don't broadcast before boot is completed.
+946e1a9 AlarmManager: Reschedule the date changed event if time changed.
+e011056 input: Add option to toggle pointer icon when using stylus(2/3)
+a640ce8 Stylus gestures features (1/2)
+acf9ee8 SystemUI : Improve nav ring swipe behavior
+5e1f21e Fix typo in @hide annotation for PRIVATE_FLAG_PREVENT_POWER_KEY
+
+   * frameworks/native/
+ad7b567 libgui: Copyback all region except dirty region for newly allocated buffer
+fbceb9f input: Add option to toggle pointer icon when using stylus(3/3)
+
+   * frameworks/opt/telephony/
+54ec6b7 Telephony: Unbreak PROTECTED_SMS broadcasts. Update for common method call.
+7fea5be Broadcast icc card state as NOT_READY if card is not initialized
+
+   * hardware/qcom/audio-caf/msm8974/
+455758e hal: Allow building hardware audio encoders
+
+   * packages/apps/CMFileManager/
+f383909 CMFileManager: Don't show unmounted volumes in PickerActivity
+
+   * packages/apps/Contacts/
+4fe0b5d Contacts: Update dialog with the correct selected count
+
+   * packages/apps/InCallUI/
+5193400 Add new features for layout-land
+
+   * packages/apps/Mms/
+22dcc08 Apply zoom scale to all items in ListView.
+
+   * packages/apps/Settings/
+edad31e Improve navigation settings help messages
+4cd0951 settings: Add option to toggle the pointer icon when using stylus(1/3)
+70139e4 Stylus gestures features (2/2)
+243e3a8 Settings: Performance: move cpu info refresh off of main thread
+a1ac33e settings: Fix the custom screen color controls
+
+   * packages/apps/Stk/
+4bed236 Update app icon again
+
+   * packages/services/Telephony/
+04ba83d TelephonyService: Unbreak PROTECTED_SMS. Update for common methods.
+
+   * system/media/
+ef36f65 Revert "audio_route: Support BYTE type controls"
+
+====================
+     02-04-2015
+====================
+
+
+   * bootable/recovery/
+967cdde add support to mount ntfs file system
+c606e5b Add NTFS support
+
+   * external/bluetooth/bluedroid/
+ed43ee1 bluedroid: Make the dynamic samplerate for A2DP optional
+
+   * frameworks/av/
+42d068e audioflinger: Fix glitches and volume ramp issue
+
+   * frameworks/base/
+3edef04 ringtones: Add ANDROID_LOOP to "Digital Phone" metadata
+92f918b Themes: Get boot theme config from ThemeUtils
+241683a SystemUI : Add ability to disable lockscreen targets
+35faff9 SystemUI : Fix Rtl for lockscreen shortcuts
+9bb408e Fix Power Shutter Exception 2 of 2
+8607b58 PhoneWindowPolicy: Fix NPE race condition by excessive screen on delay
+0ec7789 Camera : allow camera to use power key as shutter
+d1e4002 Themes: Allow notification shadows to be rounded
+
+   * hardware/qcom/audio-caf/msm8974/
+65e1b92 hal: Fix glitch in audio playback during device switch
+
+   * packages/apps/AudioFX/
+ac94fca audiofx: Listen for new USB audio broadcasts
+
+   * packages/apps/CMFileManager/
+890171c CM File Manager : Add Application category to Easy Mode List
+
+   * packages/apps/Camera2/
+d8aa4be Fix Power Shutter Exception 1 of 2
+4160876 Camera: Powerkey shutter (2/2)
+4fdf3fe Camera: Disable Camera Launcher when both Front and Back sensors are not detected
+
+   * packages/apps/DeskClock/
+f58422e DeskClock: Handle alarm playback when the uri is not valid
+
+   * packages/apps/Mms/
+d918fc0 QuickMessagePopup: pager fix on multiple messages.
+f00f4b1 Mms: Prevent popup window from closing
+a5f03d8 Mms: Tweak code to make mms compose more performant
+
+   * packages/apps/Settings/
+cc4418b development: Add setting for updating recovery
+2a3fcb2 Settings : Add ability to disable a lockscreen shortcut
