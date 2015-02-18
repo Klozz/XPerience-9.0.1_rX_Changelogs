@@ -1,0 +1,186 @@
+====================
+     02-18-2015
+====================
+
+   * device/motorola/falcon/
+7f4730a falcon: Move audio calibration files to device
+
+   * device/motorola/msm8226-common/
+c291f52 msm8226-common: Move audio calibration files to devices
+58f5d7a enable prebuilt chromium to make more faster the build (You need first build disable this)
+
+   * frameworks/base/
+d2992f9 Revert "Generate IKeystoreService using aidl"
+3410086 Revert "Call VMRuntime.clampGrowthLimit for small heap apps"
+b0e5a6a Revert "Check for OOM in BitmapFactory's getMimeTypeString()."
+5d83282 Revert "New Script Group API."
+50c6805 Register DDM handlers at the beginning of main method.
+d80dd67 Store compiled code in Context.getCodeCacheDir()
+e083750 Support connecting to networks with misconfigured subnet masks.
+078e42b Add missing <string.h> includes.
+dea45f4 Fix default compute thread priority
+896eea2 Add FP16 types to the list of RenderScript types.
+43f87ac New trick to install bad dex file.
+d14cbab Generate IKeystoreService using aidl
+11b30c4 Find wall clock RTC through sysfs
+5f6cfe5 Use more intention-revealing tests for S_ISLNK and S_ISSOCK.
+b3d1328 Add + code handling logic for SMS Global Roaming
+c9f0ec1 Fix ANR caused by hwuiTask thread
+283c698 Fix HttpResponseCacheTest in anticipation of an OkHttp upgrade.
+af5ee63 Call VMRuntime.clampGrowthLimit for small heap apps
+1efd57a bindService can't start up service process
+560f7a7 New Script Group API.
+4846d55 camera2: Clarify the documentation on the ImageReader usecase
+3f4e7bf Fixup aapt usage message
+a68f15e Fix crash caused by toHex returning exception
+f741fdc Check for OOM in BitmapFactory's getMimeTypeString().
+26d33b8 Use NULL instead of 0 for pointer arguments of CallStaticVoidMethod.
+3804133 Fix comment. It should be 'or' not 'of'.
+6a6fb52 fix issuse 65774
+8262544 Merge remote-tracking branch 'upstream/xpe9.0' into HEAD
+
+   * hardware/qcom/keymaster/
+ca6561a keymaster: Export HEAP_MASK flag for msm8610 target
+
+   * packages/apps/Settings/
+d528e18 fix build
+498a74c Merge remote-tracking branch 'upstream/xpe9.0' into HEAD
+4f42e7f Settings : Remove unused xml
+771926e Fix mobile network settings for multi sim (2/2)
+88995dd Only access CMHW from main thread.
+
+   * packages/apps/Trebuchet/
+e169a31 Fix potential NPE handling TransitionEffectsFragment
+
+   * system/vold/
+5bc50b1 Revert "vold: cryptfs: Disable HW fde for msm8939 64bit"
+
+   * vendor/XPe/
+2e2be67 Update Japanese APNs
+19dc6ed correct APN for Setar Aruba
+ae740d3 sepolicy: Fix denails for flash_recovery service
+f0775e4 sepolicy: Split off /cache/recovery's permissions
+c1a2453 sepolicy: allow userinit to set its property
+1808c90 init: remove logwrapper
+deabf47 Remove Openvpn this does not exist on XPerience proyect and I don't see nothing related to this on CM to make a fork :)
+
+   * vendor/motorola/
+775083d Merge pull request #4 from TheMuppets/cm-12.0
+
+====================
+     02-17-2015
+====================
+
+
+   * android/
+d57fab4 aosp
+8a2adf1 Remove OpenWnn from manifest
+c9816ca Add hardware bits for Intel CPUs
+
+   * build/
+d699058 Merge remote-tracking branch 'upstream/xpe' into HEAD
+
+   * frameworks/av/
+4af8125 Revert "Flush the audio sink if NuPlayerRenderer is paused during a flush"
+
+   * frameworks/base/
+ccb9dc1 Themes: Include ThemeConfig for ResourceKey hash
+0b2765e Themes: Add theme change timestamp to ThemeConfig
+b32df3a Merge remote-tracking branch 'upstream/xpe9' into HEAD
+1a3dd05 SystemUI: fix flashlight tile inconsistency
+2488f5a Revert "Revert "camera2-legacy: Workaround max jpeg/preview size AR mismatch""
+6019798 Profiles: Disable lock screen after boot
+a2e1b6f Themes: Don't clip notification when a theme defines a larger radius
+b04193a Themes: Fix theme package name being set to target's
+
+   * packages/apps/DeskClock/
+71c6a04 DeskClock: LT translations
+
+   * packages/apps/Eleven/
+d8ce5c3 Merge remote-tracking branch 'upstream/xpe9' into cm-12.0
+
+   * packages/apps/Settings/
+0bb6020 Merge remote-tracking branch 'upstream/xpe9' into HEAD
+c9e5e3b Settings: add summary for double_tap_to_wake
+5229554 Settings: reorganization
+
+   * packages/services/Telephony/
+2f4ca0e Fix mobile network settings for multi sim (1/2)
+1d97438 Fix back button on SelectSubscription activity
+
+====================
+     02-16-2015
+====================
+
+
+   * packages/apps/Nfc/
+c6f7234 NFCService: Add sysprop to prevent FW download during boot with NFC off.
+
+   * packages/providers/ThemesProvider/
+063f220 Don't update package while resources are being processed
+
+====================
+     02-15-2015
+====================
+
+
+   * external/skia/
+bf4617b Revert "NEON optimized blitter S32_Opaque_D32_filter_DX"
+
+   * hardware/qcom/audio-caf/msm8974/
+3e4aa5e hal: align fragment size to 24 instead of 1024 for PCM offload
+
+   * packages/apps/Camera2/
+455c85b Camera2: Remove google help preference
+8f53249 Camera2: Add option to set max screen brightness
+
+   * packages/apps/InCallUI/
+acad21a InCallUI: Fix string typo
+
+   * packages/apps/Terminal/
+4538377 TerminalKeys: Disable debug
+
+====================
+     02-14-2015
+====================
+
+
+   * build/
+c1b233d Themes: Include tm command line tool
+
+   * external/busybox/
+d9ce728 mount: use blkid to determine fstype
+
+   * frameworks/base/
+19f1298 Prevent power key capture when screen is off
+9d0514d Storage: Fix moving apps to external storage
+5216b64 Revert "Fixes large number of thumbnails leads to low memory"
+
+   * frameworks/opt/net/ims/
+607bb1e IMS: Add an extra for ims phantom MO call.
+
+   * packages/apps/AudioFX/
+451a68b Add missing translations from 5.0.2_r1
+
+   * packages/apps/Bluetooth/
+16bc583 bluetooth: Tone down the logspam
+
+   * packages/apps/InCallUI/
+9d67326 InCallUi: Update string for call on hold.
+
+   * packages/services/Telephony/
+74b8c6f Telephony: theme MultiSim Mobile Settings to match Settings app
+
+   * system/core/
+bbdc54a logd: fix persistent blocking reader performance
+7c92abf healthd: Disable the RTC wakeup timer
+
+   * system/vold/
+0274d51 Vold: Reset mPartMinors array when handling disk removal
+1951d59 vold: Fix compilation
+f9efab5 Fix Ext4 sdcard permissions on mount
+
+   * vendor/motorola/
+23b5430 Merge pull request #139 from stargo/cm-12.0
+8026a44 omap4: use L3 widevine libs from oppo/msm8974-common
+
