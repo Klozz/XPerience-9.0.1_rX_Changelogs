@@ -1,0 +1,350 @@
+====================
+     02-24-2015
+====================
+
+
+   * device/motorola/falcon/
+e071d03 falcon: Fix FM recording
+
+   * device/motorola/msm8226-common/
+fce816f Revert "msm8226-common: Disable kernel modules"
+9a99079 Revert "msm8226-common: Get rid of ctrl_interface=/data/misc/wifi/sockets"
+aa49af5 msm8226:update audio flags
+d4266f5 remove unneded scripts for FM
+99a5fc1 msm8226-common: Bring back fm
+6422968 msm8226-common: Add titan to build barrier
+bb259f0 msm8226-common: Add titan sensor permission
+3068d58 msm8226-common: Adjust min-free value for lowmemorykiller
+74b371e msm8226-common: Disable kernel modules
+d6c39f3 msm8226-common: Get rid of ctrl_interface=/data/misc/wifi/sockets
+
+   * kernel/motorola/msm8226/
+cf9ddf6 Revert "media: radio: Fix building and loading the IRIS transport"
+f93f135 Revert "Remove Module support to make more according to CM changes (and fix issues of FM radio)"
+82f137d Initialize this functions on 0 Like when you add variable like int value; The valor are 0 :D but for avoid warnings like "drivers/devfreq/simple_gpu_algorithm.c: In function 'simple_gpu_algorithm': drivers/devfreq/simple_gpu_algorithm.c:58:2: warning: 'val' may be used uninitialized in this function [-Wmaybe-uninitialized] error, forbidden warning: simple_gpu_algorithm.c:58"
+695cd37 Fix mm/slub.c:4542:11: warning: 'x' may be used uninitialized in this function [-Wmaybe-uninitialized] error, forbidden warning: slub.c:4542
+83cd7f0 gic: Remove redundant logging
+4d11e78 gic: add calls to log wakeup_reason.
+a813156 gpio: msm-common: Add wakeup reason logging
+cfa56fb Power: Changes the permission to read only for sysfs file /sys/kernel/wakeup_reasons/last_resume_reason
+a1e368d power: wakeup_reason: rename irq_count to irqcount
+3eff1234 Power: Add guard condition for maximum wakeup reasons
+a0dd486 POWER: fix compile warnings in log_wakeup_reason
+7c39a00 Power: add an API to log wakeup reasons
+7c3004a cpufreq: interactive: don't boost cpu if already boosted
+07a045c arm/dts: 8x26: increase Falcon CMI panel VBP
+7a8b33c cpufreq: cpu-boost: config cpu_boost separately
+dc3acaa Improve kernel SELinux avc logging
+b4d8305 mm: vmscan: do not count anon pages as reclaimable if swap is small
+16d6dc4 arm/dt: msm8226-moto-common: Change secure memory CMA size
+38dc9b9 fix error
+8f3ec75 msm8226_defconfig: Enable LZ4, and use it for ZRAM.
+6068555 lib: lz4: Set ARM_EFFICIENT_UNALIGNED_ACCESS
+293411b zram: Add LZ4 support
+97794b1 lz4: add overrun checks to lz4_uncompress_unknownoutputsize()
+92db05f lz4: fix another possible overrun
+e184caa lz4: ensure length does not wrap
+93329e5 lz4: fix compression/decompression signedness mismatch
+6775c62 lib/lz4: correct the LZ4 license
+c1a2a49 lib: add lz4 compressor module
+ca2be6e lib: add support for LZ4-compressed kernel
+124fc4e decompressor: add LZ4 decompressor module
+ee6b546  ARM: Use -mtune=cortex-a7 for 8226/8610
+0e9dfe6  msm8226_defconfig: Use -O2 not -Os
+1c559c0 arm: msm: watchdog_v2: Init tzbsp_cpu_count
+c9b8284 input: aps_ts: Init last
+2502bc8 drivers: leds-qpnp-rgb: Init spmi_dev
+86fe092 Enable Crypto ARM
+fead3d3 drivers/misc: bma2x2: set data in read_byte
+716b8e7 bootinfo: Fix section mismatches
+9176b2b ARM: 8120/1: crypto: sha512: add ARM NEON implementation
+f4f7376 ARM: 8119/1: crypto: sha1: add ARM NEON implementation
+92209a4 ARM: add support for kernel mode NEON
+333ac5c ARM: 8118/1: crypto: sha1/make use of common SHA-1 structures
+f8e8a06 crypto: arm-aes - fix encryption of unaligned data
+3ba704d CRYPTO: Fix more AES build errors
+ab7a1ba  ARM: add .gitignore entry for aesbs-core.S
+fa62665 ARM: add support for bit sliced AES using NEON instructions
+3e52f8b  ARM: use -mcpu=cortex-a7 to get integer divide instruction
+d8737f8 ARM: move AES typedefs and function prototypes to separate header
+efcccda ARM: 7837/3: fix Thumb-2 bug in AES assembler code
+d706a1a ARM: 7723/1: crypto: sha1-armv4-large.S: fix SP handling
+7e022a1 ARM: 7626/1: arm/crypto: Make asm SHA-1 and AES code Thumb-2 compatible
+e646b15 Remove Module support to make more according to CM changes (and fix issues of FM radio)
+
+====================
+     02-23-2015
+====================
+
+
+   * kernel/motorola/msm8226/
+77301fa ipv4: try to cache dst_entries which would cause a redirect
+eada758 media: radio: Fix building and loading the IRIS transport
+4533a2c cpufreq: interactive: fix compiling warnings The gcc warns like: drivers/cpufreq/cpufreq_interactive.c:813:6: warning: operation on 'ret' may be undefined [-Wsequence-point] error, forbidden warning: cpufreq_interactive.c:813
+870de6d Revert "USB: quirks: enable device-qualifier quirk for another Elan touchscreen"
+ef9df8f Revert "USB: quirks: enable device-qualifier quirk for yet another Elan touchscreen"
+88abf87 bump to 25
+83b2a87 Linux 3.4.106
+ae26295 drivers/net, ipv6: Select IPv6 fragment idents for virtio UFO packets
+2ed270b Patch for 3.2.x, 3.4.x IP identifier regression
+7ef17ca KVM: x86: Fix far-jump to non-canonical check
+dde9219 x86, tls, ldt: Stop checking lm in LDT_empty
+725f203 x86/tls: Validate TLS entries to protect espfix
+288ee9d x86, kvm: Clear paravirt_enabled on KVM guests for espfix32's benefit
+8474af2 mm: Remove false WARN_ON from pagecache_isize_extended()
+bf61275 firewire: cdev: prevent kernel stack leaking into ioctl arguments
+6063ea2f7 x86/asm/traps: Disable tracing and kprobes in fixup_bad_iret and sync_regs
+1919e8b x86_64, traps: Rework bad_iret
+c014b58 x86_64, traps: Fix the espfix64 #DF fixup and rewrite it in C
+984774f x86_64, traps: Stop using IST for #SS
+806d579 MIPS: oprofile: Fix backtrace on 64-bit kernel
+eefef76 of/base: Fix PowerPC address parsing hack
+262ec6b can: esd_usb2: fix memory leak on disconnect
+cbf649b can: dev: avoid calling kfree_skb() from interrupt context
+ae99b56 x86: Require exact match for 'noxsave' command line option
+d4f5f41 ASoC: sgtl5000: Fix SMALL_POP bit definition
+764ca60 rt2x00: do not align payload on modern H/W
+28cf753 ASoC: fsi: remove unsupported PAUSE flag
+2534da5 srp-target: Retry when QP creation fails with ENOMEM
+74965c6 libceph: do not crash on large auth tickets
+f0d40b4 NFSv4: Ensure that we remove NFSv4.0 delegations when state has expired
+d359099 nfs: Fix use of uninitialized variable in nfs_getattr()
+4113ded audit: keep inode pinned
+def6fdc Input: alps - allow up to 2 invalid packets without resetting device
+c2edaea Input: alps - ignore potential bare packets when device is out of sync
+38e552b drm/radeon: add missing crtc unlock when setting up the MC
+ffd6887 macvtap: Fix csum_start when VLAN tags are present
+8408c82 mac80211: fix use-after-free in defragmentation
+70ef0cd block: Fix computation of merged request priority
+a9fc298 mac80211: properly flush delayed scan work on interface removal
+3cb238d ahci: Add Device IDs for Intel Sunrise Point PCH
+dbda71a dm raid: ensure superblock's size matches device's logical block size
+8137884 xtensa: re-wire umount syscall to sys_oldumount
+356d44e dm bufio: change __GFP_IO to __GFP_FS in shrinker callbacks
+538211f sysfs: driver core: Fix glue dir race condition by gdp_mutex
+7e976b0 tty/vt: don't set font mappings on vc not supporting this
+450ab6d tty: Prevent "read/write wait queue active!" log flooding
+9aa794d tty: Fix high cpu load if tty is unreleaseable
+a4f651d serial: Fix divide-by-zero fault in uart_get_divisor()
+bd29393 USB: cdc-acm: only raise DTR on transitions from B0
+0b5eef6 staging:iio:ade7758: Fix check if channels are enabled in prenable
+854dd52 ALSA: usb-audio: Fix device_del() sysfs warnings at disconnect
+c0120bc Btrfs: fix kfree on list_head in btrfs_lookup_csums_range error cleanup
+8938f88 of: Fix overflow bug in string property parsing functions
+0f03dd4 USB: quirks: enable device-qualifier quirk for yet another Elan touchscreen
+fd76b16 USB: quirks: enable device-qualifier quirk for another Elan touchscreen
+d1e61a7 usb-storage: handle a skipped data phase
+3d7ece6 usb: Do not allow usb_alloc_streams on unconfigured devices
+9216626 USB: cdc-acm: add device id for GW Instek AFG-2225
+c1b3edb USB: opticon: fix non-atomic allocation in write path
+6e35f94 USB: kobil_sct: fix non-atomic allocation in write path
+62f9f19 powerpc: do_notify_resume can be called with bad thread_info flags argument
+9250e2b acer-wmi: Add acpi_backlight=video quirk for the Acer KAV80
+098e5c7 samsung-laptop: Add broken-acpi-video quirk for NC210/NC110
+a1dd2a6 ext4: bail out from make_indexed_dir() on first error
+8fed359 tracing/syscalls: Ignore numbers outside NR_syscalls' range
+20e8014 tracing/syscalls: Fix perf syscall tracing when syscall_nr == -1
+89cb72d wireless: rt2x00: add new rt2800usb device
+0b4c0ac drm/vmwgfx: Filter out modes those cannot be supported by the current VRAM size.
+d709077 ext4: fix oops when loading block bitmap failed
+4aaf636 ext4: fix overflow when updating superblock backups after resize
+e62f7aa lib/bitmap.c: fix undefined shift in __bitmap_shift_{left|right}()
+5fd1315 mm, thp: fix collapsing of hugepages on madvise
+58fcbc8 cgroup/kmemleak: add kmemleak_free() for cgroup deallocations.
+9a0384d zap_pte_range: update addr when forcing flush after TLB batching faiure
+4cb162f drm/radeon: remove invalid pci id
+c65e135 evm: check xattr value length and type in evm_inode_setxattr()
+ff413f8 ALSA: pcm: Zero-clear reserved fields of PCM status ioctl in compat mode
+d593631 PM / Sleep: fix recovery during resuming from hibernation
+433fb78 futex: Fix a race condition between REQUEUE_PI and task death
+15ba1d4 posix-timers: Fix stack info leak in timer_create()
+be23eaa Input: i8042 - quirks for Fujitsu Lifebook A544 and Lifebook AH544
+ee8dba5 usb: dwc3: gadget: Properly initialize LINK TRB
+70146bb nfsd4: fix crash on unknown operation number
+ee10fbe usb: serial: ftdi_sio: add "bricked" FTDI device PID
+dfcf4c7 scsi: Fix error handling in SCSI_IOCTL_SEND_COMMAND
+38fab7b x86, apic: Handle a bad TSC more gracefully
+ee1c421 USB: option: add Haier CE81B CDMA modem
+6a58254 usb: option: add support for Telit LE910
+393580c usb: serial: ftdi_sio: add Awinda Station and Dongle products
+9aefdec USB: serial: ftdi_sio: Add support for new Xsens devices
+33e0090 USB: serial: ftdi_sio: Annotate the current Xsens PID assignments
+30928aa USB: serial: cp210x: add Silicon Labs 358x VID and PID
+f28fbcf ext3: Don't check quota format when there are no quota files
+1f4fc49 spi: pl022: Fix incorrect dma_unmap_sg
+d68db6c staging:iio:ad5933: Drop "raw" from channel names
+a5cfc69 staging:iio:impedance-analyzer:ad5933 unwind use of IIO_CHAN macro.
+9617765 kvm: fix excessive pages un-pinning in kvm_iommu_map error path.
+14863f8 kvm: x86: don't kill guest on unknown exit reason
+7270719 kvm: vmx: handle invvpid vm exit gracefully
+dccbd13 nEPT: Nested INVEPT
+320d5ee KVM: x86: Handle errors when RIP is set during far jumps
+27c4a84 KVM: x86: use new CS.RPL as CPL during task switch
+4b712b1 KVM: x86: Emulator fixes for eip canonical checks on near branches
+caefbe3 KVM: x86: Fix wrong masking on relative jump/call
+8bbf6b2 KVM: x86: Improve thread safety in pit
+5a145ba4 KVM: x86: Prevent host from panicking on shared MSR writes.
+e0bcc2b KVM: x86: Check non-canonical addresses upon WRMSR
+488eefc MIPS: tlbex: Properly fix HUGE TLB Refill exception handler
+d51b3b0 MIPS: tlbex: Fix a missing statement for HUGETLB
+e0d4454 OOM, PM: OOM killed task shouldn't escape PM suspend
+303462a freezer: Do not freeze tasks killed by OOM killer
+ab9bc24 ALSA: usb-audio: Add support for Steinberg UR22 USB interface
+db3e132 ALSA: pcm: use the same dma mmap codepath both for arm and arm64
+f006793 random: add and use memzero_explicit() for clearing data
+fb2d551 crypto: more robust crypto_memneq
+783003b ext4: fix reservation overflow in ext4_da_write_begin
+c9a7d27 ext4: add ext4_iget_normal() which is to be used for dir tree lookups
+1228acd ext4: don't orphan or truncate the boot loader inode
+e16b1c9 vfs: fix data corruption when blocksize < pagesize for mmaped data
+9540c7c target: Fix queue full status NULL pointer for SCF_TRANSPORT_TASK_SENSE
+322e1c0 ext4: don't check quota format when there are no quota files
+96c6c92 ext4: check EA value offset when loading
+b796084 x86,kvm,vmx: Preserve CR4 across VM entry
+0d4ebff futex: Ensure get_futex_key_refs() always implies a barrier
+f3cbf9d virtio_pci: fix virtio spec compliance on restore
+182f2b6 mnt: Prevent pivot_root from creating a loop in the mount tree
+daf8599 ALSA: emu10k1: Fix deadlock in synth voice lookup
+bf9a871 kernel: add support for gcc 5
+c567ac6 Input: i8042 - add noloop quirk for Asus X750LN
+c6da650 Input: synaptics - gate forcepad support by DMI check
+6c006a7 fanotify: enable close-on-exec on events' fd when requested in fanotify_init()
+66c0d62 block: fix alignment_offset math that assumes io_min is a power-of-2
+274ef5c fix misuses of f_count() in ppp and netlink
+076933b fs: make cont_expand_zero interruptible
+7639ab0 fs: Fix theoretical division by 0 in super_cache_scan().
+f0fdfbe x86: Reject x32 executables if x32 ABI not supported
+7fd9d15 pata_serverworks: disable 64-KB DMA transfers on Broadcom OSB4 IDE Controller
+86ffd60 ecryptfs: avoid to access NULL pointer when write metadata in xattr
+5818740 dm log userspace: fix memory leak in dm_ulog_tfr_init failure path
+547c51b dm bufio: update last_accessed when relinking a buffer
+c66d9ce m68k: Disable/restore interrupts in hwreg_present()/hwreg_write()
+172651d NFSv4.1: Fix an NFSv4.1 state renewal regression
+b999ef3 mpc85xx_edac: Make L2 interrupt shared too
+bf83a63 framebuffer: fix border color
+c02c44c serial: 8250: Add Quark X1000 to 8250_pci.c
+3a5f963 NFSv4: fix open/lock state recovery error handling
+8b3d0c4 libata-sff: Fix controllers with no ctl port
+b1ae591 regmap: fix possible ZERO_SIZE_PTR pointer dereferencing error.
+7ad552d regmap: debugfs: fix possbile NULL pointer dereference
+2fa4b31 lzo: check for length overrun in variable length encoding.
+ccdc0ad Revert "lzo: properly check for overruns"
+b612bba Documentation: lzo: document part of the encoding
+1434b21 rt2800: correct BBP1_TX_POWER_CTRL mask
+0b3cb9f power: charger-manager: Fix NULL pointer exception with missing cm-fuel-gauge
+5ef95b8 lockd: Try to reconnect if statd has moved
+472a3be x86/intel/quark: Switch off CR4.PGE so TLB flush uses CR3 instead
+53503cc kvm: don't take vcpu mutex for obviously invalid vcpu ioctls
+4d91516 spi: dw-mid: terminate ongoing transfers at exit
+e645399 spi: dw-mid: respect 8 bit mode
+ddcb918 Drivers: hv: vmbus: Cleanup vmbus_close_internal()
+f4a4e70 Drivers: hv: vmbus: Fix a bug in vmbus_open()
+b2a8a35 Drivers: hv: vmbus: Cleanup vmbus_establish_gpadl()
+6d317d0 Drivers: hv: vmbus: Cleanup vmbus_teardown_gpadl()
+50c735b Drivers: hv: vmbus: Cleanup vmbus_post_msg()
+61daa0d firmware_class: make sure fw requests contain a name
+9b588ee PCI: Generate uppercase hex for modalias interface class
+08ed080 USB: cp210x: add support for Seluxit USB dongle
+df14389 USB: serial: cp210x: added Ketra N1 wireless interface support
+224a01e Revert "percpu: free percpu allocation info for uniprocessor system"
+79de955 PCI: Increase IBM ipr SAS Crocodile BARs to at least system page size
+956127a PCI: pciehp: Prevent NULL dereference during probe
+086b9c8 KVM: s390: unintended fallthrough for external call
+7e8a661 Bluetooth: Fix issue with USB suspend in btusb driver
+1b57d57 UBIFS: fix free log space calculation
+6ef123a UBIFS: fix a race condition
+7774366 UBIFS: remove mst_mutex
+44bc24c kvm: x86: fix stale mmio cache bug
+
+====================
+     02-22-2015
+====================
+
+
+   * build/
+0d7e718 Merge remote-tracking branch 'upstream/xpe9.0' into HEAD
+
+   * device/motorola/falcon/
+15af3a5  kernel msm8226 support removed on msm8226-common to make a propper support to TITAN device
+
+   * device/motorola/msm8226-common/
+4d6f4b9 remove msm8226 kernel to make a propper support to Titan
+2527c4e persist. usb otg
+
+   * frameworks/base/
+029fb3d Merge remote-tracking branch 'upstream/xpe9.0' into HEAD
+186eab6 Fix 'fuchsia' typo.
+64d6c32 Implement finalizer for RS contexts.
+342262a core: Materialize text select handle
+
+   * packages/apps/Eleven/
+891a94f Merge remote-tracking branch 'upstream/xpe9' into cm-12.0
+
+   * packages/apps/Settings/
+55a50e6 Merge remote-tracking branch 'upstream/xpe9.0' into HEAD
+
+   * packages/apps/XPerienceCenter/
+471c8be Add the correct url to web page :D coz xxxxx make a fc and are not the correct url :D
+
+   * system/vold/
+ac32079 Revert "vold: cryptfs: Disable HW fde for msm8939 64bit"
+
+   * vendor/XPe/
+912ff57 sepolicy: Allow CMUpdater/uncrypt access to recovery_cache_file
+29d206c sepolicy: Allow vold to create tmpfs files for asec containers
+6841a79 sepolicy: Allow system apps to write cache and media files
+
+   * vendor/motorola/
+829096f Merge pull request #5 from TheMuppets/cm-12.0
+
+====================
+     02-21-2015
+====================
+
+
+   * frameworks/base/
+36d80bd base: LT translations
+
+   * packages/apps/Mms/
+27dc0d8 MMS: Fix Unicode Strip Preference summary
+
+   * packages/apps/Settings/
+4ee0a55 Revert "Settings: LT translations"
+54a6a4c Settings: LT translations
+0e42a90 Settings: hide mobile networks for devices with no telephony
+06100d0 Settings: fix vibrate on touch crash
+c483c20 Settings: Fix hiding auto-brightness & lift to wake preferences
+267bfa5 Settings: Fix hiding power profile category or CPU freq preference
+
+====================
+     02-20-2015
+====================
+
+
+   * frameworks/base/
+4618898 Close zips when through with them
+ea23237 Expanded Desktop : Fix Left handed navbar during landscape mode
+
+   * frameworks/opt/net/wifi/
+8fd5ac8 WifiStateMachine: Tone down logging
+
+   * hardware/qcom/wlan/
+d3701c8 qcwcn: Tone down logging
+
+   * packages/apps/Mms/
+843e9da Mms: bring back Unicode Strip
+33924df Mms: Fix QM Close button not removing notifications
+
+   * packages/apps/Settings/
+06d243f Settings: fix changing profile triggers not updating actions page
+32734c4 Settings: fix Vibrate on touch preference not working
+
+   * packages/providers/ThemesProvider/
+fe573ef close cursors when through with them
+
+   * system/vold/
+e207e22 vold: cryptfs: Check return values
+
+   * vendor/motorola/
+6690c5a Merge pull request #136 from motog2014devteam/cm-12.0
+4193b57 Titan: add Titan proprietary files
