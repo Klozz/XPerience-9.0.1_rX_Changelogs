@@ -1,0 +1,321 @@
+====================
+     03-04-2015
+====================
+
+
+   * android/
+5017558 change vold to xperience one
+
+   * bionic/
+d4394db Merge remote-tracking branch 'upstream/xpe9.0' into HEAD
+
+   * bootable/recovery/
+f3f6abd Merge remote-tracking branch 'cm/xpe9.0' into HEAD
+
+   * build/
+bf2847a Merge remote-tracking branch 'upstream/xpe9' into HEAD
+b862a88 releasetools: Add bootable image signing
+
+   * device/motorola/falcon/
+c878114 falcon: move akmd daemon to device
+
+   * device/motorola/msm8226-common/
+7dbddd6 msm8226-common: Disable memcpy_base.S optimization
+a39ce69 msm8226-common: move akmd daemon to device
+f1a90e0 msm8226-common: sepolicy: Address mm-qcamerad denials
+328ebb3 msm8226-common: sepolicy: Address mpdecision denials
+
+   * external/bluetooth/bluedroid/
+f7afaa4 bluedroid: Add wiimote pairing support
+415bfa7 bluetooth: a2dp: Rework locking
+
+   * frameworks/av/
+79c1aca libmedia: Fix crash during mediaserver restart
+99c8319 mpeg2ts: Add support for parsing HEVC stream in MPEG2 TS container
+61b2505 nuplayer: Fix crash in video only HLS streams
+14bb487 libmediaplayerservice: update NuPlayer scoreFactory for http://
+bc07960 audio: Handled openOutput error for Tunnel/LPA Usecase
+5dee3bc audio: Set OutputFormat of AudioMixer to PCM16
+cccb375 audio: Fix issues during device switch
+26e81b1 audio: Fixed mBytesRemaining when partial buffers are sent
+6acc081 stagefright: use NuPlayer for http://
+7cbaf6f audio: Send USB connection events only for USB accessory
+bc0a8f4 audio: Added fallback mechanism for Tunnel Mode
+
+   * frameworks/base/
+027b71a Merge remote-tracking branch 'upstream/xpe9.0' into HEAD
+bbcf24b (?)
+bfe68a8 NetworkPolicyManager: Don't show warning notification on disabled.
+2da8d8c Revert "frameworks: disable loading notification groups in System profiles"
+cd69d1b SystemUI: fix crashes with custom lockscreen shortcuts
+1dcb9f6 KeyguardViewMediator: remove multi-user checks that are handled in LockPatternUtils
+8e46646 AudioService: launch default music player on headset connect [2/2]
+a4b7dc7 Themes: Make resolver list fully themeable
+f4f58ca Themes: Making DocumentsUI fully themeable
+b256e07 SystemUI: remove duplicate STATUS_BAR_CLOCK entry from PhoneStatusBar
+7088c52 Bad month value in DatePicker in Calendar Mode
+24fb816 Map long press of MUTE to KEYCODE_MEDIA_PLAY_PAUSE
+
+   * frameworks/native/
+797b3d7 DisplayDevice: Backwards compatibility with old EGL
+1093935 libgui: squashed update for readding ICS and JB_MR0 support
+
+   * hardware/libhardware/
+57bf795 fix: memory leak
+
+   * hardware/qcom/display-caf/msm8974/
+ea211f2 libhwcomposer: set MDP force alloc flags for secure buffer
+2ccef5b gralloc: Allocate cached by default, don't use bitops on SW flags
+329e737 gralloc: In lock use writer info from allocation time
+bb4fe6c gralloc: Optimize ION cache clean and invalidate calls
+5a5ee94 libhwcomposer: Enable padding round for SMP failure
+efb0f4f hwc: Remove external only feature related code
+15bcb64 hwc: Do not use BWC when layers are forced split
+aeaf559 hwc : Enable ABC only for non intersecting layers.
+4a2d50c hwc : Add support for ABC in MDP3
+c3bda9e hwc : Add support for single layer Bypass in MDP3
+9731887 hwc: Conditionally compile dirtyRect under QCOM_BSP for copybit
+6310414 HWC/Copybit :: Add swap rect feature in HAL for MDP3
+0c89cc4 hwc: Set HPD once at boot up
+aef953c hwc: Invalidate at the end of VDS pause
+db85c21 hwc: Allow WB to be active during VDS pause state.
+17a44d7 hwc: Call blank IOCTL on virtual as well if it is connected.
+9d6655f ovelray: Tolerate the absense of an RGB pipe
+
+   * packages/apps/Calculator/
+8c03bb6 Make calculator behavior more predictable
+a70bd84 BASH-25: avoid NPE on Calculator's widget
+
+   * packages/apps/Dialer/
+807e90d Dialer: switches for checkboxes
+
+   * packages/apps/Eleven/
+6d97390 Merge remote-tracking branch 'upstream/xpe9.0' into cm-12.0
+
+   * packages/apps/Mms/
+7292dca Mms: move mailboxmode classes to the proper location
+
+   * packages/apps/PhoneCommon/
+0fb0068 Themes: Make dialpad seperator line theme-able
+
+   * packages/apps/Settings/
+17ca273 Merge remote-tracking branch 'upstream/xpe9.0' into HEAD
+7b41bcb Settings: fix blacklist settings crash
+bd84a8a Settings: always allow profile app groups to be linked/unlinked
+9da0ca0 Settings: restore App groups with advanced mode
+db0002d Settings: Refactory regulatory dialog. Display IC Code.
+45c7e5a Settings: launch default music player on headset connect [1/2]
+8efdb1b Settings: Make quick settings editor tiles color external
+6d9fbcd Settings: always show button settings
+1e52036 Settings: Add overlay for hiding performance options
+
+   * packages/services/Telephony/
+bc4cc83 MyPhoneNumber: Handle msim sim state changed broadcast.
+b25ed9f Telephony: Create MSISDNEditPreference per active phone.
+2d536af phone: Add option for setting device phone number (squashed)
+e1581ce Telephony: Exit call features if our error is unrecoverable.
+
+   * system/vold/
+5a5d4f3 Merge remote-tracking branch 'upstream/xpe9.0' into HEAD
+
+   * vendor/XPe/
+bd92a68 otasigcheck: skip otasigcheck in headless mode
+e580999 Add MVNO APN "coopvoce"
+a19ba85 Enable circle battery & right QS pulldown by default
+a7de453 apns-conf: remove default type from all vzw apns
+2799573 More Reliance (rcomnet) updates
+c7ed65b Prioritize Airtel GPRS over Airtel Live in India.
+
+   * vendor/motorola/
+d9c0858 Merge pull request #6 from TheMuppets/cm-12.0
+9bbf1a0 Merge pull request #141 from crpalmer/victara-bringup
+65d0a9c Initial condor
+
+====================
+     03-03-2015
+====================
+
+
+   * frameworks/base/
+2a16428 systemui: adjust position of clear recents button
+55d1dde systemui: never show excluded recent task in recents view
+86c508b SystemUI: add visualizer to lock screen
+
+   * packages/apps/ContactsCommon/
+5a934d9 ContactsCommon: Add PHOTO_ID to contact tile loader    *ion
+
+   * packages/apps/Settings/
+ffc3b3c Settings: don't add inline trigger links to profiles in creation mode
+
+   * vendor/motorola/
+04a051d Merge pull request #142 from motog2014devteam/patch-1
+
+====================
+     03-02-2015
+====================
+
+
+   * external/e2fsprogs/
+23e9eca resize: allow static build
+
+   * frameworks/base/
+c65dc24 systemui: animate clear recents exit
+
+   * packages/services/Telecomm/
+57cde33 Restore old tap-to-wake state after call
+
+====================
+     03-01-2015
+====================
+
+
+   * build/
+4b86ea5 [2/3] CmHardwareService: add cm hardware jar to system server
+
+   * frameworks/av/
+96eb154 NuPlayer: Buffering improvements for http progressive playback
+
+   * packages/apps/LockClock/
+9b35b16 cLock: update to a new material icon
+
+   * packages/apps/Mms/
+28a2460 MSIM fixes.
+
+   * packages/apps/Settings/
+2ebbc31 Settings: fix button backlight brightness and timeout
+
+   * vendor/motorola/
+147d5b3 msm8226-common: move akmd daemon to device
+
+====================
+     02-28-2015
+====================
+
+
+   * external/whispersystems/WhisperPush/
+5b62782 Automatic translation import
+
+   * frameworks/base/
+ee41598 Automatic translation import
+5931038 ScreenOrientationTile : Add instanceof checks for AnimatedVectorDrawables
+cd7190d Themes: Check if updateConfiguration should be called
+a3f9a3f SystemUI: visualizer tile improvements
+55938e6 SystemUI: fix flashlight tile disappearing breifly
+425b0b1 Revert "Hide msim 'no-sim' icons"
+b14e599 Add left QS quick pulldown & fix multiuser (1/2)
+29f04d6 Cleanup deprecated settings
+8fdf78c Settings: Don't attempt to forward writes from System -> Global.
+
+   * frameworks/opt/telephony/
+ee9728f Revert "Send external state again after updating siminfo table"
+
+   * packages/apps/AudioFX/
+866d8dc Automatic translation import
+
+   * packages/apps/Bluetooth/
+4e9c263 Automatic translation import
+
+   * packages/apps/BluetoothExt/
+e07510f Automatic translation import
+
+   * packages/apps/CMFileManager/
+5da5e65 Automatic translation import
+f54b7a6 cmfm: add support for init navigation in a concrete folder
+39bb829 cmfm: add support for Intent.EXTRA_MIME_TYPES
+
+   * packages/apps/CMWallpapers/
+cd46a7e Automatic translation import
+
+   * packages/apps/Calculator/
+ec0062d Automatic translation import
+
+   * packages/apps/Calendar/
+82f0c0d Automatic translation import
+
+   * packages/apps/Camera2/
+be170a5 Automatic translation import
+
+   * packages/apps/CellBroadcastReceiver/
+76db2ff Automatic translation import
+
+   * packages/apps/Contacts/
+ba67be5 Automatic translation import
+
+   * packages/apps/ContactsCommon/
+873a41e Automatic translation import
+
+   * packages/apps/DeskClock/
+0cb4304 Automatic translation import
+
+   * packages/apps/Dialer/
+e956149 Automatic translation import
+
+   * packages/apps/Eleven/
+7f0c9ed Automatic translation import
+
+   * packages/apps/Gallery2/
+f1fa7c9 Automatic translation import
+
+   * packages/apps/InCallUI/
+34c3a6e Automatic translation import
+
+   * packages/apps/LockClock/
+42ac023 Automatic translation import
+
+   * packages/apps/Mms/
+008bbf2 Automatic translation import
+a85081d Fix crash during delivery delay
+
+   * packages/apps/PhoneCommon/
+002b947 Automatic translation import
+
+   * packages/apps/Settings/
+6e1267a Automatic translation import
+1f16ac8 Add left QS quick pulldown & fix multiuser (2/2)
+
+   * packages/apps/SoundRecorder/
+25ec919 SoundRecorder: Fix trying to view recordings without CM File Manager
+9834c04 Automatic translation import
+
+   * packages/apps/Stk/
+d1d8569 Automatic translation import
+
+   * packages/apps/Terminal/
+55e5a0b Automatic translation import
+
+   * packages/apps/ThemeChooser/
+b1eb89b Automatic translation import
+
+   * packages/apps/Trebuchet/
+b29ee17 Automatic translation import
+98b721d Trebuchet: Live Settings - stop loader before reloading dynamic grid
+
+   * packages/apps/UnifiedEmail/
+0812ca4 Automatic translation import
+
+   * packages/providers/DownloadProvider/
+53bc753 Automatic translation import
+
+   * packages/providers/ThemesProvider/
+c1c81b6 Automatic translation import
+
+   * packages/services/Mms/
+9ccbb97 Automatic translation import
+
+   * packages/services/Telecomm/
+cb9578d Automatic translation import
+
+   * packages/services/Telephony/
+34ecd4f Automatic translation import
+
+   * packages/wallpapers/Galaxy4/
+e069bab Automatic translation import
+
+   * packages/wallpapers/PhaseBeam/
+310cf73 Automatic translation import
+
+   * packages/wallpapers/PhotoPhase/
+c1fea7f Automatic translation import
+
+   * vendor/motorola/
+2edb414 Merge pull request #140 from razrqcom-dev-team/cm-12.0
