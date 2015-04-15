@@ -1,0 +1,181 @@
+====================
+     04-14-2015
+====================
+
+
+   * android/
+9961fbe 5.1.0_r3 -> 5.1.0_r5
+
+   * build/
+89e28a3 Merge remote-tracking branch 'upstream/xpe-9.1' into HEAD
+1e6e335 Merge tag 'android-5.1.0_r5' into HEAD
+
+   * device/motorola/msm8226-common/
+c68fce0 msm8226-common: Redefine rild service
+59e3501 msm8226-common: Remove device_perms header
+8cc8741 msm8226-common: Update filesystem_config header for 5.1
+af7ed50 Revert "msm8226-common: Adjust min-free value for lowmemorykiller"
+338f8a7 msm8226-common: sepolicy: address mpdecision denial
+
+   * frameworks/base/
+4fce492 fix typo
+b5636f6 Enhance dexopt with random colours
+a4417a1 Merge remote-tracking branch 'upstream/xpe-9.1' into HEAD
+c428b16 Telephony: Fix signal annunciators missing issue.
+0126f0f Revert "systemui: fix glitches with recents view and search widget"
+1f124ad frameworks: read VOLUME_LINK_NOTIFICATION from proper table
+93abc0c Framework: Always show ZenPanel when showing expanded volume panel
+80bc55b The DUT can't screen shot in guest mode
+2b4bdd0 Add overlay option for Settings.System.ACCELEROMETER_ROTATION_ANGLES
+45ca1ba Merge tag 'android-5.1.0_r5' into HEAD
+d971fa9 Volume: fix: Avoid making bad forceVolumeControlStream call.
+4badcf2 SystemUI: fix keyguard charging text not showing
+1bd36e0 SystemUI: fix updating keyguard insecure lock icon
+
+   * packages/apps/Calendar/
+329d8a6 Calendar: add RTL support
+
+   * packages/apps/Trebuchet/
+62b90e1 Trebuchet: Fix NPE when adding widgets
+
+   * packages/services/Mms/
+020210e Merge tag 'android-5.1.0_r5' into HEAD
+
+   * packages/services/Telecomm/
+2f70b20 Merge tag 'android-5.1.0_r5' into HEAD
+d5cd6ed Create new empty Bundles when creating new Call
+
+   * vendor/XPe/
+ed60569 Bump to 9.1.0_r5
+e0e0432 Merge remote-tracking branch 'upstream/xpe-9.1' into HEAD
+
+   * vendor/motorola/
+118e3b5 Merge pull request #151 from razrqcom-dev-team/cm-12.1-quark
+
+====================
+     04-13-2015
+====================
+
+
+   * frameworks/av/
+d7d5573 libstagefright: add missing TI color format case
+
+   * frameworks/base/
+139d342 QS: remove duplicate handleLongClick() code in QSTile.java
+0a94e05 Wifi: Check configKey for ScanResult while visibility is set
+93e0371 Wifi: Maintain configKey generation logic same in all APIs
+de77639 fix checkapi
+
+   * hardware/qcom/audio-caf/msm8994/
+8fe8c83 audio: Use direct    * pathmap
+
+   * hardware/qcom/media-caf/msm8994/
+6955a45 correct use of    *-path
+
+   * packages/apps/CMFileManager/
+948e0d1 Implement ability to cancel file copy.
+
+   * packages/apps/InCallUI/
+e01b345 Fix memory leak: remove a listener
+
+   * packages/apps/Mms/
+4b33fba Use unicode character for ellipsis
+
+   * vendor/XPe/
+b7634f7 cm: add FreedomPop APN
+4ffdd67 APNs: Remove leading whitespace for a couple mmsc
+
+====================
+     04-12-2015
+====================
+
+
+   * frameworks/av/
+9a37bd5 NuPlayer : Fix incorrect timestamp update for offload playback
+8dd3cd0 nuplayer: Has video hint for offload
+
+   * system/qcom/
+a511369 Implement wifi_qsap_set_tx_power
+
+   * vendor/motorola/
+45a4e32 quark: Update blobs to latest LP firmware
+
+====================
+     04-11-2015
+====================
+
+
+   * frameworks/opt/net/wifi/
+f798334 Wifi: Do not enable saved networks in ConnectedState
+2caaed6 Wifi: Filter the scan results based on the configured band
+1e45f2f wifi: Handle the NULL check for the STATUS command
+3fbc07d Wifi: Exit the monitor thread when killSupplicant is issued.
+
+   * packages/apps/Mms/
+6ebaad0 Use rounded avatars in messaging notifications.
+
+====================
+     04-10-2015
+====================
+
+
+   * android/
+6a82072 fix typo
+938dc45 Track my own Eleven APP
+8b0dc77 Manifest: Track CM chromium/v8
+d4447cc Update default.xml
+
+   * build/
+8e5687f Merge remote-tracking branch 'upstream/xpe-9.1' into HEAD
+d014494 Add support for mediatek platforms
+
+   * frameworks/av/
+20e0438 NuPlayerDriver: Maintain the timeStamp after seek
+990a0d8 stagefright: handle zero size field in ID3v2 header
+692887d nuplayer: Synchronize video and audio decoders configuration
+d23dcf8 libstagefright:avoid regression casued due to gerrit 1221948
+
+   * frameworks/base/
+27e2a21 ups my fault xD
+68b67cb fix this shit
+b3d7675 Revert "systemui: fix npe in egg"
+ed18e1c Merge remote-tracking branch 'upstream/xpe-9.1' into HEAD
+75a7066 Only go HOME if screen is fully awake
+a7b5ef6 Revert "[ActivityManager] Improve multi-thread access the same provider"
+
+   * hardware/qcom/audio-caf/msm8994/
+908a598 audio: Use    * pathmap
+7c6aba4 audio: Only allow non-legacy HAL
+
+   * hardware/qcom/display-caf/msm8994/
+95ceb15 Don't build lights module if vendor supplies it
+aee3a7c display: Use    * pathmap
+
+   * hardware/qcom/media-caf/msm8994/
+e2246f8 media: Use    * pathmap
+
+   * packages/apps/CMFileManager/
+17388c6 Fix deadlock when reading shell output.
+748753d Detect text encoding with juniversalchardet.
+3650ca2 CMFileManager: change dialog buttons to use dialog_text_color theme
+
+   * packages/apps/Eleven/
+7a820ff Eleven: add Sleep Mode support
+9ba6765 Eleven: Fix stupid typo from me :(
+664438d Eleven: Improve Material UI
+
+   * packages/apps/Exchange/
+d08d855 exchange: serialize the account parcelable before using with AlarmManager
+
+   * packages/apps/Settings/
+c206728 Merge remote-tracking branch 'upstream/xpe-9.1' into HEAD
+
+   * packages/apps/UnifiedEmail/
+5ab9abe unified-email: respect swipe user setting
+
+   * system/core/
+cb9e448 liblog: Forward xlog to regular android buffers on demand
+
+   * vendor/XPe/
+16c5c57 add host files
+fb547b5 Merge remote-tracking branch 'upstream/xpe-9.1' into HEAD
