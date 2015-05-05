@@ -1,0 +1,485 @@
+====================
+     05-05-2015
+====================
+
+
+   * device/motorola/falcon/
+2aa3e04 falcon: move touchscreen firmware to device
+9ac4132 ddsds
+b10cf94 Fix GPE init check
+4ba7c4b falcon: Update GPE fingerprint to 5.1
+cf2155d falcon: Update XT1032 Fingerprint
+610ec79 falcon: Allow installing on 41.1A bootloader
+
+   * device/motorola/msm8226-common/
+f285e24 msm8226-common: move touchscreen firmware to device
+b69eb5b msm8226: add thea to setup-makefiles.sh barrier
+78fc354 msm8226-common: motorola offline charge not work on titan and thea
+250bc57 msm8226-common: SMP default true on lollipop
+35e2762 msm8226-common: Update and Fix Offline Charging for Lollipop
+7e25038 msm8226-common: add thea to build barrier
+005b123 msm8226-common: Cleanup mm-qcamerad sepolicy
+877bae3 msm8226-common: Address bootanimation perf denial
+85ff522 msm8226-common: overlay: Enable call recording
+852b617 msm8226-common: Remove density from PRODUCT_AAPT_CONFIG
+f58adb1 msm8226-common: use shorter name of charger service
+ee7f39c msm8226-common: Build libqsap_sdk from source
+
+   * frameworks/base/
+fc18f93 perf: Update power collapse opcode
+363541e performance: Update perflock resource id
+2471612 performance: update Performance class and README
+6955122 performance: Add comments for CPU FREQ usage
+2f8be5b performance: Add opcodes to limit maximum number of cores
+5213b4e performance: Add concurrency and timer support to PerfLock.
+f592bf7 performance: Add Performance class and PerfLock API.
+4c1e211 Merge remote-tracking branch 'upstream/cm-12.1' into HEAD
+
+   * kernel/motorola/msm8226/
+9c2b10a Revert "usb-storage/SCSI: blacklist FUA on JMicron 152d:2566 USB-SATA controller"
+b264a50 Revert "drivers: clocksource: add CPU PM notifier for ARM architected timer"
+cd3176e kernel: Restrict permissions of /proc/iomem.
+a1db2f8 msm: mdss: un map dsi transmit buffer properly
+aea8b13 ASoC: msm: audio-effects: Check for array index
+08c6ed1 msm: rpc: Fix uninitialized union in rpc router close function
+5181d5f msm: rpc: Fix uninitialized union in rpc router code
+93cbed8 msm: vidc: Cancel pending power collapse works in core_release
+bcee8b5 drivers: clocksource: add CPU PM notifier for ARM architected timer
+15f9873 ARM: dt: msm8226: Add AV timer specific data
+94db01b ASoC: msm: qdsp6v2: Handles additional flac metadata
+7bbecf2 Linux 3.4.107
+128fdae PCI: Handle read-only BARs on AMD CS553x devices
+65f9840 lib/checksum.c: fix build for generic csum_tcpudp_nofold
+1105104 mm: fix anon_vma->degree underflow in anon_vma endless growing prevention
+1f26a6a nilfs2: fix deadlock of segment constructor during recovery
+24f2578 spi: dw: revisit FIFO size detection again
+2dbd094 ntp: Fixup adjtimex freq validation on 32-bit systems
+40937a2 s390/3215: fix tty output containing tabs
+4aaeb91 x86, cpu, amd: Add workaround for family 16h, erratum 793
+f832b60 fsnotify: next_i is freed during fsnotify_unmount_inodes.
+1a3a55c sched/rt: Reduce rq lock contention by eliminating locking of non-feasible target
+0b19eea Bluetooth: ath3k: workaround the compatibility issue with xHCI controller
+b7203d2 staging: comedi: cb_pcidas64: fix incorrect AI range code handling
+e309903 ipvs: rerouting to local clients is not needed anymore
+c5a52a9 jfs: fix readdir regression
+b0dedeb pagemap: do not leak physical addresses to non-privileged userspace
+a8d9e6f Drivers: hv: vmbus: incorrect device name is printed when child device is unregistered
+81704d5 nilfs2: fix deadlock of segment constructor over I_SYNC flag
+bf6a6d5 ASoC: sgtl5000: add delay before first I2C access
+c4fdf30 net: sctp: fix passing wrong parameter header to param_type2af in sctp_process_param
+e4c035e net: sctp: fix NULL pointer dereference in af->from_addr_param on malformed packet
+81c493b gpio: sysfs: fix memory leak in gpiod_sysfs_set_active_low
+4b78ead gpio: sysfs: fix memory leak in gpiod_export_link
+f42115f MIPS: Fix kernel lockup or crash after CPU offline/online
+2fefac5 caif: remove wrong dev_net_set() call
+dbbd04d lib/checksum.c: fix carry in csum_tcpudp_nofold
+562e2e0 ALSA: ak411x: Fix stall in work callback
+310c5bd ASoC: atmel_ssc_dai: fix start event for I2S mode
+d1106fd MIPS: IRQ: Fix disable_irq on CPU IRQs
+335dc5b deal with deadlock in d_walk()
+f435189 move d_rcu from overlapping d_child to overlapping d_alias
+f63187c KEYS: close race between key lookup and freeing
+27eb6ca x86, mm/ASLR: Fix stack randomization on 64-bit systems
+3f55109 net: sctp: fix skb_over_panic when receiving malformed ASCONF chunks
+3ca52e2 net: sctp: fix panic on duplicate ASCONF chunks
+e5182d1 vm: make stack guard page errors return VM_FAULT_SIGSEGV rather than SIGBUS
+dd19a14 vm: add VM_FAULT_SIGSEGV handling support
+0361a44 ipv6: replacing a rt6_info needs to purge possible propagated rt6_infos too
+b7eac0b net: sctp: fix slab corruption from use after free on INIT collisions
+fbfc8bc ALSA: seq-dummy: remove deadlock-causing events on close
+e443b2b drm/i915: Only fence tiled region of object.
+c7b26fa usb-storage/SCSI: blacklist FUA on JMicron 152d:2566 USB-SATA controller
+863e71d nl80211: fix per-station group key get/del and memory leak
+40e0295 powerpc/xmon: Fix another endiannes issue in RTAS call from xmon
+002790d ASoC: wm8960: Fix capture sample rate from 11250 to 11025
+79b8ce6 spi: dw-mid: fix FIFO size
+dce711d0 spi: dw: Fix detecting FIFO depth
+cedf386 x86, hyperv: Mark the Hyper-V clocksource as being continuous
+fd43c28 libata: prevent HSM state change race between ISR and PIO
+3152941 scripts/recordmcount.pl: There is no -m32 gcc option on Super-H anymore
+48220ad libata: allow sata_sil24 to opt-out of tag ordered submission
+7804b73 ALSA: usb-audio: Add mic volume fix quirk for Logitech Webcam C210
+d1f155e gpio: sysfs: fix gpio attribute-creation race
+3b94c3b gpio: sysfs: fix gpio device-attribute leak
+6093b4e gpiolib: Refactor gpio_export
+8273d08 gpio: sysfs: fix gpio-chip device-attribute leak
+8c858b8 driver core: Introduce device_create_groups
+d02be59 sysfs.h: add ATTRIBUTE_GROUPS() macro
+01f6842 can: dev: fix crtlmode_supported check
+8eb5941 ftrace/jprobes/x86: Fix conflict between jprobes and function graph tracing
+ea8b9fb mm: fix corner case in anon_vma endless growing prevention
+a70fa08 mm: Don't count the stack guard page towards RLIMIT_STACK
+98b8444 USB: console: fix potential use after free
+3eb0df9 OHCI: add a quirk for ULi M5237 blocking on reset
+6cc5100 HID: roccat: potential out of bounds in pyra_sysfs_write_settings()
+4bfc110 mm: protect set_page_dirty() from ongoing truncation
+683cfdc mm: prevent endless growth of anon_vma hierarchy
+a628227 mac80211: fix multicast LED blinking and counter
+a9289db Input: I8042 - add Acer Aspire 7738 to the nomux list
+07004e4 Input: i8042 - reset keyboard to fix Elantech touchpad detection
+ac428e7 time: adjtimex: Validate the ADJ_FREQUENCY values
+7f73607 time: settimeofday: Validate the values of tv from user
+5e7f888 sata_dwc_460ex: fix resource leak on error path
+34550a7 mm: propagate error from stack expansion even for guard page
+510ad51 USB: cp210x: add IDs for CEL USB sticks and MeshWorks devices
+ba3ebba virtio_pci: document why we defer kfree
+7281997 virtio_pci: defer kfree until release callback
+4c46d3d virtio: use dev_to_virtio wrapper in virtio
+940e865 ALSA: hda - Fix wrong gpio_dir & gpio_mask hint setups for IDT/STAC codecs
+f77ae69 x86, um: actually mark system call tables readonly
+b714554 USB: cp210x: fix ID for production CEL MeshConnect USB Stick
+cc6232b iscsi-target: Fail connection on short sendmsg writes
+01408b2 video/logo: prevent use of logos after they have been freed
+6a5935b net: Fix stacked vlan offload features computation
+013857d crypto: af_alg - fix backlog handling
+2514624 udf: Check component length before reading it
+3999eba x86_64, vdso: Fix the vdso address randomization algorithm
+6a62f4d udf: Check path length when reading symlink
+bebda92 udf: Verify symlink size before loading it
+0a252cd udf: Verify i_size when loading inode
+889ba28 isofs: Fix unchecked printing of ER records
+d7089e9 ocfs2: fix journal commit deadlock
+42cfe05 ALSA: usb-audio: extend KEF X300A FU 10 tweak to Arcam rPAC
+5f8648f isofs: Fix infinite looping over CE entries
+c374de2 storvsc: ring buffer failures may result in I/O freeze
+8cf4e4e x86/tls: Don't validate lm in set_thread_area() after all
+983fbd4 x86/tls: Disallow unusual TLS segments
+320a36c can: peak_usb: fix memset() usage
+4657b3b genirq: Prevent proc race against freeing of irq descriptors
+3832fe2 x86_64, switch_to(): Load TLS descriptors before switching DS and ES
+22b2982 ncpfs: return proper error from NCP_IOC_SETROOT ioctl
+9fa8f14 Btrfs: fix fs corruption on transaction abort if device supports discard
+876634f KEYS: Fix stale key registration at error path
+798adbc ALSA: usb-audio: Don't resubmit pending URBs at MIDI error recovery
+24c7aa2 can: peak_usb: fix cleanup sequence order in case of error during init
+f112595 hp_accel: Add support for HP ZBook 15
+69d49f4 drm/vmwgfx: Fix fence event code
+64fb106 drm/vmwgfx: Don't use memory accounting for kernel-side fence objects
+acac5c2 iommu/vt-d: Fix an off-by-one bug in __domain_mapping()
+28bf69f ath5k: fix hardware queue index assignment
+3a1a396 ath9k: fix BE/BK queue order
+2944fbe ath9k_hw: fix hardware queue allocation
+f54f67f eCryptfs: Remove buggy and unnecessary write in file name decode routine
+cf2717f serial: samsung: wait for transfer completion before clock disable
+1925a04 mfd: tc6393xb: Fail ohci suspend if full state restore is required
+851d908 USB: cdc-acm: check for valid interfaces
+bf4ef51 cdc-acm: memory leak in error case
+bc13870 megaraid_sas: corrected return of wait_event from abort frame path
+6a975a5 ASoC: sigmadsp: Refuse to load firmware files with a non-supported version
+bd80f25 genhd: check for int overflow in disk_expand_part_tbl()
+48acece scsi: correct return values for .eh_abort_handler implementations
+4878118 PCI: Restore detection of read-only BARs
+fcae2b1 drbd: merge_bvec_fn: properly remap bvm->bi_bdev
+b4f2f09 driver core: Fix unbalanced device reference in drivers_probe
+3a22509 UBI: Fix invalid vfree()
+227d14d usb: renesas_usbhs: gadget: fix NULL pointer dereference in ep_disable()
+cb4d0fb writeback: fix a subtle race condition in I_DIRTY clearing
+06cc945 writeback: Move I_DIRTY_PAGES handling
+10f3998 i2c: davinci: generate STP always when NACK is received
+196c4c7 eCryptfs: Force RO mount when encrypted view is enabled
+e45e797 ahci: disable MSI on SAMSUNG 0xa800 SSD
+59e338e ahci: disable MSI instead of NCQ on Samsung pci-e SSDs on macbooks
+5461cc1 ahci: disable NCQ on Samsung pci-e SSDs on macbooks
+7954c1a mm: fix swapoff hang after page migration and fork
+3b557ca drm/radeon: kernel panic in drm_calc_vbltimestamp_from_scanoutpos with 3.18.0-rc6
+ae6f8ca sata_fsl: fix error handling of irq_of_parse_and_map
+4c03a77 AHCI: Add DeviceIDs for Sunrise Point-LP SATA controller
+a74b8e0 drm/i915: Unlock panel even when LVDS is disabled
+24bcc83 powerpc/pseries: Fix endiannes issue in RTAS call from xmon
+7842ea1 Input: xpad - use proper endpoint type
+c4936da usb-quirks: Add reset-resume quirk for MS Wireless Laser Mouse 6000
+b064eaf MIPS: Loongson: Make platform serial setup always built-in.
+494de900e ALSA: hda - Limit 40bit DMA for AMD HDMI controllers
+d9d21cc USB: xhci: Reset a halted endpoint immediately when we encounter a stall.
+e02cf34 USB: xhci: don't start a halted endpoint before its new dequeue is set
+884aacf ARM: 8216/1: xscale: correct auxiliary register in suspend/resume
+7f8cc77 bnx2fc: do not add shared skbs to the fcoe_rx_list
+cd36abc nfsd: Fix slot wake up race in the nfsv4.1 callback code
+8a6f3df SUNRPC: Fix locking around callback channel reply receive
+806524e USB: ssu100: fix overrun-error reporting
+80d8884 USB: keyspan: fix overrun-error reporting
+2343f3c USB: keyspan: fix tty line-status reporting
+3a87a45 usb: serial: ftdi_sio: add PIDs for Matrix Orbital products
+29b5bbd iio: Fix IIO_EVENT_CODE_EXTRACT_DIR bit mask
+d196045 USB: serial: cp210x: add IDs for CEL MeshConnect USB Stick
+b7d5e24 spi: dw: Fix dynamic speed change.
+d04f2f9 bump to 26
+c52ae8e msm: mmi: Add LPM Workaround(Missing file)
+900863a ipv6: Don't reduce hop limit for an interface
+f7017bb ipv4: Missing sk_nulls_node_init() in ping_unhash().
+4b3c11a msm: mmi: Add LPM Workaround
+
+   * packages/apps/Eleven/
+8775acf Merge remote-tracking branch 'upstream/cm-12.1' into xpe-9.1
+
+   * packages/apps/Settings/
+7695c92 Merge remote-tracking branch 'upstream/cm-12.1' into HEAD
+
+   * vendor/XPe/
+36bcefa add performance from codeaurora
+6776a7e  Remove userinit from user builds
+f528969 Merge remote-tracking branch 'upstream/cm-12.1' into HEAD
+
+====================
+     05-04-2015
+====================
+
+
+   * external/f2fs-tools/
+ddc11c8 f2fs-tools: release 1.4.1
+e8cd72e f2fstat: fix option parsing
+c89616b fsck.f2fs: remove corrupted data indices in direct node blocks
+e8d7d00 mkfs.f2fs: avoid memory leak in mkfs
+07749a0 fsck.f2fs: support large sector size
+eb059e3 mkfs.f2fs: support large sector size
+f4a9278 f2fs: fix build for android
+d4b6768 fsck.f2fs: readahead node blocks to speed up
+91932c2 dump.f2fs: show checkpoint flag
+f32207b fsck.f2fs: fix sit types seamlessly
+160334f fibmap.f2fs: fix the wrong stat info
+d32c7d3 configure: add check for bswap_64
+fac41f5 configure: also check for byteswap.h
+34a4b7d parse.f2fs: add a tool to parse IO traces made by runtime f2fs
+acd2acd dump.f2fs: dump owner of data given block address
+489c37a fsck.f2fs: no need to fix SIT type for COLD_DATA
+cd5e99e mkfs.f2fs: introduce some macros to simplify coding style
+71c054f fsck.f2fs: remove unused value
+c9e11a4 mkfs.f2fs: fix missing endian conversion
+5dd4341 mkfs: use compact mode for data summaries
+5f3ed28 fsck.f2fs: add a missing 'fixed' during chk_dentries()
+28b9021 fsck.f2fs: avoid false alarm on SIT type fix
+3e6cab0 fsck.f2fs: remove unneeded return
+3d9fb31 fsck.f2fs: show orphan inodes when fixing partition
+b0f718d mkfs.f2fs: reclaim free space in case of regular file
+0ba63f1 mkfs.f2fs: give a kernel version for initial format
+832a96e fsck.f2fs: trigger fsck.f2fs when new change was made
+24b9f15 fsck.f2fs: fix SIT entry types
+
+   * packages/apps/CMFileManager/
+018e6c6 CMFM : Group m4v under video/mp4
+
+   * packages/apps/Gallery2/
+073d949 Gallery2: Fix RTL album picking
+
+   * vendor/motorola/
+acae886 Merge pull request #161 from luca020400/touchfirm
+732ac7c msm8226-common: move touchscreen firmware to device
+
+====================
+     05-03-2015
+====================
+
+
+   * bootable/recovery/
+934664c recovery: Allow devices to reboot to download mode
+
+   * frameworks/av/
+dd2e326 stagefright: httplive: Bring in line with upstream
+
+   * frameworks/base/
+60d46b4 libandroidfw: Fatal exception of dlfree often causes the system crashed
+921ae96 MediaSessionService: Error checks for UserRecord object
+ce8edbe Fix system server crash
+0ef11bc frameworks/base: Make minfree values optimal for 32bit devices
+40e9a37 Base: enable/disable doze through Profiles (1/2)
+4ad02d3 ambient display: Fix volume key music control
+
+   * frameworks/native/
+e2aeea5 sensorservice: Don't replace HAL orientation sensor
+
+   * packages/apps/Settings/
+c047ba5 Settings: enable/disable doze through Profiles (2/2)
+74b88fb Settings: fix bad MTP uncheck behavior
+
+   * packages/apps/TvSettings/
+4e2e4cf TvSettings: About: Fix advanced reboot selection
+102a41d TvSettings: Create Display category and add overscan option
+
+   * system/core/
+985287b Rename libext2_uuid -> libext2_uuid_static lib
+a7984d9 findParam: don't check empty param name
+
+   * vendor/motorola/
+b330186 Merge pull request #158 from luk1337/patch-3
+
+====================
+     05-02-2015
+====================
+
+
+   * external/whispersystems/WhisperPush/
+519b113 Automatic translation import
+
+   * frameworks/av/
+e48b311 Revert "nuplayer: do not use cached source for wvm content -- DO NOT MERGE"
+
+   * frameworks/base/
+da34749 Automatic translation import
+
+   * frameworks/opt/telephony/
+44e3b07 RIL: Make some methods protected
+
+   * hardware/qcom/fm/
+d6f86ef Automatic translation import
+
+   * packages/apps/AudioFX/
+b2e8ba3 Automatic translation import
+
+   * packages/apps/Bluetooth/
+55b636c Automatic translation import
+
+   * packages/apps/BluetoothExt/
+499ae4e Automatic translation import
+
+   * packages/apps/CMFileManager/
+4a6769c Automatic translation import
+
+   * packages/apps/Calculator/
+df90b7b Automatic translation import
+
+   * packages/apps/Calendar/
+113041a Automatic translation import
+
+   * packages/apps/Camera2/
+6403559 Automatic translation import
+
+   * packages/apps/CellBroadcastReceiver/
+0bcdeed Automatic translation import
+
+   * packages/apps/Contacts/
+9032693 Automatic translation import
+
+   * packages/apps/ContactsCommon/
+a942c97 Automatic translation import
+
+   * packages/apps/DeskClock/
+be06b1a Automatic translation import
+
+   * packages/apps/Dialer/
+c2a0cde Automatic translation import
+
+   * packages/apps/Eleven/
+a02bc80 Automatic translation import
+
+   * packages/apps/Email/
+8ca2f36 Automatic translation import
+
+   * packages/apps/Gallery2/
+e8e6a11 Automatic translation import
+
+   * packages/apps/InCallUI/
+c3362b5 Automatic translation import
+
+   * packages/apps/LockClock/
+fafa209 Automatic translation import
+
+   * packages/apps/Mms/
+183af12 Automatic translation import
+
+   * packages/apps/PhoneCommon/
+c703c7c Automatic translation import
+
+   * packages/apps/Settings/
+7832fce Automatic translation import
+e602f95 Settings: fix non lock pattern CryptKeeper crash
+
+   * packages/apps/SoundRecorder/
+6157560 Automatic translation import
+
+   * packages/apps/Stk/
+656cd27 Automatic translation import
+
+   * packages/apps/Terminal/
+aa252f1 Automatic translation import
+
+   * packages/apps/ThemeChooser/
+6951d60 Automatic translation import
+
+   * packages/apps/Trebuchet/
+bf48aeb Automatic translation import
+
+   * packages/apps/TvSettings/
+2914b48 About: Add advanced reboot options (2/2)
+8e8c883 Developer Settings: Add Advanced reboot (1/2)
+
+   * packages/apps/UnifiedEmail/
+3cdd22d Automatic translation import
+
+   * packages/providers/DownloadProvider/
+858a005 Automatic translation import
+
+   * packages/providers/ThemesProvider/
+5c81d89 Automatic translation import
+
+   * packages/services/Mms/
+c02c415 Automatic translation import
+
+   * packages/services/Telecomm/
+ccf6031 Automatic translation import
+
+   * packages/services/Telephony/
+a6e104d Automatic translation import
+
+   * packages/wallpapers/Galaxy4/
+2da4de9 Automatic translation import
+
+   * packages/wallpapers/PhaseBeam/
+10e4dbe Automatic translation import
+
+   * packages/wallpapers/PhotoPhase/
+6caa429 Automatic translation import
+
+   * vendor/XPe/
+8688a95 vendor: cm: yet more updates to contributors
+
+   * vendor/motorola/
+73b9bdc thea: titan: Use prebuilt charge_only_mode
+7bdf710 Merge pull request #156 from luca020400/cm-12.1
+2c111d5 thea: Update proprietary files
+
+====================
+     05-01-2015
+====================
+
+
+   * android/
+e674e5d 5.1.0_r5 -> 5.1.1_r1
+
+   * build/
+ea62c61 Merge remote-tracking branch 'upstream/cm12.1' into HEAD
+
+   * external/tinycompress/
+dcc9b99 tinycompress: Fix build on msm899x
+
+   * frameworks/base/
+9a5a329 SystemUI: small optimization for notification icon numbers
+f6e33cc Merge remote-tracking branch 'upstream/cm-12.1' into HEAD
+67de6b7 Fix no vibration during shutdown.
+71f7d99 Fix ro.telephony.default_network setting parsing
+
+   * frameworks/native/
+85b4043 binder: Add readuInt64() symbol for LG RIL compatibility
+
+   * packages/apps/Eleven/
+07f33fc Merge remote-tracking branch 'upstream/cm-12.1' into xpe-9.1
+
+   * packages/apps/Email/
+0f4610b email: fix Account table creation
+
+   * packages/apps/Settings/
+f1b6d30 Settings: disable mobile network switch when SIM isn't ready
+64ae2cf Merge remote-tracking branch 'upstream/cm-12.1' into HEAD
+3edbe22 asas
+
+   * packages/apps/TvSettings/
+43008a4 Developer Settings: Only show ADB Over network when debugging is enabled
+
+   * vendor/XPe/
+c1cda48 Isnt Experimental anymore, now is a NIGHTLY
+b954a0b Merge https://github.com/XPerience-AOSP-Lollipop/android_vendor_XPerience into HEAD
+0568015 Merge remote-tracking branch 'upstream/cm-12.1' into HEAD
+77f40b2 Add CIERTO MX apn
+
+   * vendor/motorola/
+5b03453 Merge pull request #155 from razrqcom-dev-team/cm-12.1-quark
+01cd6d3 quark: Add VR & IMS & other missing proprietaries
