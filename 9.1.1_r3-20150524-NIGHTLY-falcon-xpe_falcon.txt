@@ -1,0 +1,210 @@
+====================
+     05-23-2015
+====================
+
+
+   * android/
+0cfa6d9 Use Own framework Android webview
+a601527 Tag 5.1.1_r1--->5.1.1_r3
+
+   * build/
+0ced0b4 Merge remote-tracking branch 'upstream/cm-12.1' into HEAD
+
+   * device/motorola/falcon/
+fedf92a remove motorola charger mode now use prebuilt binary
+
+   * device/motorola/msm8226-common/
+722bc56 Add missing LPM config
+ef80f2f msm8226-common: doze: Disable gestures by default
+09bb562 msm8226-common: doze: Disable doze settings when doze disabled
+1ae7908 msm8226-common: Use low latency as primary audio output
+77e0c1d msm8226-common: doze: Add pocket mode
+35aea66 msm8226-common: Use prebuilt charge_only_mode
+f73e660 msm8226-common: add MotoDoze Service
+
+   * frameworks/base/
+fb6d141 Merge remote-tracking branch 'upstream/cm-12.1' into HEAD
+7888912 Revert "Clean up keyguard carrier text handling."
+
+   * packages/apps/Eleven/
+09500b8 Merge remote-tracking branch 'upstream/cm-12.1' into xpe-9.1
+
+   * packages/apps/Settings/
+19dacab Merge remote-tracking branch 'upstream/cm-12.1' into HEAD
+
+   * vendor/XPe/
+5b6dbde bump to R3
+cb24033 Merge remote-tracking branch 'upstream/cm-12.1' into HEAD
+
+====================
+     05-22-2015
+====================
+
+
+   * external/wpa_supplicant_8/
+688bbc2 WPS: Fix HTTP chunked transfer encoding parser
+bc7e82d AP WMM: Fix integer underflow in WMM Action frame parser
+
+   * frameworks/base/
+5abb0f2 SystemServer: Skip TorchService construction if no flash feature detected
+9ac5aa2 Add alternate WebView provider package
+757c739 base: Fix array bounds exception in getSecondaryStorageState
+1dfc43a unbreak density scaling
+
+   * frameworks/webview/
+b2305a0 Update WebView 42.0.2311.138 to 43.0.2357.76
+
+   * packages/apps/Eleven/
+bacadd7 Merge "Add Landscape support to Eleven" into cm-12.1
+
+   * packages/apps/Settings/
+8fd0c5d Keep the content when change the orientation
+
+   * vendor/motorola/
+06106d5 Merge pull request #163 from luk1337/patch-3
+8dc69dd titan: Update proprietary files
+
+====================
+     05-21-2015
+====================
+
+
+   * frameworks/base/
+d1689f3 Fix another off-by-one error in computeEllipsis
+eccafdf apps2sd: Only allow "move to ___" if the media is mounted [2/2]
+6ca2651 SystemUI: Move custom tile listener service registration to phonestatusbar.
+03c2f2c VolumePanel: Properly update expanded volume panel sliders
+
+   * frameworks/native/
+c5502f1 libgui: bail assertion if sensorservice cannot be found
+
+   * frameworks/opt/telephony/
+3f96311 telephony: extend the user notification toggle for restricted mobile access
+
+   * packages/apps/CMFileManager/
+9a75e1b [CMFileManager]Fix CMFileManager sometimes crash.
+
+   * packages/apps/Mms/
+f3a2464 Mms : Change 'Add to People' to 'Add to Contacts'
+
+   * packages/apps/Settings/
+99d9e94 Exclude themes from being moved to external storage
+9fa03b3 apps2sd: Only allow "move to ___" if the media is mounted [1/2]
+6c771d2 apps2sd: Enable apps2sd for apps with unspecified install location
+
+   * packages/services/Telephony/
+ec8c8a8 Fix CDMA vs. WCDMA typo in cs translations
+be6d6ee Telephony: Further improve network selection
+
+   * vendor/XPe/
+e190d66 CM: Update droiddoc template for cmsdk
+54d5498 APNs: 716: added Claro, Entel; 732: Fixed COMCEL
+7790c60 APNs: Add MVNO HoT Austria Internet and MMS APN configuration
+
+====================
+     05-20-2015
+====================
+
+
+   * build/
+c3cc5ec Merge tag 'android-5.1.1_r3' into HEAD
+
+   * frameworks/base/
+2196dbf [1/2] Recognized multiple wallpapers in theme
+d9cf18e DreamManager: be aware of device lid
+363abfb VolumePanel: Don't timeout quickly if expanded
+91c7ce9 Align recents clear button to screen edge instead of tasks if close
+47cbe3a fix CTS DisplayTest.testGetMetrics()
+3dcd365 SystemUI: improve dpad arrow key state logic
+
+   * frameworks/opt/telephony/
+5c05255 Make mImsPhone static. DO NOT MERGE ANYWHERE
+
+   * packages/apps/CMFileManager/
+0d31e17 [CMFileManager]Fix the FileManager Crash.
+41232db CMFileManager: Improved strings
+0c06f5c [CMFileManager] The remember selection don't work when open a file
+
+   * packages/apps/Contacts/
+a91eaf7 fix crash in QuickContact on sending contact via sms
+
+   * packages/apps/Eleven/
+4427680 Add Landscape support to Eleven
+
+   * packages/apps/Mms/
+6d7c762 Mms : Don't close single helper db instances
+
+   * packages/apps/Settings/
+c429e68 CryptKeeper improvements
+83b4a99 Settings: add marquee to Device administrators screen
+
+   * system/core/
+c7b3725 Merge tag 'android-5.1.1_r3' into HEAD
+
+   * system/vold/
+d578419 Adjust to r3 fs_mgr changes
+
+   * vendor/XPe/
+580ac6f APNs: moar MVNO's
+6a5733a APNs: Separate Simyo ES' entry (default and mms)
+ebda3cd apns: Added APN configuration for Suop MVNO (Spain)
+9635acd Added several APNs, updated a couple carrier names
+c352261 Split Smartfren MMS out
+
+====================
+     05-19-2015
+====================
+
+
+   * art/
+be62737 Revert "AArch64: Fix incorrect use of preceding LIR."
+1e14008 AArch64: Fix incorrect use of preceding LIR.
+47e066e AArch64: Addressing Cortex-A53 erratum 835769.
+
+   * frameworks/base/
+d9f1b3d Revert "Remove unnecessary sleep in ActivityThread."
+eb9ff0e Fix bugs regarding delay the dispatching of non-wakeup alarms
+2d55b7c Fix for infinite loop in RemoteViewsAdapter
+2589adf Fix bug of unnecessary wakeups after completed syncs.
+1edb451 Remove the window whose client process has died or become zombie
+6d08c9a Don't relayout based on a window that isn't visible
+7c16969 Not include fullscreen opaque window on screenshot
+1d6f9ba Only one task within the stack should moveToBack
+3a9f515 Fix racing condition of mTouchExcludeRegion
+1ff1e02 Measure absolute value of pointer motion distance
+36697c3 Make ACCESS_THEME_MANAGER permission system|signature
+e99897e Return original value if icon info is null
+6e73ab5 Make default overlay for "spell checker"
+1e7279b BaseStatusBar: Inform StatusBarService if a notification is flagged spam
+6fc65da AudioService: persist volume of ring stream when ringer mode changed
+
+   * frameworks/opt/telephony/
+2d1f7da Don't needlessly disable data.
+fe85370 Don't clear invalid defaults before SIM info of all SIMs is populated.
+
+   * packages/apps/CMFileManager/
+835447a Update Editor Activity to handle Content URI
+
+   * packages/apps/Settings/
+ef0a11d CryptKeeper: layout whole screen in bounds
+eae637c Settings: Livedisplay: Respect default values passed from CMHW
+
+   * packages/providers/ThemesProvider/
+d19fe5d [2/2] Recognized multiple wallpapers in theme
+4d4c54e Fix exception on themes without lockscreen images
+a8594f9 FIX: Preview table upgrade path
+
+   * vendor/XPe/
+88e99ec CM: Update styles for droiddoc.
+7ebb507 CM: Provide droiddoc cmsdk template.
+
+   * vendor/cmsdk/
+0f8bcd7 Merge "CMSDK: Make sure to hide internal package from docs." into cm-12.1
+fb07983 CMSDK: Point to vendor/cm cmsdk templates for web.
+9389190 CMSDK: Make sure to hide internal package from docs.
+8c36c41 CMSDK: Update code comments for permission changes.
+
+   * vendor/motorola/
+c4e5f8b Merge pull request #162 from Alberto97/patch-1
+b2f71a1 msm8226-common: Use prebuilt charge_only_mode
+20ccf14 Revert "thea: titan: Use prebuilt charge_only_mode"
