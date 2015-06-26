@@ -1,0 +1,488 @@
+====================
+     06-25-2015
+====================
+
+
+   * android/
+3014fde Add Android support library
+
+   * device/motorola/falcon/
+4d00c92 falcon: Set userdata size for encryption
+
+   * device/motorola/msm8226-common/
+2d6b3aa Automatic translation import
+2509660 msm8226-common: Don't stop RIL daemon on decrypt
+9cb0263 msm8226-common: Allow vold permissions for encryption
+b97fd23 msm8226: Don't copy FFMPEG config anymore
+1100fb2 Update SEPolicy
+bd8d91e msm8226-common: Disable QCOM hardware encryption
+2659423 msm8226-common: Move sensord to class main
+7cfc7e9 msm8226-common: Remove config_bluetooth service
+
+   * device/qcom/sepolicy/
+6a2a0b7 sepolicy: Allow time_daemon to use POSIX clocks
+
+   * external/android-visualizer/
+38d5cf3 VisualizerView: add ability to disable drawing
+fc9b944 Revert "visualizer: don't draw fade out paint when there's no content"
+3a5b85a visualizer: don't draw fade out paint when there's no content
+
+   * frameworks/base/
+5a2eb3e Fix Custom carrier label
+d946b22 Fingerprint: Make the existing FingerprintService semi-useful.
+a9e932b  fix issues with custom carrier label
+ff77667 SystemUI: workaround for visualizer flash on track change
+d2f90f5 SystemUI: dynamically generate visualizer color
+b515114 alarmmanager: Reduce calls to elapsedRealtime()
+290b5fb Fix a GL error leak issue
+5a98695 SystemUI: visualizer state improvements
+52a01e5 Don't use the SPN_STRINGS_UPDATED broadcast.
+d370ca5 Recalculate emergency after adding or removing mobile controllers.
+7553b92 Remove some useless code in KeyguardUpdateMonitor.
+899ef6c Optimize GPS property reloading.
+3e9f683 Add sms short codes for Indonesia
+
+   * frameworks/native/
+941007a surfaceflinger: use Mutex timedLock instead of tryLock loop
+7c9f0ca SF: Reduce resync samples without present
+
+   * frameworks/opt/telephony/
+67ea90e Send out a new SPN_STRINGS_UPDATED broadcast if the sub ID changes.
+3500144 Revert "SystemUI can not receive intent"
+
+   * kernel/motorola/msm8226/
+7f0169c Bump to v28
+052da07 msm: thermal: Update to speed up bootup time
+f13ba68 msm: thermal: Handle zone ID and tsens ID to fetch temperature
+5f5b5c4 power: qpnp-bms: Schedule recalculate_soc immediately in bms_resume
+8c1afcf regulator: add notifier event for regulator enable
+1eba0b2 input: synaptics_rmi4: Register pm_ops regardless of CONFIG_FB
+bcb9ea1 msm: mdss: Correctly calculate DSI clocks if fbc is enabled
+cf9792a Linux 3.4.108
+cbcbb0e xen: netback: read hotplug script once at start of day.
+3680f82 slub: refactoring unfreeze_partials()
+16a99ef xen-pciback: Add name prefix to global 'permissive' variable
+ee960da writeback: use |1 instead of +1 to protect against div by zero
+19d6bf0 IB/core: don't disallow registering region starting at 0x0
+080dc5b cdc-acm: prevent infinite loop when parsing CDC headers.
+c99e1f4 don't bugger nd->seq on set_root_rcu() from follow_dotdot_rcu()
+9307ac2 config: Enable NEED_DMA_MAP_STATE by default when SWIOTLB is selected
+e018251 perf tools: Fix build with perl 5.18
+d0ae9a5 UBI: fix soft lockup in ubi_check_volume()
+8452dbf autofs4: check dev ioctl size before allocating
+4e94e5e ipvs: uninitialized data with IP_VS_IPV6
+4e26a83 net: make skb_gso_segment error handling more robust
+3b291ab openvswitch: Check currect return value from skb_gso_segment()
+619b42a fs: take i_mutex during prepare_binprm for set[ug]id executables
+fe3e090 hpsa: fix memory leak in kdump hard reset
+0a194ad hpsa: turn off interrupts when kdump starts
+a66a78a hpsa: add missing pci_set_master in kdump path
+92f4100 hpsa: refine the pci enable/disable handling
+93d8662 IB/core: Avoid leakage from kernel to user space
+8fc87dd spi: spidev: fix possible arithmetic overflow for multi-transfer message
+d389be4 sb_edac: Fix erroneous bytes->gigabytes conversion
+b4ffd34 powerpc/mpc85xx: Add ranges to etsec2 nodes
+79e87b2 splice: Apply generic position and size checks to each write
+7abcc0c Fix lockup related to stop_machine being stuck in __do_softirq.
+608ab35 softirq: reduce latencies
+c23e255 x86/reboot: Fix a warning message triggered by stop_other_cpus()
+798fa00 ALSA: usb - Creative USB X-Fi Pro SB1095 volume knob support
+836afeb ocfs2: _really_ sync the right range
+7839058 Defer processing of REQ_PREEMPT requests for blocked devices
+e13a5bb be2iscsi: Fix kernel panic when device initialization fails
+25e60e5 IB/uverbs: Prevent integer overflow in ib_umem_get address arithmetic
+df5b917 mac80211: fix RX A-MPDU session reorder timer deletion
+8263b60 x86/reboot: Add ASRock Q1900DC-ITX mainboard reboot quirk
+c421077 radeon: Do not directly dereference pointers to BIOS area.
+179998c USB: ftdi_sio: Use jtag quirk for SNAP Connect E10
+cc88d18 net: use for_each_netdev_safe() in rtnl_group_changelink()
+b5c1957 usb: xhci: handle Config Error Change (CEC) in xhci driver
+fb114ed cifs: fix use-after-free bug in find_writable_file
+847b879 USB: ftdi_sio: Added custom PID for Synapse Wireless product
+ee9e018 ALSA: hda - Add one more node in the EAPD supporting candidate list
+5210f8a hfsplus: fix B-tree corruption after insertion at position 0
+f770c2f selinux: fix sel_write_enforce broken return value
+a4b3cdf writeback: fix possible underflow in write bandwidth calculation
+b85b024 sched: Fix RLIMIT_RTTIME when PI-boosting to RT
+12278d9 perf: Fix irq_work 'tail' recursion
+10288f2 net: ethernet: pcnet32: Setup the SRAM and NOUFLO on Am79C97{3, 5}
+78b5c4c nbd: fix possible memory leak
+cb5371a writeback: add missing INITIAL_JIFFIES init in global_update_bandwidth()
+67462e5 target/pscsi: Fix NULL pointer dereference in get_device_type
+cc7dad7 tcm_fc: missing curly braces in ft_invl_hw_context()
+77a217e IB/mlx4: Saturate RoCE port PMA counters in case of overflow
+1b0fb60 nl80211: ignore HT/VHT capabilities without QoS/WMM
+4333a81 crypto: aesni - fix memory usage in GCM decryption
+0f23093 ASoC: wm8960: Fix wrong value references for boolean kctl
+c9db17f ASoC: wm8955: Fix wrong value references for boolean kctl
+bcea0b9 ASoC: wm8904: Fix wrong value references for boolean kctl
+67eb8fc ASoC: wm8903: Fix wrong value references for boolean kctl
+4ad3eb1 ASoC: wm8731: Fix wrong value references for boolean kctl
+732d2c0 ASoC: wm2000: Fix wrong value references for boolean kctl
+bbff087 ASoC: cs4271: Fix wrong value references for boolean kctl
+1055c03 ASoC: ak4641: Fix wrong value references for boolean kctl
+adba44c ASoC: adav80x: Fix wrong value references for boolean kctl
+9f622cd x86/asm/entry/32: Fix user_mode() misuses
+4c08b1b vt6655: RFbSetPower fix missing rate RATE_12M
+46cdde0 Input: synaptics - handle spurious release of trackstick buttons
+b5562d1 Input: synaptics - fix middle button on Lenovo 2015 products
+5f6fa1d Input: synaptics - query min dimensions for fw v8.1
+8ce0453 ASoC: sgtl5000: remove useless register write clearing CHRGPUMP_POWERUP
+601a7de x86/vdso: Fix the build on GCC5
+2e39456 virtio_console: avoid config access from irq
+ded124e virtio_console: init work unconditionally
+f7b27da mac80211: disable u-APSD queues by default
+c5eeed9 mac80211: set only VO as a U-APSD enabled AC
+e84a184 mac80211: drop unencrypted frames in mesh fwding
+f778895 dm io: deal with wandering queue limits when handling REQ_DISCARD and REQ_WRITE_SAME
+14b66b0 dm: hold suspend_lock while suspending device during device deletion
+bc59093 fuse: set stolen page uptodate
+463a049 fuse: notify: don't move pages
+f5c31b9 ALSA: snd-usb: add quirks for Roland UA-22
+204f828 ALSA: control: Add sanity checks for user ctl id name string
+e274cdd drm/vmwgfx: Reorder device takedown somewhat
+c060e1b xen-pciback: limit guest control of command register
+6f36333 ftrace: Fix ftrace enable ordering of sysctl ftrace_enabled
+87c5f88 ftrace: Fix en(dis)able graph caller when en(dis)abling record via sysctl
+a4a37cb can: add missing initialisations in CAN related skbuffs
+d294025 libsas: Fix Kernel Crash in smp_execute_task
+b07c22b bnx2x: Force fundamental reset for EEH recovery
+a4200f2 ARM: at91: pm: fix at91rm9200 standby
+79d313e ipvs: add missing ip_vs_pe_put in sync code
+017c2b7 gadgetfs: use-after-free in ->aio_read()
+9736e48 sunrpc: fix braino in ->poll()
+8caf82b TTY: fix tty_wait_until_sent on 64-bit machines
+62542b6 net: irda: fix wait_until_sent poll timeout
+b23ec24 console: Fix console name size mismatch
+fb5efa0 tty: fix up atime/mtime mess, take four
+23811a6 Change email address for 8250_pci
+c098578 x86/asm/entry/64: Remove a bogus 'ret_from_fork' optimization
+ab9b55b ASoC: omap-pcm: Correct dma mask
+7a378cd ACPI / video: Load the module even if ACPI is disabled
+059c505 drm/radeon: fix DRM_IOCTL_RADEON_CS oops
+8c3f89d drm/radeon: do a posting read in si_set_irq
+09cc5f5 drm/radeon: do a posting read in evergreen_set_irq
+3364916 drm/radeon: do a posting read in r600_set_irq
+876ad0a drm/radeon: do a posting read in rs600_set_irq
+8ad49e8 drm/radeon: do a posting read in r100_set_irq
+178644c eCryptfs: don't pass fs-specific ioctl commands through
+5281d84 usb: ftdi_sio: Add jtag quirk support for Cyber Cortex AV boards
+6e07827 NFSv4: Don't call put_rpccred() under the rcu_read_lock()
+339bfae USB: serial: cp210x: Adding Seletek device id's
+b39c908 mac80211: Send EAPOL frames at lowest rate
+7be36ec USB: serial: fix tty-device error handling at probe
+b1af822 USB: serial: fix potential use-after-free after failed probe
+3a56c90 USB: ftdi_sio: add PIDs for Actisense USB devices
+4e9e090 USB: usbfs: don't leak kernel data in siginfo
+d6d0142 xhci: Allocate correct amount of scratchpad buffers
+7311069 KVM: emulate: fix CMPXCHG8B on 32-bit hosts
+29b433e team: fix possible null pointer dereference in team_handle_frame
+c731115 nilfs2: fix potential memory overrun on inode
+561e65b ALSA: pcm: Don't leave PREPARED state after draining
+d47211d gpio: tps65912: fix wrong container_of arguments
+3c7e63a autofs4 copy_dev_ioctl(): keep the value of ->size we'd used for allocation
+901cf0a debugfs: leave freeing a symlink body until inode eviction
+21ccafa kdb: fix incorrect counts in KDB summary command output
+4ffd193 dm snapshot: fix a possible invalid memory access on unload
+871161b dm: fix a race condition in dm_get_md
+f737dc2 IB/qib: Do not write EEPROM
+820876a sg: fix read() error reporting
+6b41f98 fixed invalid assignment of 64bit mask to host dma_boundary for scatter gather segment boundary limit.
+c37b3f6 ipv6: fix ipv6_cow_metrics for non DST_HOST case
+8ec5187 dm io: reject unsupported DISCARD requests with EOPNOTSUPP
+211f2b3 dm mirror: do not degrade the mirror on discard error
+7744bb8 jffs2: fix handling of corrupted summary length
+bf83422 ALSA: hdspm - Constrain periods to 2 on older cards
+92ab665 drm/radeon/dp: Set EDP_CONFIGURATION_SET for bridge chips if necessary
+6f636e7 mm/memory.c: actually remap enough memory
+609e7e5 iscsi-target: Drop problematic active_ts_list usage
+b85703d mm/nommu.c: fix arithmetic overflow in __vm_enough_memory()
+6f99b93 mm/mmap.c: fix arithmetic overflow in __vm_enough_memory()
+8dc48bc mm/hugetlb: add migration entry check in __unmap_hugepage_range
+a5d6fbe mm/hugetlb: add migration/hwpoisoned entry check in hugetlb_change_protection
+03381e0 mm/hugetlb: fix getting refcount 0 page in hugetlb_fault()
+33b767d NFSv4.1: Fix a kfree() of uninitialised pointers in decode_cb_sequence_args
+a3a7bce fsnotify: fix handling of renames in audit
+690f5f9 ALSA: off by one bug in snd_riptide_joystick_probe()
+3fb13c8 rtnetlink: ifla_vf_policy: fix misuses of NLA_BINARY
+c5d79f7 ath5k: fix spontaneus AR5312 freezes
+707f2f1 tty: Prevent untrappable signals from malicious program
+0d28a02 vt: provide notifications on selection changes
+401f1c0 USB: fix use-after-free bug in usb_hcd_unlink_urb()
+3717fd3 USB: add flag for HCDs that can't receive wakeup requests (isp1760-hcd)
+4201e28 cdc-acm: add sanity checks
+db2ae8e xprtrdma: Free the pd if ib_query_qp() fails
+2b5c8c8 ARM: 8284/1: sa1100: clear RCSR_SMR on resume
+fea376d staging: comedi: comedi_compat32.c: fix COMEDI_CMD copy back
+f362568 USB: cp210x: add ID for RUGGEDCOM USB Serial Console
+2b74d6a PCI: Fix infinite loop with ROM image of size 0
+f908a4d KVM: s390: base hrtimer on a monotonic clock
+d95d4a1 smack: fix possible use after frees in task_security() callers
+9e2c826 axonram: Fix bug in direct_access
+c8e356f usb: core: buffer: smallest buffer should start at ARCH_DMA_MINALIGN
+6b6f047 PCI: Generate uppercase hex for modalias var in uevent
+86e3cfd hx4700: regulator: declare full constraints
+1a9d86b ARM: pxa: add regulator_has_full_constraints to spitz board file
+506158e ARM: pxa: add regulator_has_full_constraints to poodle board file
+5053341 ARM: pxa: add regulator_has_full_constraints to corgi board file
+
+   * packages/apps/Settings/
+f360c3c Removed unused variable about MSIM
+
+   * vendor/XPe/
+8429400 Add privacy url
+
+====================
+     06-24-2015
+====================
+
+
+   * bootable/recovery/
+ce34fee recovery: bu: disable xcomp during backup/restore
+
+   * external/chromium_org/
+f02dfc7 net: disable SSLv3.
+
+   * external/libtar/
+6f1e8f6 libtar: Support transparent compression
+
+   * external/sepolicy/
+887d7af Define types for userdata and cache block devices.
+
+   * external/whispersystems/WhisperPush/
+125c51a WhisperPush: add Twilio SMS number for Indonesia
+
+   * frameworks/base/
+dc6c43f SystemUI: fix dpad arrow keys after rotation
+837b967 Revert "base: zenmode: add 90 minutes downtime"
+3a26922 Fix LiveDisplay notification.
+
+   * hardware/qcom/audio-caf/msm8916/
+c483a9f post_proc: remove unnecessary command size check
+
+   * hardware/qcom/audio-caf/msm8994/
+51d2833 hal: Add option to use low latency as primary output
+afe3bed hal: Invert more build flags
+a4018a8 hal: Fix voice call recording for msm8974
+0cf4659 hal: Invert standard build flags
+eb91444 hal: Fix digital USB headset combo device
+28ad56e hal: Add support for dedicated VoIP devices
+
+   * hardware/qcom/fm/
+a82d69b Fix status text to reflect when FM is enabled.
+
+   * packages/apps/Calculator/
+64af337 Remove duplicate color.
+
+   * packages/apps/Settings/
+7e7a8b9 Settings: fix confirm pattern crash on rotate
+
+   * packages/wallpapers/Galaxy4/
+0cc4e55 Galaxy4: Force 32bit
+
+   * packages/wallpapers/HoloSpiral/
+0085554 HoloSpiral: Force 32bit
+
+   * packages/wallpapers/MusicVisualization/
+621fdf5 MusicVisualization: Force 32bit
+
+   * packages/wallpapers/NoiseField/
+9084d74 NoiseField: Force 32bit
+
+   * packages/wallpapers/PhaseBeam/
+f1b3336 PhaseBeam: Force 32bit
+
+   * system/extras/
+ad697d2 make_ext4fs: Fix mac build
+
+   * vendor/XPe/
+0c80c8c Fix Sprint 3G
+
+====================
+     06-23-2015
+====================
+
+
+   * device/qcom/sepolicy/
+802f07f Label factory reset protection partition.
+
+   * external/android-visualizer/
+291c020 visualizer view: optimize allocations during drawing
+
+   * external/dhcpcd/
+60ea6f5 dhcpcd: Send unique IAID
+
+   * external/stagefright-plugins/
+3272744 stagefright-plugins: Update codec list with capabilities
+36780e8 stagefright-plugins: Set sensible defaults for audio decoders
+e5f8759 ffmpeg: Remove a couple of codecs we don't need
+
+   * frameworks/base/
+d596ba7 SystemUI: fix visualizer tile initial state
+165174e Frameworks/base: Add removeAll for ArraySet
+0e734d1 core: Protect against system server take down on empty tile order.
+
+   * hardware/libhardware/
+77cd2f4 Fingerprint: add explicit authenticate actions
+
+   * packages/apps/CMFileManager/
+22b9eab Shell console: fix bug in shell output stream
+
+   * packages/apps/Settings/
+d0bc382 Remove stray file
+
+   * packages/services/Telecomm/
+9dcf39f Telecom : Add callInfo provider abstraction
+
+   * prebuilts/cmsdk/
+5bff108 prebuilts/cmsdk: Update API text for API level 1.
+
+   * vendor/XPe/
+51fd842 vendor/cm: Represent as CyanogenMod API's
+3314aac vendor/cm: Remove search widget from developer docs.
+
+   * vendor/cmsdk/
+f1f9f25 CMSDK: Only target specific packages for checkapi.
+3ca85b3 CMSDK: Add SINCE API level for docs.
+
+====================
+     06-22-2015
+====================
+
+
+   * external/whispersystems/WhisperPush/
+34eeeb6 Automatic translation import
+
+   * frameworks/av/
+775c557 stagefright: ffmpeg: Slightly raise the threshold for the ffmpeg scanner
+
+   * frameworks/base/
+a6b40de Automatic translation import
+4cd97f7 Default time format is hard coded to 24
+f166866 Revert "Determine default 12/24 hour time format setting from locale."
+462c9b9 base: zenmode: add 90 minutes downtime
+1cba30a wifi: Allow Settings to retrieve country code (2/3)
+25ea5bb base: wifi priorities
+6a5a1d8 Profiles: fix mute ring mode not applying
+7fa62bb themes: Load icon packs outside the big lock
+c108038 Improve dynamic tile strings
+dc2db5a base: dynamic tiles
+1fc5382 qs: use external resource package for custom tiles
+
+   * frameworks/opt/chips/
+ca3c8d1 Apply anti-aliasing when drawing chips.
+
+   * frameworks/opt/net/wifi/
+8360d47 Merge "wifi: Allow Settings to retrieve country code (1/3)" into cm-12.1
+
+   * hardware/qcom/fm/
+8a1eda5 Automatic translation import
+
+   * packages/apps/AudioFX/
+4804487 Automatic translation import
+
+   * packages/apps/BluetoothExt/
+5166471 Automatic translation import
+
+   * packages/apps/CMFileManager/
+1b15dff Automatic translation import
+91c9e78 Fix parsing of shell command output regardless of encoding
+
+   * packages/apps/Calendar/
+0ddae60 Automatic translation import
+
+   * packages/apps/Camera2/
+9fe4127 Automatic translation import
+
+   * packages/apps/Contacts/
+420be57 Automatic translation import
+
+   * packages/apps/ContactsCommon/
+306c803 Automatic translation import
+
+   * packages/apps/DeskClock/
+3fec825 Automatic translation import
+
+   * packages/apps/Dialer/
+265e145 Automatic translation import
+
+   * packages/apps/Email/
+eeea1e1 Automatic translation import
+
+   * packages/apps/Gallery2/
+9c02ac4 Automatic translation import
+
+   * packages/apps/InCallUI/
+a3d7205 Automatic translation import
+a7cbcc8 Show waiting state in call title also for MSIM.
+
+   * packages/apps/LockClock/
+c71fdd2 Automatic translation import
+
+   * packages/apps/Mms/
+ac26093 Automatic translation import
+
+   * packages/apps/PhoneCommon/
+d8b2750 Automatic translation import
+
+   * packages/apps/Settings/
+8e6a1c3 Automatic translation import
+25f5a16 wifi: Allow configuration of country code for wifi (3/3)
+f1e81f5 settings: wifi priorities
+a83dfba settings: dynamic tiles
+
+   * packages/apps/ThemeChooser/
+d72c46d Automatic translation import
+
+   * packages/apps/Trebuchet/
+b04fdb1 Automatic translation import
+cae9521 Fix unintended dynamic grid resize side effects.
+e806def Trebuchet: Fix popupMenu behavior and clean up old code.
+
+   * packages/apps/TvSettings/
+60e6e26 Automatic translation import
+
+   * packages/apps/UnifiedEmail/
+0068c4a Automatic translation import
+
+   * packages/inputmethods/LatinIME/
+fa184cb Automatic translation import
+
+   * packages/services/Mms/
+9193b7e Automatic translation import
+
+   * packages/services/Telecomm/
+b537713 Automatic translation import
+
+   * packages/services/Telephony/
+0e1355e Automatic translation import
+
+   * packages/wallpapers/PhaseBeam/
+a2fe1f4 Automatic translation import
+
+   * packages/wallpapers/PhotoPhase/
+335829c Automatic translation import
+
+   * prebuilts/cmsdk/
+819c312 prebuilts/cmsdk: Add prebuilt jars for cmsdk.
+db9ab1a prebuilts/cmsdk: Add api text files for API level 1.
+62a6bfd prebuilts/cmsdk: Add declared permission info for API level 1.
+cc52a1d Initial empty repository
+
+   * vendor/XPe/
+be48647 vendor/cm: Point to proper prebuilts/cmsdk directories.
+
+   * vendor/cmsdk/
+c8b2fba Automatic translation import
+
+====================
+     06-21-2015
+====================
+
+
+   * external/ffmpeg/
+3b79b80 ffmpeg: Set cpu arch for silvermont config
+74773c1 ffmpeg: Readd missing X86 fixups
+
+   * hardware/qcom/display-caf/msm8960/
+8c77071 hwc: Bump up version to 1.4
