@@ -1,0 +1,548 @@
+====================
+R8
+====================
+
+====================
+     07-18-2015
+====================
+
+
+   * build/
+c4618e4 Merge remote-tracking branch 'upstream' into HEAD
+
+   * device/motorola/msm8226-common/
+abc47e9 Merge https://github.com/XPerience-AOSP-Lollipop/android_device_motorola_msm8226-common into HEAD
+eb6c6bd fixes and delete bluetooth xD
+e41bc36 msm8226-common: overlay: update framework base
+a999cc4 msm8226-common: overlay: update Brightness and Vibrator
+9a42146 msm8226-common: rootdir: update performance profiles
+396c7da msm8226-common: Enable FIOPS by default
+
+   * frameworks/base/
+cb71120 Merge remote-tracking branch 'upstream' into HEAD
+192d718 SystemUI: update notification clipping when reset
+
+   * frameworks/webview/
+744503e Update WebView 43.0.2357.86 to 43.0.2357.121
+
+   * kernel/motorola/msm8226/
+53993a9 msm8226:Falcon:change to fiops
+3c549b6 udp: fix behavior of wrong checksums
+
+   * packages/apps/Eleven/
+659b893 fix bad heads
+c8fac44 Merge remote-tracking branch 'upstream' into xpe-9.1
+
+   * packages/apps/Settings/
+4948b83 Setings: Add fingerprintstats
+b968b6c Merge remote-tracking branch 'upstream' into HEAD
+
+   * vendor/XPe/
+f6b88b6 apns-conf: Fix bad HEAD
+3696166 Merge remote-tracking branch 'upstream' into HEAD
+
+   * vendor/motorola/
+71acddb Merge remote-tracking branch 'upstream/cm-12.1' into HEAD
+
+====================
+     07-17-2015
+====================
+
+
+   * frameworks/base/
+1d206df SettingsProvider: Update action for Profile picker.
+
+   * packages/apps/CMFileManager/
+a7f33f3 Update launcher iconography.
+
+   * packages/apps/ContactsCommon/
+49ff098 ContactPhotoManager - Add ability to fetch contact bitmap based on photo id
+
+   * packages/apps/Settings/
+b792aef Fix Battery % display in saver threshold
+c241e9a Settings: add Kiev time zones to picker
+c11cd53 Settings: Update profiles settings dashboard icon.
+9e5fdb6 Settings: Make sure we're getting the instance of ProfileManager.
+929f527 Setup: Call setUseFingerprint() when enrollment finished
+7631a86 Settings: fix reversed name/id fields in metrics
+8f5c0e5 Remove hardcoded textAppearance for better theme support.
+
+   * prebuilts/cmsdk/
+6ead612 cmsdk: Update for future* cmsdk changes.
+
+   * vendor/XPe/
+7135af8 Fix Rogers APN
+bbeb27c APN fine tuning
+9bf517f Hack in support for the old version of Maven that Ubuntu apparently ships with
+
+   * vendor/cmsdk/
+75cd945 cmsdk: Update intent action extras to match new namespace.
+02e761f cmsdk: Fix javadoc comment for CM_VERSION_CODES.
+ce52da6 cmsdk: Update api files for intent action change.
+af4e7b4 cmsdk: Update PROFILE_PICKER intent action.
+
+====================
+     07-16-2015
+====================
+
+
+   * frameworks/av/
+9d665ab camera: add ability for a device to specify MAX_CAMERAS
+
+   * frameworks/base/
+d7f031a Fingerprint: Add break after MSG_REMOVED
+f3c64cc Authenticate When Keyguard Resumes From Camera
+
+   * hardware/qcom/display-caf/msm8974/
+6c4ceb1 Merge branch 'LA.BF.1.1.1_rb1.26' of git://codeaurora.org/platform/hardware/qcom/display into cm-12.1
+
+   * hardware/qcom/display-caf/msm8994/
+121462e Merge branch 'LA.BF64.1.2.1_rb2.22' of git://codeaurora.org/platform/hardware/qcom/display into cm-12.1
+
+   * hardware/qcom/media-caf/msm8974/
+bbe4560 Merge branch 'LA.BF.1.1.1_rb1.26' of git://codeaurora.org/platform/hardware/qcom/media into cm-12.1
+
+   * hardware/qcom/media-caf/msm8994/
+7b6fa49 Merge branch 'LA.BF64.1.2.1_rb2.22' of git://codeaurora.org/platform/hardware/qcom/media into cm-12.1
+
+   * packages/apps/CMFileManager/
+84ff5ed Changed NavigationView.refresh() in onResume() of the activity to try to restore the original position.
+b8aa362 Preferences: Move huge paragraph description to own item
+707e828 ProgressDialog: Require user to explicitly use the cancel button.
+e09d843 Editor: Handle content uri's in the editor
+
+   * packages/apps/Mms/
+d655920 Mms : Ensure text mode supports multiple content-types
+e63abd6 Drafts: Prevent duplicate drafts from being added
+651cbbd Compose:  Hiding the "To" label when editing the subject
+
+   * packages/apps/Trebuchet/
+a433e1d Trebuchet: fix voice button proxy
+
+   * packages/services/Telecomm/
+9f46b9b Merge "Update to latest api level" into cm-12.1
+
+   * prebuilts/cmsdk/
+d9c2662 prebuilts/cmsdk: Make sure readme is markdown format.
+
+   * vendor/XPe/
+d5420c0 rendang: Remove unwanted APNs
+
+   * vendor/cmsdk/
+c67a9eb cmsdk: Clean up constant linking for javadoc.
+06fc449 cmsdk: Return UNKNOWN for impossible sdk ints.
+6714bfe cmsdk: Add documentation for validating API level.
+
+====================
+     07-15-2015
+====================
+
+
+   * external/icu/
+36dc0a7 icu: add Kiev summer time zone translation
+
+   * frameworks/base/
+c8ff1a9 Lazy Fix: "More Settings" localization
+d012b00 livedisplay: Round values up
+675f662 Track current user id in ThemeService
+
+   * frameworks/opt/hardware/
+0a583f1 cmhw: Add auto contrast support
+
+   * packages/apps/DeskClock/
+d815eef Fix rescheduling of alarms that are snoozed
+
+   * packages/apps/Gallery2/
+0e0c914 Gallery2: Intents for image/video directory viewing/picking
+
+   * packages/apps/Mms/
+0e5e3aa Show Calendar Event attachment only if an activity can respond to the intent
+
+   * packages/apps/Settings/
+7680a06 Fix config_proximityCheckOnWake setting handling
+
+   * packages/apps/ThemeChooser/
+255d0cf Update iconography.
+
+   * packages/apps/Trebuchet/
+0b93e24 Loader: use INVALID_RESTORE_PAGE to avoid unnecessarily synchronizing
+171a743 Wallpaper: Allow multiple partners to be loaded
+
+   * vendor/XPe/
+5a6bda2 CYNGNOS-454 - Fix config_preferred_apn Overrides
+
+   * vendor/cmsdk/
+577fe6a cmsdk: Add copyright header for ProfileManagerTest.
+d848990 cmsdk: Add functional manual test for custom uri publish tile.
+32e97d8 cmsdk: Add unit tests for CustomTile parceling.
+1f5ae92 cmsdk: Add simple profile manager tests.
+662628a cmsdk: Add unit tests for Profile parceling.
+acc8708 cmsdk: Add unit tests for versioning with os.Build
+e341fb2 cmsdk: Fix Profile parceling.
+
+====================
+     07-14-2015
+====================
+
+
+   * art/
+1782e2d Improve dalvik cache pruning
+
+   * device/qcom/common/
+c3f88a7 power: Send 8994 perf commands ourselves
+a8bf98b power: Add features to the 8994 PowerHAL
+
+   * external/bluetooth/bluedroid/
+a7d6435 bluedroid: Fix uninitialized variable warning
+
+   * frameworks/av/
+b55b927 stagefright: Remove deprecated FFMPEG config
+57db9b4 Prevent reading past the end of the buffer in 3GPP
+9824bfd Prevent integer underflow if size is below 6
+889ae4a Fix integer overflow when handling MPEG4 tx3g atom
+b1f2929 Fix integer underflow in covr MPEG4 processing
+7ff5505 Prevent integer overflow when processing covr MPEG4 atoms
+
+   * frameworks/base/
+d8c40f5 Fix mounting of non-FAT formatted SD cards (1/2)
+5565e08 MediaScanner: Add support for default ringtones per sim
+e228c96 Revert CAF's default system sound settings
+aa7695a MediaPlayer: Add multi SIM ringtone support
+522e499 livedisplay: Fix issue where settings weren't applied
+
+   * packages/apps/LockClock/
+652fb4e LockClock: Only show timestamp if it can fit
+
+   * packages/apps/Mms/
+e0d4d06 QuickMessage: Add shortMessage to inputType
+
+   * packages/apps/Settings/
+c8ccfc8 MasterClear: fix FRP wipe crash
+79e571f Keep screen on during fingerprint enrollment
+6c9cb8b Protected Apps: Monitor unlock status
+b0cec6d Settings: fix setting light FC
+5e7a3f0 Fingerprint: Include "Fingerprint" in the unlock title
+7935167 Fix aliasing in FingerprintProgressBar
+cc98438 Fix navigating fallback security via setup wizard
+12c3b4e Fingerprint: Match Enrollment UI with SetupWizard
+fe076e3 settings: Fix livedisplay settings
+
+   * packages/apps/Trebuchet/
+d2e4bae Launcher: Close OverviewMode when transitioning back to Workspace.State.NORMAL
+5e950d2 Launcher: Close open folder when transitioning back to Workspace.State.NORMAL
+2ee7cce Folder Layout Revision
+
+   * packages/providers/MediaProvider/
+646d632 Fix mounting of non-FAT formatted SD cards (2/2)
+
+   * prebuilts/cmsdk/
+5ec9336 cmsdk: Fix spelling error.
+
+   * system/core/
+58e24e4 healthd: Support QC2.0 type charger
+813e0a0 Added umount to init
+
+   * vendor/XPe/
+f208523 sepolicy: system_app: Remove performace setting related entries
+
+   * vendor/cmsdk/
+e953794 cmsdk: Add CMStatusBarManager and CustomTile.Builder tests.
+ca648dc cmsdk: Update profiles functional tests.
+c9295fb cmsdk: Clear calling identity when resetAll is called.
+
+
+====================
+     07-10-2015
+====================
+
+
+   * android/
+0799496 5.1.1_r6 --> 5.1.1_r8
+
+   * build/
+b02a075 Merge remote-tracking branch 'upstream' into HEAD
+9332861 merge tag android 5.1.1_r8
+
+   * device/motorola/msm8226-common/
+31a855b msm8226: Update UEVENT to mach some MMI requeriments
+c76f0fc  Bluetooth: Enable vendor specific BLE code
+8ae2c39  msm8x26: add "adaptive-playback" capability for HEVC hybrid codec
+bdfbde1 msm8226: Restrict number of cameras to 2
+
+   * frameworks/base/
+5c3d3a7 Merge remote-tracking branch 'upstream' into HEAD
+0e2fbb8 SettingsProvider: add overlay for SWAP_VOLUME_KEYS_ON_ROTATION
+16d4d50 Fix build break introduced in 83b589ec9c743174ac473622adb3f759e9d598af
+97327e4 systemui: restore space between clock & battery
+9fecfdb Merge remote-tracking branch 'upstream' into HEAD
+e1a6388 nose
+83b589e Update indonesia country code in PhoneNumberUtils
+c1019bf When calling indonesia using +62 prefix while already in indonesia, replace +62 prefix with 0 (CDMA only)
+01c3ea0 core: Continue stripping out Profiles related code.
+7c1ee7b Account for cmsdk resources when attaching theme assets
+116dedc androidfw: Declare and load cmsdk resource package w/ id.
+8fec3eb core: Factor out profiles related resources.
+1d1f5f0 systemui: fix battery text level visibility
+c9561a3 Fingerprint: Add getNumEnrollmentSteps [1/2]
+1f0667a qs: fix NPE in visualizer tile
+51d76f9 Keyguard Fingerprint: Lock immediately when fp is used [1/2]
+71fe5db SystemUI: more keyguard visualizer tweaks
+1ca33c1 Improve dock battery strings
+e8604c8 msim: Fix saving default sim from select SIM dialog (1/2)
+
+   * hardware/libhardware/
+62520f1 audio: Notify amplifier HAL of device enable/disable
+
+   * hardware/qcom/audio-caf/msm8994/
+dabc25c hal: Notify amplifier of device enable/disable
+
+   * packages/apps/CMFileManager/
+8cd911b configurationChanged: Don't handle the orientation change in our main Activity
+c283288 Secure Storage: Fix unlock button
+
+   * packages/apps/Mms/
+f5164b3 Quick Message: Fix dual sim picker
+9fc3f93 Enable heads-up style notifications on Mms app
+
+   * packages/apps/Settings/
+6e597e6 Merge remote-tracking branch 'upstream/cm-12.1' into HEAD
+b46aee4 Settings: hide light pulse settings if not available
+8067a71 Merge remote-tracking branch 'upstream' into HEAD
+e134666 Settings: Point to classes within cmsdk.
+97494e0 Enroll fingerprint via SetupWizard [1/2]
+38a933b Show error state when fingerprint read times out
+8a8121a Only show fingerprint for primary user
+a03f2d2 Keyguard Fingerprint: Lock immediately when fp is used [2/2]
+5b1d69d Improve dock battery strings
+
+   * packages/services/Telephony/
+5f87833 Rewrite network type summary handling
+
+   * vendor/XPe/
+510a62e Merge remote-tracking branch 'upstream' into HEAD
+3a49910 Bump to r8 and some cleans
+27acd09 NO MORE NIGHTLY's
+
+   * vendor/cmsdk/
+cf0bfd3 CMSDK: Begin documentation and testing for profiles.
+125c899 CMSDK: Utilize CMSDK_PACKAGE_ID.
+6e46829 CMSDK: Introduce factored out resources from framework.
+
+   * vendor/motorola/
+13156de Merge remote-tracking branch 'xpe' into HEAD
+e59b720 Add FM Blobs
+fbb062c Merge pull request #169 from Alberto97/patch-2
+
+====================
+     07-09-2015
+====================
+
+
+   * bootable/recovery/
+0401aaa updater: Add LZMA support to blockimg
+
+   * build/
+e78b239 releasetools: Add support for LZMA in blockimgdiff
+
+   * frameworks/base/
+672fa1e WallpaperManagerService: use a single file observer
+ba6dd62 base: Fix RESET_BATTERY_STATS permission
+910397f base: dock battery
+c2614be Fingerprint: Vibrate device.
+2a80ec9 SystemUI: fix keyguard unlock drawable not updating
+d2d714a Fingerprint: Get current user id via Process.myUserHandle()
+
+   * packages/apps/PackageInstaller/
+5040ee6 PackageInstaller: add hook to manage packages via PRE_BOOT_COMPLETED event
+
+   * packages/apps/Settings/
+7003a4d Settings: update community metrics
+2709976 settings: dock battery
+e6e6b62 Fingerprint: Fingerprint enrollment
+ef0c34f Fingerprint: Add summary text to 'manage fingerprints'
+
+   * packages/apps/Trebuchet/
+270da93 Transition Effects: stack transition effect
+1ac777c FocusHelper: handle NPE with when getting workspace child
+
+   * packages/services/Telecomm/
+d5e706b msim: Fix saving default sim from select SIM dialog (2/2)
+
+   * system/core/
+fe93cfb healthd: dock battery
+
+   * vendor/motorola/
+3301b94 msm8226-common: Update proprietary files
+
+====================
+     07-08-2015
+====================
+
+
+   * device/qcom/sepolicy/
+fa2e85d Seandroid: Add policy for dts configurator and notifier nodes
+
+   * external/stagefright-plugins/
+68d9c45 stagefright-plugins: Remove Vorbis/MP3/H263/H264/HEVC
+ce6fc45 stagefright-plugins: Fix adaptive buffer and crop handling
+
+   * frameworks/base/
+3643d91 Add fingerprint to DB before calling clients
+121fb1e [1/2] Camera button support
+1b34a5a Fix keyguard wallpaper issues
+afd5ad9 Keyguard Fingerprint: Don't cancel if device doesn't have the feature
+bae5505 SystemUI: Add uses-permission for fingerprint
+ba9c981 Fingerprint: Secure the dump
+213331f Remove memory leak in PersistentDataBlockService jni
+5303b54 DO NOT MERGE Fix JNI global references leak in AudioEffect
+af6d9b9 Avoid AsyncTask ThreadPool leak in RecentTaskLoaser
+eff323b backup: Fix a system server crash
+
+   * hardware/libhardware/
+1d03c03 Fingerprint: Add getNumEnrollmentSteps [2/2]
+
+   * hardware/qcom/audio-caf/msm8994/
+b5ab239 hal: pass samplerate as is to tiny compress
+
+   * packages/apps/CMFileManager/
+b4d6b6e Easy Mode: Fix exit on easy mode screen
+
+   * packages/apps/Calculator/
+142a29b Floating Calculator: Fix Hidden row of buttons
+
+   * packages/apps/Gallery2/
+9abe709 Photo Gallery widget: fix NPE in getViewAt
+
+   * packages/apps/Settings/
+b733f0a [2/2] Camera button support
+
+   * packages/apps/Trebuchet/
+aa2cb4a Trebuchet: display search widget search box if available
+
+   * vendor/XPe/
+b1f4115 Prevent Maven target from grabbing transitive dependencies
+
+   * vendor/motorola/
+4ade7ad titan: Update proprietary files
+5f8543b thea: Update proprietary files
+
+====================
+     07-07-2015
+====================
+
+
+   * build/
+fa3fd31 Merge remote-tracking branch 'upstream' into HEAD
+
+   * device/motorola/falcon/
+eaceaeb falcon: Update XT1032, XT1033 and XT1034 fingerprint
+cbca250 falcon: Use correct frontend for compress-voip-call
+
+   * device/motorola/msm8226-common/
+66df71c msm8226-common: Correctly start ril-daemon1
+
+   * frameworks/base/
+e5cddac Buttons: Launch camera activity instead of BroadcastReceiver
+8cba8af Even more duplicates
+fdca151 Merge remote-tracking branch 'upstream' into HEAD
+4b7b989 ni idea xD
+
+   * hardware/qcom/audio-caf/msm8974/
+f7bddec hal: Notify amplifier of device enable/disable
+
+   * kernel/motorola/msm8226/
+f9339a8 Revert "msm: camera: add check for csid_cid to prevent of overwrite memory"
+f57bdd4 Revert "msm: camera: isp: Validate reg_offset and len parameters"
+42de295 bump to v29
+febc360 drivers:lmk: Fix null pointer issue
+70f4b5b lmk: wrap the lmk code with config
+260280a drivers:lmk: Fix double delete issue
+7737a71 soc: qcom: bam_dmux: Sync SSR with disconnect/reconnect
+63d9f9a msm: camera: isp: Validate reg_offset and len parameters
+63a8157 Revert "mm/slub: Add debug code for tracing slub usage"
+eb3547b msm: camera: add check for csid_cid to prevent of overwrite memory
+2c1ec63 mm/slub: Add debug code for tracing slub usage
+878d49f config: only enable HW_BREAKPOINT on debug build
+958a726 mmc: sdhci: handle long transfers more intelligently
+4f9fb78 net: tcp: null pointer crash in __inet_put_port
+ce90e19 ASoC: msm: Reduce minimum buffering allocation for AFE Proxy
+969e222 exec: reserve full virtual stack space at execve()
+551acac ARM: hw_breakpoint: Add watchpoint to debug memory corruption issue.
+d970638 CHROMIUM: cpufreq: interactive: calculate load before freq change
+9ca5502 drivers/cpufreq/cpufreq_interactive.c/cpufreq_ondemand squashed commits from msm8930
+8cc7e66 cpufreq: interactive: Use parts of native boost routine
+f5c8d06 cpufreq: interactive: Optimize sync_freq implementation
+
+   * packages/apps/Calculator/
+c6121ca Cursor: Keep visible for long numbers
+
+   * packages/apps/Eleven/
+6a24ebb Merge remote-tracking branch 'upstream' into xpe-9.1
+ac4470d sdkjskdjslkdjs
+
+   * packages/apps/Settings/
+5d372e0 Merge remote-tracking branch 'upstream' into HEAD
+
+   * vendor/XPe/
+0ad1d3e Merge remote-tracking branch 'upstream' into HEAD
+
+====================
+     07-06-2015
+====================
+
+
+   * android/
+a5c16f7 5.1.1_r3 --> 5.1.1_r6
+
+   * external/stagefright-plugins/
+a82d5bd stagefright-plugins: Add special handling of DivX files
+529ea8c stagefright-plugins: Improve seeking further
+
+   * frameworks/av/
+7533421 audio: Reduce logging verbosity
+b2eb385 Acodec: Add interlaced video support
+1a4c727 audio: fallback to SW decoder for video clips
+
+   * frameworks/base/
+1d4e84e Rewrite Keyguard Visualizer
+0686de9 Add fingerprint permission [1/2]
+bd62a43 Add a few more default QS tiles
+4b1337e livedisplay: Fix outdoor mode detection
+b1d1b1a Barrier only messages shouldn't prevent the idle handlers from running
+a263cc2 Add Process IOWAIT info to ANR dump
+80f14ac Avoid ANR loop because of queued-up ANR runnables
+4587c32 Use isolated thread to perform onStart()
+ae57863 SystemUI: dismiss brightness slider on screen off
+f3fbf88 Fingerprint: Reset state when client cancels
+9b3d0c9 Keyguard: Increase time to show hint texts
+699de3b Keyguard: Add fingerprint icon to the bottom view
+
+   * hardware/qcom/media-caf/msm8916/
+26f4ba7 mm-video-v4l2: Remove useless build warning
+
+   * packages/apps/CMFileManager/
+c6207b6 Android.mk don't build source components in tests/
+
+   * packages/apps/Mms/
+c67b355 Contact vCard: Dont crash if contact that is sent no longer exits.
+
+   * packages/apps/Settings/
+5e3695e Add fingerprint permission [2/2]
+0cbb3cf Settings: Add config for not allowing calls/sms being set to > slot 1
+198a64f Make preferred install location option configurable.
+
+   * packages/apps/Trebuchet/
+db86a7f Badge: Check count on bind
+
+   * packages/providers/TelephonyProvider/
+aa98e82 MmsProvider : Add ability to get thread information in search
+
+   * packages/services/Telephony/
+fe084f7 Telephony : Add support for config_hardcodeDefaultMobileNetworks
+
+   * system/core/
+a213c36 Charger: Add font to show real battery capacity in charger mode.
+
+   * vendor/XPe/
+5e0f142 bump to R6
+
