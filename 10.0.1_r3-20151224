@@ -3,16 +3,56 @@
 ====================
 
 
-   * build/
-50ac01e Add support to make changelog [1/2]
-
    * frameworks/base/
+417f232 Add color to network traffic arrows
+4c14930 slimseekbarpreference: set monitorbox text as string
+d78767e SlimSeekBarPreference: clean up a wee bit
+44e62b9 FWB: Network Traffic [1/2]
+b80727b FWB:Status bar carrier label font size 2/2
+d40583a xperience Utils
+a411922 Show carrier label / custom & change color [1/2] [Squashed]
+bd12bd4 GlobalScreenshot: increase thread priority
 640fef0 Fix API
 fc3ded0 Frameworks: port SlimSeekBarPreference to xperience
 a0f92e3 headset fixes
 6d32059 Revert "base: charger sounds also for wired"
 3c54708 add Settings.System boolean helper methods
 e37a92f fix build of toast and doze changes
+
+   * packages/apps/Settings/
+695a0ec fix the build :'c
+368dfdf Settings: Network traffic indicator [SQUASHED]
+257edc6 Settings: Status bar carrier label font size 1/2
+b6735ea fix margaritov colorpicker
+9143d8d Add marginov color picker
+25210ac  Show carrier label / custom & change color [2/2] [Squashed]
+00b6d72 Screen and Animations: Update & clean up
+59fa6fd AOKP Animations: Use SlimSeekBarPreference
+ff7bb96 :v
+
+   * vendor/XPe/
+bf9c65a enabled changelog
+122eada Merge https://github.com/XPerience-AOSP-Lollipop/android_vendor_XPerience into HEAD
+74168d1 Fix changelog
+047195f Update CHANGELOG.mkdn
+5bf742c more info
+
+====================
+     12-23-2015
+====================
+
+
+   * build/
+50ac01e Add support to make changelog [1/2]
+
+   * device/asus/grouper/
+fdf2c3b SYS:Disable smartdimmer To save battery while playing video Tegra intelligently decreases the backlight while increasing color brightness and contrast. Because it monitors on a frame by frame basis the changes are often unnoticable. You basically end up with the same displayed image using less backlight. more info HERE: http://forum.xda-developers.com/showthread.php?t=1815414
+794571c Reacomodo
+
+   * external/stagefright-plugins/
+6c89800 stagefright-plugins: remove global dictionaries
+
+   * frameworks/base/
 ee32702 Add option to disable scrolling cache [1/2]
 3b1ef31 Return: Listanimation Views and Interpolator [1/2]
 07b921f FW_Base - XuiMod: Toast Animations [1/2]
@@ -27,52 +67,6 @@ bfd01e3 AOKP custom system animations (1/2)
 f8eff52 [2/2] Frameworks: Slim doze options
 7f4492d Services: DO NOT send Broadcast On boot
 848c55b base: header image tweaks
-
-   * packages/apps/Settings/
-00b6d72 Screen and Animations: Update & clean up
-59fa6fd AOKP Animations: Use SlimSeekBarPreference
-ff7bb96 :v
-41373ad Add option to disable scrolling cache [2/2]
-531883b Return: Listanimation Views and Interpolator [2/2]
-cf1f23d XuiMod: Toast Animations [2/2]
-8131950 Match AOKP changes for system animations
-25c5bd9 AOKP system animations: add Animation controls exit only and Animations controls reverse exit [2/2]
-dae1ed2 AOKP system animations: remove no app override
-5e79b83 AOKP animations: Add and entry for TRANSIT_TASK_OPEN_BEHIND [2/2]
-9aadac7 AOKP custom system animations (2/2)
-424dbd3 [1/2] Settings: Slim doze options
-
-   * vendor/XPe/
-122eada Merge https://github.com/XPerience-AOSP-Lollipop/android_vendor_XPerience into HEAD
-74168d1 Fix changelog
-047195f Update CHANGELOG.mkdn
-5bf742c more info
-
-====================
-     12-23-2015
-====================
-
-
-   * device/asus/grouper/
-fdf2c3b SYS:Disable smartdimmer To save battery while playing video Tegra intelligently decreases the backlight while increasing color brightness and contrast. Because it monitors on a frame by frame basis the changes are often unnoticable. You basically end up with the same displayed image using less backlight. more info HERE: http://forum.xda-developers.com/showthread.php?t=1815414
-794571c Reacomodo
-b4b4d9c add some missing partitions
-9383f0d Support for grouper/tilapia
-ce0c918 BoardConfig: Remove deprecated EGL
-d910aa2 Allow support to vendor new structure
-
-   * device/generic/goldfish/
-2083610 goldfish: Add gateway using 'ip route'
-
-   * external/libchrome/
-0124f20 Remove base/third_party/valgrind headers
-fc2f650 Remove base/third_party/symbolize library
-f4e13cd Remove superfasthash
-
-   * external/stagefright-plugins/
-6c89800 stagefright-plugins: remove global dictionaries
-
-   * frameworks/base/
 6157c16 Add Headset status bar icon
 714dd7e core: XPerience is upgrading PS1: We should add to xpe_string do not modify aosp strings file.
 0542290 base: Add permissions to Browser package
@@ -90,17 +84,20 @@ e6a648c NavigationBar : Switch to display orientation from config orientation
 140d589 PowerManagerService: Log when proximity blocks wake
 b838343 Add custom camera shutter
 
-   * hardware/qcom/display-caf/msm8996/
-420cc3a msm8996: remove unused qcom features
-
-   * hardware/ril/
-a9c266d reference-ril: Return success for RIL_REQUEST_ALLOW_DATA
-
    * kernel/asus/grouper/
 a21a12e xpe
 1f90c0e staging: iio: use monotonic time since boot for event timestamps
 
    * packages/apps/Settings/
+41373ad Add option to disable scrolling cache [2/2]
+531883b Return: Listanimation Views and Interpolator [2/2]
+cf1f23d XuiMod: Toast Animations [2/2]
+8131950 Match AOKP changes for system animations
+25c5bd9 AOKP system animations: add Animation controls exit only and Animations controls reverse exit [2/2]
+dae1ed2 AOKP system animations: remove no app override
+5e79b83 AOKP animations: Add and entry for TRANSIT_TASK_OPEN_BEHIND [2/2]
+9aadac7 AOKP custom system animations (2/2)
+424dbd3 [1/2] Settings: Slim doze options
 65202c7 add category
 ce53787 Fix this shit
 cb32454 [2/2] header image packs
@@ -117,10 +114,6 @@ c6c6c85 Always show band 0 (Automatic)
 c30f77d Trebuchet: Adjust device profiles and add one for bacon
 cc3bc30 Trebuchet: Add migration for new messaging app
 
-   * packages/providers/ThemesProvider/
-8f6d976 Use CmLockPatternUtils instead of LockPatternUtils
-59167a4 Re-apply live lock screen on update
-
    * system/core/
 574d774 Revert "Lose ls to toybox."
 
@@ -133,15 +126,6 @@ afa4fef ExtView: Add samples for using KeyguardExternalViews
 8cc5a55 ExtViews: Add callbacks for ExtView->Host communication
 f2741cb ExtView: Add keyguard specific interface for KeyguardExternalView
 d1f0a6e CMSettings: fixup ENABLE_PEOPLE_LOOKUP res
-6ff47d4 CMSettings : Add default overlay for people lookup
-7bdcaa5 cmsdk: Fixup stub generation.
-2ba238b ProfileManagerService: fix broadcasting crash
-
-   * vendor/motorola/
-6b7987c msm8960dt: Remove qdump crash reporting service
-aee706b obake: Update proprietary libraries
-e121f3e ghost: Update proprietary libraries
-68f3b1c msm8960dt-common: Update proprietary libraries
 
 ====================
      12-22-2015
@@ -150,6 +134,84 @@ e121f3e ghost: Update proprietary libraries
 
    * bionic/
 51ad57b libc: ARM64: kryo: use generic memmove routine
+
+   * device/asus/grouper/
+b4b4d9c add some missing partitions
+9383f0d Support for grouper/tilapia
+ce0c918 BoardConfig: Remove deprecated EGL
+d910aa2 Allow support to vendor new structure
+
+   * device/generic/goldfish/
+2083610 goldfish: Add gateway using 'ip route'
+
+   * external/ffmpeg/
+bc1e061 Merge branch 'release/2.8' of https://github.com/FFmpeg/FFmpeg into cm-13.0
+
+   * external/libchrome/
+0124f20 Remove base/third_party/valgrind headers
+fc2f650 Remove base/third_party/symbolize library
+f4e13cd Remove superfasthash
+dc9ba3f dbus: Don't abort when the dbus connection drops.
+
+   * frameworks/av/
+8a0d505 Fix: "NuPlayerDecoder: add synchronous call pause() to ensure decoder will not request or send out data."
+
+   * hardware/qcom/display-caf/msm8996/
+420cc3a msm8996: remove unused qcom features
+
+   * hardware/ril/
+a9c266d reference-ril: Return success for RIL_REQUEST_ALLOW_DATA
+
+   * kernel/motorola/msm8226/
+8c617ee Revert "Rename heap_mask when used in userspace"
+50e54a1 7a + 1a
+652ca13 Revert "msm: mdss: add bandwidth check function"
+d5ffedf Revert "msm: mdp3: implement overlay prepare ioctl for mdp3 driver"
+56894ba Rename heap_mask when used in userspace
+005cc37 hwrng: hwrandom: cleanup in hwrng_register() add randomness to system from rng sources fetch randomness only after device init free rng_buffer at module exit
+bb38160 msm: mdp3: implement overlay prepare ioctl for mdp3 driver
+38af734 msm: mdss: add bandwidth check function
+80ecf08 Fix : Suspend: enable freeze timeout configuration through sys
+98f30cb Suspend: enable freeze timeout configuration through sys At present, the value of timeout for freezing is 20s, which is meaningless in case that one thread is frozen with mutex locked and another thread is trying to lock the mutex, as this time of freezing will fail unavoidably. And if there is no new wakeup event registered, the system will waste at most 20s for such meaningless trying of freezing.
+
+   * packages/apps/SetupWizard/
+7ab7f3c SetupWizard: Conditionally run account setup
+
+   * packages/apps/Trebuchet/
+0cabbc2 Trebuchet: Auto collapse settings panel
+
+   * packages/providers/ThemesProvider/
+8f6d976 Use CmLockPatternUtils instead of LockPatternUtils
+59167a4 Re-apply live lock screen on update
+
+   * packages/services/Telephony/
+4ee48b4 TelephonyService: Use user preferred nw for selections.
+
+   * system/bt/
+0307719 btsnoop: Enable snoop logging by default only on eng builds
+
+   * vendor/asus/
+db6bf50 tilapia: Add libxgold-ril
+
+   * vendor/cmsdk/
+6ff47d4 CMSettings : Add default overlay for people lookup
+7bdcaa5 cmsdk: Fixup stub generation.
+2ba238b ProfileManagerService: fix broadcasting crash
+0ab4ff9 ExtView: Move all samples to externalviews directory
+
+   * vendor/motorola/
+6b7987c msm8960dt: Remove qdump crash reporting service
+aee706b obake: Update proprietary libraries
+e121f3e ghost: Update proprietary libraries
+68f3b1c msm8960dt-common: Update proprietary libraries
+
+   * vendor/nvidia/
+4892cf5 Wi-Fi/BT: Update nvram parameters blob
+
+====================
+     12-21-2015
+====================
+
 
    * build/
 c1a6037 repopick: Allow commits to be excluded from a topic importation
@@ -179,21 +241,15 @@ a121935 msm8x26:add device out for FM.
    * external/bash/
 52936c4 bash: prefer toybox's ls
 
-   * external/ffmpeg/
-bc1e061 Merge branch 'release/2.8' of https://github.com/FFmpeg/FFmpeg into cm-13.0
-
-   * external/libchrome/
-dc9ba3f dbus: Don't abort when the dbus connection drops.
-
    * external/stagefright-plugins/
 21ef449 stagefright-plugins: Seek to beginning of file on seek error
 c34df96 stagefright-plugins: Fix AAC profile selection
 
    * frameworks/av/
-8a0d505 Fix: "NuPlayerDecoder: add synchronous call pause() to ensure decoder will not request or send out data."
 29c3ef4 stagefright: Fix audio profile retrieved
 c68bccc stagefright: Correctly reassemble HVCC data
 ab35ee6 stagefright: Deal with output format of other AAC decoders
+d3c005d stagefright: Fix AAC profile selection
 
    * frameworks/base/
 a60745f SettingsProvider: add mechanism to return migrated keys
@@ -213,21 +269,12 @@ e0dcb82 SystemUI: fix incorrect tile shifting behavior
 
    * frameworks/native/
 b17c928 sensor: Skip additional permission request checks
+cbd3e07 gui: only support tertiary display if QTI_BSP is defined
 
    * hardware/qcom/audio-caf/msm8960/
 93979cc libalsa-intf: Don't log as error on successful EC change
 
    * kernel/motorola/msm8226/
-8c617ee Revert "Rename heap_mask when used in userspace"
-50e54a1 7a + 1a
-652ca13 Revert "msm: mdss: add bandwidth check function"
-d5ffedf Revert "msm: mdp3: implement overlay prepare ioctl for mdp3 driver"
-56894ba Rename heap_mask when used in userspace
-005cc37 hwrng: hwrandom: cleanup in hwrng_register() add randomness to system from rng sources fetch randomness only after device init free rng_buffer at module exit
-bb38160 msm: mdp3: implement overlay prepare ioctl for mdp3 driver
-38af734 msm: mdss: add bandwidth check function
-80ecf08 Fix : Suspend: enable freeze timeout configuration through sys
-98f30cb Suspend: enable freeze timeout configuration through sys At present, the value of timeout for freezing is 20s, which is meaningless in case that one thread is frozen with mutex locked and another thread is trying to lock the mutex, as this time of freezing will fail unavoidably. And if there is no new wakeup event registered, the system will waste at most 20s for such meaningless trying of freezing.
 6ce3d52 Wait 1 second to turn off a cpu
 afe9003 Add frandom support
 ed5b627 Change wlan to powersuspend instead os earlysuspend
@@ -305,36 +352,17 @@ eac269c setings: Fix livedisplay settings
 311337f Settings: adapt lock screen visualizer toggle
 65306c4 Settings: Fix the SoundSettings activity and intents
 
-   * packages/apps/SetupWizard/
-7ab7f3c SetupWizard: Conditionally run account setup
-
-   * packages/apps/Trebuchet/
-0cabbc2 Trebuchet: Auto collapse settings panel
-
-   * packages/services/Telephony/
-4ee48b4 TelephonyService: Use user preferred nw for selections.
-
-   * system/bt/
-0307719 btsnoop: Enable snoop logging by default only on eng builds
-
    * vendor/XPe/
 63939de sepolicy: Set the context for fsck.exfat/ntfs to fsck_exec
 
-   * vendor/asus/
-db6bf50 tilapia: Add libxgold-ril
-
    * vendor/cmsdk/
-0ab4ff9 ExtView: Move all samples to externalviews directory
 8a79ddb cmsdk: Clean up some provider tests.
 20bfdd7 cmsdk: add keys which to intercept from SettingsProvider
 cb4a990 Profiles: add isEnabled(); send state changes
 c81519d cmsdk: remove visualizer from default qs tile list
 
-   * vendor/nvidia/
-4892cf5 Wi-Fi/BT: Update nvram parameters blob
-
 ====================
-     12-21-2015
+     12-20-2015
 ====================
 
 
@@ -345,37 +373,10 @@ c81519d cmsdk: remove visualizer from default qs tile list
 38f8c809 nutdec: only copy the header if it exists
 945ae04 exr: fix out of bounds read in get_code
 6d7b4db on2avc: limit number of bits to 30 in get_egolomb
-
-   * frameworks/av/
-d3c005d stagefright: Fix AAC profile selection
-
-   * frameworks/native/
-cbd3e07 gui: only support tertiary display if QTI_BSP is defined
-
-====================
-     12-20-2015
-====================
-
-
-   * external/ffmpeg/
 644179e Update Changelog
 9be3441 rawdec: only exempt BIT0 with need_copy from buffer sanity check
 63ecbb8 mlvdec: check that index_entries exist
 bdc6ba4 avcodec/mpeg4videodec: also for empty partitioned slices
-3a3be02 avcodec/h264_refs: Fix long_idx check
-
-   * hardware/intel/common/libmix/
-0c6abb4 intel: videoencoder: Add support for LP blobs
-05ece44 intel: videodecoder: Allow INTEL_VIDEO_XPROC_SHARING to be defined
-
-   * hardware/intel/img/hwcomposer/
-2855d50 hwc: merrifield_plus: Add legacy LP blob support
-662d8be hwc: Use the proper define for the primary display
-9303837 hwc: Enabling ION
-a8d4a6a Update HWC interface
 
    * hardware/qcom/display-caf/msm8994/
 7a75b3e gralloc: add cflag to use nv21 format for camera preview
-
-   * packages/apps/Gallery2/
-65196ed Revert "Gallery2: Properly declare the own permissions"
