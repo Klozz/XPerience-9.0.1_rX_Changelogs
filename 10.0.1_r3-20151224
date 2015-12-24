@@ -1,0 +1,381 @@
+====================
+     12-24-2015
+====================
+
+
+   * build/
+50ac01e Add support to make changelog [1/2]
+
+   * frameworks/base/
+640fef0 Fix API
+fc3ded0 Frameworks: port SlimSeekBarPreference to xperience
+a0f92e3 headset fixes
+6d32059 Revert "base: charger sounds also for wired"
+3c54708 add Settings.System boolean helper methods
+e37a92f fix build of toast and doze changes
+ee32702 Add option to disable scrolling cache [1/2]
+3b1ef31 Return: Listanimation Views and Interpolator [1/2]
+07b921f FW_Base - XuiMod: Toast Animations [1/2]
+7bae709 fix this frameworks/base/core/res/res/values/xpe_symbols.xml:28: error: Symbol 'android_start_xpe_title' declared with <java-symbol> not defined
+6d0d864 Match AOKP changes for system animations
+52f6106 AOKP system animations: add Animation controls exit only and Animations controls reverse exit [1/2]
+ded4f43 AOKP system animations: remove no app override
+139a3ce AOKP animations: Add an entry for TRANSIT_TASK_OPEN_BEHIND [1/2]
+bfd01e3 AOKP custom system animations (1/2)
+7cc9a47 New contextual header images
+4d323d7 Fix battery bar glitch on NavBar
+f8eff52 [2/2] Frameworks: Slim doze options
+7f4492d Services: DO NOT send Broadcast On boot
+848c55b base: header image tweaks
+
+   * packages/apps/Settings/
+00b6d72 Screen and Animations: Update & clean up
+59fa6fd AOKP Animations: Use SlimSeekBarPreference
+ff7bb96 :v
+41373ad Add option to disable scrolling cache [2/2]
+531883b Return: Listanimation Views and Interpolator [2/2]
+cf1f23d XuiMod: Toast Animations [2/2]
+8131950 Match AOKP changes for system animations
+25c5bd9 AOKP system animations: add Animation controls exit only and Animations controls reverse exit [2/2]
+dae1ed2 AOKP system animations: remove no app override
+5e79b83 AOKP animations: Add and entry for TRANSIT_TASK_OPEN_BEHIND [2/2]
+9aadac7 AOKP custom system animations (2/2)
+424dbd3 [1/2] Settings: Slim doze options
+
+   * vendor/XPe/
+122eada Merge https://github.com/XPerience-AOSP-Lollipop/android_vendor_XPerience into HEAD
+74168d1 Fix changelog
+047195f Update CHANGELOG.mkdn
+5bf742c more info
+
+====================
+     12-23-2015
+====================
+
+
+   * device/asus/grouper/
+fdf2c3b SYS:Disable smartdimmer To save battery while playing video Tegra intelligently decreases the backlight while increasing color brightness and contrast. Because it monitors on a frame by frame basis the changes are often unnoticable. You basically end up with the same displayed image using less backlight. more info HERE: http://forum.xda-developers.com/showthread.php?t=1815414
+794571c Reacomodo
+b4b4d9c add some missing partitions
+9383f0d Support for grouper/tilapia
+ce0c918 BoardConfig: Remove deprecated EGL
+d910aa2 Allow support to vendor new structure
+
+   * device/generic/goldfish/
+2083610 goldfish: Add gateway using 'ip route'
+
+   * external/libchrome/
+0124f20 Remove base/third_party/valgrind headers
+fc2f650 Remove base/third_party/symbolize library
+f4e13cd Remove superfasthash
+
+   * external/stagefright-plugins/
+6c89800 stagefright-plugins: remove global dictionaries
+
+   * frameworks/base/
+6157c16 Add Headset status bar icon
+714dd7e core: XPerience is upgrading PS1: We should add to xpe_string do not modify aosp strings file.
+0542290 base: Add permissions to Browser package
+fbc47d5 askalskalsk!
+80a67eb base: charger sounds also for wired
+b3ca2ca base: add more constants to metrics enum
+9ca656a [1/2] base: header image packs
+25c8026 SystemUI: time-context header fixes
+27ff2ca [1/2] SystemUI: Add time-context headers to the notification header
+77eda7b PackageManagerService: Grant signature permission to setup and search
+094be79 Added a toast to screenshot delete, why not right?
+86aaf98 Add config_autoBrightnessAmbientLightHorizon overlay
+c35730a hwui: Allow devices to opt-out of asynchronouse setSurface initialization
+e6a648c NavigationBar : Switch to display orientation from config orientation
+140d589 PowerManagerService: Log when proximity blocks wake
+b838343 Add custom camera shutter
+
+   * hardware/qcom/display-caf/msm8996/
+420cc3a msm8996: remove unused qcom features
+
+   * hardware/ril/
+a9c266d reference-ril: Return success for RIL_REQUEST_ALLOW_DATA
+
+   * kernel/asus/grouper/
+a21a12e xpe
+1f90c0e staging: iio: use monotonic time since boot for event timestamps
+
+   * packages/apps/Settings/
+65202c7 add category
+ce53787 Fix this shit
+cb32454 [2/2] header image packs
+f8f41f3 Introduce SystemSettingsCheckBoxPreference
+7ceede8 bluetooth: Show a refresh icon on the select devices screen
+5c45454 Settings: Conditionally remove Buttons tile from Dashboard
+df86360 Light settings: reduce tone if preview image color is very light
+2d6c324 Settings: Show Baseband version on MSIM devices
+c6c6c85 Always show band 0 (Automatic)
+78ff5e7 Add missing blacklist xxhdpi drawables.
+
+   * packages/apps/Trebuchet/
+336600c Trebuchet: Don't resize BubbleTextView based on all apps pref
+c30f77d Trebuchet: Adjust device profiles and add one for bacon
+cc3bc30 Trebuchet: Add migration for new messaging app
+
+   * packages/providers/ThemesProvider/
+8f6d976 Use CmLockPatternUtils instead of LockPatternUtils
+59167a4 Re-apply live lock screen on update
+
+   * system/core/
+574d774 Revert "Lose ls to toybox."
+
+   * vendor/XPe/
+f5e9ff2 updated changelof of 10.0.1_r3
+dac6635 xpe: Add Screencast
+
+   * vendor/cmsdk/
+afa4fef ExtView: Add samples for using KeyguardExternalViews
+8cc5a55 ExtViews: Add callbacks for ExtView->Host communication
+f2741cb ExtView: Add keyguard specific interface for KeyguardExternalView
+d1f0a6e CMSettings: fixup ENABLE_PEOPLE_LOOKUP res
+6ff47d4 CMSettings : Add default overlay for people lookup
+7bdcaa5 cmsdk: Fixup stub generation.
+2ba238b ProfileManagerService: fix broadcasting crash
+
+   * vendor/motorola/
+6b7987c msm8960dt: Remove qdump crash reporting service
+aee706b obake: Update proprietary libraries
+e121f3e ghost: Update proprietary libraries
+68f3b1c msm8960dt-common: Update proprietary libraries
+
+====================
+     12-22-2015
+====================
+
+
+   * bionic/
+51ad57b libc: ARM64: kryo: use generic memmove routine
+
+   * build/
+c1a6037 repopick: Allow commits to be excluded from a topic importation
+
+   * device/motorola/msm8226-common/
+fa58be0 msm8226-common: sepolicy: Don't change type of generic input devices
+2623ea8 msm8226-common: sepolicy: Add policies for OSS sensord
+f3b16d5 msm8226-common: sensors: bst: Fix build warnings
+2843aa6 msm8226-common: sensors: bst: Report correct value for motion events
+85ee1a2 msm8226-common: sensors: bst: Move lightsensor up
+a813c7a msm8226-common: sensors: bst: Set proper sensors flags
+6da328c msm8226-common: sensors: bst: Enable 200Hz mode
+e4d3c93 msm8226-common: sensors: bst: Properly NULL terminate strings
+32f0cbb msm8226-common: sensors: bst: Set correct dtap & sig flags
+28885de msm8226-common: sensors: bst: Use correct remap values from gyroscope axis table
+8e06ae4 msm8226-common: sensors: bst: Do not include buildversion.mk
+c976047 msm8226-common: sensors: bst: Use correct report type for STK3310
+34bb89a msm8226-common: sensors: bst: Fix build under OS X
+8682b18 msm8226-common: sensors: bst: Set correct STK3310 sysfs enable path
+7550894 msm8226-common: sensors: bst: Use our own config
+80ef852 msm8226-common: sensors: bst: Import crackling's sensor HAL
+9c40652 Revert "msm8226-common: Allow init to write to userdata/cache"
+017af1a init.qcom.rc: msm8226: Enable qseecom daemon at core level. Enable the qseecomd daemon at core level.
+a121935 msm8x26:add device out for FM.
+9b8036e add custom flags
+
+   * external/bash/
+52936c4 bash: prefer toybox's ls
+
+   * external/ffmpeg/
+bc1e061 Merge branch 'release/2.8' of https://github.com/FFmpeg/FFmpeg into cm-13.0
+
+   * external/libchrome/
+dc9ba3f dbus: Don't abort when the dbus connection drops.
+
+   * external/stagefright-plugins/
+21ef449 stagefright-plugins: Seek to beginning of file on seek error
+c34df96 stagefright-plugins: Fix AAC profile selection
+
+   * frameworks/av/
+8a0d505 Fix: "NuPlayerDecoder: add synchronous call pause() to ensure decoder will not request or send out data."
+29c3ef4 stagefright: Fix audio profile retrieved
+c68bccc stagefright: Correctly reassemble HVCC data
+ab35ee6 stagefright: Deal with output format of other AAC decoders
+
+   * frameworks/base/
+a60745f SettingsProvider: add mechanism to return migrated keys
+3874c2f SystemUI: Don't collapse quick settings when removing custom tile
+a264233 Keyguard: Support for external keyguard views
+e773827 TwilightService: always fall back to timezone-based location
+a054bc2 Fix filedescriptor leakage in MediaMetadataRetriever
+cad74c5 SystemUI: More stings cleanup on QS tiles
+91ca566 core: String improvements from cm-12.1
+6f0e0ca pm: Update PackageManagerServiceTests
+586233d Lockscreen: Introduce window type TYPE_KEYGUARD_PANEL
+7f78185 base: Complete sms prompt interfaces.
+4abf295 SystemUI : Add DemoModeActivity hook for settings
+4c808b4 Option to use volume keys to control media volume anytime (2/2)
+b427612 Port over linked volumes from 12.1
+e0dcb82 SystemUI: fix incorrect tile shifting behavior
+
+   * frameworks/native/
+b17c928 sensor: Skip additional permission request checks
+
+   * hardware/qcom/audio-caf/msm8960/
+93979cc libalsa-intf: Don't log as error on successful EC change
+
+   * kernel/motorola/msm8226/
+8c617ee Revert "Rename heap_mask when used in userspace"
+50e54a1 7a + 1a
+652ca13 Revert "msm: mdss: add bandwidth check function"
+d5ffedf Revert "msm: mdp3: implement overlay prepare ioctl for mdp3 driver"
+56894ba Rename heap_mask when used in userspace
+005cc37 hwrng: hwrandom: cleanup in hwrng_register() add randomness to system from rng sources fetch randomness only after device init free rng_buffer at module exit
+bb38160 msm: mdp3: implement overlay prepare ioctl for mdp3 driver
+38af734 msm: mdss: add bandwidth check function
+80ecf08 Fix : Suspend: enable freeze timeout configuration through sys
+98f30cb Suspend: enable freeze timeout configuration through sys At present, the value of timeout for freezing is 20s, which is meaningless in case that one thread is frozen with mutex locked and another thread is trying to lock the mutex, as this time of freezing will fail unavoidably. And if there is no new wakeup event registered, the system will waste at most 20s for such meaningless trying of freezing.
+6ce3d52 Wait 1 second to turn off a cpu
+afe9003 Add frandom support
+ed5b627 Change wlan to powersuspend instead os earlysuspend
+b7f85b6 Hid:some fixes on wiimote
+9a86f90 defconfig: msm8226: Enable wiimote
+db9cd98 Revert "HID: wiimote: add LEGO-wiimote VID"
+92ddffb HID: wiimote: add pro-controller analog stick calibration
+adc679f HID: wiimote: fix inverted pro-controller axes
+d823b25 HID: wiimote: add LEGO-wiimote VID
+2405363 HID: wiimote: fix FF deadlock
+0f1c068 Revert "Input: introduce BTN/ABS bits for drums and guitars"
+44a93ac HID: hid-wiimote: print small buffers via %*phC
+5221e4c HID: wiimote: add support for Guitar-Hero guitars
+0ebb846 HID: wiimote: add support for Guitar-Hero drums
+610ce4a HID: wiimote: work around broken DRM_KAI on GEN10
+02280d2 HID: wiimote: support Nintendo Wii U Pro Controller
+13c7883 HID: wiimote: fix coccinelle warnings
+e597241 HID: wiimote: discard invalid EXT data reports
+468b40b HID: wiimote: fix classic controller parsing
+a76caaa HID: wiimote: init EXT/MP during device detection
+014e4c5 HID: wiimote: add MP quirks
+0109bde HID: wiimote: fix DRM debug-attr to correctly parse input
+e714d3e HID: wiimote: remove old static extension support
+a77109c HID: wiimote: add "bboard_calib" attribute
+57a8114 HID: wiimote: add sysfs extension/device-type attrs
+b25818f HID: wiimote: lock DRM mode during debugfs overwrite
+128d459 HID: wiimote: fix ctx pointer in debugfs DRM-write
+f1df334 HID: wiimote: add Motion Plus extension module
+bccc36e HID: wiimote: add Classic Controller extension
+31c085b HID: wiimote: add Nunchuk support
+26d6509 HID: wiimote: add Balance Board support
+615708b HID: wiimote: add extension hotplug support
+8b6cb82 HID: wiimote: convert IR to module
+b49b569 HID: wiimote: convert ACCEL to module
+a0382fd HID: wiimote: convert LEDS to modules
+f2d5a1f HID: wiimote: convert BATTERY to module
+4d21d04 HID: wiimote: convert KEYS and RUMBLE to modules
+44e9a71 HID: wiimote: add sub-device module infrastructure
+02f4877 HID: wiimote: wake up if output queue failed
+676c8da HID: wiimote: use cached battery values on I/O failure
+847fb0f HID: wiimote: add device detection
+e97bca2 HID: wiimote: keep HID device open
+e0e9c64 HID: wiimote: extend driver description
+70ca69d HID: wiimote: parse reduced status reports
+a59bf81 HID: wiimote: add 2nd generation Wii Remote IDs
+3598616 HID: wiimote: use unique battery names
+462d6fe HID: Fix uninitialized variable "size" in hid-wiimote-debug
+dc0b357 HID: wiimote: fix weight conversion error for values > 17kg
+8fa343c HID: wiimote: Parse calibration data of balance boards
+ec0aa3a HID: wiimote: Add Nintendo Balance-Board support
+5dade1f HID: Allow drivers to be their own listener
+49dc40c HID: wiimote-ext: comment spelling fix
+4dc14f9 input: document gamepad API and add extra keycodes
+34675bf bluetooth: Validate socket address length in sco_sock_bind().
+24f42aa net: add validation for the socket syscall protocol argument
+a1a771f defconfig: titan: Enable significant motion sensor
+31fbce8 misc: bma2x2: Add config entries for extra sensor features
+
+   * packages/apps/Settings/
+f11a224 Settings: respect telephony config for profiles override
+03b2eeb Settings: display light pulse dialog settings conditionally
+4ae01eb Settings : Show wifi usage tab by default
+d958c70 Settings: Move NFC payment under NFC category
+e6c6682 Settings: update About screen device model fields
+7d868c2 Power Menu: remove power as an option
+a4a6894 Settings: Add some more entries into 'SMS message limit' menu
+9b7caa1 Settings: Cleanup ALL the strings
+3f36f04 settings: LiveDisplay color profiles
+264cb14 Settings: Utilize frameworks sms prompt interfaces as fallback.
+f3482a3 Settings : Launch demo mode on triple tap of build date
+a422d60 Settings : Cleanup control media volume toggle
+4629b2f Settings : Add warning for lcd density
+de10cde Settings : Add volume link notification
+eac269c setings: Fix livedisplay settings
+311337f Settings: adapt lock screen visualizer toggle
+65306c4 Settings: Fix the SoundSettings activity and intents
+
+   * packages/apps/SetupWizard/
+7ab7f3c SetupWizard: Conditionally run account setup
+
+   * packages/apps/Trebuchet/
+0cabbc2 Trebuchet: Auto collapse settings panel
+
+   * packages/services/Telephony/
+4ee48b4 TelephonyService: Use user preferred nw for selections.
+
+   * system/bt/
+0307719 btsnoop: Enable snoop logging by default only on eng builds
+
+   * vendor/XPe/
+63939de sepolicy: Set the context for fsck.exfat/ntfs to fsck_exec
+
+   * vendor/asus/
+db6bf50 tilapia: Add libxgold-ril
+
+   * vendor/cmsdk/
+0ab4ff9 ExtView: Move all samples to externalviews directory
+8a79ddb cmsdk: Clean up some provider tests.
+20bfdd7 cmsdk: add keys which to intercept from SettingsProvider
+cb4a990 Profiles: add isEnabled(); send state changes
+c81519d cmsdk: remove visualizer from default qs tile list
+
+   * vendor/nvidia/
+4892cf5 Wi-Fi/BT: Update nvram parameters blob
+
+====================
+     12-21-2015
+====================
+
+
+   * external/ffmpeg/
+79f407b nuv: sanitize negative fps rate
+174ec7d nutdec: reject negative value_len in read_sm_data
+778c8de xwddec: prevent overflow of lsize * avctx->height
+38f8c809 nutdec: only copy the header if it exists
+945ae04 exr: fix out of bounds read in get_code
+6d7b4db on2avc: limit number of bits to 30 in get_egolomb
+
+   * frameworks/av/
+d3c005d stagefright: Fix AAC profile selection
+
+   * frameworks/native/
+cbd3e07 gui: only support tertiary display if QTI_BSP is defined
+
+====================
+     12-20-2015
+====================
+
+
+   * external/ffmpeg/
+644179e Update Changelog
+9be3441 rawdec: only exempt BIT0 with need_copy from buffer sanity check
+63ecbb8 mlvdec: check that index_entries exist
+bdc6ba4 avcodec/mpeg4videodec: also for empty partitioned slices
+3a3be02 avcodec/h264_refs: Fix long_idx check
+
+   * hardware/intel/common/libmix/
+0c6abb4 intel: videoencoder: Add support for LP blobs
+05ece44 intel: videodecoder: Allow INTEL_VIDEO_XPROC_SHARING to be defined
+
+   * hardware/intel/img/hwcomposer/
+2855d50 hwc: merrifield_plus: Add legacy LP blob support
+662d8be hwc: Use the proper define for the primary display
+9303837 hwc: Enabling ION
+a8d4a6a Update HWC interface
+
+   * hardware/qcom/display-caf/msm8994/
+7a75b3e gralloc: add cflag to use nv21 format for camera preview
+
+   * packages/apps/Gallery2/
+65196ed Revert "Gallery2: Properly declare the own permissions"
