@@ -1,0 +1,336 @@
+====================
+     12-30-2015
+====================
+
+
+   * android/
+5ab2c4b track own Setupwizard based on CM one
+
+   * build/
+432da04 build: Add msm8952 as a QCOM board platform
+
+   * device/motorola/falcon/
+f73d8d0 falcon: Partially switch to L camera blobs
+41013e7 falcon: Switch to open source sensors HAL
+
+   * device/motorola/msm8226-common/
+67d869a msm8226-common: PowerHAL: Add powersave bias profile
+1542078 msm8226-common: Unlock the GPS
+2c87c75 msm8226-common: Update system.prop
+1659d75 :v we build on 5.2 GCC
+c61c93a msm8226-common: Build the kernel with gcc-4.9
+09e59bf msm8226-common: Remove camera wrapper and decommonize blobs
+8073ef8 msm8226-common: Enable auto power modes
+19575ea msm8226-common: Add falcon and peregrine sensors HAL
+
+   * external/libchrome/
+88ee374 Revert "Fix compiler warnings in libchrome"
+b636ff6 Fix compiler warnings in libchrome
+
+   * external/stagefright-plugins/
+644d57a stagefright-plugins: Fix crash during testDecodeWithEOSOnLastBuffer
+61710f5 stagefright-plugins: Wait for reader shutdown on EOS
+
+   * frameworks/av/
+8ca3dfd nuplayer: Enable PCM offload for any source
+
+   * frameworks/base/
+3e9fa1a Themes: Expose hard code color for divider sim pin
+06ce4a0 Themes: Expose Hard coded colors in Quick Settings Tiles
+b204152 Automatic translation import
+45d77cf core: Remove CAF Chinese translations
+4885e3d Keyguard: Implement KeyguardExternalViewCallbacks
+75316d6 Keyguard: Pass keyguard events to KeyguardExternalView
+
+   * kernel/motorola/msm8226/
+98824a3 v8
+1acc996 ASoC: tpa6165a2: Lower the headphones amplifier gain
+7c380be ARM: be strict about FP exceptions in kernel mode
+cc2ef91 ARM: pull in <asm/simd.h> from asm-generic
+68116d3 crypto: create generic version of ablk_helper
+c97c29d ARM: Make NEON support independent from procfs
+9885039 sysrq: Emergency Remount R/O in reverse order
+bac5aa0 msm8226: defconfig: Update configs based on Google recommendations
+5aede20 net: ipv4: tcp: Get tcpi_count via file_count() not direct access
+1e50da9 Set the iif for IPv6 packets as well.
+524cc80 net: ping: Return EAFNOSUPPORT when appropriate.
+e615e9a net: ipv6: allow choosing optimistic addresses with use_optimistic
+aa034a7 net: ipv6: Add a sysctl to make optimistic addresses useful candidates
+ed43ce9 ARM: msm: GCC Version change.
+c0cc7fc mm/compaction.c: fix warning of 'flags' may be used uninitialized
+c813ad3 Makefile: Try to always use GNU ld
+3f005e1 misc: lis3dh_mot: Report timestamp associated to event packet
+8c43d82 misc: lis3dh_mot: Add movement detection mode
+fcfa2de misc: lis3dh_mot: Enable IRQ and configure sensor separately
+a7bb3e8 misc: lis3dh_mot: Fix CTRL_REG4 configuration when enabling IRQ
+640a4d2 misc: lis3dh_mot: Refactor SET_MODE IOCTL
+09a6da0 misc: lis3dh_mot: Make sure ODR is always updated
+
+   * packages/apps/CellBroadcastReceiver/
+dd6bee9 Themes: Expose hardcoded styles and colors for themes
+
+   * packages/apps/Settings/
+b6fe7a9 fix apn
+bc62c0d Settings: Expose backgroundTint from Single Button Panel
+41dfb73 Settings: Expose Fingerprint Enrollment Checkmark Tint to an XML
+61986ac settings: Animation scale seekbars
+73255cd Profiles: Cleanup the code
+38de6c7 Settings: improve empty Profile trigger icons
+2892581 Settings: make empty profile views fit on hdpi
+8e5a1e9 Improve profile setting layouts.
+3e8318c profiles: Make the actions wizard buttons show up
+b95e73c Profiles: remove unused code
+6dd41ef Settings: always allow profile app groups to be linked/unlinked
+c89cf76 Settings : Save instance state for app group deletes
+5a8b18e Settings: fix empty Wifi triggers screen
+feb7d84 Settings: make empty profile trigger screens more useful
+bdab3d7 Settings: merge ProfilesList into ProfilesSettings
+aa8bb64 Profiles: Fix override item summary not displaying none
+3dd7e70 Hide usb mode chooser dialog after disconnected
+9d612e0 apn: Update the add actionbar icon
+e05125c Automatic translation import
+b8a9824 Settings: Fix the failing strings
+09a2ee9 Development Settings: fix setting reset on disable
+ea577d5 settings: Fix NPE in sounds settings for wifi only devices
+7386fe2 Settings: Fix some settings
+c935b8a Settings: Fix NFC Tap & pay removal
+9b2806b Revert "Settings: Show Baseband version on MSIM devices"
+
+   * packages/apps/SetupWizard/
+c749080 Fix layouts
+0d62d54 Fix some permissions
+e734eae :P
+553c224 fix this?
+bf72178 Fix datasimpackage
+3d89fe1 update strings
+93c0fc7 update strings
+11d57a8 update strings and fix typos
+f9bf6fa fix build
+b6adefd XPerienced :v
+
+   * packages/apps/ThemeChooser/
+854459a Automatic translation import
+
+   * vendor/XPe/
+a556ea2 Merge https://github.com/XPerience-AOSP-Lollipop/android_vendor_XPerience into HEAD
+89e93c7 sepolicy: label exfat and ntfs mkfs executables
+720a35b cm: Publish system api as part of publish process.
+
+====================
+     12-29-2015
+====================
+
+
+   * external/stagefright-plugins/
+09f677f stagefright-plugins: Only do as much sniffing as necessary
+e7ea399 stagefright-plugins: Increase confidence on HEVC mp2p files
+c0742cd stagefright-plugins: Fix audio trimmed when reaching eos
+28d6141 stagefright-plugins: Fix crash
+
+   * external/toybox/
+0f882f6 Merge branch 'master' of https://android.googlesource.com/platform/external/toybox into cm-13.0
+
+   * frameworks/av/
+b19f360 stagefright: Those who cannot remember history are doomed to repeat it
+
+   * hardware/qcom/display-caf/msm8994/
+a0dd49b gralloc: cflag to use nv21 format for camera write
+
+   * vendor/XPe/
+a6e7df9 well if I not made it then are unnoficial
+98aed48 well if I not made it then are unnoficial
+
+====================
+     12-28-2015
+====================
+
+
+   * frameworks/av/
+020adf2 nuplayer: Pass along the sniffed metadata from GenericSource
+4adc183 stagefright: Remove special handling of FFMPEG extractor
+1bb6c3e stagefright: Add more hardware codec support for our extractor
+
+====================
+     12-27-2015
+====================
+
+
+   * external/stagefright-plugins/
+8caee14 stagefright-plugins: Fix thumbnail issues
+cea1cb3 stagefright-plugins: Pass the container format in the metadata
+94932fa stagefright-plugins: Remove voodoo from sniff logic
+f9e21d7 stagefright-plugins: Add special case for DivX containers
+5e9d63d stagefright-plugins: Fix HEVC extradata handling
+8107a7f stagefright-plugins: Always use FFMPEG for FLAC audio
+4ecbcbb stagefright-plugins: Correctly check if audio codec is open
+
+   * frameworks/av/
+1b5f480 stagefright: Remove special case for FLAC offload
+5712d5c stagefright: Copy the thumbnail time
+d2c00b4 Validation of Number of Channels on WAV files.
+efa19ab Fix overflows in amrwbenc
+
+   * hardware/qcom/audio-caf/msm8916/
+a065400 hal: Allow building hardware audio encoders
+
+   * hardware/qcom/audio-caf/msm8996/
+a495e40 hal: Allow building hardware audio encoders
+
+   * packages/apps/AudioFX/
+7944518 AudioFX: platform sign
+
+   * vendor/motorola/
+2da06d0 Merge pull request #217 from luk1337/cm-13.0
+3c1fda6 msm8226-common: Partially decommonize camera blobs
+
+====================
+     12-26-2015
+====================
+
+
+   * packages/apps/AudioFX/
+2eefaf2 Automatic translation import
+
+   * packages/apps/BasicSmsReceiver/
+961eed1 Automatic translation import
+
+   * packages/apps/Bluetooth/
+63088a9 Automatic translation import
+
+   * packages/apps/BluetoothExt/
+6162335 Automatic translation import
+
+   * packages/apps/Browser/
+ad614da Automatic translation import
+
+   * packages/apps/CMBugReport/
+4313513 Automatic translation import
+
+   * packages/apps/CMFileManager/
+9eb5798 Automatic translation import
+
+   * packages/apps/CMWallpapers/
+61bb875 Automatic translation import
+
+   * packages/apps/Calendar/
+ecf9b82 Automatic translation import
+
+   * packages/apps/Camera2/
+960b850 Automatic translation import
+
+   * packages/apps/CellBroadcastReceiver/
+0dadb76 Automatic translation import
+
+   * packages/apps/CertInstaller/
+95ca4c7 Automatic translation import
+
+   * packages/apps/Contacts/
+bcef0c9 Automatic translation import
+
+   * packages/apps/ContactsCommon/
+dc60d46 Automatic translation import
+
+   * packages/apps/Dialer/
+3edb649 Automatic translation import
+
+   * packages/apps/Eleven/
+281ddcb Automatic translation import
+
+   * packages/apps/Email/
+325beae Automatic translation import
+
+   * packages/apps/FMRadio/
+6d4803d Automatic translation import
+
+   * packages/apps/Gallery2/
+5952713 Automatic translation import
+
+   * packages/apps/InCallUI/
+6f89959 Automatic translation import
+
+   * packages/apps/KeyChain/
+27ecfb5 Automatic translation import
+
+   * packages/apps/LockClock/
+864c4e9 Automatic translation import
+
+   * packages/apps/PackageInstaller/
+536afdd Automatic translation import
+
+   * packages/apps/PhoneCommon/
+8e3b23f Automatic translation import
+
+   * packages/apps/Profiles/
+cb125ca Automatic translation import
+
+   * packages/apps/Screencast/
+088677a Automatic translation import
+
+   * packages/apps/Settings/
+38dc924 CarrierLabel: use seekbar instead of slimseekbar
+
+   * packages/apps/SoundRecorder/
+b6618ae Automatic translation import
+
+   * packages/apps/Stk/
+d1ffe2a Automatic translation import
+
+   * packages/apps/Tag/
+8c18297 Automatic translation import
+
+   * packages/apps/Terminal/
+dff584e Automatic translation import
+
+   * packages/apps/Trebuchet/
+6be1ecf Automatic translation import
+
+   * packages/apps/TvSettings/
+345fd98 Automatic translation import
+
+   * packages/apps/UnifiedEmail/
+ffe71d9 Automatic translation import
+
+   * packages/inputmethods/LatinIME/
+4c26e4e Automatic translation import
+
+   * packages/providers/CalendarProvider/
+7e9ce94 Automatic translation import
+
+   * packages/providers/ContactsProvider/
+8707141 Automatic translation import
+
+   * packages/providers/DownloadProvider/
+f1d2361 Automatic translation import
+
+   * packages/providers/MediaProvider/
+61eb49b Automatic translation import
+
+   * packages/providers/TelephonyProvider/
+c793071 Automatic translation import
+
+   * packages/providers/ThemesProvider/
+5470255 Automatic translation import
+
+   * packages/providers/UserDictionaryProvider/
+084102c Automatic translation import
+
+   * packages/services/Mms/
+105dcb1 Automatic translation import
+
+   * packages/services/Telecomm/
+8562735 Automatic translation import
+
+   * packages/services/Telephony/
+e850772 Automatic translation import
+
+   * packages/wallpapers/Galaxy4/
+8266065 Automatic translation import
+
+   * packages/wallpapers/PhaseBeam/
+53dfc85 Automatic translation import
+
+   * packages/wallpapers/PhotoPhase/
+ba62eca Automatic translation import
+
+   * vendor/cmsdk/
+9f9759a Automatic translation import
