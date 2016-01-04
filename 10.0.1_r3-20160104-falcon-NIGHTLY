@@ -1,0 +1,511 @@
+====================
+     01-03-2016
+====================
+
+
+   * frameworks/base/
+9026e1d Add 3Minit battery mod
+fc16eb4 Correct RAM Bar text color and also made it themeable
+e53fcf2 Adjustments in RAM Bar
+6331d6d Fix recents button force close after RAM bar commit
+35847fb RAM bar: fix position without search bar in portrait and fix wrong bottom position in landscape with serch bar on. Also centralize text
+31f63b2 Add membar to recents options [1/2]
+1e3354c Change SQL to improve performance.
+8ab7654 BatteryBar [1/2]
+c04ff96 FWB: PIE: Always on the right switch (1/2)
+d2a67e5 FWB: Fix PIE 3.0 Build
+750c392 FWB: PIE 3.0 (1/2)
+31897da Trace SQLite operations
+c4d7760 Navbar: fix navbar transitions which was causing bizarre statusbar bleed
+6454e29 FWB: Battery saver and low battery notification toggles [1/2]
+f82f75c Turn advanced devices and file sizes on by default
+
+   * packages/apps/Settings/
+21f1baa Add membar to recents options [2/2]
+3b1968a Intergrate Viper4Android into settings
+ddaecdd Add supersu vector
+3c75041 Remove checkbox preferences (aren't used xD)
+3f6e9b6  Battery Bar [2/2]
+e02ebc9 Settings: PIE: Always on the right switch (2/2)
+6991815 Settings: Fix PIE 3.0 build
+7e3c34f  Settings: PIE 3.0 (2/2)
+0c4b3ee Settings: Battery saver & low battery notification toggles [2/2] PS2: Remove spaces
+
+====================
+     01-02-2016
+====================
+
+
+   * development/
+5225472 gdbclient: fix adb output test
+
+   * external/stagefright-plugins/
+4924fcb stagefright-plugins: Protect against crash
+f7c42ea stagefright-plugins: Increase max video buffer size + count
+
+   * frameworks/base/
+8082951 SystemUI: Do not turn on Wifi hotspot in APM Mode
+7d3b148 SystemUI: Fix the unlock sound played repeatedly
+c4beaa5 SystemUI: Make rotation lock toggle always visible
+fb53298 IMS: Fix video call forwarding options issue
+e35ded7 frameworks/base: Added SD type support
+6f3e3e0 Settings: Don't attempt to forward writes from System -> Global.
+5d67763 Add entry to copy VideoStop.ogg file to system image
+26d4a89 statusbar: fix overlapping backgrounds when expanded
+32b7a01 DndTile: Always open the detailed view
+bcd7cb4 ZenModePanel: Fix until next alarm missing from do not disturb
+
+   * kernel/motorola/msm8226/
+627253d Linux 3.4.71
+c030a39 cris: media platform drivers: fix build
+b9985b6 configfs: fix race between dentry put and lookup
+0f47d1a rt2800usb: slow down TX status polling
+5691b9d SUNRPC: Fix a data corruption issue when retransmitting RPC calls
+6972ae4 powerpc/signals: Mark VSX not saved with small contexts
+775a69d powerpc/powernv: Add PE to its own PELTV
+a66f478 powerpc/vio: use strcpy in modalias_show
+b613c33 block: properly stack underlying max_segment_size to DM device
+34eb0c4 block: fix a probe argument to blk_register_region
+0e2dd05 block: fix race between request completion and timeout handling
+db57c48 hwmon: (lm90) Fix max6696 alarm handling
+78a60d5 x86/microcode/amd: Tone down printk(), don't treat a missing firmware file as an error
+9d222ef nfsd: make sure to balance get/put_write_access
+2c21a8a nfsd: split up nfsd_setattr
+62982f1 NFSv4: Fix a use-after-free situation in _nfs4_proc_getlk()
+58cd6ff ALSA: msnd: Avoid duplicated driver name
+cc51860 ALSA: 6fire: Fix probe of multiple cards
+74e109e exec/ptrace: fix get_dumpable() incorrect tests
+8fcf8fe Revert "ima: policy for RAMFS"
+e5706f2 rt2x00: check if device is still available on rt2x00mac_flush()
+95e967c perf/ftrace: Fix paranoid level for enabling function tracer
+e25a18b include/linux/fs.h: disable preempt when acquire i_size_seqcount write lock
+0ea55ac exec: do not abuse ->cred_guard_mutex in threadgroup_lock()
+53d0902 8139cp: re-enable interrupts after tx timeout
+78be56e can: c_can: Fix RX message handling, handle lost message before EOB
+6153ccf crypto: ansi_cprng - Fix off by one error in non-block size request
+e8e10e8 USB: mos7840: fix tiocmget error handling
+0f03e92 ACPICA: Fix for a Store->ArgX when ArgX contains a reference to a field.
+78a3408 ACPICA: Return error if DerefOf resolves to a null package element.
+599748e ACPICA: DeRefOf operator: Update to fully resolve FieldUnit and BufferField refs.
+e3ca131 ACPICA: Interpreter: Fix Store() when implicit conversion is not possible.
+db21b58 libertas: potential oops in debugfs
+8dcdc92 nfs: don't allow nfs_find_actor to match inodes of the wrong type
+63b11be Linux 3.4.70
+739c305 usb: fix cleanup after failure in hub_configure()
+671a6ec PCI/PM: Clear state_saved during suspend
+6bc6bc1 tracing: Fix potential out-of-bounds in trace_get_user()
+4bf12266 ALSA: hda - Move one-time init codes from generic_hdmi_init()
+a668c47 USB: add new zte 3g-dongle's pid to option.c
+50dfc0a PCI: fix truncation of resource size to 32 bits
+8fd9176 xen-netback: use jiffies_64 value to calculate credit timeout
+8b82540 Linux 3.4.69
+558c40a drm/radeon/atom: workaround vbios bug in transmitter table on rs780
+e3b2dc0 drm: Prevent overwriting from userspace underallocating core ioctl structs
+70eec41 mm: fix aio performance regression for database caused by THP
+e99e23c aacraid: missing capable() check in compat ioctl
+894a9c4 lib/scatterlist.c: don't flush_kernel_dcache_page on slab page
+8770b6c xtensa: don't use alternate signal stack on threads
+2a0a588 uml: check length in exitcode_proc_write()
+65e24bc Staging: bcm: info leak in ioctl
+9d8c4ce staging: ozwpan: prevent overflow in oz_cdev_write()
+a4c2b0b ASoC: dapm: Fix source list debugfs outputs
+6536ed4 ASoC: wm_hubs: Add missing break in hp_supply_event()
+8b89dda ALSA: fix oops in snd_pcm_info() caused by ASoC DPCM
+4802de5 ALSA: hda - Add a fixup for ASUS N76VZ
+981c37c7 parisc: Do not crash 64bit SMP kernels on machines with >= 4GB RAM
+c2e9cd5 clockevents: Sanitize ticks to nsec conversion
+a95b5ac md: Fix skipping recovery for read-only arrays.
+5e1c5bb libata: make ata_eh_qc_retry() bump scmd->allowed on bogus failures
+c928d85 can: flexcan: flexcan_chip_start: fix regression, mark one MB for TX and abort pending TX
+fcc444c jfs: fix error path in ialloc
+3cd4e32 rtlwifi: rtl8192cu: Fix error in pointer arithmetic
+24fa828 mac80211: update sta->last_rx on acked tx frames
+a0a165a mac80211: correctly close cancelled scans
+c90c594 USB: serial: ftdi_sio: add id for Z3X Box device
+af12028 USB: quirks: add touchscreen that is dazzeled by remote wakeup
+6273045 USB: quirks.c: add one device that cannot deal with suspension
+2750452 USB: support new huawei devices in option.c
+f5d7d6b Linux 3.4.68
+9792ef2 usb: serial: option: blacklist Olivetti Olicard200
+6430921 USB: serial: option: add support for Inovia SEW858 device
+654a258 USB: serial: ti_usb_3410_5052: add Abbott strip port ID to combined table as well.
+75d6862 wireless: radiotap: fix parsing buffer overrun
+5fd6314 writeback: fix negative bdi max pause
+71b1aa3 dm snapshot: fix data corruption
+8efd396 ext3: return 32/64-bit dir name hash according to usage type
+b85f275 davinci_emac.c: Fix IFF_ALLMULTI setup
+92fc62b inet: fix possible memory corruption with UDP_CORK and UFO
+41c248b net: fix cipso packet validation when !NETLABEL
+fe9ded4 net: unix: inherit SOCK_PASS{CRED, SEC} flags from socket to fix race
+309ba90 wanxl: fix info leak in ioctl
+4c7a968 sctp: Perform software checksum if packet has to be fragmented.
+d8c2d19 sctp: Use software crc32 checksum when xfrm transform will happen.
+3e126fd net: dst: provide accessor function to dst->xfrm
+c7a130f bnx2x: record rx queue for LRO packets
+3fdbb72 connector: use nlmsg_len() to check message length
+d33cbd5 unix_diag: fix info leak
+8a0eaa4 farsync: fix info leak in ioctl
+a6a353a l2tp: must disable bh before calling l2tp_xmit_skb()
+6e6dce1 net: vlan: fix nlmsg size calculation in vlan_get_size()
+55ca9cb bridge: Correctly clamp MAX forward_delay when enabling STP
+33a3d34 ipv6: restrict neighbor entry creation to output flow
+e416642 can: dev: fix nlmsg size calculation in can_get_size()
+978ff2b ipv4: fix ineffective source address selection
+d4b4942 proc connector: fix info leaks
+2d31a2f net: heap overflow in __audit_sockaddr()
+7902575 net: mv643xx_eth: fix orphaned statistics timer crash
+c863c34 net: mv643xx_eth: update statistics timer from timer context only
+abc69c8 net: do not call sock_put() on TIMEWAIT sockets
+4ec1c41 tcp: do not forget FIN in tcp_shifted_skb()
+33a6c8c tcp: must unclone packets before mangling them
+e04e391 Linux 3.4.67
+4ce9dcc mm: do not grow the stack vma just because of an overrun on preceding vma
+0cc5625 mm/mmap: check for RLIMIT_AS before unmapping
+4db0475 drm/radeon: fix hw contexts for SUMO2 asics
+546015a watchdog: ts72xx_wdt: locking bug in ioctl
+318f95f parisc: fix interruption handler to respect pagefault_disable()
+116d5bb KVM: PPC: Book3S HV: Fix typo in saving DSCR
+6e2349f vfs: allow O_PATH file descriptors for fstatfs()
+a67ae53 random: run random_int_secret_init() run after all late_initcalls
+c5628e4 ALSA: hda - Add fixup for ASUS N56VZ
+fc8e5e4 ALSA: snd-usb-usx2y: remove bogus frame checks
+f5f0b7b Linux 3.4.66
+17b72e2 ext4: avoid hang when mounting non-journal filesystems with orphan list
+da92bf5 Btrfs: change how we queue blocks for backref checking
+156457e tile: use a more conservative __my_cpu_offset in CONFIG_PREEMPT
+370e7bc ACPI / IPMI: Fix atomic context requirement of ipmi_msg_handler()
+162f86f mm, show_mem: suppress page counts in non-blockable contexts
+ffa5abdf staging: comedi: ni_65xx: (bug fix) confine insn_bits to one subdevice
+e510552 dmaengine: imx-dma: fix slow path issue in prep_dma_cyclic
+345c51f dmaengine: imx-dma: fix callback path in tasklet
+7ad7522 dmaengine: imx-dma: fix lockdep issue between irqhandler and tasklet
+61194b9 p54usb: add USB ID for Corega WLUSB2GTST USB adapter
+3a23427 rtlwifi: Align private space in rtl_priv struct
+951278e ib_srpt: always set response for task management
+1336140 ib_srpt: Destroy cm_id before destroying QP.
+853e40f USB: serial: option: Ignore card reader interface on Huawei E1750
+aa3c3b3 sparc32: Fix exit flag passed from traced sys_sigreturn
+bfe60c8 sparc64: Fix not SRA'ed %o5 in 32-bit traced syscall
+ac793ec sparc64: Fix off by one in trampoline TLB mapping installation loop.
+3e93891 sparc64: Remove RWSEM export leftovers
+23bc886 sparc64: Fix ITLB handler of null page
+2f132a9 esp_scsi: Fix tag state corruption when autosensing.
+3b80257 powerpc: Fix parameter clobber in csum_partial_copy_generic()
+c75db8e powerpc/vio: Fix modalias_show return values
+702ac77 powerpc/iommu: Use GFP_KERNEL instead of GFP_ATOMIC in iommu_init_table()
+64889f1 ASoC: 88pm860x: array overflow in snd_soc_put_volsw_2r_st()
+5d32e58 ASoC: max98095: a couple array underflows
+3acb9bd ll_temac: Reset dma descriptors indexes on ndo_open
+4e3960a ipv6 mcast: use in6_dev_put in timer handlers instead of __in6_dev_put
+7018089 ipv4 igmp: use in_dev_put in timer handlers instead of __in_dev_put
+6a015c6 bonding: Fix broken promiscuity reference counting issue
+25f56c9 dm9601: fix IFF_ALLMULTI handling
+b3635dc via-rhine: fix VLAN priority field (PCP, IEEE 802.1p)
+d6e5d79 ipv6: udp packets following an UFO enqueued packet need also be handled by UFO
+816a686 ip: generate unique IP identificator if local fragmentation is allowed
+73091f1 ip: use ip_hdr() in __ip_make_skb() to retrieve IP header
+50405e1 bridge: Clamp forward_delay when enabling STP
+3160ff2 resubmit bridge: fix message_age_timer calculation
+2f1f62a net: sctp: fix ipv6 ipsec encryption bug in sctp_v6_xmit
+5b40d3b netpoll: fix NULL pointer dereference in netpoll_cleanup
+71e441a net: flow_dissector: fix thoff for IPPROTO_AH
+153a563 gianfar: Change default HW Tx queue scheduling mode
+364ac30 cciss: fix info leak in cciss_ioctl32_passthru()
+78f55f5 cpqarray: fix info leak in ida_locked_ioctl()
+9cee096 Revert "HID: logitech-dj: validate output report details"
+2973d5c Revert "HID: LG: validate HID output report details"
+704353c Revert "HID: provide a helper for validating hid reports"
+4b1694a Linux 3.4.65
+4bb4df0 HID: LG: validate HID output report details
+f339da3 mm, memcg: give exiting processes access to memory reserves
+6c3f295 ALSA: compress: Fix compress device unregister.
+86e0ffa hwmon: (applesmc) Check key count before proceeding
+84c6c36 drm/radeon: disable tests/benchmarks if accel is disabled
+c54fc0d drm/i915/dp: increase i2c-over-aux retry interval on AUX DEFER
+ad252f7 dm-snapshot: fix performance degradation due to small hash size
+ce37c7f dm snapshot: workaround for a false positive lockdep warning
+fe8023b usb/core/devio.c: Don't reject control message to endpoint with wrong direction bit
+8384303 xhci: Fix race between ep halt and URB cancellation
+eee301d xhci: Fix oops happening after address device timeout
+3a46b0a xhci: Ensure a command structure points to the correct trb on the command ring
+f471e90 staging: vt6656: [BUG] main_usb.c oops on device_close move flag earlier.
+7d6c6a4 x86, efi: Don't map Boot Services on i386
+9b075d7 x86/reboot: Add quirk to make Dell C6100 use reboot=pci automatically
+87ffc4a Linux 3.4.64
+a08e8c5 kernel-doc: bugfix - multi-line macros
+81cccbf sfc: Fix efx_rx_buf_offset() for recycled pages
+106e651 perf tools: Handle JITed code in shared memory
+f3f40f9 fanotify: dont merge permission events
+f61602f perf: Fix perf_cgroup_switch for sw-events
+3bee113 perf: Clarify perf_cpu_context::active_pmu usage by renaming it to ::unique_pmu
+15b1200 cgroup: fail if monitored file and event_control are in different cgroup
+eed7954 drm/radeon/atom: workaround vbios bug in transmitter table on rs880 (v2)
+bf0a930 drm/radeon: fix handling of variable sized arrays for router objects
+f448ff4 drm/radeon: fix resume on some rs4xx boards (v2)
+7b88b13 drm/radeon: update line buffer allocation for dce6
+8acce91 drm/radeon: update line buffer allocation for dce4.1/5
+03af2e5 drm/radeon: fix endian bugs in hw i2c atom routines
+edbb4e8 drm/radeon: fix LCD record parsing
+a65acc0 drm/ttm: fix the tt_populated check in ttm_tt_destroy()
+19506f2 HID: logitech-dj: validate output report details
+5a9c0b5 HID: zeroplus: validate output report details
+8845f31 HID: provide a helper for validating hid reports
+9bfb0c2 sched/fair: Fix small race where child->se.parent,cfs_rq might point to invalid ones
+9c773c1 rt2800: fix wrong TX power compensation
+3b41eed net: usb: cdc_ether: Use wwan interface for Telit modules
+171a231 Revert "sctp: fix call to SCTP_CMD_PROCESS_SACK in sctp_cmd_interpreter()"
+4447cff Linux 3.4.63
+81a1d69 fuse: invalidate inode attributes on xattr modification
+7891090 fuse: postpone end_page_writeback() in fuse_writepage_locked()
+e1959be of: Fix missing memory initialization on FDT unflattening
+68a8023 mmc: tmio_mmc_dma: fix PIO fallback on SDHI
+9662da3 drm/edid: add quirk for Medion MD30217PG
+65084a7 isofs: Refuse RW mount of the filesystem instead of making it RO
+913eaac mm/huge_memory.c: fix potential NULL pointer dereference
+b2a25ea memcg: fix multiple large threshold notifications
+377d14d ocfs2: fix the end cluster offset of FIEMAP
+1c0da6d intel-iommu: Fix leaks in pagetable freeing
+e0986ad MIPS: ath79: Fix ar933x watchdog clock
+461e80e media: v4l2: added missing mutex.h include to v4l2-ctrls.h
+edc98fd HID: usbhid: quirk for N-Trig DuoSense Touch Screen
+3027b4a HID: check for NULL field when setting values
+9041373 HID: battery: don't do DMA from stack
+bce307c HID: Fix Speedlink VAD Cezanne support for some devices
+0454723 HID: pantherlord: validate output report details
+14a97fc ath9k: avoid accessing MRC registers on single-chain devices
+19d0ad6 ath9k: fix rx descriptor related race condition
+910c073 ath9k: always clear ps filter bit on new assoc
+8842b46 brcmsmac: Fix WARNING caused by lack of calls to dma_mapping_error()
+fa1a936 ALSA: hda - Add Toshiba Satellite C870 to MSI blacklist
+a3a381f ASoC: wm8960: Fix PLL register writes
+7ea3b7a rculist: list_first_or_null_rcu() should use list_entry_rcu()
+245e888 usb: config->desc.bLength may not exceed amount of data returned by the device
+bf7d46f USB: cdc-wdm: fix race between interrupt handler and tasklet
+8429efc usb: ehci-mxc: check for pdata before dereferencing
+f691036 USB: mos7720: fix big-endian control requests
+871b5de USB: mos7720: use GFP_ATOMIC under spinlock
+eef8758 staging: comedi: dt282x: dt282x_ai_insn_read() always fails
+0f440fe cifs: ensure that srv_mutex is held when dealing with ssocket pointer
+9975c63 usb: xhci: Disable runtime PM suspend for quirky controllers
+5fbf0ee ARM: PCI: versatile: Fix SMAP register offsets
+1254cbc xen-gnt: prevent adding duplicate gnt callbacks
+11526cd powerpc: Handle unaligned ldbrx/stdbrx
+d52db37 crypto: api - Fix race condition in larval lookup
+73f7625 SCSI: sd: Fix potential out-of-bounds access
+
+   * packages/apps/CMFileManager/
+358590d Change ts file extension mime type
+
+   * packages/apps/Settings/
+6e0ac0f fix dev settings
+330df4b Settings: Respect legacy quick pulldown row.
+4cf463b settings: adds OVERRIDE_WIFI_CONFIG permission
+752961f Settings: Fix fc
+
+   * system/core/
+228ca48 Add vendor hook to handle_control_message
+
+   * vendor/XPe/
+8434dbb sepolicy: Allow minivold execute_no_trans
+
+   * vendor/cmsdk/
+d1129cc cmsdk: Also hide internal package from docs.
+9734639 cmsdk: Fix quick pulldown settings, and unhide numerous system settings.
+2d4d514 cmsdk: Update current api text.
+
+====================
+     01-01-2016
+====================
+
+
+   * android/
+1d850c1 remove apollo and track CM Eleven
+62eda0e Point manifest at official CTS release branch
+3aea82c  Use clone-depth="1" for all pre-built    *s.
+
+   * build/
+25c8cbf Allow for 5200 words in dump-words-to-file
+
+   * device/motorola/msm8226-common/
+cb5938c msm8226-common: Enable disableWifiApFirmwareReload
+
+   * external/lz4/
+7cb39f5 lz4: Enable building with Android
+a30ee1b Revert "lz4: Add Android.mk file to build as a host static library"
+
+   * frameworks/av/
+38f51de BatteryNotifier: Add missing log LOG_TAG
+
+   * frameworks/base/
+788cbd2 Revert "Special case system_server to not create the JIT code cache."
+7cd8bc3 Revert "Pass app's code paths to the runtime"
+adb51a2 Special case system_server to not create the JIT code cache.
+ee0c718 Stop preloading fortress classes
+f129436 Use HexDump instead of java.lang.IntegralToString
+6db917d common_time_server.cpp: more O_CLOEXEC
+b1d33af Fix typo in config.xml file
+5afa347 Pass app's code paths to the runtime
+edcee6ac Add comments to keep Java and native binder PersistableBundle in sync
+6a719dc Fix PersistableBundle handling in Parcel.writeValue
+669d5dc Update default public notification view on notification update.
+b652886 Themes: Expose hard code for themes in SystemUI
+945bd5a Themes: Expose "Set Wallpaper" text color in wallpaper picker
+61ea706 Themes: Expose hard code for themes
+
+   * hardware/intel/img/hwcomposer/
+767cc4e Revert "Hwcomposer Moorefield: Return DummyDevice for TERTIARY display"
+
+   * kernel/motorola/msm8226/
+826ea9b Linux 3.4.62
+5f5911a Revert "KVM: X86 emulator: fix source operand decoding for 8bit mov[zs]x instructions"
+e99b8fa m32r: make memset() global for CONFIG_KERNEL_BZIP2=y
+337d46b m32r: add memcpy() for CONFIG_KERNEL_GZIP=y
+23147ee m32r: consistently use "suffix-$(...)"
+34c68cf tipc: fix lockdep warning during bearer initialization
+746a4b2 macvtap: do not zerocopy if iov needs more pages than MAX_SKB_FRAGS
+b8a461f vhost: zerocopy: poll vq in zerocopy callback
+78a10a7 net: ipv6: tcp: fix potential use after free in tcp_v6_do_rcv
+dd200ed ICMPv6: treat dest unreachable codes 5 and 6 as EACCES, not EPROTO
+8cba39a net: bridge: convert MLDv2 Query MRC into msecs_to_jiffies for max_delay
+f8841bf ipv6: Don't depend on per socket memory for neighbour discovery messages
+34e9c10 ipv6: drop packets with multiple fragmentation headers
+c479dd6 ipv6: remove max_addresses check from ipv6_create_tempaddr
+beb7d95 tun: signedness bug in tun_get_user()
+fe6c45df 8139cp: Fix skb leak in rx_status_loop failure path.
+8797e0b ipv6: don't stop backtracking in fib6_lookup_1 if subtree does not match
+ac827e8 tcp: cubic: fix bug in bictcp_acked()
+9d0a8f4 tcp: cubic: fix overflow error in bictcp_update()
+1ed3eef fib_trie: remove potential out of bound access
+fb230df bonding: modify only neigh_parms owned by us
+6e58af2 neighbour: populate neigh_parms on alloc before calling ndo_neigh_setup
+e7f7e3b net: check net.core.somaxconn sysctl values
+6e1f910 htb: fix sign extension bug
+aaaf213 Linux 3.4.61
+c2f57c6 SCSI: sg: Fix user memory corruption when SG_IO is interrupted by a signal
+0d4ad7b target: Fix trailing ASCII space usage in INQUIRY vendor+model
+6275610 ACPI / EC: Add ASUSTEK L4R to quirk list in order to validate ECDT
+00bd2df iwl4965: fix rfkill set state regression
+eba5dcc ath9k_htc: Restore skb headroom when returning skb to mac80211
+70b3622 SUNRPC: Fix memory corruption issue on 32-bit highmem systems
+02ff248 drm/i915: ivb: fix edp voltage swing reg val
+12af8e2 drm/vmwgfx: Split GMR2_REMAP commands if they are to large
+32d7070 drivers/base/memory.c: fix show_mem_removable() to handle missing sections
+27acf65 regmap: silence GCC warning
+820facc powerpc/hvsi: Increase handshake timeout from 200ms to 400ms.
+df5d692 powerpc: Work around gcc miscompilation of __pa() on 64-bit
+222bf26 ALSA: opti9xx: Fix conflicting driver object name
+5dd112e jfs: fix readdir cookie incompatibility with NFSv4
+7e61c80 Linux 3.4.60
+7dc6dd0 x86/xen: do not identity map UNUSABLE regions in the machine E820
+e714412 SCSI: zfcp: fix schedule-inside-lock in scsi_device list loops
+e15a796 SCSI: zfcp: fix lock imbalance by reworking request queue locking
+7028c57 libata: apply behavioral quirks to sil3826 PMP
+3ff24e6 Hostap: copying wrong data prism2_ioctl_giwaplist()
+cd26c15 nilfs2: fix issue with counting number of bio requests for BIO_EOPNOTSUPP error detection
+065b0a7 nilfs2: remove double bio_put() in nilfs_end_bio_write() for BIO_EOPNOTSUPP error
+0c34a50 of: fdt: fix memory initialization for expanded DT
+c355177 drm/i915: Invalidate TLBs for the rings after a reset
+d527523 xen/events: initialize local per-cpu mask for all possible events
+0a605ad zd1201: do not use stack as URB transfer_buffer
+9ed627e Linux 3.4.59
+013501c m68k/atari: ARAnyM - Fix NatFeat module support
+0c73b70 m68k: Truncate base in do_div()
+c25101e xtensa: replace xtensa-specific _f{data,text} by _s{data,text}
+359e9ca xtensa: fix linker script transformation for .text.unlikely
+e8eda6c USB: mos7720: fix broken control requests
+4f3126c usb: add two quirky touchscreen
+1451d8e can: pcan_usb: fix wrong memcpy() bytes length
+7528034 iwl4965: reset firmware after rfkill off
+dc018bf iwl4965: set power mode early
+4cdfd3d af_key: initialize satype in key_notify_policy_flush()
+6d9e7e0 MIPS: Rewrite pfn_valid to work in modules, too.
+f31fd85 md/raid1,raid10: use freeze_array in place of raise_barrier in various places.
+2d62a92 alpha: makefile: don't enforce small data model for kernel builds
+07559c2 powerpc/numa: Avoid stupid uninitialized warning from gcc
+b4b06cf frv: Use core allocator for task_struct
+b8adccb frv: Use correct size for task_struct allocation
+c6aaf80 CRIS: Add _sdata to vmlinux.lds.S
+d5171f5 cris: Remove old legacy "-traditional" flag from arch-v10/lib/Makefile
+98da225 cris: posix_types.h, include asm-generic/posix_types.h
+c4d26ee vm: add no-mmu vm_iomap_memory() stub
+a0453bd HID: microsoft: do not use compound literal - fix build
+af66f00 sound: Fix make allmodconfig on MIPS correctly
+a4ae564 sound: Fix make allmodconfig on MIPS
+2d867890 microblaze: Update microblaze defconfigs
+3865909 MIPS: Expose missing pci_io{map,unmap} declarations
+adc9e97 drm/i915/lvds: ditch ->prepare special case
+9842e1b fs/proc/task_mmu.c: fix buffer overflow in add_page_map()
+94e9869 Linux 3.4.57-58
+9878e76 Linux 3.4.56-57
+d74108e Linux 3.4.55-56
+62d90ff Linux 3.4.54-55
+3913d7c Linux 3.4.53-54
+ef31c9d Linux 3.4.52-53
+3b71cc2 Linux 3.4.51-52
+3cb8512 Linux 3.4.50-51
+d21fdc8 8d
+e102f84 Linux 3.4.49-50
+639acc6f Linux 3.4.48-49
+a354c24 Linux 3.4.47-48
+663b920 Linux 3.4.46-47
+d087940 Linux 3.4.45-46
+167f0be Linux 3.4.44-45
+3a4e9f8 Linux patch 3.4.43-44
+a0afa507 Linux patch 3.4.42-43
+
+   * packages/apps/ContactsCommon/
+d3de2eb Themes: Define back arrow tint color for themes
+
+   * packages/apps/Settings/
+a8f9ded Fingerprint: Forward challenge extras
+
+   * vendor/XPe/
+2def9e0 Track Eleven , enable XPerienceSetupWizard and change codename
+c5abc5e cm: sepolicy: fix denials for external storage
+
+====================
+     12-31-2015
+====================
+
+
+   * frameworks/av/
+c39941d libmedia: correct latency computing for TRANSFER_SYNC
+
+   * packages/apps/Camera2/
+553ccb7 Fix writing to external storage.
+16635f1 Add Storage preference (1/2)
+
+   * vendor/motorola/
+6ab5421 victara: update blobs from M
+
+====================
+     12-30-2015
+====================
+
+
+   * external/libchrome/
+00be730 Fix sign promotion errors
+060e36d Remove unnecessary disabled warning flags
+3bf7081 Fix mac specific warnings
+b8803f9 Fix no-missing-field-initializers warnings
+2a903e2 Fix non-virtual-dtor warnings
+60d96a4 Fix unused parameter warnings in libchrome
+f2949ac Make it easy to turn clang on and off
+
+   * external/stagefright-plugins/
+e13ea55 stagefright-plugins: Refactor packet queue locking
+
+   * packages/apps/SetupWizard/
+c749080 Fix layouts
+0d62d54 Fix some permissions
+e734eae :P
+553c224 fix this?
+
+   * vendor/asus/
+06159f6 sensors.grouper.so: change calibration file paths
+
+   * vendor/motorola/
+ae94b82 Merge pull request #216 from razrqcom-dev-team/cm-13.0
+
+   * vendor/nvidia/
+4b51d85 libnvrm.so: replace with a newer version compatible with 3.4
