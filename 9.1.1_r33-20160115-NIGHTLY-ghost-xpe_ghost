@@ -1,0 +1,451 @@
+====================
+     01-15-2016
+====================
+
+
+   * device/motorola/msm8960dt-common/
+83d0741 Merge pull request #1 from XPerience-AOSP-Lollipop/cm-12.1
+f109c2c Add support to F2FS cache
+
+   * frameworks/base/
+aee8c31 policy: disable EdgeGestureService
+6826396 Fingerprint: fix restarting timeout when screen is on
+6ba766e Automatic translation import
+876324d fingerprint improvements
+
+   * kernel/motorola/ghost/
+78c6f31 Update defconfig to v2 of xpe
+c548adc Add frandom support
+203022a Fix: drivers/usb/gadget/Kconfig:881:warning: defaults for choice values not supported
+3ef6a53 fs: Fix theoretical division by 0 in super_cache_scan().
+c0196c6 Input: optimize events_per_packet count calculation
+baa48b6 netfilter: idletimer: Fix trivial lockdep warning
+4bab886 Nest rename_lock inside vfsmount_lock
+622bd7c timer: Prevent overflow in apply_slack
+4184049 tcp: fix timing issue in CUBIC slope calculation
+1b22d61 tcp_cubic: fix the range of delayed_ack
+39396d2 msm: ipc_socket: fix leak of kernel memory to userspace
+352bc32 seccomp: Use atomic operations that are present in kernel 3.4.
+71df5a9 seccomp: implement SECCOMP_FILTER_FLAG_TSYNC
+36f48e3 seccomp: allow mode setting across threads
+c8ad9ce seccomp: introduce writer locking
+08b7c4f seccomp: split filter prep from check and apply
+6ca36f9 ARM: add seccomp syscall
+18f4c9f seccomp: add "seccomp" syscall
+3ae4291 seccomp: split mode setting routines
+0709b05 seccomp: extract check/assign mode helpers
+d2d4623 seccomp: create internal mode-setting function
+ff1212c MAINTAINERS: create seccomp entry
+b34933c CHROMIUM: ARM: r1->r0 for get/set arguments
+4486895 CHROMIUM: seccomp: set -ENOSYS if there is no tracer
+144c838 CHROMIUM: ARM: arch/arm: allow a scno of -1 to not cause a SIGILL
+a0b8850 CHROMIUM: arch/arm: add asm/syscall.h
+607f38d samples/seccomp: fix dependencies on arch macros
+54cc8ef seccomp: fix build warnings when there is no CONFIG_SECCOMP_FILTER
+28ebb01 seccomp: ignore secure_computing return values
+fde0984 seccomp: use a static inline for a function stub
+7c26cd3 Documentation: prctl/seccomp_filter
+cee755c change x86 config Change-Id: I7c9d49079d4e18390c2d520513a4afd55e6eaa3e
+56f3157 ptrace,seccomp: Add PTRACE_SECCOMP support
+d6ea25a seccomp: Add SECCOMP_RET_TRAP
+7755886 signal, x86: add SIGSYS info and make it synchronous.
+0568b5a seccomp: add SECCOMP_RET_ERRNO
+c74b8cd seccomp: remove duplicated failure logging
+368763a seccomp: add system call filtering using BPF
+2e85710 arch/x86: add syscall_get_arch to syscall.h
+2f2402a asm/syscall.h: add syscall_get_arch
+f0c147e seccomp: kill the seccomp_t typedef
+318e342 f2fs: skip committing valid superblock
+aa1c26f f2fs: setting discard option in parse_options()
+1dc9f81 f2fs: do not trim preallocated blocks when truncating after i_size
+dae1014 f2fs crypto: add alloc_Kinzie_page
+05383c8 f2fs crypto: fix to handle errors likewise ext4
+27793c1 f2fs: fix to return exact trimmed size
+a4b3453 f2fs: support FALLOC_FL_INSERT_RANGE
+7bbed51 f2fs: hide common code in f2fs_replace_block
+da05db3 f2fs: disable the discard option when device doesn't support
+0d45f83 f2fs crypto: remove alloc_page for Kinzie_page
+330eeeb f2fs: fix a deadlock for summary page lock vs. sentry_lock
+2c310a0 f2fs crypto: clean up error handling in f2fs_fname_setup_filename
+a208aff f2fs crypto: avoid f2fs_inherit_context for symlink
+ebfe4aa f2fs crypto: do not set encryption policy for non-directory by ioctl
+c4bfb27 f2fs crypto: allow setting encryption policy once
+6264bd0 f2fs: avoid duplicated code by reusing f2fs_read_end_io
+fd1314d f2fs crypto: use per-inode tfm structure
+a4328ef f2fs: recovering broken superblock during mount
+bd9914e f2fs: introduce update_meta_page
+8a88d71 f2fs crypto: zero next free dnode block
+501eb49 f2fs crypto: split f2fs_crypto_init/exit with two parts
+0b9c6ef f2fs crypto: fix incorrect release for crypto ctx
+74344c0 f2fs crypto: fix to release buffer for fname crypto
+69bd3d9 f2fs crypto: shrink size of the f2fs_crypto_ctx structure
+5dc34a2 f2fs crypto: get rid of ci_mode from struct f2fs_crypt_info
+5566e4d f2fs crypto: use slab caches
+7f9f944 f2fs: truncate data blocks for orphan inode
+95c94b8 f2fs: cleanup a confusing indent
+082c79b f2fs: fix building on 32-bit architectures
+1d964abe f2fs: avoid buggy functions
+5584fd9 f2fs: add compat_ioctl to provide backward compatability
+3dc2c61 f2fs: do not issue next dnode discard redundantly
+d05fc44 f2fs: add default mount options to remount
+3f3f581 f2fs crypto: remove checking key context during lookup
+4a2d7ad f2fs crypto: fix missing key when reading a page
+d12aaa8 f2fs crypto: add symlink encryption
+d41c1fb f2fs crypto: add filename encryption for roll-forward recovery
+0f4cc89 f2fs crypto: add filename encryption for f2fs_lookup
+9ed39ef f2fs crypto: add filename encryption for f2fs_readdir
+b33b5d9 f2fs crypto: add filename encryption for f2fs_add_link
+398ec88 f2fs crypto: add encryption support in read/write paths
+bbd64e6 f2fs crypto: activate encryption support for fs APIs
+2675601 f2fs crypto: filename encryption facilities
+75d012c f2fs crypto: add encryption key management facilities
+fbf8ded f2fs crypto: add f2fs encryption facilities
+0ad377a f2fs crypto: add encryption policy and password salt support
+6667fbe f2fs crypto: add encryption xattr support
+e8a8950 f2fs crypto: add f2fs encryption Kconfig
+a473562 f2fs crypto: declare some definitions for f2fs encryption feature
+4a7b08e f2fs: report unwritten area in f2fs_fiemap
+3096a41 f2fs: avoid value overflow in showing current status
+c9e96a6 f2fs: support FALLOC_FL_ZERO_RANGE
+1ad83b6 f2fs: support FALLOC_FL_COLLAPSE_RANGE
+dd72ac6 f2fs: introduce f2fs_replace_block() for reuse
+8c7a284 f2fs: do not re-lookup nat cache with same nid
+7b94142 f2fs: remove unneeded f2fs_make_empty declaration
+b4eef4c f2fs: issue discard with finally produced len and minlen
+1922f2c f2fs: introduce discard_map for f2fs_trim_fs
+3ec72d7 f2fs: split find_data_page according to specific purposes
+e35d2e8 f2fs: fix counting the number of inline_data inodes
+2333dda f2fs: add need_dentry_mark
+8510af6 f2fs: fix race on allocating and deallocating a dentry block
+9446f1f f2fs: introduce dot and dotdot name check
+d8cc5b2 f2fs: move get_page for gc victims
+99bd4cf8 f2fs: add sbi and page pointer in f2fs_io_info
+cec2314 f2fs: add f2fs_may_inline_{data, dentry}
+288092b f2fs: clean up f2fs_lookup
+06b6ede f2fs: expose f2fs_mpage_readpages
+8555b88 f2fs: introduce f2fs_commit_super
+eb5c1c2 f2fs: add f2fs_map_blocks
+7a1d192 f2fs: add feature facility in superblock
+031e5cb f2fs: move existing definitions into f2fs.h
+1222914c f2fs: add missing version info in superblock
+c191352 f2fs: make has_fsynced_inode static
+56839dd f2fs: add offset check routine before punch_hole() in f2fs_fallocate()
+1f31860 f2fs: use is_valid_blkaddr to verify blkaddr for readability
+9128ce0 Revert "f2fs: enhance multi-threads performance"
+b715082 f2fs: drop the volatile_write flag only
+785c29c f2fs: pass checkpoint reason on roll-forward recovery
+cf2518c f2fs: change 0 to false for bool type
+366bec4 ANDROID: exec_domains: Disable request_module() call for personalities
+efcff57 USB: android: Fix memory leak in mass_storage_function_init()
+a44d762 net/compat.c,linux/filter.h: share compat_sock_fprog
+35fef92 sk_run_filter: add BPF_S_ANC_SECCOMP_LD_W
+0cd933e readahead: make context readahead more conservative
+331d66c Failed to load kernel modules
+22fb26c get rid of magic in proc_namespace.c
+d0d36be get rid of ->mnt_longterm
+0785f69 brlocks/lglocks: API cleanups
+9111b70 brlocks/lglocks: turn into functions
+7d2320b lglock: remove online variants of lock
+6a71048 between the 2.6.32 and 3.0 kernels. By removing the plug from do_io_submit(), we observed a 34% improvement in the I/O latency.
+b0c4d40 lowmemorykiller: Don't try to kill the same pid over and over
+c1de13e power: msm_battery: Increase battery check interval from 5 seconds to 15 seconds.
+5fdb743a Revert "block: account iowait time when waiting for completion of IO request"
+431dd46 block: account iowait time when waiting for completion of IO request
+bf784cd Reduce Disk Writes With noatime, nodiratime noatime, nodiratime are disk mount options to disable access time information updates onto every file or directory the system access. By using these options, disk writing activity can be reduce significantly.
+477cd99 return_address.c: Fix warning - TODO: return_address should use unwind tables
+99110bc cpufreq: Move get_cpu_idle_time() to cpufreq.c
+499bf5c mmc: Disable crc check
+2de7e4a zlib: clean up some dead code
+a92e811 Optimize slub by not using fair sleepers
+f1b9cb6 cpufreq: Optimize cpufreq_frequency_table_verify()
+fb30a5a cpufreq: Break out early when frequency equals target_freq
+adf30f8 cpufreq: Prevent mpdecision changing scaling freq
+1abdb4d cpufreq: implement cpufreq_quick_get_util()
+17e2432 cpufreq: Introduce new relation for freq selection
+46a2e1e update defconfig
+934ceb1 writeback: increase bdi_min_ratio to 5
+d0ef4df mm: lower swappiness
+85632ed block: deadline: Optimize for non-rotational
+39586a3 block: Disable add_random
+134145f xz: Optimize Sfck Compression
+31e0589 block: zen: Optimize usage for android
+e27fda6 block: Add SIO, VR and ZEN I/O schedulers
+a33f413 initrd: fix lz4 decompress with initrd
+1687ac8 lz4: Sync up with latest version
+46d1744 scripts/gen_initramfs_list.sh: fix flags for initramfs LZ4 compression
+d97628c initramfs: read CONFIG_RD_ variables for initramfs compression
+f5ee3ba lz4: add overrun checks to lz4_uncompress_unknownoutputsize()
+3eb7f04 lz4: fix another possible overrun
+86ed7d3 lz4: ensure length does not wrap
+fa2de5b lib/decompress_unlz4.c: always set an error return code on failures
+1b67858 .gitignore: ignore *.lz4 files
+d8edc24 lib: add weak clz/ctz functions
+93cd0d0 lib/lz4: correct the LZ4 license
+539f6d9 LZ4: compression/decompression signedness mismatch (v2)
+84670c7 lib/lz4/lz4_compress: fix macro usage error
+c35da8e crypto: Add lz4 Cryptographic API
+1c048e3 lib: Add lz4 compressor module
+dfd1174 arm: Add support for LZ4-compressed kernel
+019251a lib: Add support for LZ4-compressed kernel
+6c5ef78 decompressor: Add LZ4 decompressor module
+cc78705 drivers/Makefile: add exFat support
+f652178 drivers/exfat: add Samsung's open source exFat module version 1.2.4
+6ee6984 Update defconfig remove overclock
+49ec0ca Revert "msm8960ab: initial CPU overclocking"
+a490e14 Revert "msm_turbo: initial coding for turbo boost on MSM architectures"
+5a6a2be Revert "cpufreq: inject cpu turbo boost"
+51eb76b Revert "CPU OVERCLOCKING: tweak for Moto X"
+1a81469 Revert "msm_turbo: change license from proprietary to GPL V2"
+417b764 introduce for_each_thread() to replace the buggy while_each_thread()
+c022427 msm8960dt_mmi: Regenerate defconfig for XPerience-01 * Enable Intelli-thermal * Add suport to overclock 1.9ghz *  Overclock + turbo boost  = 2.1ghz * Voltage cpu control * Fast charge * ZSMALLOC * ZRAM support * Kernel mode neon * Sweep2wake-Doubletap2wake * Sound control *
+
+   * packages/apps/InCallUI/
+50f4daf IncallUI: Screen doesn't wakeup after MT/MO call disconnect
+
+   * packages/apps/Settings/
+0e964ef Support multiple SAR values, separate args list with ','
+cd97ec4 Automatic translation import
+
+   * vendor/XPe/
+846615f fix theme app
+a962a5e remove audio fx
+b920714 Remove themestore :v I not going to add ambiencore and ambientaccount (CM account)
+ecc7c3b :P we need themes provider but not themechooser ;)
+1d01c06 Track cyanogenos apps
+cdb6ab9 fix cricket APN
+
+====================
+     01-14-2016
+====================
+
+
+   * external/libpng/
+f3e5faa libpng: fix hang during read when inflate fails
+
+   * kernel/motorola/ghost/
+3627aff Sound Control: add line gain to cached and register lock
+8d20b48 Sound Control: fix copy and paste error for separate record lock
+41dfbd0 Sound Control: MSM8960DT/APQ8064 ONLY: Fix logic derp
+e80314d Sound Control: separate locking mechanism for recording and playback
+2477581 drivers/thermal/Kconfig: fix default prompt error
+d516e1c Sound Control: let register lock be dependent on different hw revisions
+88e88fb Sound Control: Misc clean up for newer WCD9xxx SOCs
+cf4294b Sound Control: expose direct register manipulations to userspace
+48418ae drivers/input/touchscreen/synaptics_dsx_i2c.c: fix s2w/dt2w lock up issues
+8e9340d lowmemorykiller: fix logic derp for ZRAM/ZSWAP enabled use cases
+69720fa introduce for_each_thread() to replace the buggy while_each_thread() (fix)
+2548690 lowmemorykiller.c: convert to use for_each_thread
+69fa0ca sched/fair: Optimize find_busiest_queue()
+48f60ec intelli-thermal: increase sampling time to reduce sampling overhead
+076e3e5 mm: vmscan: If kswapd has been running too long, allow it to sleep
+97671f4 lowmemorykiller: also count zram swapfile usage
+416f7ba page_alloc: Make watermarks tunable separately
+5dce085 cpufreq_limit: adapt for 8960dt
+040adeb cpufreq_limit: adapted for use as built-in kernel option
+e8237fd mach-msm:cpufreq_limit: fix merge derp and minor code clean up
+c165820 cpufreq: fix a logic derp with turbo boost
+6705b56 intelli-thermal: use its own dedicated workqueue
+eb3d51d ksm: check and skip page, if it is already scanned
+543174a sound control: add register cache
+6799a01 Sound Control: (OPTIONAL) add power amp registers access control as well
+5054017 Sound Control: (Optional) work around for WCD93xx audio issues
+4e94427 sound control 3.x: Initial GPL release for WCD9310 Audio Codec
+76ea1a8 sound/soc/codecs/wcd9310.c: expose additional controls
+d9a3d85 Sound Control: Added headphone poweramp controls
+04317b7 Sound Control: Sound control for WCD93xx codec
+6e75a41 fastcharge: initial adaptation for Moto X
+1695a44 intelli/msm_thermal: initial coding for Qualcomm S4 Pro devices
+fcbd93b arm: vfpmodule: Fix warning procfs vfp_bounce reporting failed
+98187a9 msm_turbo: change license from proprietary to GPL V2
+a0d7bbc CPU OVERCLOCKING: tweak for Moto X
+db71962 cpufreq: inject cpu turbo boost
+3350e8b msm_turbo: initial coding for turbo boost on MSM architectures
+0980ace msm8960ab: initial CPU overclocking
+d19d3cc zram: prefer crypto LZ4 over LZ0 if library exists
+b67e688 zram: add Crypto API support
+2636b67 ZRAM/ZSMALLOC: Linux 3.4 API backport
+4942a0d zram: remove zram->lock in read path and change it with mutex
+dbfc57b zram: remove workqueue for freeing removed pending slot
+bd8de70 zram: introduce zram->tb_lock
+1217fa6 zram: use atomic operation for stat
+06dc233 zram: remove unnecessary free
+980506e zram: delay pending free request in read path
+3cfb5ee zram: fix race between reset and flushing pending work
+481a55a zram: add zram maintainers
+dacb916 zsmalloc: add copyright
+cd16fa3 zram: add copyright
+0545bfe zram: remove old private    * comment
+d956321 ZRAM/ZSMALLOC: initial file import from Linux 3.14 rc1 source
+9250a8d ARM: Use -mcpu=cortex-a15 when targeting MSM Krait CPUs
+6dc4775 sched: reinitialize rq->next_balance when a CPU is hot-added
+43b777d sched: remove redundant update_runtime notifier
+1e00281 sched,rt: disable rt_runtime borrowing by default
+ccf20c5 Input: Send events one packet at a time
+4168995 softirq: reduce latencies
+11d3e16 jiffies conversions: Use compile time constants when possible
+72be745 writeback: fix occasional slow sync(1)
+73cd367 SELinux: include definition of new capabilities
+601a545 CHROMIUM: mm: Fix calculation of dirtyable memory
+dddadd3 ARM: only allow kernel mode neon with AEABI
+0917b5a ARM: 7835/2: fix modular build of xor_blocks() with NEON enabled
+d30c9c7 ARM: crypto: add NEON accelerated XOR implementation
+8cdc585 ARM: add support for kernel mode NEON
+ce13556 ARM: be strict about FP exceptions in kernel mode
+cf24c07 ARM: move VFP init to an earlier boot stage
+9f92419 ARM: mm: update __v7_setup() to the new LoUIS cache maintenance API
+3215b17 ARM: kernel: update __cpu_disable to use cache LoUIS maintenance API
+0ae47a8 ARM: kernel: update cpu_suspend code to use cache LoUIS operations
+33313da ARM: mm: rename jump labels in v7_flush_dcache_all function
+85f1696 ARM: mm: implement LoUIS API for cache maintenance ops
+3add666 sweep2wake/doubletap2wake: adapt for falcon_umts (aka Moto G)
+0fe54f0 initial s2w dt2w code import from @showp1984
+5245f13 overall_stats: forward port to kernel 3.4+
+4729028 overall_stats: make dual/quad core stats configurable via meunconfig
+11370bc overall_stats: add overall stats for all available cores
+7f13bf7 cpufreq: enable sibling cpu policy sharing
+e6da7f1 cpufreq_limit: remove unused vars
+dfd3203 msm_cpufreq_limit: add GPL V2 licensing to access to GPL symbols
+8e19ae3 msm_cpu_freq_limit: initial coding for controlling MSM quadcore cpus
+b157bba scheduler: Re-compute time-average nr_running on read
+1f63ee6 proc: enhance time-average nr_running stats
+81b2e7c scheduler: compute time-average nr_running per run-queue
+206aa2b Voltage Control: add sysfs interface
+fc1638c Voltage Control: initial voltage control for MSM Snapdragon 800 SOC
+9fc69f0 arm/crypto: Add optimized AES and SHA1 routines
+fed4def Optimized ARM RWSEM algorithm
+
+   * packages/apps/Mms/
+73fc8d8 Automatic translation import
+
+   * packages/apps/Settings/
+0cffe9e remove this su
+
+====================
+     01-13-2016
+====================
+
+
+   * android/
+13ebe6c add cm setupwizard
+36d008b remove efence xD
+0a4a0bc  Use clone-depth="1" for all pre-built    *s.
+680e4f9 bump to 5.1.1_r33
+
+   * build/
+0f98f6e remove goma.mk from config
+9126705 Merge remote-tracking branch 'upstream/cm-12.1' into HEAD
+
+   * device/motorola/ghost/
+01737f1 Rename cm.dependencies to xpe.dependencies
+4d5d3ce Update and rename cm.mk to xpe.mk
+
+   * frameworks/av/
+c002bbb Merge tag 'android-5.1.1_r33' into XPerience-9.1
+
+   * frameworks/base/
+1cefe35 ThemeService: ManagedProvisioning is a setup package too.
+6f02b3f Make WIFI_IDLE_MS default into an overlay
+f180324 SettingsProvider: Load notification led customization defaults
+13f9cfb Fingerprint: handle canclled error code
+7befaf7 Automatic translation import
+cb82aae ThemeEngine : Use manifest.mf for hash calculation
+8a77f5e Toast: Fix toast layout for RTL
+944a653 Fix lockscreen disabling for MSIM.
+8928389 NavigationBar : Switch to display orientation from config orientation
+ac46ada Add custom camera shutter
+4f6a0c9 PowerManagerService: Log when proximity blocks wake
+cd8bb8b Automatic translation import
+16be2bd4 SystemUI: fix "directly show bouncer" conflicting with smart unlock
+90dcdab Merge tag 'android-5.1.1_r33' into xperience-9.1
+
+   * packages/apps/Mms/
+11c7822 Fixed processing of clicking on phone # to send_sms
+
+   * packages/apps/Settings/
+dadbe55 Show full version
+c1625ce More Battery Saver Mode Options
+ab8fcc7 Settings: Wi-Fi WPS Materialized icon
+e8a05b9 Settings: materialize grabber icon
+7935d8c Add this whitout it you can't use xperience OTA
+fbec6f4 Add supersu vector
+145337b Intergrate Viper4Android into settings and embed superSU too
+dde11ff Merge remote-tracking branch 'upstream/cm-12.1' into HEAD
+
+   * packages/apps/XPerienceCenter/
+339ab56 fix url
+2f6486b OTA:Chage green color to blue * make some white icons visible on white background
+a946200 more fixes
+eae5fc7 add priority
+2361ecd Launch app on SystemUpdates from google :D Update the name from xperience center to xperience updater
+076ecd0 OpenDelta: Add launcher shortcut
+3cae68e update urls
+
+   * vendor/XPe/
+cc4f962 fix path
+f449382 Merge remote-tracking branch 'upstream/cm-12.1' into HEAD
+2048bb9 r33
+
+====================
+     01-12-2016
+====================
+
+
+   * external/whispersystems/WhisperPush/
+453e55f Automatic translation import
+
+   * frameworks/opt/net/wifi/
+1e35a44 Use def_wifi_idle_ms to fetch WIFI_IDLE_MS defaults
+
+   * packages/apps/AudioFX/
+4c0b0e8 Automatic translation import
+
+   * packages/apps/Bluetooth/
+c20fdee Automatic translation import
+
+   * packages/apps/BluetoothExt/
+6b31a79 Automatic translation import
+
+   * packages/apps/Browser/
+84477d8 Automatic translation import
+
+   * packages/apps/CMFileManager/
+c23f255 Automatic translation import
+
+   * packages/apps/Calculator/
+c35e592 Automatic translation import
+
+   * packages/apps/Calendar/
+bbe0b1a Automatic translation import
+
+   * packages/apps/Camera2/
+fa49bdc Automatic translation import
+
+   * packages/apps/CellBroadcastReceiver/
+9a76d7d Automatic translation import
+
+   * packages/apps/Contacts/
+2fefb4c Automatic translation import
+
+   * packages/apps/ContactsCommon/
+50966eb Automatic translation import
+
+   * packages/apps/DeskClock/
+af8f902 Automatic translation import
+
+   * packages/apps/Dialer/
+100504b Automatic translation import
+
+   * packages/apps/Email/
+f4877af Automatic translation import
+
+   * packages/apps/Gallery2/
+ccaa5e8 Automatic translation import
+
+   * packages/apps/InCallUI/
+af9c930 Automatic translation import
+
+   * packages/apps/LockClock/
+ddacdc6 Automatic translation import
+
+   * packages/apps/Profiles/
+d759276 Automatic translation import
