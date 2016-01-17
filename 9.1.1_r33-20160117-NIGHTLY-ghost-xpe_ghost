@@ -1,0 +1,266 @@
+====================
+     01-16-2016
+====================
+
+
+   * android/
+94ebaab track ELEVEN from CM
+
+   * frameworks/base/
+94f3657 StrictMode: fix deserialization of ViolationInfo on large stacks
+
+   * kernel/motorola/ghost/
+31adc91b update defconfig again
+2815e35 msm: mdp: Add userspace LUT tuning
+1cf4632 sched/cpuidle: reduce IPI storm. Backport upstream 3.16 scheduler updates
+d4fef32 block: recursive merge requests
+b61abd4 KGSL: GPU kgsl_pwrctrl.c use min pwr level as default. to reduce battery drain.
+26496b9 drv2605: vibe strength control
+1914880 drv2605: expose vibrator to kernel
+4a32f23 mm/ksm: engage deferred timer by default
+2ba8c3a ksm: Provide support to use deferred timers for scanner thread
+ea0248a crypto: add crypto_[un]register_shashes for [un]registering multiple shash entries at once
+b1c43a5 crypto: sha1 - implement base layer for SHA-1
+7941480 crypto: arm/sha1 - move SHA-1 ARM asm implementation to base layer
+e449f10 crypto: arm - replace memset by memzero_explicit
+526c2a0 crypto: sha512 - Expose generic sha512 routine to be callable from other modules
+6a0a6b9 crypto: sha256 - Expose SHA256 generic routine to be callable externally.
+3eb5fac ARM: pull in <asm/simd.h> from asm-generic
+6a0c322 ARM: 8120/1: crypto: sha512: add ARM NEON implementation
+9c63df0 ARM: 8119/1: crypto: sha1: add ARM NEON implementation
+21e6a25 ARM: 8118/1: crypto: sha1/make use of common SHA-1 structures
+1f6df9f crypto: arm-aes - fix encryption of unaligned data
+87f036c CRYPTO: Fix more AES build errors
+b996d97 ARM: add .gitignore entry for aesbs-core.S
+97a6031 crypto: create generic version of ablk_helper
+23de599 ARM: add support for bit sliced AES using NEON instructions
+9473c2e ARM: move AES typedefs and function prototypes to separate header
+2d173c7 ARM: 7837/3: fix Thumb-2 bug in AES assembler code
+f0c326a ARM: 7723/1: crypto: sha1-armv4-large.S: fix SP handling
+00ef4b0 ARM: 7626/1: arm/crypto: Make asm SHA-1 and AES code Thumb-2 compatible
+afb7ad5 arm: Added NEON compilation flag to VFP module
+1b41ee8 ARM: Perform the creation of procfs node for VFP later
+0b7115d arm: vfpmodule: Fix warning procfs vfp_bounce reporting failed
+1f8c9ae Remove duplicated get_cpu_idle_time_jiffy get_cpu_idle_time
+c4174ea cpufreq: Always allow update of user policy
+c706028 cpufreq: Save user policy min/max instead of policy min/max during hotplug
+7ea04dd msm: cpufreq: Only apply driver limits for scaling_min/max_freq writes
+c8eda86 cpufreq: Retain only online cpus in managed_policy->cpus
+52205a5 drivers: cpufreq: Send a uevent when governor changes
+1a17ae6 cpufreq: interactive: Honor boosted state in several timer calculations
+5b68fc3 cpufreq: interactive: Consider changed min limit a frequency boost
+a1bbac8 cpufreq: interactive: Honor changed minimum frequency
+b94ee57 cpufreq: interactive: Exercise hispeed settings at a policy level
+1d8a670 cpufreq: interactive: Make window alignment optional
+f4e61f7 cpufreq: interactive: Add max_freq_hysteresis feature
+31787c5 cpufreq: interactive: Use del_timer/add_timer_on to rearm timers
+dd23733 cpufreq: interactive: Round up timer_rate to match jiffy
+dfd22cd cpufreq: interactive: Reset last evaluated jiffy in idle callback
+b573494 cpufreq: interactive: Align timer windows for all CPUs
+1b8081c cpufreq: interactive: Squashed cleanup patches
+4f4a605 cpufreq: Move get_cpu_idle_time() to cpufreq.c
+78c7dfa cpufreq: interactive: Move definition of cpufreq_gov_interactive downwards
+d7d5f0b cpufreq: interactive: Remove unnecessary cpu_online() check
+9f5c44b cpufreq: interactive: Don't reset sampling down factor at max freq
+945fd98 cpufreq: Sync on thread migration optimizations
+30b423e cpufreq: interactive: delete timers for GOV_START
+4a594a9 cpufreq: interactive: Fix null pointer dereference in interactive governor
+f931432 cpufreq: interactive: Use default min_sample_time if SDF is zero
+81da5e8 cpufreq: interactive: Modifying sync_freq implementation
+ae2f344 cpufreq: interactive: Remove trace event from idle_start handler
+6bd9b05 cpufreq: interactive: Reset floor_validate_time if busy at max for 100ms
+0d81ff3 cpufreq: interactive: sync freq feature for interactive governor
+a707336 cpufreq: interactive: Allow 1 ms error in above_hispeed_delay comparisons
+8b01f28 cpufreq: interactive: Add a sampling_down_factor for max frequencies
+04d648e cpufreq: interactive: fix show_target_loads and show_above_hispeed_delay
+ad89c73 cpufreq: interactive: resched timer if max freq raised
+f8810c62 cpufreq: interactive: fix race on cpufreq TRANSITION notifier
+0f9c1f0 cpufreq: interactive: avoid underflow on active time calculation
+9c77032 cpufreq: interactive: reduce chance of zero time delta on load eval
+6864f2b cpufreq: interactive: handle errors from cpufreq_frequency_table_target
+5ade5c9 cpufreq: interactive: fix uninitialized spinlock
+c14dfc4 cpufreq: interactive: base above_hispeed_delay on target freq, not current
+04c02b9 cpufreq: interactive: fix crash on error paths in get_tokenized_data
+3070561 cpufreq: interactive: add io_is_busy interface
+11c051d cpufreq: interactive: allow arbitrary speed / delay mappings
+9994794 cpufreq: interactive: fix race on governor start/stop
+17eddec cpufreq: interactive: fix deadlock on spinlock in timer
+c245d88 cpufreq: interactive: don't handle transition notification if not enabled
+ec81cae cpufreq: interactive: init default values at compile time
+c273a7e cpufreq: interactive: default go_hispeed_load 99%, doc updates
+f715943d cpufreq: interactive: fix race on timer restart on governor start
+396c6ad cpufreq: interactive: fix racy timer stopping
+2848f56 cpufreq: interactive: fix boosting logic
+705fb64 cpufreq: interactive: add timer slack to limit idle at speed > min
+2d95d2a cpufreq: interactive: specify duration of CPU speed boost pulse
+360b6ac cpufreq: interactive: adjust load for changes in speed
+452deba cpufreq: interactive: remove load since last speed change
+2c23aa0 cpufreq: interactive: allow arbitrary speed / target load mappings
+7687635 cpufreq: interactive: apply above_hispeed_delay to each step above hispeed
+a502ee3 cpufreq: interactive: change speed according to current speed and target load
+7a65ec8 cpufreq: interactive: trace actual speed in target speed decisions
+7a266ff cpufreq: interactive: kick timer on idle exit past expiry
+da638c6 cpufreq: interactive: use deferrable timer by default
+470f891 cpufreq: interactive: pin timers to associated CPU
+9bdc32c cpufreq: interactive: run at fraction of hispeed_freq when load is low
+0505664 cpufreq: interactive: always limit initial speed bump to hispeed
+72c79b2 cpufreq: interactive: remove input_boost handling
+2cc56ee cpufreq: interactive: handle speed up and down in the realtime task
+777f871 cpufreq: interactive: keep freezer happy when not current governor
+97ab8c0 cpufreq: interactive: take idle notifications only when active
+e512cda Revert "cpufreq: fix interactive bug during hotplug"
+c3ff117 Revert "cpufreq: interactive: Fix blocked task warnings"
+7ea58d9 cpufreq: interactive: Fix blocked task warnings
+4b91753 cpufreq: fix interactive bug during hotplug
+d88b14a cpufreq: interactive: fixup trace of string params
+ddf1940 cpufreq: interactive: restart above_hispeed_delay at each hispeed load
+3a74580 cpufreq-interactive: Compile fixup
+e079a8c cpufreq: interactive: add boost pulse interface
+94d31e7 cpufreq: interactive: set floor for boosted speed
+6e501c9 cpufreq: interactive: Add sysfs boost interface for hints from userspace
+52d79f7 cpufreq: interactive: remove unused target_validate_time_in_idle
+f356e5d cpufreq: interactive: Boost frequency on touchscreen input
+acfa4de cpufreq: interactive: Separate speed target revalidate time and initial set time
+72a0342 cpufreq: interactive: base hispeed bump on target freq, not actual
+70aa1c3 cpufreq: interactive: adjust code and documentation to match
+9d22292 cpufreq: interactive: configurable delay before raising above hispeed
+cdb07c1 cpufreq: interactive: don't drop speed if recently at higher load
+38775c2 cpufreq: interactive: set at least hispeed when above hispeed load
+0df915c cpufreq: interactive: apply intermediate load to max speed not current
+5f4635f cpufreq interactive governor: event tracing
+ef0c4c4 cpufreq: interactive: New 'interactive' governor
+289cc9a cpufreq: interactive: Remove interactive
+afe6946 Update to XPerience-03
+3120a85 mm: remove compressed copy from zram in-memory
+407941d staging: zram: Rate limit memory allocation errors
+e578144 zram: Change ratio to 90% for bad compress
+a0712ff zram: Disable allocation failure logging
+eb46fe0 diag: Make fixes to diag_switch_logging
+4c0d7d8 diag: Remove error message
+2f94aab msm: ADSPRPC: Add checks for erroneous values
+bec9699 diag: Change maximum size of error response
+959ff28 msm: fix in-tree compilation for perf_trace_counters In-tree compilation for arch/arm/mach-msm/perf_trace_counters.c was hitting this error:
+b1d804d ARM: 7565/1: sched: stop sched_clock() during suspend
+d22ff49 ARM: 7486/1: sched_clock: update epoch_cyc on resume
+63bb96e msm: perf: set filter bits for cycle counter on krait
+0cd433f msm: arm: make nohlt readable
+260586db msm: perf: tracectr: Initialize cnts after hotplug
+1974ed8 msm: perf: Fix cpu id logic in tracectr notifier
+48c9644 msm: perf: fix formatting of trace entry
+274e2f5 Perf: Fix PID for tracepoints
+26b4660 Perf: Make per-process counters cumulative
+3bb04b5 msm: perf: clean up duplicate constraint events
+2ae1b0b msm: perf: initialise krait perf L2 counter enables
+d24693a Perf: bring CPU online if needed when disabling irq
+9d142de msm: perf: Fix debug node permissions
+828c89d ARM: dma-mapping: don't allow DMA mappings to be marked executable
+35bf6bc ARM: fix executability of CMA mappings
+04f2cfa ARM: mm: remove IPI broadcasting on ASID rollover
+b169c61 msm: perf: Add L2 support for tracecounters
+3f64e94 Perf: Make per-process counters configurable
+11435fa Perf: Add L1 counters to tracepoints
+c7eae0d Perf: Check perf activity on correct CPU
+08bf313 arm: new way of handling ERESTART_RESTARTBLOCK
+a570c25 arm: if there's no handler we need to restore sigmask, syscall or no syscall
+0fbea93 ARM: 7880/1: Clear the IT state independent of the Thumb-2 mode
+394ae5f msm: pm-8x60: Remove timeout waiting for cpu to power collapse
+0b28fba msm:pm: Fix for race condition of starting cpu1 when cpu0 in PC.
+e3e6a66 arm: Move the secondary_startup to __CPUINIT section.
+38100d1 gpu: ion: add 'Refactor locking' to Moto custom debug code
+c89c283 gpu: ion: Delete invalid extra file
+8ea7adf gpu: ion: add locking to traversal of volatile rb tree
+c1331ad gpu: ion: fix locking issues in debug code
+6fa31a7 ion: cma: Add debug heap ops for CMA heap
+3366e80 gpu: ion: use a list instead of a tree for heap debug memory map
+3102943 gpu: ion: Refactor locking
+a2b151f msm: kgsl: Don't hold the refernce to the process private in kgsl create context
+e5424f0 msm: kgsl: Fix spinlock recursion in destroy pagetable
+5869ad1 msm: kgsl: prevent kgsl_get_pagetable from returning a destroyed pt
+d24427d msm: kgsl: hold a process_private refcount in process_mem_print
+989817e msm: kgsl: Cleanup the memory free list
+d0c9d74 msm: kgsl: Reset VSC control registers
+edd5820 msm: kgsl: Fix GPU hang recovery logic
+8a67429 msm: kgsl: Release process mutex appropriately to avoid deadlock
+3aeda83 msm: kgsl: fix a race condition when calling kref_put
+ba862df msm: kgsl: use %pK to restrict printing GPU / memory addresses
+02aa9b2 msm: kgsl: don't use sscanf()
+ccfdabc msm: kgsl: Remove sscanf() from kgsl_pwrctrl.c
+e50a6d6 ASoc : use hwdep node to get calibration
+1a0ef45 ASoC: msm: qdsp6v2: add check for NULL dereference
+5c17f63 ASoC: msm: qdspv2: Fix junk characters in session name
+731a51c ASoC: msm: qdsp6v2: check proxy port is open when closing
+ce150c8 ASoC: qdsp6v2: fix the audio record failure
+cbd4b11 audio: Change to set the USB switch state correctly
+cb56de9 msm: qdsp6v2: Increase max ports in APR
+462bf43 ASoc: msm: qdsp6v2: Fix for NULL check
+bdabede msm: qdsp6v2: memset stack buffer allocation.
+47d8be9 ASoC:wcd9304:Modified code to acquire codec_resource_lock only once.
+05a4463 msm: qdsp6v2: memset stack buffer allocation.
+d9aaf0a msm: qdsp6v2: memset stack buffer allocation.
+3f3d6a6 msm: qdsp6v2: Deleting kernel driver from arch/arm/mach-msm
+0a9f12d msm: audio: qdsp6v2: memeset msm_audio_stats to zero
+2e56db6 msm: audio: qdsp6v2: Zero the cfg stack var
+834bdaf msm: Remove files no longer buildable under arch/arm/mach-msm
+f304db6 ASoC: msm: qdsp6v2: Fix buffer overflow in voice driver
+6a3d777 ASoC: msm: qdsp6v2: Copy frame data based on frame length
+b1c254e msm: audio: qdsp6v2: Change acdb_mmap size variable to unsigned
+2a911df ALSA: pcm: check for integer overflow during multiplication
+bda0d55 ASoC: wcd9304:Fix RX voice in handset call distort after reboot the device
+ab9b5d9 ASoC: msm: qdsp6: Fix pop noise seen with touch tone during playback
+fd47a28 ASoC: msm:Initialize local variable output_meta_data.
+aac6a39 crypto: msm: check potential integer overflow
+fc6fdaa crypto: msm: Use scnprintf() instead of snprintf()
+2f97a6d crypto: msm: Fix null pointer exception in qcrypto_count_sg()
+e379175 mm: vmscan: fix do_try_to_free_pages() livelock
+e9ec2c1 swap: add per-partition lock for swapfile
+d357dae mm/page_alloc.c: fix watermark check in __zone_watermark_ok()
+e767f52 prima: memset the command buffer in GetCommandBuffer routine
+c88fc6f msm: rpc: Fix uninitialized union in rpc router close function
+5d23299 msm: rpc: Fix uninitialized union in rpc router code
+024dc43 mmc: Allow forward compatibility for eMMC
+fd304b9 dtc: add integer overflow checks in fdt header
+778625f target/rd: Refactor rd_build_device_space + rd_release_device_space
+e146fd3 seq_file: introduce seq_setwidth() and seq_pad()
+85fd5c6 seq_file: remove "%n" usage from seq_file users
+162f2d2 msm_rmnet_sdio: Fix potential memory corruption
+3b52ead msm_rmnet: Fix potential memory corruption
+349435e msm: dma: Moving queue_work() function within spinlock
+3250a25 scripts/kallsyms: filter symbols not in kernel address space
+4e7c01a misc: isa1200: Add mutex for clk_on
+69eca08 msm: clock-rpm: Make rpm clocks sleeping clocks
+274b0f6 msm: Remove old unused sdio related code
+6f0deac msm: buspm: Correct size type in buspm_xfer_req
+9a0cc42 kernel/msm: Add qrngp header file
+5e15b98 Bluetooth: Replace sprintf with snprintf
+c26e469 mach-msm:bus_config:fix possible missing error check
+d82b1d6 csdio: Remove the driver
+53b6b49 vsprintf: ignore %n again
+f27a9b3 lib/scatterlist: error handling in __sg_alloc_table()
+a93f087 genalloc: Correct nbytes calculation on long boundary
+dc395c4 msm: rpm: do not disable the interupt during suspend
+b04c9b4 power: pm8921-charger: Fix delay in USB wall-charger removal
+de53b9e kernel: Restrict permissions of /proc/iomem.
+1499a48 sched: Make sure to not re-read variables after validation
+371e78c sched: re-calculate a cpu's next_balance point upon sched domain changes
+6c2a2a4 sched: Reset rq->next_interval before going idle
+0544372 power: don't wait for timeout if sys_sync completes early
+b45000c workqueue: Added null check and warning
+9e39c63 msm_serial_hs: Discard Clock On/Off request after Port Close
+74e1cda msm_serial_hs: Programming Auto RFR Ctrl bit
+3e2b258 msm_serial_hs: Vote for Clocks
+a074555 msm_seial_hs:Removing call to Spin unlock twice
+371797f msm: mdm: Changes to implement notifications from the mdm-driver
+5eaf866 cpufreq: ondemand:kernel NULL pointer dereference at dbs_check_cpu
+d2020bf cpufreq: ondemand: Fix locking in store_powersave_bias
+068abf3 cpufreq: ondemand: Fix store_powersave_bias() race with hotplug
+70c340b cpufreq: ondemand:Fix NULL check for dbs_info->cur_policy
+3e41013 cpufreq: ondemand: Fix locking issue in store_powersave_bias
+99877d3 cpufreq: ondemand: Fix kernel warning in cpufreq_governor_dbs
+1ac6ac5 msm: cpufreq: Unable to handle kernel NULL pointer
+
+   * packages/apps/Settings/
+2831248 fix some unworking things and fix FC
+
+   * vendor/XPe/
+8403abc remove this
+3c6f3a4 Add status bar network traffic to all-
