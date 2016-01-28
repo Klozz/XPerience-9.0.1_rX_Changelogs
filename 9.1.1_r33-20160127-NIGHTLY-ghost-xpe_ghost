@@ -1,0 +1,130 @@
+====================
+     01-27-2016
+====================
+
+
+   * build/
+dcbf5a2 Build: Use 0 compression ratio for jar files
+
+   * device/motorola/msm8960dt-common/
+088adbb fix this shit xD
+
+   * frameworks/base/
+83b5570 Revert "SystemUI: Add option for new poly hd custom headers (1/2)"
+48b15e2 fix shit
+c84d058 fix header images FC
+
+   * packages/apps/Settings/
+9143b34 Revert " Settings: Add option for new poly hd custom headers (2/2)"
+
+====================
+     01-26-2016
+====================
+
+
+====================
+     01-25-2016
+====================
+
+
+   * device/motorola/msm8960dt-common/
+7e62f87 fix
+58df2ac well we have a problem so restore to ext4
+38f8d77 create a new fstab fstabrec coz recovery dont allow zram xd
+
+   * frameworks/base/
+8aaaa2e import android.util.Log; xd
+f34d75f Paella: Enable Spanish single shift table
+6354a29 Revert "Services: DO NOT send Broadcast On boot"
+7d84786 New DocumentsUI icon
+9c36caf aapt: Don't compress qmg, wbp and arsc assets
+56e4578 aapt: Default to 0 compression ratio
+2ca8b69 Use Teal M Logo for Frameworks
+ac03799 Battery saver enhancements
+e4b494a  Delete Media Tests
+
+   * packages/apps/Settings/
+f74afe9 add some missing utils and fix notification drawer
+
+====================
+     01-24-2016
+====================
+
+
+   * device/motorola/msm8960dt-common/
+6c9ffaa fstab: add zRAM
+19d1d91 fstab.qcom: add support to F2FS system
+
+   * frameworks/base/
+c7ee6b5 Services: DO NOT send Broadcast On boot
+a2a3430 GlobalScreenshot: increase thread priority
+dcf5db9 Change SQL to improve performance.
+30db79b Turn advanced devices and file sizes on by default
+46b9ac9 WallpaperCropper: use same action bar style as Launcher3
+7337f81 base: add keyguard support in WallpaperCropActivity
+020dd51 Fix WallpaperCropper crash when setting wallpaper over 8MB
+ff6a00a Reduce risk of memory corruption due to finalization.
+3f8f538 Revert "Squashed On-The-Go mode (1/2)"
+b4a0355 SystemUI: Add option for new poly hd custom headers (1/2)
+a7ff466 SystemUI: Add new HD poly effect contextual header images
+a2543f7 base: delete obsolete context header images
+597777e SystemUI: time-context header fixes
+63999b1 [1/2] SystemUI: Add time-context headers to the notification header
+f0bbca0 Use a better icon for headset in statusbar
+2ee4f9c base: display headset when plug
+c8b65b4 Squashed On-The-Go mode (1/2)
+   * device/motorola/msm8960dt-common/
+58df2ac well we have a problem so restore to ext4
+38f8d77 create a new fstab fstabrec coz recovery dont allow zram xd
+6c9ffaa fstab: add zRAM
+19d1d91 fstab.qcom: add support to F2FS system
+
+   * frameworks/base/
+8aaaa2e import android.util.Log; xd
+f34d75f Paella: Enable Spanish single shift table
+6354a29 Revert "Services: DO NOT send Broadcast On boot"
+7d84786 New DocumentsUI icon
+9c36caf aapt: Don't compress qmg, wbp and arsc assets
+56e4578 aapt: Default to 0 compression ratio
+2ca8b69 Use Teal M Logo for Frameworks
+ac03799 Battery saver enhancements
+e4b494a  Delete Media Tests
+c7ee6b5 Services: DO NOT send Broadcast On boot
+a2a3430 GlobalScreenshot: increase thread priority
+dcf5db9 Change SQL to improve performance.
+30db79b Turn advanced devices and file sizes on by default
+46b9ac9 WallpaperCropper: use same action bar style as Launcher3
+7337f81 base: add keyguard support in WallpaperCropActivity
+020dd51 Fix WallpaperCropper crash when setting wallpaper over 8MB
+ff6a00a Reduce risk of memory corruption due to finalization.
+3f8f538 Revert "Squashed On-The-Go mode (1/2)"
+b4a0355 SystemUI: Add option for new poly hd custom headers (1/2)
+a7ff466 SystemUI: Add new HD poly effect contextual header images
+a2543f7 base: delete obsolete context header images
+597777e SystemUI: time-context header fixes
+63999b1 [1/2] SystemUI: Add time-context headers to the notification header
+f0bbca0 Use a better icon for headset in statusbar
+2ee4f9c base: display headset when plug
+c8b65b4 Squashed On-The-Go mode (1/2)
+
+   * packages/apps/Settings/
+f74afe9 add some missing utils and fix notification drawer
+0dba136 Revert " [2/2] Settings: On-The-Go mode"
+c7074f3  Settings: Add option for new poly hd custom headers (2/2)
+75b2f8b Custom HEADERS: Add time-context headers to the notification header
+de2252f  [2/2] Settings: On-The-Go mode
+0dba136 Revert " [2/2] Settings: On-The-Go mode"
+c7074f3  Settings: Add option for new poly hd custom headers (2/2)
+75b2f8b Custom HEADERS: Add time-context headers to the notification header
+de2252f  [2/2] Settings: On-The-Go mode
+
+
+
+====================
+     01-23-2016
+====================
+
+
+   * prebuilts/cmsdk/
+a538920 prebuilts/cmsdk: Update for API 4 maven central release.
+
