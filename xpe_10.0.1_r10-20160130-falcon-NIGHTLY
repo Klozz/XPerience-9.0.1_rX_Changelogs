@@ -1,0 +1,335 @@
+====================
+     01-29-2016
+====================
+
+
+   * android/
+88f3b03 change to tes branch
+
+   * build/
+18ae6a0 releasetools: Store and use the dt image file through target files
+3ea0829 build: force .config update if additional kernel config changes
+f9b5dc8 If a console doesn't exist, read password from stdin.
+0a195be binary: Don't run protobuf header relocations if origin/target are the same
+3d120e1 binary: Allow specifying a path for generated proto headers
+
+   * device/motorola/falcon/
+54bd1a9 falcon: init: Additional CDMA props
+6c6722b falcon: Allow to install cm-13.0 on CDMA variants
+10dae96 falcon: Add a CDMA specific APN list
+960ce93 falcon: init: Fixup CDMA carrier detection
+1b3f6a7 falcon: init: Minor code refactoring
+8418709 falcon: Snap: Disable ZSL
+
+   * device/motorola/msm8226-common/
+1c58214 add support to f2fs cache
+40af6bc CameraWreapper: fix wrapper bad merges
+2ada899 msm8226-common: Enable APN settings for CDMA devices
+f76d64d msm8226-common: releasetools: Remove radio version assertion
+b2c1110 Revert "msm8226-common: camera: Add ISO support (falcon/peregrine)"
+6738fd6 msm8226-common: clean up cmdline * console is overwritten by bootloader * CONFIG_USER_DEBUG is disabled, so no need to keep user_debug * same deal for msm_rtb, which depends on CONFIG_MSM_RTB From fb13d2c117c66431f6b122f6780711e200556de8 Mon Sep 17 00:00:00 2001 From: xboxfanj <xboxlover360@gmail.com> Date: Sat, 16 Jan 2016 18:45:48 +0100
+c9b0311 msm8226-common: camera: Remove preview fps range hack
+0675361 msm8226-common: camera: Don't disable HW face detection
+202de81 Revert "some changes to hack shits"
+d637047 some changes to hack shits
+
+   * frameworks/base/
+b4d0fc8 updated header images
+bb815e5 Fix slow wifi connection from QS.
+b4a8818 CamcorderProfile: Add 1440p camcorder profile
+ab70ef0 Rework thumbnail handling
+f387ea4 telephony: Hack GSM and LTE signal strength
+85a5315 WindowManagerService: Tweak the animations
+2c9adf6 SystemUI: add better hints when trying to delete edit tile
+4bf5620 SeekBarVolumizer : Disable notification volume if RINGER_MODE_VIBRATE
+3a95319 Partially revert 'SOFTAP: implement SOFTAP new requirement in framework.'
+f3f3f04 ZenMode : Update defaults for CTSVerifier
+9ec8cfd Tethering: Fix number of device connected
+636ac29 am: Don't take down activity process if target intent component is null.
+1d81c2c Themes: Add xpe setupwizard into themeservice
+06c367b Themes: Fix CMSetupWizard package name in ThemeService
+9435cb1 Themes: def theme package is defined in CMSettings
+36e8283 Wifi tile: don't set items visible from non-ui thread
+205e7c1 SystemUI: fix contracting qs settings page
+ec0962b SystemUI: improve tile caching mechanism
+1b3c687 allow whitelisting of ACCESS_KEYGUARD_SECURE_STORAGE
+eb9d49d Make lights out mode of navigation bar consistent to normal mode.
+979ff93 SettingsProvider : Don't replay aosp defaults every boot
+2a36063 aapt: add check for untranslatable "string-array"s
+cd644a5 pm: Fix ordering of parameters for sendPackageBroadcast.
+8d24a69 SystemUI: disable editing tiles while in lock screen
+2aba112 allow priveleged phone state permission to be whitelisted
+dae8eec Answer call with hardware HOME button (2/2)
+c20a952 SystemUI: make sure to expand all the way when flinging
+bfb8058 SystemUI: initialize drag panel with proper column count
+22accfa SystemUI: handle when brightness slider is hidden
+cac0990 Automatic translation import
+66bde8b DisplayMetrics: set noncompat DPI as well
+8991117 tests: Fix compilation issue for themes unit tests
+0238865 Download: add to support pause/resume download by manual
+b15e304 core: Improve protected apps notification message
+7da007a SystemUI: Move CAF string
+f391a10 libhwui: fix texture memory leak
+9c38bee batteryservice: Avoid exception if device doesn't support HVDCP
+f035a94 frameworks/base: Adjust the index of LHR tones
+45ff57b Settings: Fix bluetooth phone icon disappear in Settings/Bluetooth.
+4c21870 Associate connected APN list with subscription
+9012584 Wi-Fi: Introduce state variable to signify Wi-Fi turn on Fail
+02607cf StatusBar: Update TTY icon on status bar at boot
+742bfec Introduce a flag to signify the presence of saved profile in scan results
+5ed454d Bluetooth: OBEX: Don't close transport when obex is disconnected
+ba512ab [Telephony]: Add channel 60 support
+877b977 Add left QS quick pulldown (1/3)
+6248153 Fingerprints: allow devices to restrict 3rd party access
+51b508d fw: Fix protected apps implementation.
+4e29e2c Support alert type profile default:Vibrator & Ringtone for settings.
+029b455 SysUI: Recreate volume dialog on theme change
+7806437 Themes: Reference app resource when compiling theme [2/2]
+31fca99 SysUI: Check that backgrounds are RippleDrawables
+039b2ed SysUI: Guard against NPE in SignalClusterView
+3afcf34 fix race condition between HWUI cache and renderThread
+
+   * hardware/qcom/display-caf/msm8916/
+d95fa42 Merge remote-tracking branch 'caf/LA.BR.1.2.6_rb1.8' into cm-13.0-caf-8916
+845cb50 gralloc: allow forcing old pixel alignment
+696adeb gralloc: fall back to old pixel alignment on old blobs
+
+   * hardware/qcom/media-caf/msm8916/
+19a2e7f Merge remote-tracking branch 'caf/LA.BR.1.2.6_rb1.8' into cm-13.0-caf-8916
+
+   * packages/apps/CMFileManager/
+e0318a5 Cleanup permission strings again
+
+   * packages/apps/Messaging/
+005a261 Messaging: Port of quick message from MMS
+7f5fbb7 Messaging: Fix for UnicodeStripping for multi-character replacement
+
+   * packages/apps/Settings/
+91b202b fix build
+b80257e Fingerprint: do not error out when stopping to listen
+8c44e24 ProtectedApps: add up navigation and fix action bar icons
+0e68295 Settings : Finish SimPreferenceDialog on dismiss
+068832c Settings : Fix linked volume crash + inconsistent state
+1e47ef3 Settings : Improve app info screen
+174b1bf [2/2] Settings: blacklist: update iconography
+a497f80 Settings: hide light pulse settings if not available
+08382b6 Settings: fix a few color picker inconsistentcies
+3cd9575 MasterClear: update UI
+b6603c4 Settings : Add overlay for hiding wifi region code
+5cd513f Fix alignment on dashboard.
+2bfd1dd Automatic translation import
+dc15032 Regulatory text color: make this readable
+efcc3f1 Settings: Apps started on boot shortcut in memory settings
+ddf16b7 Settings: Move Do Not Disturb Access under DND settings
+ecb7d2f Improve a SIM enabler string
+468c6b9 Add left QS quick pulldown (2/3)
+30fc3fe Settings : Improve usage stats screen
+50deb1d Settings: Add fingerprint authentication for protected apps.
+ae6d621 Settings: Actually expose protected apps settings.
+2d5832d Break out status bar icon from extdesk icon.
+
+   * packages/apps/SetupWizard/
+7b10599 SetupWizard : Use MccTable for mcc -> locale lookup
+16e8626 Themes: Re-enable applying theme in OOBE
+2e1a541 Automatic translation import
+969fa4a SetupWizard : Ensure we don't override user locale picks
+e7d66a8 SetupWizard : Switch to mcc/mnc locale
+
+   * packages/apps/Snap/
+0d1bd29 Improve maps app string
+adb421e Snap: support resolutions used by Moto X Play
+8f6504f Automatic translation import
+be00eae Snap: Restore flash mode setting
+b0b6297 Snap: Add icons to all scene modes
+2a3f5a9 Snap: Add icons to all remaining preferences
+0789ff5 Snap: update shutter button style
+9a7a44e Snap: do not restart preview during longshots
+a557839 Fix up layout of auto HDR notice and histogram view.
+059f34d Remove unused menu indicators code.
+fde1657 Avoid static member variable.
+66ab9c1 Improve CameraControls layout code.
+4c05218 Fix transparent background color.
+4acd8a3 SnapdragonCamera: Fix UI alignment glitches when nav-bar is enabled
+8b7db11 Snap: Don't enable ZSL when disabling HDR
+
+   * packages/apps/Stk/
+f61ae60 Launcher: Present STK app name if possible
+e2d12df Update layout to Material
+
+   * system/core/
+23ac678 rootdir: Update cpufreq permissions when governor changes
+
+   * vendor/XPe/
+7d7b226 fix this
+485139c recovery: Add new rules for recursive wipe
+b154b93 Grant platform apps access to /mnt/media_rw with sdcard_posix label
+
+====================
+     01-28-2016
+====================
+
+
+   * bootable/recovery/
+a6a4c8a recovery: Fix mount_for_wipe
+c7610f2 recovery: Fix recursive rm wipe of data
+
+   * packages/apps/Messaging/
+8668700 Framework to Local Blacklist Synchronization Fix
+
+   * packages/apps/PhoneCommon/
+a809cc0 Add last call fail cause 26 string.
+
+   * packages/apps/Trebuchet/
+7df0227 Port Remote Folder from 12.1 to 13.
+84dfd2a Revert "fix CTS failure on Trebuchet - manually picked from a269d518db02c8383e3621dff9d6054e3e9e48d6"
+
+====================
+     01-27-2016
+====================
+
+
+   * cts/
+d4c97ef Merge "Revert "Cts test fix for shortcode 48000" BUG: 26714654" into marshmallow-cts-release
+1247bca Revert "Cts test fix for shortcode 48000" BUG: 26714654
+
+   * device/motorola/msm8960dt-common/
+9466770 some changes for M
+
+   * vendor/motorola/
+dc8c2cd Merge remote-tracking branch 'cm/cm-13.0' into HEAD
+e6f049c msm8960dt: QC location service APK is not working in M anymore, remove it's   dependencies.
+
+====================
+     01-26-2016
+====================
+
+
+   * external/uicommon/
+0216401 Make into module
+
+   * hardware/qcom/fm/
+93ad52e libfm_jni: Confine the firmware-load skipping to the actual loading
+208ee64 FM: Do not stop FMRadioService if FM is still on
+
+   * hardware/ti/omap4/
+d3699e4 Add common omap4 init file
+f3f7678 Add common sepolicy
+
+   * packages/apps/CMBugReport/
+6430f1e Update CMBugReport to have separate urls for uploads
+
+   * packages/apps/CMFileManager/
+d6ce089 Refine CMFM permissions.
+
+   * packages/services/Telecomm/
+4f7086f [1/2] Telecomm: blacklist: update iconography
+
+   * vendor/cmsdk/
+ad6f85c CMSettingsProvider: Don't trample default values on migrate.
+3629a57 cmsdk: remove visualizer from default qs tile list
+a3c05bf Revert "cmsdk: Add example service test."
+25a7147 Revert "cmsdk/tests: Temp hack to fix `mka` builds."
+
+====================
+     01-25-2016
+====================
+
+
+   * external/libchrome/
+1ac3a5e libchrome: Add files needed by some veyron variants on Chrome OS
+
+   * external/libnfc-nci/
+9fb5e21 libnfc-nci: Fix Ubikey on pn5xx devices
+
+   * hardware/qcom/display-caf/msm8996/
+17f2d38 Don't build lights module if vendor supplies it
+
+   * hardware/ril-caf/
+09b05fe librilutils: Relocate pb-generated objects to their expected path
+db90d15 Revert "Fix libril build errors"
+
+   * packages/apps/Bluetooth/
+78fbdf9 Automatic translation import
+
+   * packages/apps/Browser/
+33c7f9d Automatic translation import
+
+   * packages/apps/CMBugReport/
+33c9b1a Automatic translation import
+
+   * packages/apps/CMFileManager/
+1f90d24 Automatic translation import
+901e396 Adding NULL checks AsyncResultProgram.java
+
+   * packages/apps/Contacts/
+c1cee5b Automatic translation import
+
+   * packages/apps/ContactsCommon/
+64f99f8 Automatic translation import
+
+   * packages/apps/Dialer/
+4ca90e6 Automatic translation import
+
+   * packages/apps/Gallery2/
+163a4e2 Automatic translation import
+
+   * packages/apps/InCallUI/
+627ffdd Automatic translation import
+
+   * packages/apps/LockClock/
+14c4616 Automatic translation import
+
+   * packages/apps/Messaging/
+742d830 Automatic translation import
+
+   * packages/apps/PhoneCommon/
+61c82d8 Automatic translation import
+
+   * packages/apps/Profiles/
+6064f03 Automatic translation import
+
+   * packages/apps/Screencast/
+5447314 Automatic translation import
+
+   * packages/apps/SoundRecorder/
+3fa2c83 Automatic translation import
+
+   * packages/apps/Stk/
+8e1100e Automatic translation import
+
+   * packages/apps/Terminal/
+8a4e622 Automatic translation import
+
+   * packages/apps/Trebuchet/
+e76e868 Trebuchet: Fix hidden folder name color
+2cdfb1d Trebuchet: Fix hidden folder remove icon color
+2e8c739 Automatic translation import
+
+   * packages/apps/TvSettings/
+26d5ad1 Automatic translation import
+
+   * packages/apps/UnifiedEmail/
+7bb321f Automatic translation import
+
+   * packages/providers/DownloadProvider/
+e04900e Automatic translation import
+
+   * packages/providers/ThemesProvider/
+0bc8eda Automatic translation import
+
+   * packages/screensavers/PhotoTable/
+d36882e Automatic translation import
+
+   * packages/services/Telecomm/
+eff91f4 Telecomm : unblock calls and messages via Blacklist notification
+c1c9af0 Automatic translation import
+
+   * packages/services/Telephony/
+48e714f Automatic translation import
+
+   * packages/wallpapers/PhotoPhase/
+9bd5d3d Automatic translation import
+
+   * vendor/cmsdk/
+d0d4ce9 CMSettings: Fix defaults load on provider creation.
+910648e Automatic translation import
