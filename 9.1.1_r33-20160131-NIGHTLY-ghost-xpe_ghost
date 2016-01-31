@@ -1,0 +1,30 @@
+====================
+     01-31-2016
+====================
+
+
+   * device/motorola/ghost/
+62cd796 update thermald to go with 5.1 stock
+
+   * device/motorola/msm8960dt-common/
+eda1dd8 add zram
+c82e753 msm8960: init: Add mpdecision file socket creation into init Add mpdecision file socket creation into target init. This change is required for SEAndroid so that mpdecision socket context are not overriden by init.
+f6a165c media_profiles: update LPCM encoding min sampling rate to 8 KHz Update LPCM encoder in media_profiles.xml to support encoding from 8 KHz to 48 KHz.
+877a195 some updates
+ae1f65c add lpcm again
+8dfe705 updated media codecs to last caf/LA.AF.1.1.1_rb1.18
+
+   * packages/apps/Settings/
+69e4436 dissable this for now
+
+   * vendor/XPe/
+803f4c7 fix this
+
+====================
+     01-30-2016
+====================
+
+
+   * device/motorola/msm8960dt-common/
+fa3310b Merge pull request #2 from tycoo/xpe-9.1
+6325252 cpufreq: limit max scaling freq
