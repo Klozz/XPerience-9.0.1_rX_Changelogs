@@ -1,0 +1,174 @@
+====================
+     02-03-2016
+====================
+
+
+   * android/
+79f28b3 track XPerience SetupWizard
+9d5e74b Manifest: Update AOSP tag to android-5.1.1_r34
+5baaf70 manifest: Remove whispersystems (EOL Feb 1)
+
+   * build/
+c673b16 build: force .config update if additional kernel config changes
+3f56feb kernel: Fix usage of KERNEL_ARCH
+20fd02f mms: introduce a shortcut to quickly rebuild kernel/boot.img
+5c6b112 kernel: prevent targets from being rebuilt needlessly
+996f4a3 kernel: don't build modules or dtbs unless enabled
+790196d Merge tag 'android-5.1.1_r34' into xperience-9.1
+
+   * device/motorola/msm8960dt-common/
+4858303 Revert "msm8960: init: Add mpdecision file socket creation into init"
+
+   * frameworks/av/
+6ba2acc [PATCH 6/6] GenericSource: reset mDecryptHandle when mDataSource is  cleared.
+cc20cb2 Merge tag 'android-5.1.1_r34' into HEAD
+
+   * frameworks/base/
+85422b5 Revert "askasklask"
+0fc726e add missing symbols
+96405aa askasklask
+7ff4fff repairing my disaster
+a76aebb update translations
+c59dddf38 change to xperience titles
+ff16695 Fix dextop message to make more good
+6989b7f SystemUI : Show create profile if user doesn't have one setup
+ed2f46e AppOps: fix wifi scan op
+fc2607d Automatic translation import
+71e464b Merge tag 'android-5.1.1_r34' into HEAD
+
+   * packages/apps/Settings/
+a3e6860 Lockscreen: Show redaction interstitial when swipe selected
+04be981 Automatic translation import
+832cf3f Settings: Default edge gesture service to false.
+b4b21fa Settings: Fix NFC Tap & pay removal
+
+   * packages/apps/SetupWizard/
+5a51172 -.- missing shit
+a60c73b SetupWizard: Remove useless WhisperPushUtils
+29c584f SetupWizard: RIP Whisperpush
+
+   * vendor/XPe/
+1ecd89f Update changelog and bump to xpe 9.1.1_r34
+7be5d93 config: telephony.mk: Remove deprecated WhisperPush
+
+====================
+     02-02-2016
+====================
+
+
+   * frameworks/minikin/
+0ef148d Merge tag 'android-5.1.1_r34' into HEAD
+
+   * packages/apps/AudioFX/
+f7344e8 Automatic translation import
+
+   * packages/apps/Bluetooth/
+a3df5c0 Automatic translation import
+
+   * packages/apps/BluetoothExt/
+3285835 Automatic translation import
+
+   * packages/apps/Browser/
+0b4b794 Automatic translation import
+
+   * packages/apps/CMFileManager/
+edf8d1f Automatic translation import
+
+   * packages/apps/Calculator/
+8d9ef59 Automatic translation import
+
+   * packages/apps/Calendar/
+049ce28 Automatic translation import
+
+   * packages/apps/Camera2/
+7b8c225 Automatic translation import
+
+   * packages/apps/CellBroadcastReceiver/
+9cd9021 Automatic translation import
+
+   * packages/apps/Contacts/
+76f3690 Automatic translation import
+
+   * packages/apps/ContactsCommon/
+c97f8fe Automatic translation import
+
+   * packages/apps/DeskClock/
+ae7d764 Automatic translation import
+
+   * packages/apps/Dialer/
+cf6e3c3 Automatic translation import
+
+   * packages/apps/Eleven/
+2bf3c8e Automatic translation import
+
+   * packages/apps/Email/
+fb65119 Automatic translation import
+
+   * packages/apps/Gallery2/
+f8a76cb Automatic translation import
+
+   * packages/apps/InCallUI/
+433e9dc Automatic translation import
+
+   * packages/apps/LockClock/
+f184b34 Automatic translation import
+
+   * packages/apps/Mms/
+9bd85af Automatic translation import
+
+   * packages/apps/PhoneCommon/
+800599e Automatic translation import
+
+   * packages/apps/Profiles/
+3300b7e Automatic translation import
+
+   * packages/apps/SoundRecorder/
+76ac837 Automatic translation import
+
+   * packages/apps/Stk/
+d7b1cb2 Automatic translation import
+
+   * packages/apps/Terminal/
+81dfd96 Automatic translation import
+
+   * packages/apps/ThemeChooser/
+05ca3f9 Automatic translation import
+
+   * packages/apps/Trebuchet/
+787ced1 Automatic translation import
+
+   * packages/apps/TvSettings/
+ca84c73 Automatic translation import
+
+   * packages/apps/UnifiedEmail/
+786fe30 Automatic translation import
+
+   * packages/inputmethods/LatinIME/
+bfc2493 Automatic translation import
+
+   * packages/providers/DownloadProvider/
+2ac8f4f Automatic translation import
+
+   * packages/providers/ThemesProvider/
+834d952 Automatic translation import
+
+   * packages/services/Mms/
+a79e29b Automatic translation import
+
+   * packages/services/Telecomm/
+9c90ea4 Automatic translation import
+
+   * packages/services/Telephony/
+e0510e6 Automatic translation import
+
+   * packages/wallpapers/Galaxy4/
+be76f5a Automatic translation import
+
+   * packages/wallpapers/PhaseBeam/
+e32e838 Automatic translation import
+
+   * packages/wallpapers/PhotoPhase/
+5286571 Automatic translation import
+
+   * vendor/cmsdk/
+7aeb228 Automatic translation import
