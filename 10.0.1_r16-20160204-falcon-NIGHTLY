@@ -1,0 +1,334 @@
+====================
+     02-04-2016
+====================
+
+
+   * android/
+99ca97f back to the default branch of system core
+80b7d0f bump to 6.0.1_r16
+
+   * build/
+48137a5 roomservice: check uniqueness by path, not name
+50e0a70 envsetup: dopush: fix error when device is not connected
+07c149f releasetools: add compatibility for full ota functions with incrementals
+6725a67 releasetools: Use the first entry of a mount point when reading fstab
+3e6bf99 Merge tag 'android-6.0.1_r16' into HEAD
+
+   * device/motorola/falcon/
+1704618 falcon: init: Detect Boost Mobile
+
+   * external/libchrome/
+602804e Add libchrome-crypto to the Makefile.
+
+   * external/toybox/
+b90823e Don't exit with failure code when cp ownership preservation fails
+
+   * frameworks/base/
+a4463bb Revert "Screen pinning improvements"
+69e6f4d remove duplicated variable
+2e7ef6a Battery: Show battery fully charged notification
+dcb97c2 Fix pattern visibility settings (1/2)
+db2b884 Default time format is hard coded to 24
+c7c21a9 Alarm: add missing closedir after opendir when searching for RTC
+76219b6 String update, change wording from "Mobile" to "Cellular"
+da8e847 fw: Make sure to get the actual ringtone uri per subId.
+558db6a nms: Actually allow smsRingtone to work.
+620a0d3 SystemUI : Show create profile if user doesn't have one setup
+ec0285e Automatic translation import
+c107ca2 Tethering: Turn off Wi-Fi Hotspot after inactivity (1/3)
+f6c4349 am: Handle potential NPE when activity info can't be resolved.
+61914a7 base: fix window bounds for left hand navigationbar
+709c81a SystemUI: nuke broadcast tile from user tile list
+ab62d9f SystemUI: don't add already attached qs tile pages
+126ca1e SystemUI: smoother tile transitions when moving to 1st row
+ad7a329 SystemUI: add flashlight notification reminder
+36365bd Themes: Process applied themes before boot finishes
+29d8b1f Add FDN enabled related API
+ba84440 IMS: Add Ims reason info codes for supplementary service failures
+3acfc8e Add mapping string for call reject cause code 26.
+6d2195c SysUI: Listen for changes to LIVE_LOCK_SCREEN_ENABLED
+e83bdce Merge tag 'android-6.0.1_r16' into HEAD
+42c4de5 Merge tag 'android-6.0.1_r13' into HEAD
+
+   * frameworks/opt/net/wifi/
+2d664bb Merge "Kill wpa_supplicant before load driver" into cm-13.0
+
+   * frameworks/opt/telephony/
+3061686 Merge tag 'android-6.0.1_r16' into HEAD
+
+   * packages/apps/Settings/
+c7f1bbb fix this
+a524381 Merge tag 'android-6.0.1_r16' into HEAD
+8d5b46b Forward port pattern visibility settings (2/2)
+6acb738 String update, change wording from "Mobile" to "Cellular"
+d057542 Bluetooth: Underp "Accept all files" setting
+8d95bcb Lockscreen: Show redaction interstitial when swipe selected
+046105a Settings : Recompute highlight index upon changes
+c422e3c Settings : Show search on all panels
+986482d LiveLockScreen: Add live lock screen settings
+6370933 Automatic translation import
+6d98bd5 Tethering: Turn off Wi-Fi Hotspot after inactivity (3/3)
+106d748 [3/3]Settings: add "Accept all files" option for incoming files via BT
+267bc4b Settings: Cleanup lock screen settings
+65a0513 SimSettings: Disable entry for missing sim
+a3b5e7c Settings: Use correct icon for lock screen settings entry.
+176009a Bluetooth/Wifi: center empty view and set textAppearance to medium
+
+   * packages/apps/SetupWizard/
+49d3cbc SetupWizard : Don't update locale if sim locked
+993b510 SetupWizard: Remove useless WhisperPushUtils
+4c0aaf2 SetupWizard: Ensure UI doesn't show when user is guest
+57f15ec SetupWizard: Bring back software nav keys option
+276ef71 SetupWizard: Fix test app building in 13
+e8610a2 SetupWizard: RIP Whisperpush
+
+   * packages/apps/Snap/
+18320b1 Automatic translation import
+2738a5a Snap: Don't crash when hardcoded gallery intent fails
+
+   * packages/apps/Trebuchet/
+15d3632 Trebuchet: Fix background flicker when opening all apps
+de0af4b Trebuchet: Fix adapter derp on grid size item
+2d9c49d Trebuchet: Use DisplayMetrics density for scale factor
+
+   * packages/services/Telecomm/
+b9a9869 Revert "Telecom: add transfer call interface"
+0e98a58 Telecom: add transfer call interface
+
+   * packages/services/Telephony/
+1ff9190 Revert "Telephony: hook up call transfer"
+bb36f95 Merge tag 'android-6.0.1_r16' into HEAD
+cdab421 Telephony: hook up call transfer
+5a11264 Telephony: only add vmail sim slot indicator with multi sim
+a4e0e84 String update, change wording from "Mobile" to "Cellular"
+
+   * prebuilts/cmsdk/
+4634337 prebuilts/cmsdk: Update for latest minor stable release.
+915fbaa prebuilts/cmsdk: Prepare for 5.0 snapshots.
+
+   * system/core/
+d85c2f7 fix merge
+7a92232 Merge tag 'android-6.0.1_r13' into HEAD
+33d620c Merge tag 'android-6.0.1_r16' into HEAD
+11e868f fastboot: add Zuk to the list of known vendors
+
+   * vendor/XPe/
+cca014c fix path
+5181cf2 bump to r16
+15ae74d cm: Add live lockscreen feature
+79b1833 apns: Cricket AIO 310150: Remove duplicate
+949f9ae apns: T-Mobile 310260: Compatibility update
+
+   * vendor/cmsdk/
+a6ce9b8 cmsdk: Annotate a few zenmode tests as flaky.
+
+====================
+     02-03-2016
+====================
+
+
+   * bootable/recovery/
+3b963ad recovery: Fix media wipe
+
+   * frameworks/opt/hardware/
+bb99ef5 hardware: Add UniqueDeviceId support
+
+   * frameworks/opt/net/wifi/
+1fbe947 Kill wpa_supplicant before load driver
+
+   * frameworks/opt/telephony/
+cb7c1f5 telephony: Set multi-rat default to true.
+a966679 SIMRecords: Treat empty SPN fields as null and proceed with the fallbacks
+6119c4c SIMRecords: If there's no EF_SPN record, fallback to EF_PNN
+
+   * hardware/cyanogen/
+3083116 cmhw: Add UniqueDeviceId implementation
+
+   * hardware/libhardware_legacy/
+17d8e9f wifi: Ensure supplicant stopped in wifi_stop_supplicant
+
+   * hardware/qcom/display-caf/msm8974/
+b8c0285 Merge branch 'LA.BF.1.1.3_rb1.9' of git://codeaurora.org/platform/hardware/qcom/display into cm-13.0
+
+   * packages/apps/CMFileManager/
+b73f0c1 Automatic translation import
+
+   * packages/apps/Eleven/
+9afedcf Automatic translation import
+
+   * packages/apps/Messaging/
+b5157d2 Messaging: Don't add quick reply for MMS
+
+   * packages/providers/DownloadProvider/
+203ba0d Automatic translation import
+
+   * packages/services/Telephony/
+68b7c7a telephony: Set multi-rat default to true.
+87d7846 telephony: Allow default ssn toast notifications to be overlaid.
+
+   * vendor/cmsdk/
+eb82dbf cmsdk: cmhw: Add UniqueDeviceId support
+
+====================
+     02-02-2016
+====================
+
+
+   * device/common/
+e0e0d5b Merge tag 'android-6.0.1_r13' into 13.0
+
+   * device/google/atv/
+6ed67b2 Merge tag 'android-6.0.1_r13' into 13.0
+
+   * frameworks/av/
+fda1413 Revert "AudioMixer: delete reformatBuffer provider in proper order"
+da6f52d AudioMixer: Clear bufferProviders in correct order
+0276a2f audioflinger: Enable TEE_SINK compilation
+77062b4 Merge tag 'android-6.0.1_r13' into HEAD
+96985ed Combine 'DTS Sound (TruMedia) Postpro support in frameworks/av for Android 6.0' as a single patch.
+
+   * frameworks/minikin/
+bf5465a Merge tag 'android-6.0.1_r13' into 13.0
+
+   * frameworks/opt/telephony/
+9158cae IMS: Changes for VICE FR
+0cacbf2 Add a setting for call deflect support
+e2150d9 IMS: Add capability constant for add participant
+e506270 IMS-VT: Add capability constants for downgrade to voice support
+b004996 IMS: Default Implementation for ims interface listener
+6a5d588 IMS: Add supplementary services (hold/resume) failure codes
+
+   * hardware/broadcom/wlan/
+33a76dd Merge tag 'android-6.0.1_r13' into 13.0
+
+   * hardware/intel/img/hwcomposer/
+f8bb82a Merge tag 'android-6.0.1_r13' into 13.0
+
+   * packages/apps/AudioFX/
+6b34e3d Automatic translation import
+
+   * packages/apps/Bluetooth/
+1d9319a Automatic translation import
+
+   * packages/apps/BluetoothExt/
+a80ed8b Automatic translation import
+
+   * packages/apps/Browser/
+e10bde3 Automatic translation import
+
+   * packages/apps/CMBugReport/
+1912228 Automatic translation import
+
+   * packages/apps/CMWallpapers/
+d701513 Automatic translation import
+
+   * packages/apps/Calendar/
+1864c64 Automatic translation import
+
+   * packages/apps/Camera2/
+8cfae63 Automatic translation import
+
+   * packages/apps/Contacts/
+ef961d6 Automatic translation import
+
+   * packages/apps/ContactsCommon/
+1e000e6 Automatic translation import
+
+   * packages/apps/Dialer/
+8f517b2 Automatic translation import
+
+   * packages/apps/Email/
+08bde27 Automatic translation import
+
+   * packages/apps/Gallery2/
+7b8f013 Automatic translation import
+
+   * packages/apps/InCallUI/
+0b8ca16 Automatic translation import
+f9d5a1a Fix a race-condition that causes incorrect call deflect status
+
+   * packages/apps/LockClock/
+be097bf Automatic translation import
+
+   * packages/apps/Messaging/
+eb11c6f Automatic translation import
+a53f97d QuickMessage: Forward port string improvements
+
+   * packages/apps/PhoneCommon/
+3780192 Automatic translation import
+
+   * packages/apps/Profiles/
+34aa5e2 Automatic translation import
+
+   * packages/apps/Screencast/
+4ffc37c Automatic translation import
+
+   * packages/apps/SoundRecorder/
+2fae54a Automatic translation import
+
+   * packages/apps/Stk/
+1167517 Automatic translation import
+
+   * packages/apps/Terminal/
+7a6098f Automatic translation import
+
+   * packages/apps/Trebuchet/
+ffc1e79 Automatic translation import
+8a65082 Trebuchet: Close folder layout when adding shortcut
+
+   * packages/apps/TvSettings/
+81c4312 Automatic translation import
+
+   * packages/apps/UnifiedEmail/
+f688a0e Automatic translation import
+
+   * packages/inputmethods/LatinIME/
+5f629e9 Automatic translation import
+
+   * packages/providers/ThemesProvider/
+9c50005 Automatic translation import
+
+   * packages/screensavers/Basic/
+06c485f Create a live lock screen for Colors
+
+   * packages/screensavers/PhotoTable/
+32c4328 Automatic translation import
+
+   * packages/services/Mms/
+bcba7f5 Automatic translation import
+
+   * packages/services/Telecomm/
+e22b715 Automatic translation import
+d3a90b4 Ensure missed call notification isn't triggered for Blacklisted calls
+
+   * packages/services/Telephony/
+06363d5 Automatic translation import
+3d91a3b networksettings: Don't crash when the sim is ejected
+
+   * packages/wallpapers/Galaxy4/
+067b4a0 Automatic translation import
+
+   * packages/wallpapers/PhaseBeam/
+6335b0b Automatic translation import
+
+   * packages/wallpapers/PhotoPhase/
+de75745 Automatic translation import
+
+   * vendor/cmsdk/
+ee703e7 Automatic translation import
+
+====================
+     02-01-2016
+====================
+
+
+   * hardware/qcom/audio/default/
+9347736 Revert "hal: Set maximum channel count for msm8960"
+
+====================
+     01-31-2016
+====================
+
+
+   * vendor/cmsdk/
+c17ac38 CMSettingsProvider: Update app icon
