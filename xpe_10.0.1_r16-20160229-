@@ -1,0 +1,120 @@
+====================
+     02-29-2016
+====================
+
+
+   * device/motorola/msm8960dt-common/
+dc500a3 Fix TWRP shits -.-
+8fad6df add missing mk
+25d532f msm8960dt-common: enable BOARD_SUPPRESS_SECURE_ERASE
+dabf9b4 TWRP fix issues with formating using TWRP
+ebc1a37 msm8960dt-common: enable basic dexpreopt
+
+   * kernel/motorola/ghost/
+58db6f4 Revert "video: msm: Initialize HistLUT with last saved LUT"
+
+====================
+     02-28-2016
+====================
+
+
+====================
+     02-27-2016
+====================
+
+
+====================
+     02-26-2016
+====================
+
+
+   * device/motorola/ghost/
+7325e56 ghost: Define radio access family
+
+   * device/motorola/msm8960dt-common/
+e43e003 policy remove some utags
+3750376 msm8960dt: Update SELinux policies for M
+2c8769b Revert "msm8960dt: Speed up boot"
+c4fd1bb msm8960dt-common: ril: fix invalid number error
+2df73a2 msm8960dt: Remove redundant LOCAL_PATH definition
+3b9ff36 msm8960dt: Speed up boot
+
+   * frameworks/base/
+363ca93 FullBackup: Add handling for shared storage
+6ca8161 Show correct pinning message for accessibility
+6f1ef1f Show correct pinning message without navbar
+9c210a1 NotificationPanelView : Fix incorrect panel translation
+0686c7a SystemUI: reset tile page after inactivity
+1bb03c1 When the device boots up, netd works more than required
+3672ca5 Performance Optimization: Align texture dirty rect
+0e10ef3 SharedStorageAgent: fix off by 1
+1186ac0 Alarm: Support devices using timerfd without CLOCK_POWEROFF_ALARM
+e34cd0f Revert "Alarm: Don't use invalid timerfd alarm types"
+f6b1ca2 ActivityManager : Remove POWER_OFF_ALARM_MODE HOME_KEY button override
+7155fd1 SystemUI: Listen for phone state change
+065f3eb Inflate custom notifications with the app's theme.
+766ca3d WifiTracker : Don't queue up duplicate messages for updating access points
+b468475 NetworkPolicyManager: Null check list of packages belonging to UID
+8231570 SystemUI: Show lockscreen wallpaper if no album art is available
+94bc6f2 QS: Show # of clients connected to hotspot
+368f7f4 Automatic translation import
+
+   * hardware/cyanogen/
+fa60003 cmhw: UniqueDeviceId: don't generate hardware IDs from SD card CIDs
+
+   * kernel/motorola/ghost/
+b34236e changes on lzo decompress
+2de5455 cpufreq: Add Lionheart, Smartmax and Dancedance Governors
+de5604c cpufreq: Add Lionheart, Smartmax and Dancedance Governors
+3b5c705 cpufreq: introduce BioShock governor for 3.4.X
+19deceb intellimm: make support to msm8960
+0b38aa8 Initial porting of Intellimm from nexus devices Autor : Faux123
+b036450 xperience: Change powersuspend to earlysuspend coz I'm not ported yet powersuspend and tweaked for ghost
+1c4d206 Tweaked Gobernors
+f838d00 cpu_gov:XPerience: Update
+adfc293 XPerience: Define cputime64_add and sub
+3214e20 Add XPerience Governor
+11b2a08 alessa:more logicsalsklask
+0a09831 Alessa:fix some logic x2
+80f5d3f Alessa:Fix logic
+3696e80 Alessa_plug: v1.5 -For ghost change the support of 4cores to 2cores and remove the hax code
+0e6c9a5 update alessaplug and changes update alessa to 1.4.2 alessa_plug: 1.4.2 Add some cpu idle info required if aren't present on cpufreq.c
+a9402c5 Add lcd_notify
+76e0766 Alessa Plug: Change powersuspend to lcd_notifier
+d92ccdc Alessa_PLUG: enable option to enable or disable hotplug
+d443f5a Alessa_Plug: Update to 1.3 * v1.2.1 Sampling rate tunable- * v1.3 Fix some endurance mode * Threshold are now tunable
+ad3d5fe Added New Alessa_Plug: Optimized for QuadCore devices: * It plugs down 3 cores * when the device suspends and brings them online only when awake leading to * significant power savings
+0105146 msm: mdss: Add support to make use of interrupt data pointer in an isr
+b28e03e msm_fb: mdss: DSI driver code clean-up
+8a1ffd8 msm_fb: mdss: Add DSI physical layer settings
+5b0da75 msm_fb: mdss: Add support for Backlight control and panel  gpios
+9cfdb04 msm_fb: mdss: Add support for DSI specific regulators
+
+   * packages/apps/Settings/
+3ef7d97 Settings : Fix back button for sim card lock
+89bb9ad Split out drawable to separate from dashboard drawable
+2cb9c01 Break out text color value from commonly used color.
+b592cb5 PowerUsage : Don't update if profile didn't change
+b4a4e82 Revert "Customize regulatory info."
+74c28cc Automatic translation import
+
+   * packages/apps/Snap/
+56d2a66 Automatic translation import
+
+   * system/core/
+c52179f healthd: use timerfd if dev alarm not exist
+
+   * vendor/XPe/
+79c4f38 add yufone APN
+8a3022d recovery: Add new rule for sys.usb.ffs.ready
+
+====================
+     02-25-2016
+====================
+
+
+   * art/
+bc97168 ART: make ART extension available only in 32bit for msm8996
+
+   * frameworks/av/
+c5fa90a audio: omx encoder isn't expected for raw recording
