@@ -1,0 +1,225 @@
+====================
+     03-03-2016
+====================
+
+
+   * build/
+20af32f releasetools: Update XPE copyright
+
+   * device/motorola/falcon/
+323ae66 Revert "falcon: move WCNSS bin to msm8226-common"
+90a9258 Revert "falcon: Decommonize WCNSS NV binary"
+
+   * device/motorola/msm8226-common/
+3c28c99 Revert "msm8226-common: Import Motorola WCNSS configs"
+aab1563 Revert "msm8226-common: Decommonize WCNSS NV binary"
+510416a Revert "msm8226-common: Set wlan.driver.config prop for softap"
+
+   * device/motorola/msm8960dt-common/
+48c828a Sepolicy: fix some SEPolicy
+
+   * frameworks/base/
+4ff50e4 App Circle Sidebar: Support for Configurable Trigger Region [1/2]
+
+   * hardware/ril-caf/
+e8de3c2 Revert "Revert "Fix libril build errors""
+
+   * kernel/motorola/ghost/
+fe04f9c add missing file for bioshock driver
+92e474a Enable intelli-thermal and fix build when you build with AOSP source
+
+   * kernel/motorola/msm8226/
+507f9ca fix intellithermal build and update kernel to 10
+9c5eef1 initrd: fix lz4 decompress with initrd
+8163d4b lz4: Sync up with latest version
+e659dbc scripts/gen_initramfs_list.sh: fix flags for initramfs LZ4 compression
+af6211e initramfs: read CONFIG_RD_ variables for initramfs compression
+7bdcd70 lib/decompress_unlz4.c: always set an error return code on failures
+222a8d3 .gitignore: ignore *.lz4 files
+f303495 lib: add weak clz/ctz functions
+f55bdf9 lib/lz4/lz4_compress: fix macro usage error
+51aece9 crypto: Add lz4 Cryptographic API
+69eca95 msm: kgsl: Fix Z180 memory leak
+99c8f1d zram: prefer crypto LZ4 over LZ0 if library exists
+26e2c3d zram: add Crypto API support
+24fe910 ZRAM/ZSMALLOC: Linux 3.4 API backport
+9a8afb3 zram: remove zram->lock in read path and change it with mutex
+1adf554 zram: remove workqueue for freeing removed pending slot
+6237ace zram: introduce zram->tb_lock
+4f66486 zram: use atomic operation for stat
+2f09291 zram: remove unnecessary free
+8234dc1 zram: delay pending free request in read path
+cdda934 zram: fix race between reset and flushing pending work
+e7fd2ef zram: add zram maintainers
+eca18b0 zsmalloc: add copyright
+1ec3af4 zram: add copyright
+a97f51f zram: remove old private    * comment
+c5cf1da ZRAM/ZSMALLOC: initial file import from Linux 3.14 rc1 source
+d2492d0 sched: reinitialize rq->next_balance when a CPU is hot-added
+736e30b sched,rt: disable rt_runtime borrowing by default
+590cd72 Input: Send events one packet at a time
+7a0e1f9 softirq: reduce latencies
+298c7ba jiffies conversions: Use compile time constants when possible
+90ce4c5 writeback: fix occasional slow sync(1)
+1bdaf73 sched/fair: Optimize find_busiest_queue()
+8fc95b2 mm: vmscan: If kswapd has been running too long, allow it to sleep
+764a015 xz: Optimize Sfck Compression
+c19d10f make more neon vfp
+20302d4 crypto: add crypto_[un]register_shashes for [un]registering multiple shash entries at once
+c115d16 mm/ksm: engage deferred timer by default
+3185b23 block: recursive merge requests
+6720336 sched/cpuidle: reduce IPI storm. Backport upstream 3.16 scheduler updates
+fe2b707 writeback: fix writeback cache thrashing
+0ad2aec Wakeup:Use rcu callbacks for better performance
+f17ef88 Enable intelli-thermalv2
+f868b0b Fix build when build with AOSP
+afe9734 pdated intelli thermal to use on MSM8226 board
+82d5204 Intelli_thermal_v2: Initial adaptation is based on the latest Qualcomm thermal driver adapted for in-kernel use and control. Newer MSM8974+ chipsets should use this driver going forward.
+096ed28 drivers/thermal/Kconfig: Fix default prompt error
+3eb27c8 Intelli/msm_thermal: initial coding for Qualcomm Snapdragon 800 devices an intelligent MSM thermal throttling kernel driver designed to replace the closed sourced thermald(aemon) from Qualcomm. The current driver can throttle the SOC via core frequency scaling or via core hotplug with user configurable sysfs entries to adjust the throttling temperature thresholds for each. Derived from Qualcomm's Open source repo. Signed-off-by: Paul Reioux <reioux@gmail.com> Conflicts: arch/arm/mach-msm/lge/board-8974-hammerhead.c Signed-off-by: Paul Reioux <reioux@gmail.com> Conflicts: drivers/thermal/Makefile
+
+====================
+     03-02-2016
+====================
+
+
+   * external/libchrome/
+a8721bf Add some debug logging to libchrome_test in case of flake
+
+   * frameworks/base/
+d87271e [1/2] Base: implement App circle sidebar add whitelist app to include into circle view rebased make standalone patch PS.15 : rebased PS.16 : cleanup
+3814257 Dotted Circle Battery (1/3)
+
+   * packages/apps/CMFileManager/
+029bcc5 PickerActivity: Request for permissions
+
+   * packages/apps/OmniSwitch/
+8dac2a7 change daynaight theme to material coz XPE does not have it Remove icon launcher :)
+
+   * packages/apps/Settings/
+dee9867 App Circle Sidebar: Support for Configurable Trigger Region [2/2]
+bbe9b36 [2/2] Settings: Implement App circle sidebar Add AppMultiSelectListPreference.java from ChameleonOS. 	Conflicts: 		res/values/xpe_strings.xml Patch Set 2: Add metrics logger Patch Set 3: Update icons
+668e5bf Dotted Circle Battery (2/3)
+0673470 omniswitch: move from dashboard to display&light
+6b26d4d Omniswitch: add this to dashboard
+
+   * vendor/cmsdk/
+81cb21f Dotted Circle Battery (3/3)
+
+====================
+     03-01-2016
+====================
+
+
+   * build/
+d9272ef build: better compatibility between zsh shells
+3897d07 envesetup: mmm/mmma: fix for zsh
+278b7d1 binary: Generate dummy rule for relocated protobuf headers
+
+   * development/
+171957c idegen: Check if environment variable exists
+
+   * device/motorola/msm8960dt-common/
+f813a6d remove this for now it have some issues when I build
+bc4744a msm8960dt: Update SELinux policies for M
+f48fee3 msm8960dt: Don't loopback mount pds
+
+   * external/libchrome/
+1633416 Add openssl_util.cc to the Chrome OS build.
+
+   * frameworks/base/
+fd6a2fd Add OmniSwitch as option for default recents [1/2]
+3e2345e Make CaptivePortalLoginActivity compatible with setupwizard.
+ca06a46 SystemUI: fix zen mode panel warning not showing
+4c2c599 HotSpot: Store # of connected clients in receiver
+55ee929 SystemUI: Don't vibrate on touchscreen camera gesture
+57345c4 livedisplay: Factoring out color temperature to RGB conversion algorithm
+368d239 am: Cancel protected app notification on validation launch.
+
+   * kernel/motorola/ghost/
+8d151f3 v5
+
+   * packages/apps/Messaging/
+fec6c6a Added 'Always Ask' for Multi SIM phones to decide which SIM to use for every text
+58c9b30 Improve swipe to delete strings
+2a065f1 Messaging: Toggable keyboard emoticons access
+
+   * packages/apps/Settings/
+9c5e2fd Add OmniSwitch as option for default recents [2/2]
+512808c Settings: fix indexing for saved access point settings
+83c4452 Expose values for themes.
+5343d22 Settings: Meet BYOD check intent filter expectations.
+
+   * packages/apps/SetupWizard/
+3d1cba9 SetupWizard: Modify intent for CaptivePortalLogin
+
+   * packages/apps/Snap/
+50fab18 Snap: update icon
+ea690fb Snap: Fix incorrect preview layout surface size in landscape mode
+3ec8546 Snap: Remove face detection option if not supported
+
+   * vendor/XPe/
+c72b1ab add omniswitch to build targets
+e58a161 some changes for R16
+
+   * vendor/cmsdk/
+afe5a2b fix path :v
+8a25943 cmsdk: Add device-specific strings
+
+====================
+     02-29-2016
+====================
+
+
+   * cts/
+b48eb3f Merge "DO NOT MERGE ANYWHERE: BUMP CTS to 6.0R4" into marshmallow-cts-release
+0d1e320 DO NOT MERGE ANYWHERE: BUMP CTS to 6.0R4
+64e8dc5 Merge "Add tests for the existence of the OS Patch String, and to detect obsolete versions." into marshmallow-cts-release
+c05e90e Add tests for the existence of the OS Patch String, and to detect obsolete versions.
+
+   * device/motorola/falcon/
+dd3b8f6 falcon: init: Look for metadata block to detect GPE variant
+b2a5a2f falcon: Increase headphone output gain
+08d4e09 falcon: Decommonize WCNSS NV binary
+95e030a falcon: move WCNSS bin to msm8226-common
+
+   * device/motorola/msm8226-common/
+af047c3 msm8226-common: enable basic dexpreopt
+1e8add2 msm8226-common: sepolicy: Remove no longer needed rules
+d53189e msm8226-common: Set wlan.driver.config prop for softap
+2272480 msm8226-common: Enable proximity check on wake
+4026b5f msm8226-common: Decommonize WCNSS NV binary
+e72b71c msm8226-common: Import Motorola WCNSS configs
+
+   * device/motorola/msm8960dt-common/
+ebc1a37 msm8960dt-common: enable basic dexpreopt
+
+   * frameworks/av/
+dd0433c stagefright: Don't crash on invalid / null AVCC atoms in MKV
+
+   * frameworks/opt/telephony/
+0f6a630 Forward port Samsung STK support (frameworks/opt/telephony)
+
+   * kernel/motorola/ghost/
+58db6f4 Revert "video: msm: Initialize HistLUT with last saved LUT"
+
+   * packages/apps/Messaging/
+80c9a59 Messaging:Swipe right to delete conversation
+
+   * packages/apps/Trebuchet/
+1cd4587 Trebuchet: Handle random crash during theme change / user switch
+c5454ec Trebuchet: Scale icons in portrait if using condensed grid
+
+   * vendor/XPe/
+f9380c2 :D updated donators thnks to all
+
+====================
+     02-28-2016
+====================
+
+
+   * hardware/qcom/media-caf/msm8994/
+0382411 Merge tag 'LA.BF64.1.2.2-03340-8x94.0' into HEAD
+
+   * packages/providers/ContactsProvider/
+4417d18 Don't suspend aggregation for new contacts
