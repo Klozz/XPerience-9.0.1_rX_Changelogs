@@ -1,0 +1,406 @@
+====================
+     03-16-2016
+====================
+
+
+   * build/
+7579f20 envsetup: fix mm under zsh
+
+   * frameworks/base/
+3ecc2ed fw: Move externalCMServices declaration to external res package.
+dc8fb1e Prompt permission dialog for status bar weather
+f353d0f Move keyDisabled and gamma to service
+dfe3101 SystemUI: Always unset seperate roaming indicator.
+e4fcd21 InputMethodManager : Move registration to systemReady
+0b2326b Should use scan flag, or it will not scan device.
+ebd7e0c SystemUI: Change demo mode time of day.
+21d7204 GlobalActions: Set the initial status of airplane mode toggle
+a7df00f fix metrics density comparisons
+6024395 again shits related to refactor of themes
+2e45e1d fix build
+0c6ff41 This shit should be removed in the commit:fde8511ea "Themes: Refactor themes to CMSDK [1/6] "
+457b075 remove duplicated definitions
+
+   * packages/apps/Settings/
+1371951 fixed colors to go with Yunne colors
+416b10d Settings: ask telephony for network selection
+d584297 Settings : Add multiuser support for CMHardware
+
+   * packages/apps/SetupWizard/
+34ac72c Themes: Refactor themes to CMSDK [6/6]
+
+   * packages/apps/Trebuchet/
+0991d31 Trebuchet: Fix some issues with the DB upgrade path
+772f61d Show apps as unavailable when on unmounted storage
+
+   * packages/services/Telephony/
+da57833 Telephony: add external network selection activity
+
+   * prebuilts/cmsdk/
+d97eb01 prebuilts/cmsdk: Update for snapshot maven release.
+
+   * system/core/
+85947ff init: Fix derp in property name for rebooting to charger hook
+
+   * vendor/XPe/
+e8a0ed7 fix path xD
+b64c4a9 cm: Commonize cmsdk specific targets.
+fd0eaf4 cm: Remove externalCMServices overlay. (in cmsdk)
+12447d7 Bring back Exchange2
+
+   * vendor/cmsdk/
+200105f fix shits
+b672a1c Merge remote-tracking branch 'upstream/cm-13.0' into HEAD
+c46e0ff cmsdk: send connection value when changing network modes
+80f5651 cmsdk: Introduce externalCMServices array to cmres.
+a335ba3 cmsdk: Mandate cmhw feature xml's for service implementation.
+
+====================
+     03-15-2016
+====================
+
+
+   * external/stagefright-plugins/
+ed03eec Revert "stagefright-plugins: Protect against crash"
+c32061c stagefright-plugins: Fix memory leak
+c39d091 stagefright-plugins: Fix memory leak
+
+   * external/zlib/
+df42d71 zlib: crc optimization for arm64
+
+   * frameworks/opt/hardware/
+232ae82 hardware: make sure to declare hardware as feature.
+
+   * frameworks/opt/telephony/
+d414390 MSIM: RJIL primary card feature
+
+   * hardware/qcom/audio-caf/msm8974/
+0d2d286 Force voice path when recording audio during call
+
+   * kernel/motorola/ghost/
+fb65218 Revert "make some modules prebuilded inside kernel" wifi becomes unstable
+
+   * packages/services/Telecomm/
+939d1cd Telecomm: Add support to set ring tone for SIM2
+
+   * system/core/
+5f79c82 liblog: build log_event_write regardless of TARGET_USES_LOGD and fix build problems
+
+   * vendor/XPe/
+1cf6f1a new codename
+
+   * vendor/cmsdk/
+19b267d Revert "cmhw: Don't hold a static reference to the service"
+
+====================
+     03-14-2016
+====================
+
+
+   * android/
+0a52102 track cm theme chooser
+99831ee Update to 6.0.1_r22
+
+   * build/
+384e09c Merge tag 'android-6.0.1_r22' into HEAD
+6669476 Fix a race condition while building the recovery patch
+241921f Merge tag 'android-6.0.1_r17' into HEAD
+3ace965 kernel: add banner for defconfig and header install steps
+e0c400c kernel: allow toolchain prefix to be overridden
+1fc1f35 kernel: add docs for config vars
+de5a2e3 kernel: remove support for unused MTK Kernel
+
+   * device/motorola/msm8226-common/
+a43bfd5 msm8226-common: power: Update profiles
+
+   * device/motorola/msm8960dt-common/
+0d0c7f3 msm8960dt-common: correct sensor handling
+c3c2d43 msm8960dt: Clean up charger sequence
+5723d76 msm8960dt: Use MONOTONIC for rotation sensor timestamp
+9efdd23 msm8960dt: Remove obsolete KSM configuration
+089ec0a msm8960dt: Speed up boot
+
+   * external/sepolicy/
+ed32747 Merge tag 'android-6.0.1_r22' into HEAD
+
+   * external/stagefright-plugins/
+b8759d0 stagefright-plugins: Fix memory leak
+
+   * frameworks/base/
+b40815f yunne colors <3
+be5b584 Merge tag 'android-6.0.1_r22' into HEAD
+0663870 core: Add strings for hotswap configuration event.
+33807f5 SystemUI : Fix navbar dpad key visibility
+5f55978 Move high touch sensitivity and hovering to InputService
+f98ac34 Move VIBRATOR_INTENSITY to vibrator service
+9fd4151 LiveDisplayController : Reload settings for current user
+b18b9ba intel: Pick the best ABI based on number of libs, not just priority
+787eed3 perf: Remove scroll / fling boosting
+89a0078 Allow to ignore presentation indicator of outgoing calls [1/3]
+d5ad644 base: dock battery
+fc74cc1 SysUI: Fix hiding sensitive notification behavior
+446ad4a Remove opaque check in preparing dirty region for all QCOM device
+942d5a3 Fix volume expand arrow to be displayed correctly
+dceb324 SysUI: Clear notification data when recreating status bar
+b9e8c1c SystemUI: Improve string in data capable, not selected scenario.
+1681180 audiosystem: Add API for listening to effect session events
+55ea2d6 SysUI: Fix hiding per-app sensitive notifications
+7a04c0e SystemUI: Add PERFORMANCE_ACCESS permission.
+51b1cbe0 base: Fix proximity check on non power key
+7799e3b Merge tag 'android-6.0.1_r17' into HEAD
+67d14e3 SystemUI: fix always_show_roaming
+664f197 Fix GlobalActions sound panel iconography.
+fde8511 Themes: Refactor themes to CMSDK [1/6]
+be67ef4 NetworkPolicyManager : Process low power mode change on background thread
+988ec49 SettingsProvider: allow ambient display/doze mode to be overlayed
+7086151 SystemUI: Fix volume panel inconsistencies
+
+   * frameworks/opt/telephony/
+96c5861 Telephony: Don't show as roaming if new state isn't in service.
+
+   * hardware/intel/img/hwcomposer/
+2248deb intel: hwcomposer: Only use DRM_PSB_PM_SET if it exists
+
+   * kernel/motorola/ghost/
+13638ef make some modules prebuilded inside kernel
+99263a3 bump v6
+9024a8d WLAN subsystem: Sysctl support for key TCP/IP parameters
+d8999dc workqueue: cond_resched() after processing each work item
+702d6f1 workqueue: fix possible stall on try_to_grab_pending() of a delayed work item
+1bc8f68 kernel/lib: add additional debug capabilites for data corruption
+5bc6b0c workqueue: reimplement WQ_HIGHPRI using a separate worker_pool
+c28c5bd workqueue: introduce NR_WORKER_POOLS and for_each_worker_pool()
+a80a7ac workqueue: separate out worker_pool flags
+597dd8d workqueue: use @pool instead of @gcwq or @cpu where applicable
+0050662 workqueue: factor out worker_pool from global_cwq
+e92ecd8 workqueue: don't use WQ_HIGHPRI for unbound workqueues
+94ed451 msm: msm_rq_stats: remove is_smp() API
+ceeb4ef stop_machine: Mark per cpu stopper enabled early
+dee9713 arm: Use generic idle thread allocation
+abf543e rcu: Use smp_hotplug_thread facility for RCUs per-CPU kthread
+c0f1d2f rcu: Yield simpler
+6aaffed ksoftirqd: Enable IRQs and call cond_resched() before poking RCU
+8616a29 softirq: Use hotplug thread infrastructure
+a35f7ce smpboot: Add missing get_online_cpus() in smpboot_register_percpu_thread()
+508e7f6 kthread: Fix the race condition when kthread is parked
+dc85852 kthread: Prevent unpark race which puts threads on the wrong cpu
+d42956f kthread: Implement park/unpark facility
+8522847 stop_machine: Use smpboot threads
+69df3d9 stop_machine: Store task reference in a separate per cpu variable
+2c30707 smpboot: Allow selfparking per cpu threads
+0a24365 hotplug: Fix UP bug in smpboot hotplug code
+23ace83 smpboot: Provide infrastructure for percpu hotplug threads
+8513629 smpboot, idle: Fix comment mismatch over idle_threads_init()
+f5b69ba smpboot, idle: Optimize calls to smp_processor_id() in idle_threads_init()
+6e1cf2e smp, idle: Allocate idle thread for each possible cpu during boot
+3cd7a0b smp: Provide generic idle thread allocation
+26f5e45 smp: Add task_struct argument to __cpu_up()
+4cdbe96 smp: Add generic smpboot facility
+f2ea310 CPU hotplug, perf: Fix CPU hotplug callback registration
+5900706 cpu: fix section mismatch warnings with __hotcpu_register
+25af556 drivers/base/topology.c: Fix CPU hotplug callback registration
+3ad218d arm, hw-breakpoint: Fix CPU hotplug callback registration
+0ca6dce net/core/flow.c: Fix CPU hotplug callback registration
+abc4683 net: flow: Prevent bringing up new CPUs during per-CPU initialization
+03867bd perf: Fix perf ring buffer memory ordering
+e285db4 mm, vmstat: Fix CPU hotplug callback registration
+793af93 perf, cpu hotplug: Use cached value of smp_processor_id()
+3a5a881 perf, cpu hotplug: Run CPU_STARTING notifiers with irqs disabled
+ca7fd90 Doc/cpu-hotplug: Specify race-free way to register CPU hotplug callbacks
+8a928c4 profile: Fix CPU hotplug callback registration
+525eaea trace, ring-buffer: Fix CPU hotplug callback registration
+0b9ac2a CPU hotplug: Provide lockless versions of callback registration functions
+09966c8 mm/slub: don't wait for high-order page allocation
+7796d79 msm: cpufreq: Relax constraints on "msm-cpufreq" workqueue
+709eac8 msm: cpufreq: Configure WQ for higer priority
+79293ae msm: rpm-smd: Configure WQ for higer priority
+bf6f708 ARM: sched_clock: Load cycle count after epoch stabilizes
+84c51d1 fuse: break infinite loop in fuse_fill_write_pages()
+5290292 msm: msm_bus: Fix the type error causing bandwidth overflow
+0085f1c msm: cpuidle: use format string in snprintf
+7a24303 time: settimeofday: Validate the values of tv from user
+1f34ac0 msm: video: Checks for code robustness
+e681220 msm_fb: display: validate input args of mdp4_argc_process_write_req
+83f8276 UPSTREAM: proc: actually make proc_fd_permission() thread-friendly
+343c659 UPSTREAM: proc: make proc_fd_permission() thread-friendly
+1ea9124 hrtimer: Set expiry time before switch_hrtimer_base()
+0caec02 hrtimer: Prevent remote enqueue of leftmost timers
+aa946bf hrtimer: Prevent all reprogramming if hang detected
+a95a175 msm: ipc: Add check to avoid integer & buffer overflow
+c224b17 msm: rpm-smd: Fix uninitialized variables in a function
+4736a13 jiffies: Fix timeval conversion to jiffies
+b588df4 msm: mpm-of: Fix NULL pointer and buffer overflow errors
+9824a3f msm: mpm-of: Fix buffer overflow errors.
+00f0ce0 sched: Set MC (multi-core) sched domain's busy_factor attribute to 1
+57a3d47 softirq: reduce latencies
+3f1dc8e sync: don't block the flusher thread waiting on IO
+891f0a6 mm: change initial readahead window size calculation
+0be7111 rcu: Stop rcu_do_batch() from multiplexing the "count" variable
+7638600 timer: Fix mod_timer_pinned() header comment
+aa88c56 rcu: Make rcu_barrier() less disruptive
+24d9064 rcu: Precompute RCU_FAST_NO_HZ timer offsets
+07eba00 rcu: Move RCU_FAST_NO_HZ per-CPU variables to rcu_dynticks structure
+59980fd rcu: Update RCU_FAST_NO_HZ tracing for lazy callbacks
+7c23ca5 rcu: Explicitly initialize RCU_FAST_NO_HZ per-CPU variables
+60e4083 rcu: Make RCU_FAST_NO_HZ handle timer migration
+605b2d1 rcu: Make exit_rcu() more precise and consolidate
+955c840 rcu: Ensure that RCU_FAST_NO_HZ timers expire on correct CPU
+90b54fb rcu: Add warning for RCU_FAST_NO_HZ timer firing
+876698a rcu: Make RCU_FAST_NO_HZ account for pauses out of idle
+0f9823d rcu: Make RCU_FAST_NO_HZ use timer rather than hrtimer
+f82be24 rcu: Add RCU_FAST_NO_HZ tracing for idle exit
+3eb888c rcu: Add a module parameter to force use of expedited RCU primitives
+a46cd3f cpufreq: cpu-boost: Use interruptible wait to not affect load average
+daa84ed cpufreq: cpu-boost: Re-issue boosts above minimum frequency
+ef98eb2 cpufreq: cpu-boost: Resolve deadlock when waking up sync thread
+7d387b5 cpufreq: cpu-boost: Resolve deadlock when waking up sync thread
+
+   * packages/apps/LockClock/
+fde0e1e LockClock : Add external facing permission grant activity
+
+   * packages/apps/OmniSwitch/
+e7f0fe4 OmniSwitch: tweak DragGripView
+
+   * packages/apps/Settings/
+33a814d Merge tag 'android-6.0.1_r22' into HEAD
+174fee3 settings: dock battery
+05bc189 Settings: Modify RU translation for Ambient display
+6c1d795 Settings: Add PERFORMANCE_ACCESS permission.
+d228ddd MSIM: Fix erroneous defaults display in slot selection dialog
+d3e0736 AppOps: Guard against themes without colorAccent defined
+5078a9d Settings: Remove "Learn More" clickable text if not overlaid.
+1214382 Settings: Allow disabling default allcaps state in tabtext.
+88bf3ee Automatic translation import
+2d5c3f7 Settings: Default edge gesture service to false.
+7dacb67 Settings: no more holo for navbar editor
+32283b5 Better expose text color for single button panel button
+29e6510 Themes: Expose Hard colors for storage settings
+e2c4f23 Use correct icon for ring volume
+8a51049 Settings: Fix "Fix SecuritySettings filtering" copy pasta
+323679c Settings: Fix SecuritySettings filtering.
+
+   * packages/apps/Snap/
+df59cd6 Snap: Do not crash when cur-focus-scale is null
+bbd9a7a Automatic translation import
+
+   * packages/providers/ThemesProvider/
+1a5f882 Use correct read/write perms for provider
+
+   * packages/services/Telephony/
+e2d5520 Fix "Fix "multi-sim: fallback on active subId on emergency calls""
+
+   * system/core/
+fe0fc81 init: Add a hook to turn a shutdown into a reboot
+5cd6b17 init: Add property_get_bool
+a9e547d Merge tag 'android-6.0.1_r22' into HEAD
+4d93857 liblog: build log_event_write regardless of TARGET_USES_LOGD
+2afef16 Add optional target-specific LD_PRELOAD to environment
+
+   * vendor/XPe/
+323c282 Remove cyanOS theme chooser and build again from sources this to avoid FC when install new theme coz new refactor of themes to SDK
+1d9cfff update to v22
+c5fdd36 apns: Update virgin and cierto MX apn's
+2c8e5c9 apns: fix build
+26395ef apns: Add ATT Nextgenphone
+0fc4924 Resolve Orange RO authtype
+2a6a25d config: Lower the priority of vendor/xpe overlays
+cae5aa1 cm: Always verify against current CMSDK version.
+715d608 Modify APN for Orange Romania
+b2089c6 Include AmbientSDK artifact
+206b78f cm: Create cmsdk coverage task.
+b19b701 Themes: Refactor themes to CMSDK [3/6]
+
+   * vendor/cmsdk/
+220ab79 CMSettings : Add display gamma setting
+47eb8d0 cmhw: Don't hold a static reference to the service
+7056dad CMSettings: Add VIBRATOR_INTENSITY setting
+afb8162 CMSettings: Add FEATURE_TOUCH_HOVERING
+d55acac cmsdk: Minor string improvement
+0c2647c ExtViews: Guard against bad LLS providers
+66a3024 Revert "Allow to ignore presentation indicator of outgoing calls [1/3]"
+f251024 cmsdk: Fix resource name.
+fb59984 cmsdk: Update README for release artifact numerics.
+fc6140e cmsdk: Add PerformanceManager tests, Change target permission.
+c727b9a cmsdk: Keep generated java classes from aidl interfaces.
+c85885c cmsdk: Clean up proguard flags.
+5df8154 Allow to ignore presentation indicator of outgoing calls [1/3]
+3d14309 Automatic translation import
+022adb2 Update stubs to include cyanogenmod.themes package
+d5c279e cmsdk: Remove debugging from proguard.
+2a6f23d Add missing WRITE_THEMES from cm_system-current
+0e0ab21 cmsdk: Strip unused cmsdk members for codecoverage.
+5eb8b46 Themes: Refactor themes to CMSDK [2/6]
+b09c2d6 cmsdk: Add cyanogenmod.util to stubs and update API
+
+====================
+     03-13-2016
+====================
+
+
+   * frameworks/av/
+50c27ea Merge branch 'dr15' into cm-13.0
+
+   * frameworks/native/
+65a4c0c vds: Allocate Framebuffer target buffer
+a9cbaf5 SurfaceFlinger: Add support for continuous dumpsys to file.
+
+   * frameworks/opt/telephony/
+69df2a9 Merge branch 'dr15' into cm-13.0
+
+   * packages/apps/Trebuchet/
+1129f55 Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/apps/Launcher3 into HEAD
+
+   * packages/providers/ContactsProvider/
+832a3d6 Merge branch 'dr15' into cm-13.0
+
+   * packages/services/Telephony/
+82b47ca Merge branch 'dr15' into cm-13.0
+
+   * vendor/cmsdk/
+96cfc73 cmhw: Don't hold a static reference to the service
+
+   * vendor/motorola/
+1db246f Merge pull request #233 from GalaticStryder/cm-13.0
+
+====================
+     03-12-2016
+====================
+
+
+   * external/pdfium/
+20ad4b0 PDFium: Silence warnings
+
+   * frameworks/av/
+46da121 nuplayer: Allow devices to force a flush when surface changes
+
+   * frameworks/native/
+0e89896 sf: ex-sf: Remove screenshot surface from secondary displays
+
+   * frameworks/opt/telephony/
+c31d22d telephony: Notify user for potential reconfiguration.
+
+   * hardware/qcom/fm/
+71997bb fmapp2: String improvements
+
+   * packages/apps/Bluetooth/
+0fe7495 Revert "Bluetooth: Disconnect SCO for In-Band Ringtone."
+
+   * packages/providers/ContactsProvider/
+3b52dc7 ContactsProvider : Hard code group resource ids
+
+   * packages/services/Telecomm/
+8c2bde1 Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/services/Telecomm into cm-13.0
+
+   * packages/services/Telephony/
+a3f2b60 Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/services/Telephony into cm-13.0
+
+   * system/bt/
+718ba0b Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/system/bt into cm-13.0
+
+   * vendor/cmsdk/
+5e2d5a6 CMSettings: Add VIBRATOR_INTENSITY setting
+9714d7f CMSettings: Add FEATURE_TOUCH_HOVERING
+
+   * vendor/motorola/
+ca18ad5 shamu: Nexus 6 (Mobile) binaries for Android 6.0.1 (MMB29V)
+45c8b43 condor: Add adsp libs for camera
