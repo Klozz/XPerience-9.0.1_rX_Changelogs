@@ -1,0 +1,391 @@
+====================
+     03-29-2016
+====================
+
+
+   * android/
+dfdb3a1 track calllog from cm
+
+   * build/
+aaf1a39 Makefile: fix changelog (?
+
+   * device/motorola/msm8960dt-common/
+2e43bef msm8960dt: use legacy on snap camera
+
+   * frameworks/base/
+dd036c8 Fix num cpu check for CPU overlay
+a4769e2 [1/2] Base: add cpu info overlay
+
+   * frameworks/opt/telephony/
+8b4c5b0 Fix LTE attach issue due to wrong initial attach profile.
+7a2fa62 telephony: Add oldril feature setPrefNwTypeOnUnsolConnected.
+
+   * packages/apps/OmniSwitch/
+9ed870f OmniSwitch: Create a shortcut to exposed toggle activity
+7d97dee OmniSwitch: basic multi window support
+9987719 Automatic translation import
+
+   * packages/apps/Settings/
+a0754bd development: fix checkbox FC i forget to change to switchpref in xml
+790418e DevelopmentSettings: Fix checkbox and change to switch
+294b207 [2/2] settings: add CPU info overlay this shows CPU temp (if available) for every core governor + online + freq
+
+   * packages/apps/XPerienceCenter/
+bec8bcd some string changes
+
+====================
+     03-28-2016
+====================
+
+
+   * cts/
+90ea1ef Merge "DO NOT MERGE: Increase AdoptableHostTest timeout." into marshmallow-cts-release
+34bb9fd DO NOT MERGE: Increase AdoptableHostTest timeout.
+664155a Merge "Temporarily disable com.android.cts.cpptools.RunAsHostTest#testRunAs" into marshmallow-cts-release
+bb9317a Temporarily disable com.android.cts.cpptools.RunAsHostTest#testRunAs
+1205c12 Merge "Fix issues in SensorBatchingTests" into marshmallow-cts-release
+9ac7d3e Fix issues in SensorBatchingTests
+f6672c0 Merge "DO NOT MERGE ANYWHERE: Bumping CTS 6.0 to R5" into marshmallow-cts-release
+a6d2f6b DO NOT MERGE ANYWHERE: Bumping CTS 6.0 to R5
+
+   * device/qcom/common/
+41b58e4 power: Encode optimization
+5436ef0 power: Modify camera encode/preview hint
+032f125 power: Enable camera preview hint in powerhal
+1915eb6 power: Add and update resources for encode powerHAL
+c798dcf power: Introduce 8996 specific handling
+cd39e2e init: Add MSM-specific init extension library for msm8996
+
+   * frameworks/base/
+d69c749 pm: Don't call into AppSuggestManager before service available.
+b157b88 Don't block wake locks for required always-on system apps
+960aafc Frameworks AppOps: Enable MODE_IGNORED for OP_WAKE_LOCK
+fb25f9d SystemUI: stop hiding hotspot & color inversion tiles
+b6213d8 Automatic translation import
+1390d51 NullPointerException when starting VoiceInteractionManagerService
+ae12918 SystemUI: fix play queue crash
+
+   * hardware/qcom/fm/
+7f9e252 Automatic translation import
+
+   * kernel/motorola/ghost/
+ab511b0 msm: perf: Protect buffer overflow due to malicious user
+
+   * packages/apps/AudioFX/
+f2e65d6 Automatic translation import
+
+   * packages/apps/BasicSmsReceiver/
+dcf25e2 Automatic translation import
+
+   * packages/apps/Bluetooth/
+d7199f6 Automatic translation import
+
+   * packages/apps/BluetoothExt/
+835ae50 hiddTestApp: disable from launcher
+8c812f6 Automatic translation import
+
+   * packages/apps/Browser/
+6cbb497 Automatic translation import
+
+   * packages/apps/CMBugReport/
+1567fb7 Automatic translation import
+
+   * packages/apps/CMFileManager/
+ef48c44 Automatic translation import
+
+   * packages/apps/CMWallpapers/
+01dbbfe Automatic translation import
+
+   * packages/apps/Calendar/
+0f26215 Automatic translation import
+
+   * packages/apps/Camera2/
+09b03eb Automatic translation import
+
+   * packages/apps/CellBroadcastReceiver/
+d08c6e7 Automatic translation import
+
+   * packages/apps/CertInstaller/
+8963303 Automatic translation import
+
+   * packages/apps/Contacts/
+1b9de1a Automatic translation import
+
+   * packages/apps/ContactsCommon/
+0d14760 Automatic translation import
+
+   * packages/apps/Dialer/
+fae4e43 Automatic translation import
+
+   * packages/apps/Eleven/
+2c9da4a Automatic translation import
+
+   * packages/apps/Email/
+bab9090 Automatic translation import
+
+   * packages/apps/ExactCalculator/
+0811be0 Automatic translation import
+
+   * packages/apps/Exchange/
+899a3a2 Automatic translation import
+
+   * packages/apps/FMRadio/
+91b8bae Automatic translation import
+
+   * packages/apps/Gallery2/
+2bca058 Automatic translation import
+
+   * packages/apps/HTMLViewer/
+324672f Automatic translation import
+
+   * packages/apps/InCallUI/
+97a8ab2 Automatic translation import
+
+   * packages/apps/KeyChain/
+6c5a184 Automatic translation import
+
+   * packages/apps/LockClock/
+475447a Automatic translation import
+
+   * packages/apps/ManagedProvisioning/
+3af74ba Automatic translation import
+
+   * packages/apps/Messaging/
+0132f00 Messaging: Fix file mode
+503af9b Automatic translation import
+a831659 Messaging App is crashing when storage  memory is full
+
+   * packages/apps/Nfc/
+474bd34 Automatic translation import
+
+   * packages/apps/PackageInstaller/
+4dae9f3 Automatic translation import
+
+   * packages/apps/PhoneCommon/
+8967f2f Automatic translation import
+
+   * packages/apps/Profiles/
+615f4c8 Automatic translation import
+
+   * packages/apps/Screencast/
+ff5ff1c Automatic translation import
+
+   * packages/apps/Snap/
+26ce90d Automatic translation import
+af06aa7 Protect against multiple shutter callbacks per frame in longshot mode.
+592c86b Re-enable processing of drawable state.
+
+   * packages/apps/SoundRecorder/
+6042d6c Automatic translation import
+
+   * packages/apps/Stk/
+bf57068 Automatic translation import
+
+   * packages/apps/Tag/
+cc441c8 Automatic translation import
+
+   * packages/apps/Terminal/
+cf0ce29 Automatic translation import
+
+   * packages/apps/ThemeChooser/
+007e5b1 Automatic translation import
+
+   * packages/apps/Trebuchet/
+fd94d2f Automatic translation import
+
+   * packages/apps/TvSettings/
+b9dda27 Automatic translation import
+
+   * packages/apps/UnifiedEmail/
+3ae2975 Automatic translation import
+
+   * packages/inputmethods/LatinIME/
+2608af8 Automatic translation import
+
+   * packages/providers/CalendarProvider/
+1d0a091 Automatic translation import
+
+   * packages/providers/ContactsProvider/
+8259514 Automatic translation import
+
+   * packages/providers/DownloadProvider/
+ed04a8a Automatic translation import
+
+   * packages/providers/MediaProvider/
+17f0028 Automatic translation import
+
+   * packages/providers/TelephonyProvider/
+ea5a496 Automatic translation import
+
+   * packages/providers/ThemesProvider/
+e981c2b Automatic translation import
+
+   * packages/providers/UserDictionaryProvider/
+274e2e5 Automatic translation import
+
+   * packages/screensavers/Basic/
+d06b108 Automatic translation import
+
+   * packages/screensavers/PhotoTable/
+8b474fb Automatic translation import
+
+   * packages/services/Mms/
+0bc7241 Automatic translation import
+
+   * packages/services/Telecomm/
+51a5dd8 Automatic translation import
+
+   * packages/services/Telephony/
+bc16bb2 Automatic translation import
+
+   * packages/wallpapers/Basic/
+1fab5d5 Automatic translation import
+
+   * packages/wallpapers/Galaxy4/
+7da1e29 Automatic translation import
+
+   * packages/wallpapers/LivePicker/
+489e1c1 Automatic translation import
+
+   * packages/wallpapers/MagicSmoke/
+fd64cf9 Automatic translation import
+
+   * packages/wallpapers/PhaseBeam/
+90de936 Automatic translation import
+
+   * packages/wallpapers/PhotoPhase/
+2bc3ccb Automatic translation import
+
+   * vendor/cmsdk/
+8351fd9 cmsdk: Add hidden interface for getService on AppSuggestManager.
+0a99739 Automatic translation import
+e994c77 Fix: "cmsdk: Mandate partner feature xml's for service implementation."
+
+   * vendor/motorola/
+b4d5b1c Merge pull request #238 from Moto8610/cm-13.0
+
+====================
+     03-27-2016
+====================
+
+
+====================
+     03-26-2016
+====================
+
+
+   * build/
+d48b95d qcom: Explicitly build the custom audio policy for legacy alsa
+27e045b ota_from_target_files: Fix typo
+
+   * device/motorola/msm8960dt-common/
+0d21d48 Revert "msm8960dt: we don't have barometer" well maybe my moto x have a broken sensor so i re-add this
+b59d6ac doze: Use new mechanism to include tiles into settings dashboard.
+
+   * frameworks/base/
+c3916f3 SystemUI: attach a queue to media player notifications
+39a4f2f Themes: Fail theme install if common resources fail
+2d8d19d SystemUI: Fix missing semi colon.
+d8f63df SystemUi: Show correct iconography for default left affordance settings.
+6939115 camera2 legacy: Allow HDR processing to take a while
+0600669 SystemUI: Hide system/notification when config changes on kg.
+b3d2009 [1/4] Pass call extras to addcall
+a60d1ca NetworkManagement : Add ability to restrict app data/wifi usage
+213f4cd SystemUI: improve battery saver tile
+f542400 Compile app theme in background
+19d5ed5 Accept underscore and tilde in web URLs.
+09135de Automatic translation import
+89195cc VolumeDialogController : Ignore inactive stream volume updates
+6d47504 SystemUI: more consistent visualizer logic
+c435415 SystemUI: fix crypt keeper race condition
+56c07ca Cast Tile: only scan while in detail view
+756b3fa Keyguard: Don't show keyguard if CryptKeeper enabled
+4a9130f Show icons of only background apps in Toasts
+
+   * kernel/motorola/ghost/
+7ab81c7 include/linux/poison.h: fix LIST_POISON{1,2} offset
+22c6593 pipe: iovec: Fix memory corruption when retrying atomic copy as non-atomic
+748829d tty: Fix unsafe ldisc reference via ioctl(TIOCGETD)
+b1f18dd KEYS: Fix race between read and revoke
+
+   * packages/apps/Settings/
+a7a4418 Improve data usage strings
+0ceef68 Settings: forward decrypt required on boot flag
+6830cb3 Settings : Fix default privacy guard preference
+d92e0c2 Settings: Respect config_proximityCheckOnWakeEnabledByDefault
+b089d62 Settings : Add per app internet/data control
+778cb0d Settings: fix BT switch enabling discoverable mode
+33202b3 Move external input tile inclusion to device repo.
+0e31cf8 Improve protected apps string
+d20eea7 Automatic translation import
+8634f2c Re-expose hardcoded white text colors
+a2a857e Themes: Expose Hard coded icon tint in power summary settings
+93acc59 DisplayColor: clamp maximum value to 1.0f
+
+   * packages/apps/SetupWizard/
+e185dad SetupWizard: Update for themes api changes.
+4ad27bf SetupWizard: Fix regression on GMS account setup skip.
+69d91d8 SetupWizard: Conditionally supress d2d on lack of nfc.
+5864d84  SetupWizard: Handle both restore scenarios.
+97530d8 SetupWizard: Restore last page on setup wizard death.
+4badbc5 SetupWizard: Adapt to new GMS tap & go expectations.
+7d56b83 SetupWizard: Fixup backup/restore for Marshmallow.
+
+   * packages/apps/Snap/
+df68cb6 Snap: Fall back to REVIEW intent before VIEW intent
+f301518 Automatic translation import
+
+   * system/core/
+ebab704 sched_policy: split add_tid_to_cgroup
+cb9ef65 sched_policy: Split cpuset/cgroup init
+9883939 libcutils: Add process name to logs
+6700f7c libcutils: make sched_policy more robust
+
+   * vendor/XPe/
+daeda6e xpe: Introduce partner feature xml.
+b423098 xpe: Introduce performance feature xml.
+b3fb166 cm: Introduce telephony feature xml.
+5370b24 cm: Introduce appsuggest feature xml.
+03c498e xpe: Introduce profiles feature xml.
+3611685 xpe: Introduce statusbar feature xml.
+5dfed55 XPE: sepolicy: allow platform apps to crop user images
+
+   * vendor/cmsdk/
+5c344e9 Merge remote-tracking branch 'upstream/cm-13.0' into HEAD of XPerience-10
+
+====================
+     03-25-2016
+====================
+
+
+   * packages/apps/AudioFX/
+6b8d526 Merge "audiofx: Add support for session callback API" into cm-13.0
+
+   * packages/apps/FMRadio/
+6cd7a60 FMRadio: Immediately mute AudioTrack once stopRender is called
+c2c2cbf FMRadio: Pause and stop AudioTrack before stopping
+4711f65 FMRadio: Run render thread at THREAD_PRIORITY_AUDIO
+
+   * packages/apps/ThemeChooser/
+bc079ea ThemeChooser: Update for Theme api changes.
+
+   * packages/apps/Trebuchet/
+c8e0058 Ignore tap below scrubber in the app container padding area
+
+   * packages/providers/ThemesProvider/
+e7d94a6 ThemesProvider: Update for themes api changes.
+
+   * prebuilts/cmsdk/
+5a08d04 prebuilts/cmsdk: Update themes api text.
+
+   * system/vold/
+7ceeb5b Fix the group permissions of the sdcard root.
+
+   * vendor/cmsdk/
+b271dcf cmsdk: Mandate partner feature xml's for service implementation.
+279ce42 cmsdk: Mandate performance feature xml's for service implementation.
+ccdb292 cmsdk: Mandate themes feature xml's for service implementation.
+c406211 cmsdk: Mandate telephony feature xml's for service implementation.
+fe7fd1d cmsdk: Mandate app suggest feature xml's for service implementation.
+21a5674 cmsdk: Mandate profile feature xml's for service implementation.
+cdf85ad cmsdk: Mandate cm sb feature xml's for service implementation.
