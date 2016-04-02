@@ -1,0 +1,278 @@
+====================
+     04-01-2016
+====================
+
+
+   * android/
+29879df LLS: Add live lock screen service [4/4]
+
+   * build/
+cbe44ea [1/2] build: rename to DeskClock2
+9ef60ed envsetup: Always look up JAVA_HOME path
+357d7b5 Revert "binary: Generate dummy rule for relocated protobuf headers"
+
+   * cts/
+29e5042 Merge "DO NOT MERGE Change Wifi check to warning" into marshmallow-cts-release
+a3eda50 DO NOT MERGE Change Wifi check to warning
+
+   * device/motorola/falcon/
+b478d15 falcon: build CMActions
+
+   * device/motorola/ghost/
+935b6fd ghost: Update build fingerprints
+
+   * device/motorola/msm8226-common/
+55b6365 msm8226-common: CMActions: Hold a wakelock when the screen is on
+e0d9742 msm8226-common: Introduce CMActions
+eb5f35f msm8226-common: Disable dex2oat watchdog
+086be4b msm8226-common: enable AV offload
+
+   * device/motorola/msm8960dt-common/
+fd51b90 msm8960dt: Tune TCP performance
+dcd7c1d msm8960dt: Remove debugfs mounting
+
+   * frameworks/base/
+fb6c7c3 fw: Respect new cmsdk sdk class directory.
+968846c Framework changes for resetting data usage statistics
+ef8d2b4 NetworkManagement: Add ability to restrict app WiFi background data access
+e5245aa SystemUI: ensure volume record exists before showing notification
+5d40b2f MountService: ensure VolumeRecord with UUID exists before modifying
+e46d748 Implement left swipe on lockscreen
+14b7e88 Revert "fw: Implement hungarian cipher text."
+cd842e5 fw: Implement hungarian cipher text.
+f878f0d LLS: Use window attachment callbacks
+b27e233 LLS: Add LiveLockScreenController
+3ee98ae Fix ownership for files/folders created by ExternalStorageProvider on ext4/f2fs
+ed833a5 SystemUI: remove deleted broadcast receiver
+
+   * kernel/motorola/msm8226/
+ab96a1d misc: lis3dh_mot: Use PM ops for device suspend and resume
+ee648e7 pipe: Fix buffer offset after partially failed read
+
+   * packages/apps/DeskClock/
+58a4fdb fix theme styles
+
+   * packages/apps/Settings/
+d5c211a Settings app Data Usage UI enhancements
+68aeb41 LLS: Add config for showing LLS settings at top
+c650d46 Add Weather Content Provider [2/5]
+571db54 Settings: add marquee to Device administrators screen
+ca0afb9 LLS: Add LiveLockScreenSettings to ENTRY_FRAGMENTS
+23117ef Settings: implicitly link to lls settings
+1b842a0 LLS: Use LiveLockScreenManager for selecting LLS
+9d93111 Settings: Fix one-time vibration intensity restore
+ff4227b Settings: reflect/inform user of disabled wakelock appop
+37d4971 Automatic translation import
+
+   * packages/apps/Snap/
+bcd188c Fix histogram not being hidden after disabling it.
+a3c10d2 Beautify and optimize histogram view.
+
+   * packages/apps/SoundRecorder/
+e8816a2 SoundRecorder: record in background
+
+   * system/core/
+eb01347 sched_policy: zero proc_name buffer before populating
+
+   * vendor/XPe/
+51867be Add Weather Content Provider [3/5]
+a6dd1eb Fix typo
+00df3b2 cm: Add further verbose messaging for api breaking changes.
+1d96e7c LLS: Add live lock screen service [3/4]
+72a1733 LatinIME: Refresh remaining dictionaries
+
+   * vendor/cmsdk/
+5b84ae7 Merge remote-tracking branch 'upstream/cm-13.0' into HEAD
+ea7d712 cmsdk: Add test coverage for parceling LiveLockScreenInfo
+3757686 cmsdk: Add test coverage for LiveLockScreenInfo.Builder
+5f6c9f4 cmsdk: Move sdk classes under new sdk directory.
+1ee5f20 Added READ_DATAUSAGE and WRITE_DATAUSAGE permissions
+fcfc13e Initial checkin for DataUsageContract
+891e998 Added ACTION_DATA_USAGE Intent to directly invoke Settings->DataUsage
+0ab2886 Revert "cmsdk: Fix cm system api stub generation."
+df4486f cmsdk: Unhide the Concierge.
+d549053 CmSdk : Swipe offsets and show lockscreen
+42a1a85 cmsdk: Minor weather provider string updates
+3726f6b cmsdk: Add test coverage for parceling of ThemeChangeRequests.
+3916ed7 cmsdk: Add test coverage for ThemeChangeRequestBuilder and object.
+127c0cf cmsdk: Change parameter type of unregisterProcessingListener.
+22859ef cmsdk: Add preliminary ThemeManager test coverage.
+d2e7e04 cmsdk: Fix cm system api stub generation.
+eafcdbd cmsdk: Create Concierge parcel handler concept.
+4195a1c Add Weather Content Provider [4/5]
+
+====================
+     03-31-2016
+====================
+
+
+   * cts/
+1b22c76 Merge "Revert "Removed test from knownfailures"" into marshmallow-cts-release
+7c40fe3 Revert "Removed test from knownfailures"
+
+   * external/stagefright-plugins/
+4295c11 stagefright-plugins: Convert calls to av_free_packet to av_packet_unref
+
+   * frameworks/opt/telephony/
+9b0d0c3 Use registerForAvailable when device is encrypted only for RIL version >= 9
+
+   * packages/apps/Messaging/
+bc9e661 msim: Fix broken assumptions around the meaning of subId/slotId/selfId
+
+   * vendor/cmsdk/
+4682130 CMSettings: add event live lock component key
+2c5d3d5 Add callbacks for window attachment
+c995822 LLS: Don't build LlsInfo when defComponent is empty
+
+====================
+     03-30-2016
+====================
+
+
+   * frameworks/opt/telephony/
+e0e82e2 telephony: Workaround default sms sub id not being set.
+
+   * packages/apps/Bluetooth/
+8c5b9fe Merge branch 'LA.BF.1.1.3_rb1.11' of git://codeaurora.org/platform/packages/apps/Bluetooth into cm-13.0
+
+   * packages/apps/BluetoothExt/
+9292fb9 Merge branch 'LA.BF.1.1.3_rb1.11' of git://codeaurora.org/platform/vendor/qcom-opensource/bluetooth into cm-13.0
+
+   * packages/apps/CMFileManager/
+de3fb3d Default file manager fails to search files with Russian file name
+
+   * packages/apps/FMRadio/
+f9e74ef Fix force close when Google Play Music is not installed
+
+   * vendor/XPe/
+9c48faf buildscript add ccache and build clean
+
+   * vendor/cmsdk/
+a50a323 LLS: add type
+9f6530b cmsdk: add live lock screen settings action intent
+
+====================
+     03-29-2016
+====================
+
+
+   * build/
+aaf1a39 Makefile: fix changelog (?
+
+   * cts/
+cbaad06 Merge "Any charging device will stay awake during CTS" into marshmallow-cts-release
+3e4e12c Any charging device will stay awake during CTS
+
+   * device/motorola/falcon/
+dc9ad55 falcon: Enable proximity check on wake
+
+   * device/motorola/msm8226-common/
+fa6d134 msm8226-common: fstab: add a comment for USB OTG
+d6ba468 msm8226-common: sensors: Use CLOCK_BOOTIME (falcon-peregrine)
+5ace0fa Revert "msm8226-common: Enable proximity check on wake"
+
+   * frameworks/base/
+dd036c8 Fix num cpu check for CPU overlay
+a4769e2 [1/2] Base: add cpu info overlay
+
+   * frameworks/opt/telephony/
+8b4c5b0 Fix LTE attach issue due to wrong initial attach profile.
+
+   * kernel/motorola/msm8226/
+9f8b831 input: ct406: Use boot time for event timestamps
+620804f misc: akm8963: Use boot time for event timestamps
+5abc248 misc: l3g4200d: Use boot time for event timestamps
+9e9b932 UPSTREAM: include/linux/poison.h: fix LIST_POISON{1,2} offset
+1d85e96 genirq: Do not consider disabled wakeup irqs
+9416690 pipe: iovec: Fix memory corruption when retrying atomic copy as non-atomic
+00de86eb tty: Fix unsafe ldisc reference via ioctl(TIOCGETD)
+9cb60f3 KEYS: Fix race between read and revoke
+b8cec4f msm: qpnp-vibrator: Fixup coding style
+
+   * packages/apps/Settings/
+a0754bd development: fix checkbox FC i forget to change to switchpref in xml
+790418e DevelopmentSettings: Fix checkbox and change to switch
+294b207 [2/2] settings: add CPU info overlay this shows CPU temp (if available) for every core governor + online + freq
+
+   * packages/apps/XPerienceCenter/
+bec8bcd some string changes
+
+   * packages/inputmethods/LatinIME/
+b2a7a9d LatinIME: Disable Hungarian spell checking
+beee7f7 LatinIME: Add Bulgarian, Georgian and Ukrainian wordlists
+
+   * vendor/cmsdk/
+bfa500d LLS: Add live lock screen service [1/4]
+
+====================
+     03-28-2016
+====================
+
+
+   * android/
+dfdb3a1 track calllog from cm
+
+   * cts/
+90ea1ef Merge "DO NOT MERGE: Increase AdoptableHostTest timeout." into marshmallow-cts-release
+34bb9fd DO NOT MERGE: Increase AdoptableHostTest timeout.
+664155a Merge "Temporarily disable com.android.cts.cpptools.RunAsHostTest#testRunAs" into marshmallow-cts-release
+bb9317a Temporarily disable com.android.cts.cpptools.RunAsHostTest#testRunAs
+1205c12 Merge "Fix issues in SensorBatchingTests" into marshmallow-cts-release
+9ac7d3e Fix issues in SensorBatchingTests
+f6672c0 Merge "DO NOT MERGE ANYWHERE: Bumping CTS 6.0 to R5" into marshmallow-cts-release
+a6d2f6b DO NOT MERGE ANYWHERE: Bumping CTS 6.0 to R5
+
+   * device/qcom/common/
+41b58e4 power: Encode optimization
+5436ef0 power: Modify camera encode/preview hint
+032f125 power: Enable camera preview hint in powerhal
+1915eb6 power: Add and update resources for encode powerHAL
+c798dcf power: Introduce 8996 specific handling
+cd39e2e init: Add MSM-specific init extension library for msm8996
+
+   * frameworks/base/
+d69c749 pm: Don't call into AppSuggestManager before service available.
+b157b88 Don't block wake locks for required always-on system apps
+960aafc Frameworks AppOps: Enable MODE_IGNORED for OP_WAKE_LOCK
+fb25f9d SystemUI: stop hiding hotspot & color inversion tiles
+b6213d8 Automatic translation import
+1390d51 NullPointerException when starting VoiceInteractionManagerService
+ae12918 SystemUI: fix play queue crash
+
+   * frameworks/opt/telephony/
+7a2fa62 telephony: Add oldril feature setPrefNwTypeOnUnsolConnected.
+
+   * kernel/motorola/ghost/
+ab511b0 msm: perf: Protect buffer overflow due to malicious user
+
+   * packages/apps/BluetoothExt/
+835ae50 hiddTestApp: disable from launcher
+
+   * packages/apps/Messaging/
+0132f00 Messaging: Fix file mode
+503af9b Automatic translation import
+a831659 Messaging App is crashing when storage  memory is full
+
+   * packages/apps/OmniSwitch/
+9ed870f OmniSwitch: Create a shortcut to exposed toggle activity
+7d97dee OmniSwitch: basic multi window support
+9987719 Automatic translation import
+
+   * packages/apps/Snap/
+26ce90d Automatic translation import
+af06aa7 Protect against multiple shutter callbacks per frame in longshot mode.
+592c86b Re-enable processing of drawable state.
+
+   * packages/providers/DownloadProvider/
+ed04a8a Automatic translation import
+
+   * vendor/cmsdk/
+8351fd9 cmsdk: Add hidden interface for getService on AppSuggestManager.
+0a99739 Automatic translation import
+e994c77 Fix: "cmsdk: Mandate partner feature xml's for service implementation."
+11334c9 cmsdk: Add hidden interface for getService on AppSuggestManager.
+3f42978 Automatic translation import
+374a17e Fix: "cmsdk: Mandate partner feature xml's for service implementation."
+
+   * vendor/motorola/
+b4d5b1c Merge pull request #238 from Moto8610/cm-13.0
