@@ -1,0 +1,180 @@
+====================
+     04-26-2016
+====================
+
+
+   * android/
+74c6928 Add OpenWeatherMapProvider
+
+   * cts/
+b359c22 Merge "DO NOT MERGE MediaServerCrashTest: skip checkIfMediaServerDiedForDrm when dm to fl conversion is not supported." into marshmallow-cts-release
+35e0605 DO NOT MERGE MediaServerCrashTest: skip checkIfMediaServerDiedForDrm when dm to fl conversion is not supported.
+
+   * frameworks/base/
+3cc19e5 Add Weather Content Provider [5/5]
+4282bfc bootanimation: Switch to readahead
+461ceba LLS: Update LLS slide offsets when focus changes
+2cb0241 Support for new properties to identify country based ecc #s added by RIL
+9a46e71 LLS: Show notification panel if LLS crashes
+7f4a057 LLS: Fix screen off event firing when not interactive
+ea8475a libhwui: Remove opaque check for everything
+2611d85 SystemUI: handle camera launch gesture from keyhadler
+ee3da9a Keyguard: switch to cm-specific device provisioned flag
+86e3241 SettingsProvider : load region-specific settings
+d5ab89c Themes: Update icon mapping on boot
+
+   * packages/apps/Dialer/
+e790722 Fix nudge counts
+
+   * packages/apps/Messaging/
+01868a1 Fixed the cutoff timestamp for MMS deletion by limit.
+
+   * packages/apps/OpenWeatherMapProvider/
+65707bc Initial checking of OpenWeatherMap weather provider service
+
+   * packages/apps/PhoneCommon/
+33beb0a Check if Volte is enabled in ImsManager to determine Volte support
+e8398ca Fix call method spinner text cutoff
+
+   * packages/apps/Settings/
+363c9a8 Setting : Don't show search for activities not within same shared user id
+d5d4aea settings: Remove LiveDisplay preferences if not available
+2ab0ee5 Settings: fix incorrect default sim/sms/data selection logic
+f373c36 Themes: Add tint mode so custom icons can show in power usage detail
+
+   * packages/apps/SetupWizard/
+0c93e00 SetupWizard: Handle register theme change listener crash
+cfa3937 SetupWizard: Fix test app building
+f56e725 SetupWizard: GMS page controls the next step
+2354364 SetupWizard: add a CM-specific setup-complete settings key
+
+   * packages/apps/Snap/
+e7d5438 Snap: Add support for focus distance
+
+   * system/bt/
+3a1764b Add Renault MediaNav to HFP 1.7 blacklist
+
+   * system/core/
+7c7fc99 fastboot: add ZTE to the list of known vendors
+
+   * system/vold/
+57f9939 vold: Fix cryptfs changepw parsing
+
+   * vendor/XPe/
+7b7b976 Remove cyngn dialer
+
+   * vendor/cmsdk/
+c9d3f34 Merge remote-tracking branch 'upstream/cm-13.0' into HEAD
+4595cfd livedisplay: Add some unit tests
+35315d3 cmsdk: Fix crash when getting LiveDisplay config
+
+   * vendor/cmsdk/samples/weatherproviderservice/
+f495569 WundergroundCM: Add uses-feature for play store targeting.
+
+====================
+     04-25-2016
+====================
+
+
+   * cts/
+912c63e merge in marshmallow-cts-release history after reset to marshmallow-cts-dev
+
+   * frameworks/opt/telephony/
+4e5d695 Fix bug in CallManager unregisterForPhoneStates()
+
+   * packages/apps/Bluetooth/
+2c9c545 Ensure synchronized access of JNI callback object
+
+   * packages/apps/ContactsCommon/
+14ae197 Add new method to LookupHandlerThread for calling new API interfaces
+
+   * packages/apps/Eleven/
+ac7e035 Eleven: Cleanup all the whitespace
+
+   * packages/apps/Messaging/
+4052475 Implement lookup provider for 4x3 and 3x3 widget
+33e9316 Bring back original color
+
+   * packages/apps/ThemeChooser/
+74d7544 ThemeChooser: don't try to set bg color when displaying from font filter
+
+   * vendor/cmsdk/
+c68b38a livedisplay: Connect display modes to CMHW
+
+====================
+     04-24-2016
+====================
+
+
+   * packages/apps/Screencast/
+1b416a4 Screencast: cleanup
+
+   * packages/apps/SoundRecorder/
+bbd3c55 SoundRecorder: cleanup
+
+   * system/bt/
+87c9691 add medianav to unsupported device for hfp 1.7
+
+   * vendor/cmsdk/
+e41c292 livedisplay: Fix three bugs
+
+====================
+     04-23-2016
+====================
+
+
+   * android/
+d5e7cb2 Update default.xml
+
+   * kernel/motorola/ghost/
+2d415c8 update xperience gov
+
+   * packages/apps/Settings/
+1b9c2b5 add performance app to Settings
+
+   * vendor/XPe/
+32c30fb New Alessaapp :)
+
+====================
+     04-22-2016
+====================
+
+
+   * external/stagefright-plugins/
+d379af4 stagefright-plugins: Fix port reset problem
+38e74de stagefright-plugins: Fix eos flush problem.
+
+   * frameworks/av/
+c27a16c audiopolicy: Fix notification not sent for session release
+
+   * frameworks/opt/net/wifi/
+eb9c90d Null check before accessing AP objects
+
+   * hardware/ti/omap4/
+c0ab422 camera: fix large tiler memory leakages
+
+   * packages/apps/CMBugReport/
+a101530 CMBugReport: add bypass processing config
+e48c244 CMBugReport: better bug report uploading
+
+   * packages/apps/Dialer/
+6167f42 NPE: check that cn is null and return
+
+   * packages/apps/InCallUI/
+536b9f5 CallButtons: Prevent FRP bypass via the video calling option
+
+   * packages/apps/LockClock/
+c56159a Refactor cLock to use the new Weather API
+
+   * packages/apps/Messaging/
+22d92d6 Text/Multimedia message limit feature
+
+   * packages/services/Telecomm/
+fb92b65 Telecom: refresh missed call notification on locale change
+
+   * vendor/cmsdk/
+bf5261c CMSettings: add CM_SETUP_WIZARD_COMPLETED key
+7a4fed9 livedisplay: Always check for transition
+
+   * vendor/cmsdk/samples/weatherproviderservice/
+6757ab6 WundergroundCM: Update iconography.
