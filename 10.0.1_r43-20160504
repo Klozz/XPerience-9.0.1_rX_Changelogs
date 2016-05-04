@@ -1,0 +1,406 @@
+====================
+     05-04-2016
+====================
+
+
+   * android/
+5db864e android_6.0.1_r31 -> android_6.0.1_r43
+
+   * build/
+df5a3f1 Merge tag 'android-6.0.1_r43' into HEAD
+e057ed0 build: Fix manual invocation of aar targets.
+24688f2 build: Make sure to check for variable definition during execution.
+ff89361 build: allow to set a consumer proguard file
+
+   * device/motorola/msm8226-common/
+b1a1aa2 msm8226-common: Remove init.qcom.ssr.sh
+eb87f72 msm8226-common: Make /persist writable again
+
+   * device/motorola/msm8960dt-common/
+2f894d7 commonize rild for ghost and obake set in msm8960dt common
+33a7163 revert:revert: msm8960dt: Run fsck on /persist
+532bbbc Update readme :D
+43b43e5 sepolicy: define fsg_file
+dc7e343 msm8960dt: Snap: override device manufacturer and model
+c9a97a5 msm8960dt: mount cache with journal_async_commit
+323ef67 Revert: msm8960dt: Run fsck on /persist
+f94f572 Enable Bootmodem Sepolicy
+
+   * external/boringssl/
+95d9351 Merge tag 'android-6.0.1_r43' into HEAD
+
+   * external/flac/
+8882a5a Merge tag 'android-6.0.1_r43' into HEAD
+
+   * external/wpa_supplicant_8/
+5c128ae Merge tag 'android-6.0.1_r43' into HEAD
+
+   * frameworks/av/
+bcd1d7c Merge tag 'android-6.0.1_r43' into HEAD
+
+   * frameworks/base/
+0e604e1 Merge tag 'android-6.0.1_r43' into HEAD
+3efce63 SystemUI: remember deleted custom tiles
+4316fbd Settings: defer DEV_FORCE_SHOW_NAVBAR query to CMSettings
+81b51ee Revert "Selectively show zen footer."
+bb73fea Lockscreen shortcuts: don't allow specific activities
+0575219 keyguard: Allow disabling fingerprint wake-and-unlock
+8ea6f3b nms: Only generate LED colors if the device has a multicolored LED
+616a8ae Revert "SettingsLib: Add back accidentally removed translations"
+
+   * frameworks/native/
+134fddb Merge tag 'android-6.0.1_r43' into HEAD
+
+   * hardware/broadcom/wlan/
+4103993 Merge tag 'android-6.0.1_r43' into HEAD
+
+   * libcore/
+7e191c4 Merge tag 'android-6.0.1_r43' into HEAD
+
+   * packages/apps/Dialer/
+c5c1357 Revert "Dialer DeepLink Integration"
+
+   * packages/apps/Email/
+81609f7 Merge tag 'android-6.0.1_r43' into HEAD
+
+   * packages/apps/FMRadio/
+5b02aca fmradio: Add an optional static library target
+
+   * packages/apps/InCallUI/
+68a49fb Revert "DeepLink Integration in InCallUi"
+
+   * packages/apps/PhoneCommon/
+59c6d45 Revert "Add DeepLinkAPI to AmbientApiClient"
+c4aa3a9 Revert "AmbientConnection: Permissions checking"
+
+   * packages/apps/Settings/
+d34a621 Settings: Make sure to rebuild on app entries loaded.
+873e64e Settings: fix backlight illumination wrong summary
+
+   * packages/apps/SetupWizard/
+8b9234c SetupWizard: Run as com.android.wizard task affinity
+
+   * packages/apps/Snap/
+8f4e87e Snap: Only set preferred preview sizes if they are valid
+a7e91da Snap: Support override maker and model exif tag
+
+   * packages/apps/UnifiedEmail/
+d717c31 Merge tag 'android-6.0.1_r43' into HEAD
+
+   * system/bt/
+e191407 Merge tag 'android-6.0.1_r43' into HEAD
+
+   * system/core/
+e22eea8 Merge tag 'android-6.0.1_r43' into HEAD
+4acff53 rootdir: Remove cpufreq mode settings
+
+   * vendor/XPe/
+67b22cc Bump to R43 Galactic Kindred
+7f18d60 cm: Allow LiveDisplay to write to color_enhance
+
+   * vendor/cmsdk/
+b082e10 Merge remote-tracking branch 'upstream/cm-13.0' into HEAD
+
+====================
+     05-03-2016
+====================
+
+
+   * external/zlib/
+55411b1 zlib: Remove usage of cpu directive in inline asm
+
+   * hardware/cyanogen/
+ff81fca cmhw: Correct TAG for Color Enhancement
+01801a2 aw2013: Add header for malloc/free
+
+   * packages/apps/FMRadio/
+b51931e FmService: Make usage of audiopatch a build-time option
+
+   * packages/apps/PhoneCommon/
+b5448ef AmbientConnection: Permissions checking
+
+   * packages/apps/Screencast/
+f88548a ScreenRecorder: new icon
+
+   * packages/apps/Trebuchet/
+1daec9c Use bitmap filtering for shrinking app icons
+a56a75d Prevent crash when exiting grid size fragment
+
+   * packages/services/Telecomm/
+cbf3ace Telecomm: Bandaid possible NPE on call waiting scenarios.
+6c7dd77 CallsManager: Fix racey disconnect-on-waiting
+
+   * prebuilts/cmsdk/
+f2c8d86 prebuilts/cmsdk: Overwrite release artifact.
+
+   * vendor/cmsdk/
+60f2acf cmsdk: @hide protected variable
+fd4b383 CMSettings: intercept Settings calls to DEV_FORCE_SHOW_NAVBAR
+94dd91a cmsdk: Fix PerformanceManagerTest expectations.
+c6550fd cmsdk: include our own consumer proguard rules
+de43b8c cmsdk: set minsdk to api level 4
+
+====================
+     05-02-2016
+====================
+
+
+   * hardware/qcom/audio-caf/msm8994/
+866d090 Fix incall music enabled error
+49054ba policy_hal: Fix setOutputDevice call when starting source
+f17c099 hal: Fix build break when incall music isn't set
+
+   * hardware/qcom/display-caf/msm8994/
+cedd62a display: Fix warnings on 64-bit clang
+
+   * hardware/qcom/media-caf/msm8994/
+8f10396 media: Fix issues when building with Clang
+
+   * hardware/ti/omap4/
+10f354f domx: connection robustness improvements
+
+   * packages/apps/BasicSmsReceiver/
+3e06852 Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/apps/BasicSmsReceiver into cm-13.0"
+
+   * packages/apps/Bluetooth/
+f4546b1 Partially revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/apps/Bluetooth into cm-13.0"
+
+   * packages/apps/Calendar/
+288ecbb Calendar: Fix translatability of buttons list
+
+   * packages/apps/Camera2/
+4770312 Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/apps/Camera2 into cm-13.0"
+
+   * packages/apps/CellBroadcastReceiver/
+78dd173 Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/apps/CellBroadcastReceiver into cm-13.0"
+
+   * packages/apps/CertInstaller/
+43e8a16 Partially revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/apps/CertInstaller into cm-13.0"
+
+   * packages/apps/Contacts/
+829ce77 Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/apps/Contacts into cm-13.0"
+
+   * packages/apps/Dialer/
+bde990e Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/apps/Dialer into cm-13.0"
+11ed4a8 Revert "Workaround for AOSP strings missing translations"
+
+   * packages/apps/Email/
+89e216d Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/apps/Email into cm-13.0"
+
+   * packages/apps/ExactCalculator/
+7e0d09a Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/apps/ExactCalculator into cm-13.0"
+
+   * packages/apps/FMRadio/
+20b31d7 Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/apps/FMRadio into cm-13.0"
+
+   * packages/apps/Gallery2/
+55b2afc Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/apps/Gallery2 into cm-13.0"
+
+   * packages/apps/Gello/
+4ec3df1 Gello: Improve some strings
+
+   * packages/apps/InCallUI/
+2425096 Partially revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/apps/InCallUI into cm-13.0"
+
+   * packages/apps/KeyChain/
+1d01cb0 Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/apps/KeyChain into cm-13.0"
+
+   * packages/apps/ManagedProvisioning/
+e1c1f4a Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/apps/ManagedProvisioning into cm-13.0"
+
+   * packages/apps/Nfc/
+80f5226 Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/apps/Nfc into cm-13.0"
+
+   * packages/apps/PhoneCommon/
+158e6b3 Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/apps/PhoneCommon into cm-13.0"
+
+   * packages/apps/SoundRecorder/
+92f1897 Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/apps/SoundRecorder into cm-13.0"
+
+   * packages/apps/Stk/
+fabbc12 Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/apps/Stk into cm-13.0"
+
+   * packages/apps/Tag/
+f26dd77 Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/apps/Tag into cm-13.0"
+
+   * packages/apps/Trebuchet/
+98fc7cb Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/apps/Launcher3 into HEAD"
+
+   * packages/apps/TvSettings/
+3327e7b Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/apps/TvSettings into cm-13.0"
+
+   * packages/apps/UnifiedEmail/
+6d39c78 Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/apps/UnifiedEmail into cm-13.0"
+
+   * packages/providers/ContactsProvider/
+d849765 Partially revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/providers/ContactsProvider into cm-13.0"
+
+   * packages/providers/DownloadProvider/
+d94d7f8 Partially revert "Import translations. DO NOT MERGE"
+7b3ecae Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/providers/DownloadProvider into cm-13.0"
+
+   * packages/providers/MediaProvider/
+d4592ab Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/providers/MediaProvider into cm-13.0"
+
+   * packages/providers/TelephonyProvider/
+662c50e Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/providers/TelephonyProvider into cm-13.0"
+
+   * packages/providers/UserDictionaryProvider/
+796f619 Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/providers/UserDictionaryProvider into cm-13.0"
+
+   * packages/screensavers/Basic/
+c1813e3 Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/screensavers/Basic into cm-13.0"
+
+   * packages/screensavers/PhotoTable/
+dd4a862 Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/screensavers/PhotoTable into cm-13.0"
+
+   * packages/services/Telephony/
+50e6e40 Apply correct theme color to USSD progress dialog.
+a374161 Partially revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/services/Telephony into cm-13.0"
+
+   * packages/wallpapers/Basic/
+6983fd7 Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/wallpapers/Basic into cm-13.0"
+
+   * packages/wallpapers/HoloSpiral/
+3d59c10 Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/wallpapers/HoloSpiral into cm-13.0"
+
+   * packages/wallpapers/LivePicker/
+fb8dcdb Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/wallpapers/LivePicker into cm-13.0"
+
+   * packages/wallpapers/MagicSmoke/
+15cab6a Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/wallpapers/MagicSmoke into cm-13.0"
+
+   * packages/wallpapers/NoiseField/
+38435b4 Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/wallpapers/NoiseField into cm-13.0"
+
+   * packages/wallpapers/PhaseBeam/
+1105ac7 Revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/packages/wallpapers/PhaseBeam into cm-13.0"
+
+====================
+     05-01-2016
+====================
+
+
+   * android/
+90ead83 Update default.xml
+d9dc44a Update core_cm_all.xml
+4a7b1c0 revert uber toolchain
+
+   * bionic/
+e87a5b3 bionic: Use a more simple strrchr for arm64
+
+   * external/toybox/
+8aadde6 toybox: Do not install a symlink for traceroute6
+
+   * external/zlib/
+41a0457 zlib: Disable Clang for now
+
+   * frameworks/av/
+7592f6c avextensions: Fix warnings on 64-bit clang
+
+   * hardware/qcom/audio-caf/msm8994/
+2a7df58 hal: Fix warnings when building with clang
+4f1d6d3 policy_hal: fix improper voice-playback concurrency handling
+
+   * packages/apps/Dialer/
+fe086be Quick Fix for NPE in Dialer
+
+   * vendor/XPe/
+b52ee50 APN: Fix Saunalahti APN regression introduced by CYNGNOS-436
+4d20745 APN: update Batelco and Zain APNs for Bahrain
+19c64ab cm: Add CMAudioService the platform
+fe3a97f cm: Remove garbage from sepolicy
+
+   * vendor/cmsdk/
+a4ab6bd cmsdk: Fix warning from 64-bit clang
+
+   * vendor/motorola/
+3b12e13 clark: kangbang ims.apk from bullhead
+
+====================
+     04-30-2016
+====================
+
+
+   * android/
+d5277e3  [2/2] Gello ships!
+28a87c1 remove duplicated
+586f666 update toolchains
+ccc83eb [1/2] Gello ships!
+
+   * device/motorola/msm8226-common/
+ead9577 Automatic translation import
+0014830 msm8226: let Gello take part of the builds
+
+   * device/motorola/msm8960dt-common/
+3e1c225 msm8960dt:let Gello take part of the builds
+
+   * device/qcom/common/
+d657426 power: Bring all CM features to 8992 PowerHAL
+
+   * external/skia/
+9c5a1d3 skia: Fix QC-PERF for msm8992
+
+   * frameworks/base/
+69c348b SysUI: Animate notificaiton panel back into view
+a1dbad5 Keyguard: Register for the correct CMSW completed Uri
+de06866 Automatic translation import
+c585f9b SystemUI: Handle null keys on settings reload.
+5a7feb1 media: Remove effect session callbacks from the framework
+1bd2edb SysUI: Don't call removeAllViews on AdapterView
+
+   * hardware/qcom/audio-caf/msm8994/
+211004f hal: Fix warnings in audio HAL and policy
+a5ccf06 hal: Add performance lock for playback usecase
+034efca hal: Add support for LINE out device
+
+   * kernel/motorola/msm8226/
+6a5fa53 defconfig: Enable memory resource controller swap extension
+
+   * packages/apps/ContactsCommon/
+849685b Fix height calculation of ContactListItemView
+
+   * packages/apps/Dialer/
+abec0f3 Dialer DeepLink Integration
+
+   * packages/apps/Gello/
+bdeeedb Automatic translation import
+
+   * packages/apps/InCallUI/
+09e5382 DeepLink Integration in InCallUi
+
+   * packages/apps/Messaging/
+d845463 Showing Normalized number instead of denormalize number
+
+   * packages/apps/PhoneCommon/
+51aefeb Add DeepLinkAPI to AmbientApiClient
+35f20a7 Correctly mark data broadcast as done.
+
+   * packages/apps/Settings/
+fd73c17 Settings: refresh ui on foce stop/diable
+0cd7462 Settings: Ensure user has to wait 30 before retrying pattern
+cb5028e Automatic translation import
+7dfb0da Settings: restore proper live display color profile
+b7b2dfe Simplify and improve dream, LLS and weather provider layouts.
+
+   * packages/apps/SetupWizard/
+1c29df7 SetupWizard: Add Mod disovery language for mod ready devices
+8089953 SetupWizard: Ensure compliance with GMS TOS
+
+   * packages/apps/Snap/
+1c81111 Automatic translation import
+c8130db Improve RTL layout behaviour.
+
+   * packages/apps/Trebuchet/
+d20f779 Revert "Trebuchet: send metrics directly when possible"
+097b950 Trebuchet: send metrics directly when possible
+
+   * system/core/
+732c474 fastboot: Add Nextbit's USB vendor id
+
+   * vendor/XPe/
+c4ac7a7 Include Gello.
+
+   * vendor/cmsdk/
+0ddaa46 Merge remote-tracking branch 'upstream/cm-13.0' into HEAD
+
