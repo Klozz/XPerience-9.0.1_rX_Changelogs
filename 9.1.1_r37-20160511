@@ -1,0 +1,128 @@
+====================
+     05-10-2016
+====================
+
+
+   * android/
+2cc5330 default.xml: android-5.1.1_r36 -> android-5.1.1_r37
+
+   * build/
+c02e673 Change security STRING to preparation for may otas
+06354f3 Merge tag 'android-5.1.1_r37' into HEAD
+
+   * device/motorola/msm8960dt-common/
+3aeb820 Resolve config_speed_up_audio_on_mt_calls overlay
+
+   * frameworks/av/
+f4aab40 Fix AMR decoder
+398035d Subject: [PATCH 6/9] SoftAMR: check input buffer size to avoid overflow.
+e62954b SoftAMR: check output buffer size to avoid overflow.
+37325de codecs: check OMX buffer size before use in VP8 encoder.
+f6ad328 NuPlayerStreamListener: NULL and bounds check before memcpy
+2e1fe6d Camera3Device: Validate template ID
+a4e515a Add VPX output buffer size check
+05350bb Merge tag 'android-5.1.1_r37' into HEAD
+
+   * frameworks/base/
+b04c9f5 Revert "XPerience MAterialized blue Settings :D"
+ccdd241 Revert "change the settings color"
+7c1b4bb SystemUI: Fix build of the add-on quicksettings pull down
+b2e0042 meh?
+dfd18a3 Disallow guest user from changing Wifi settings
+d3a5991 Automatic translation import
+a7dc291 RemoteController: extract interface conflicting with CTS test (1/2)
+03d9d57 Automatic translation import
+7273cd6 git fetch Merge tag 'android-5.1.1_r37' into HEAD
+
+   * packages/apps/Settings/
+0818994 Settings:fix some things added when I add On the spot support :)
+21bfcc6 Hide Keypad for pattern lock.
+029297f Automatic translation import
+bf17627 Settings: restore proper live display color profile
+ce78bcc Automatic translation import
+7846fca Use settings' theme when inflating account prefs
+b628151 Remove "Apps" category when empty
+c31eb32 Settings: Update contributors cloud DB
+7a1e05f Settings: disable Cast Screen from QuickSettings
+228057e Settings: Modify RU translation for Ambient display
+d697f12 Settings: Allow disabling default allcaps state in tabtext.
+7fdae6c Settings: disable wifi display from search indexing if disabled
+d557aec Use same technology type for LTE/4G
+e2cfc03 Automatic translation import
+14cdc0f RegulatoryDialog : Use String.split to avoid crash on empty args
+35c8cac Reapply custom lockscreen when switching to swipe mode
+60b6e9a Settings: disable Wifi display from the Settings menu
+2dd4af5 Adding null checks to prevent OnPrepareRemoval() on null object
+c5a042c Automatic translation import
+
+   * vendor/XPe/
+4b4b070 add weex OMV
+5f5f199 bump to r37
+
+====================
+     05-09-2016
+====================
+
+
+   * external/bluetooth/bluedroid/
+7d9fc98 DO NOT MERGE Check size of pin before replying
+
+   * external/flac/
+13879f9 Avoid free-before-initialize vulnerability in heap
+
+   * external/wpa_supplicant_8/
+488403d Guard against return value already being null
+f119bf2 Remove newlines from config output
+
+   * frameworks/native/
+c7e90d6 Fix issue #27252896: Security Vulnerability -- weak binder
+ddc6177 BQ: fix some uninitialized variables
+
+   * packages/apps/Email/
+2b8d11c Don't allow cachedFile Attachments if the content Uri is pointing to EmailProvider.
+
+   * packages/apps/UnifiedEmail/
+d6b298b Don't allow cachedFile Attachments if the content Uri is pointing to EmailProvider.
+
+   * system/core/
+1918072 Don't demangle symbol names.
+
+====================
+     05-08-2016
+====================
+
+
+   * prebuilts/cmsdk/
+e029cf3 prebuilts/cmsdk: Update for patch release.
+
+====================
+     05-07-2016
+====================
+
+
+   * packages/apps/CMFileManager/
+20785ed Automatic translation import
+
+   * packages/apps/Calendar/
+150cbdb Automatic translation import
+
+   * packages/apps/Contacts/
+8c4b745 Automatic translation import
+
+   * packages/apps/LockClock/
+1a4d69b Automatic translation import
+
+   * packages/apps/Mms/
+184c0d6 Automatic translation import
+
+   * packages/services/Telephony/
+52b9135 Automatic translation import
+
+   * vendor/cmsdk/
+d49538a Automatic translation import
+
+====================
+     05-06-2016
+====================
+
+
