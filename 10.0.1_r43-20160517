@@ -1,0 +1,764 @@
+====================
+     05-17-2016
+====================
+
+   * android/
+399652d fix D: remote
+907784f track own stk
+f9fc391 remove cm stk
+
+   * build/
+fc2e313 ereleasetools: Allow for custom boot image signing tools
+
+   * frameworks/base/
+0f1fd44 Merge https://github.com/XPerience-AOSP-Lollipop/android_frameworks_base into HEAD
+5d92ece QSTiles: set disconnect callback in bluetooth details list adapter
+bb7d210 Port "Settings: add a way to not localize zone selections" to cm-13
+bf976c6 Settings: add Kiev time zones to picker
+23e1703 Automatic translation import
+c852330 pm: Avoid installing prebundle to other users that were uninstalled by owner.
+bd297be SystemUI : Ensure previous camera preview is removed
+c7590d9 Lls: Use LlsController for checking LLS focus
+97ccbc6 LLS: Don't change bar state when changing LLS focus
+88d83fe LLS: Ensure LLS loses focus when showing bouncer
+7764e23 new xpe colors
+64fe7f3 ShutdownThread: Decrypt before stopping storage manager
+c9c5a8d Expose lock screen blurring as a setting [2/2]
+3b63132 Automatic translation import
+8a202fd MediaScanner: Add support for default ringtones per sim
+4521c2b Fix incorrect behavior for statusbar and quicksettings panel
+
+   * frameworks/opt/telephony/
+46a6b73 SubscriptionController: fix subscription updating
+
+
+   * frameworks/opt/telephony/
+aa6e466 Fix pdn cleanup issue due to apn change
+
+   * packages/apps/AudioFX/
+880b2d3 Automatic translation import
+
+   * packages/apps/Bluetooth/
+4502c24 Automatic translation import
+
+   * packages/apps/Browser/
+5cd29de Automatic translation import
+
+   * packages/apps/Calendar/
+d8157b5 Automatic translation import
+
+   * packages/apps/Camera2/
+a4ad9b4 Automatic translation import
+
+   * packages/apps/CellBroadcastReceiver/
+a7d3a7e Automatic translation import
+
+   * packages/apps/Contacts/
+91321bc Automatic translation import
+
+   * packages/apps/ContactsCommon/
+dc2032c Utilize city and country within Lookup Response
+2f01ecf Automatic translation import
+
+
+   * kernel/motorola/ghost/
+69beb94 netfilter: x_tables: check for size overflow
+0a67e58 ALSA: timer: Fix leak in events via snd_timer_user_tinterrupt
+af52ca4 ALSA: timer: Fix leak in events via snd_timer_user_ccallback
+b1ab9bd ALSA: timer: Fix leak in SNDRV_TIMER_IOCTL_PARAMS
+16063e3 Input: aiptek - fix crash on detecting device without endpoints
+aee3bf21 Input: aiptek - adjust error-handling code label
+ad052c1 netfilter: x_tables: fix unconditional helper
+af651eb ipv4: Don't do expensive useless work during inetdev destroy.
+0f10851 USB: cdc-acm: more sanity checking
+d38cc38 usbnet: cleanup after bind() in probe()
+5de61cc ALSA: hrtimer: Fix stall by hrtimer_cancel()
+2475683 pipe: limit the per-user amount of pages allocated in pipes
+9762029 ALSA: timer: Harden slave timer list handling
+cff3d07 ALSA: timer: Fix race among timer ioctls
+7c90df3 ALSA: timer: Fix double unlink of active_list
+e40738b ALSA: usb-audio: avoid freeing umidi object twice
+
+   * kernel/motorola/msm8226/
+2e2b46c netfilter: x_tables: check for size overflow
+396e159 ALSA: timer: Fix leak in events via snd_timer_user_tinterrupt
+250becf ALSA: timer: Fix leak in events via snd_timer_user_ccallback
+a2d5341 ALSA: timer: Fix leak in SNDRV_TIMER_IOCTL_PARAMS
+
+   * packages/apps/Dialer/
+4b71765 Fix for issues with the Note action/icon disappearing from call log.
+6b09908 Show SIP call method in spinner and force update on resume
+907ac58 Allow MANAGE_USERS and INTERACT_ACROSS_USERS permissions
+46795a7 Automatic translation import
+561cc16 Dialer Settings: fix InCall Plugin settings
+fa919fe Fix call log contact info query
+
+   * packages/apps/InCallUI/
+c3a5ee4 Ensure the block icon within incoming call notification is themable
+6db091c Automatic translation import
+
+   * packages/apps/ManagedProvisioning/
+5a67ade Automatic translation import
+
+   * packages/apps/Messaging/
+e3ad34d Automatic translation import
+
+   * packages/apps/Nfc/
+0db06f2 Automatic translation import
+fba2444 Nfc: Clear transfer manager service on Destroy
+
+   * packages/apps/PackageInstaller/
+9627774 Automatic translation import
+
+   * packages/apps/PhoneCommon/
+5f1bd90 Show SIP call method in spinner and force update on resume
+4e40c7c Automatic translation import
+
+   * packages/apps/Messaging/
+e4d2731 Messaging: properly handle "always ask" SMS sending option
+3352b45 PhoneUtils: Phone numbers are always LTR regardless of grouping
+
+   * packages/apps/Settings/
+66af0d6 Revert "wifi: forward port avoid poor connection setting"
+9478267 Settings: update time zone strings on date change
+a78437c Automatic translation import
+d8eb9ee Settings: Ignore process kill receiver events if activity is destroyed.
+0f47dfd Revert "Dotted Circle Battery (2/3)"
+83d78d7 Close "Protected apps" activity during power cycle
+93c6b12 Settings: Move vibrator value restore to onActivityStop
+1bcb655 Automatic translation import
+facb27b Automatic translation import
+f9bb3e5 Use correct icon for sim card
+
+   * packages/apps/Stk/
+2161aaf fix the icon xD
+ac0b3cf Materialized icon for SIM toolkit
+
+   * packages/apps/SetupWizard/
+a33843e SetupWizard: Use proper CMSetting for soft keys option
+
+   * packages/services/Telephony/
+633c017 Telephony: fix crash if SubInfo isn't ready
+
+   * system/core/
+b955e18 rootdir: Put bootanimation service in system-background group
+
+   * vendor/XPe/
+6906376 Fix the overlay icon for STK
+b3b143e :p fix SU
+8a91345 this are UNOFFICIAL if it are builde on non MIZAKI-MEI pc
+879fb41 ambientsdk: Add ambientsdk.aar file this fix some problems when you build the dialer and IncallerUI with the new CM add-ons
+c2135e4 Materialized icon for SIM toolkit
+7437f9f sepolicy: Allow uncrypt additional access
+0567e1a New XPerience 10 Wallpaper
+fb2970a STK: remove overlay of this
+6906376 Fix the overlay icon for STK
+b3b143e :p fix SU
+8a91345 this are UNOFFICIAL if it are builde on non MIZAKI-MEI pc
+879fb41 ambientsdk: Add ambientsdk.aar file this fix some problems when you build the dialer and IncallerUI with the new CM add-ons
+
+
+   * vendor/cmsdk/
+7bf862e Merge remote-tracking branch 'upstream/cm-13.0' into HEAD
+3b4129f Expose lock screen blurring as a setting [1/2]
+77aba28 Revert "Dotted Circle Battery (3/3)"
+7057a3e Merge remote-tracking branch 'upstream/cm-13.0' into HEAD
+8f50ecd Automatic translation import
+7bf862e Merge remote-tracking branch 'upstream/cm-13.0' into HEAD
+
+   * vendor/motorola/
+70dc8d9 clark: add ipacm-diag
+
+====================
+     05-16-2016
+====================
+
+  * android/
+661f665 track own galery
+72cca51 remove galery from cm core
+
+   * external/libnetfilter_conntrack/
+1ff34fa conntrack: Fix Clang errors
+
+   * frameworks/base/
+64fe7f3 ShutdownThread: Decrypt before stopping storage manager
+c9c5a8d Expose lock screen blurring as a setting [2/2]
+3b63132 Automatic translation import
+8a202fd MediaScanner: Add support for default ringtones per sim
+4521c2b Fix incorrect behavior for statusbar and quicksettings panel
+
+   * frameworks/opt/telephony/
+46a6b73 SubscriptionController: fix subscription updating
+
+   * kernel/motorola/ghost/
+69beb94 netfilter: x_tables: check for size overflow
+0a67e58 ALSA: timer: Fix leak in events via snd_timer_user_tinterrupt
+af52ca4 ALSA: timer: Fix leak in events via snd_timer_user_ccallback
+b1ab9bd ALSA: timer: Fix leak in SNDRV_TIMER_IOCTL_PARAMS
+16063e3 Input: aiptek - fix crash on detecting device without endpoints
+aee3bf21 Input: aiptek - adjust error-handling code label
+ad052c1 netfilter: x_tables: fix unconditional helper
+af651eb ipv4: Don't do expensive useless work during inetdev destroy.
+0f10851 USB: cdc-acm: more sanity checking
+d38cc38 usbnet: cleanup after bind() in probe()
+5de61cc ALSA: hrtimer: Fix stall by hrtimer_cancel()
+2475683 pipe: limit the per-user amount of pages allocated in pipes
+9762029 ALSA: timer: Harden slave timer list handling
+cff3d07 ALSA: timer: Fix race among timer ioctls
+7c90df3 ALSA: timer: Fix double unlink of active_list
+e40738b ALSA: usb-audio: avoid freeing umidi object twice
+
+   * kernel/motorola/msm8226/
+2e2b46c netfilter: x_tables: check for size overflow
+396e159 ALSA: timer: Fix leak in events via snd_timer_user_tinterrupt
+250becf ALSA: timer: Fix leak in events via snd_timer_user_ccallback
+a2d5341 ALSA: timer: Fix leak in SNDRV_TIMER_IOCTL_PARAMS
+
+   * packages/apps/Contacts/
+c68948b Contacts : handle InCall plugin refresh on configuration change
+baa3812 Contacts: fixed build break in androidTest
+
+   * packages/apps/Dialer/
+eb35027 Clear and restart cache on contact-info provider updates
+7f62e06 Fix 'Learn More' link within the picker for caller-info provider
+9fb1a7b Constrain logo bounds within the picker for caller-info provider
+4b71765 Fix for issues with the Note action/icon disappearing from call log.
+
+   * packages/apps/Gallery3/
+2f5c1a7 Merge remote-tracking branch 'upstream' into HEAD
+66e2dda Change name to galery 2 to avoid the deletiong when install Gapps
+
+   * packages/apps/Messaging/
+e4d2731 Messaging: properly handle "always ask" SMS sending option
+3352b45 PhoneUtils: Phone numbers are always LTR regardless of grouping
+
+   * packages/apps/Settings/
+83d78d7 Close "Protected apps" activity during power cycle
+93c6b12 Settings: Move vibrator value restore to onActivityStop
+1bcb655 Automatic translation import
+facb27b Automatic translation import
+f9bb3e5 Use correct icon for sim card
+
+   * packages/apps/SetupWizard/
+a33843e SetupWizard: Use proper CMSetting for soft keys option
+
+   * packages/services/Telephony/
+633c017 Telephony: fix crash if SubInfo isn't ready
+
+   * system/core/
+b955e18 rootdir: Put bootanimation service in system-background group
+
+   * vendor/XPe/
+c2135e4 Materialized icon for SIM toolkit
+7437f9f sepolicy: Allow uncrypt additional access
+
+   * vendor/cmsdk/
+3b4129f Expose lock screen blurring as a setting [1/2]
+
+
+   * packages/apps/Trebuchet/
+c9fcf9a Trebuchet: Rebind QSB in finishBindingItems
+
+====================
+     05-15-2016
+====================
+
+
+   * android/
+df417ad Added DataUsageProvider
+a5f8654 Sync YahooWeatherProvider
+
+   * build/
+4a7545b Avoid accidentally using the host's native 'as' command.
+9d5b157 repopick: support specifying a range of commits to pick
+5b45a7d envsetup: Fix aosp & caf remote
+
+   * device/motorola/falcon/
+a5828f0 falcon: Add audio_platform_info.xml file
+
+   * device/motorola/ghost/
+1073365 Merge https://github.com/XPerience-AOSP-Lollipop/android_device_motorola_ghost into HEAD
+5dc99d9 update thermald to go with 5.1 stock
+
+   * device/motorola/msm8226-common/
+64da692 msm8226-common: Snap: Enable noise reduction by default
+73c6ed3 msm8226-common: camera: Update parameters
+da3ed52 msm8226-common: CMActions: Use Preference Fragments
+1fc4928 Automatic translation import
+c61bf5f msm8226-common: clean display related debug props
+3629be6 msm8226-common: Remove common audio_platform_info.xml
+de8c030 Automatic translation import
+
+   * device/motorola/msm8960dt-common/
+f910075 msm8960dt-common: clean display related debug props
+6bd9f2d enable audio offload
+0178bf1 Fix this add new xml
+41c1905 add zram
+730a4b5 sm8960: media: Update media decoder framerate range
+
+   * frameworks/base/
+d46ed01 ActivityManager: fix perf boost NPE
+4a521b8 QS: fix performance profile tile observer
+932e7f9 SystemUI : Fix multi-user for keyguard
+e111f25 SystemUI: Set circle battery path as untranslatable
+3374386 Update volume slider only if ringer mode changed
+825a858 SystemUITests: fix compile error
+50030f6 CMSettings : Move force_show_navbar to globa
+442516d Lockscreen : Disable left edge after showing keyguard
+481ab90 Keyguard: Allow swiping up when trust managed
+01d0f8e SpamFilter : Hide option if notification cannot be filtered
+d70cde6 Acquire wakelock until dream service acknowledges dream state change
+a1299be Lockscreen : Only animate targets if launched via swipe
+8aa0c4d Ensure camera is launched if doing screen off gesture
+a584b5f Keyguard : Ensure we expand onIconClicked
+645f159 WindowManagerService : Ensure we update both size/position
+8b36c5d bootanimation: fix check for system bootanimation
+4c9598a Revert "LLS: Fix logic in isKeyguardInteractiveAndShowing"
+83afd71 pm: Don't throw if invalid package setting or classname.
+bff6f74 Add hotword AudioService null check
+dd2ae38 LLS: Fix logic in isKeyguardInteractiveAndShowing
+1d543ee SysUI: Use VectorDrawable's for rendering battery The current implementation of BatteryMeterView uses arrays of points that are drawn programmatically.  This limits the ability to overlay or theme the battery.  By utilizing VectorDrawables and AnimatedVectorDrawables we can achieve the same look and feel of stock while allowing for more unique battery meters.
+c6c6297 SystemUI: fix blank qs tile issues
+b013c44 only use proximity checks on wakeup keys
+da028f1 SystemUI: fix potential NPE with Queue
+61e5094 am: Don't protect apps that atttempt to grant uri perms.
+7d28c57 Automatic translation import
+0c6ad97 Automatic translation import
+938cc29 CmRes: Attach themed cmsdk resources to assets
+3b8b785 RF cutback feature for SAR
+e458257 batteryservice: Use Alpha channel for segmented LED power level
+a400bbf am: Remove extraneous boostage
+81d7913 SystemUI: Update cached weather data when temperature unit changes
+5da1f1b perf: Send the process name and pid for launch boosts
+da24cbc SysUI: Make sure LLS focus is false when unlocking
+dc22a37 Add new options for call waiting response in InCallUI
+f4d0048 fw: Provide system context to EnableAccessibilityController.
+c285eb0 Themes: Expose manifest styles for framework activities
+23a8986 Revert "Themes: Expose manifest styles for themes"
+f68a496 Themes: Expose manifest styles for themes
+600f4b9 SystemUI: LiveDisplay is not translatable
+b39056e Lockscreen : Bunch-o-fixes
+8fbb60a server: modify network stat plugin framework
+45f93df SystemUI: bail out of recents-to-home animation when losing focus
+4bd3b68 SystemUI: implement properly saving tile locations
+c356dc6 Fix revert build breakage
+5bdc78c systemui: Fix the TrustDrawable animation state
+f61ae82 pms: Skip reinstall of prebundles correctly per user.
+660e23f Partially revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/frameworks/base into cm-13.0"
+850d325 SysUI: Show keyguard when LLS dies and had focus
+d329d13 batteryservice: Add support for segmented power LEDs
+1021343 SystemUI: avoid lock screen shortcut picker crash
+
+   * kernel/motorola/msm8226/
+f9c9c6f Add new line character to some log messages
+23c35cd Input: aiptek - fix crash on detecting device without endpoints
+8c12ea9 Input: aiptek - adjust error-handling code label
+7eb26f1 netfilter: x_tables: fix unconditional helper
+cf10227 ipv4: Don't do expensive useless work during inetdev destroy.
+6ca01f3 USB: cdc-acm: more sanity checking
+7736bc0 usbnet: cleanup after bind() in probe()
+221dccf ALSA: hrtimer: Fix stall by hrtimer_cancel()
+b86416f pipe: limit the per-user amount of pages allocated in pipes
+dc82484 ALSA: timer: Harden slave timer list handling
+5ce944e ALSA: timer: Fix race among timer ioctls
+9ac98a9 ALSA: timer: Fix double unlink of active_list
+412733a ALSA: usb-audio: avoid freeing umidi object twice
+
+   * packages/apps/CMBugReport/
+24434f5 Automatic translation import
+
+   * packages/apps/CMFileManager/
+6fac9aa Automatic translation import
+
+   * packages/apps/Calendar/
+32409dd Automatic translation import
+
+   * packages/apps/Contacts/
+6e5e658 Automatic translation import
+ef6fa49 Automatic translation import
+
+   * packages/apps/Dialer/
+b3d9925 Automatic translation import
+
+   * packages/apps/Email/
+2ad31cb Automatic translation import
+cb45162 Automatic translation import
+
+   * packages/apps/Gallery2/
+9cfb25e Automatic translation import
+
+   * packages/apps/Gello/
+9a28000 Automatic translation import
+
+   * packages/apps/InCallUI/
+733c29e Automatic translation import
+
+   * packages/apps/Messaging/
+ffec127 Automatic translation import
+4ac5e9a Automatic translation import
+
+   * packages/apps/Screencast/
+481ce58 Automatic translation import
+
+   * packages/apps/Settings/
+ad57ad1 Cleanup cm_arrays
+c38fa4f Profiles: Disable notification item if ringtone & notification volumes are linked
+5f5b430 Settings : Filter livelockscreen, button for secondary users
+dd5e281 Disable cellular networks settings menu if airplane mode is enabled
+c2a10db Add config to hide/show weather menu
+dd25cb5 Automatic translation import
+5b69504 Automatic translation import
+c709a5c Disable battery pulsing if segmented battery LED is enabled
+0680ecc Add option to select temperature unit
+3c92988 Update power control widget preview image.
+1e0bd16 WifiSettings : Fix forgetting saved networks crash after rotation
+d73fb65 Settings: sync qs invert color with color inversion in Settings
+ddac3b5 Partial revert "Settings : Add per app internet/data control"
+896f83c Protected apps: fix rotation states
+0a084c4 LockPatternView: persist state across rotates
+7d8534d LLS: Load title and summary from ext. package if avail.
+
+   * packages/apps/SetupWizard/
+3efc817 SetupWizard: Alway show google pages if gms present
+
+   * packages/apps/Snap/
+0867b7a Automatic translation import
+19734fa Automatic translation import
+a362aff Snap: force enable zsl for lge hdr
+
+   * packages/apps/SoundRecorder/
+8c2fa9f Automatic translation import
+
+   * packages/apps/ThemeChooser/
+bab1603 Automatic translation import
+
+   * packages/apps/Trebuchet/
+e93e2ee Automatic translation import
+c9fcf9a Trebuchet: Rebind QSB in finishBindingItems
+
+   * packages/providers/DataUsageProvider/
+7a08b17 Automatic translation import
+97e923c Automatic translation import
+
+   * packages/services/LiveLockScreenService/
+e672873 Automatic translation import
+
+   * packages/services/Telephony/
+60af7ef Automatic translation import
+
+   * system/core/
+2bf6998 Use fsck.f2fs -a instead of -f for faster boot
+1659628 Revert "Revert "fs_mgr: let fsck.f2fs actually attempt a fix""
+
+   * vendor/XPe/
+34ec66e sepolicy: Allow recovery to mount on tmpfs
+96c7ce7 Add overlay for fingerprint help URL
+1ee1848 cm: Build DataUsageProvider
+e9dd4dc Prep for C-Apps support
+f66dae5 Update Ambient SDK to 1.5.8
+c24bf25 cm: Add SE policy for iop service
+5014ada change supersu from beta to stable
+
+   * vendor/cmsdk/
+5cb275d Automatic translation import
+48f8362 Merge remote-tracking branch 'upstream/cm-13.0' into HEAD
+638da93 Automatic translation import
+
+====================
+     05-14-2016
+====================
+
+   * android/
+df417ad Added DataUsageProvider
+a5f8654 Sync YahooWeatherProvider
+
+   * build/
+4a7545b Avoid accidentally using the host's native 'as' command.
+9d5b157 repopick: support specifying a range of commits to pick
+5b45a7d envsetup: Fix aosp & caf remote
+
+   * device/motorola/falcon/
+a5828f0 falcon: Add audio_platform_info.xml file
+
+   * device/motorola/ghost/
+1073365 Merge https://github.com/XPerience-AOSP-Lollipop/android_device_motorola_ghost into HEAD
+5dc99d9 update thermald to go with 5.1 stock
+
+   * device/motorola/msm8226-common/
+64da692 msm8226-common: Snap: Enable noise reduction by default
+73c6ed3 msm8226-common: camera: Update parameters
+da3ed52 msm8226-common: CMActions: Use Preference Fragments
+1fc4928 Automatic translation import
+c61bf5f msm8226-common: clean display related debug props
+3629be6 msm8226-common: Remove common audio_platform_info.xml
+de8c030 Automatic translation import
+
+   * device/motorola/msm8960dt-common/
+f910075 msm8960dt-common: clean display related debug props
+6bd9f2d enable audio offload
+0178bf1 Fix this add new xml
+41c1905 add zram
+730a4b5 sm8960: media: Update media decoder framerate range
+
+   * frameworks/base/
+d46ed01 ActivityManager: fix perf boost NPE
+4a521b8 QS: fix performance profile tile observer
+932e7f9 SystemUI : Fix multi-user for keyguard
+e111f25 SystemUI: Set circle battery path as untranslatable
+3374386 Update volume slider only if ringer mode changed
+825a858 SystemUITests: fix compile error
+50030f6 CMSettings : Move force_show_navbar to globa
+442516d Lockscreen : Disable left edge after showing keyguard
+481ab90 Keyguard: Allow swiping up when trust managed
+01d0f8e SpamFilter : Hide option if notification cannot be filtered
+d70cde6 Acquire wakelock until dream service acknowledges dream state change
+a1299be Lockscreen : Only animate targets if launched via swipe
+8aa0c4d Ensure camera is launched if doing screen off gesture
+a584b5f Keyguard : Ensure we expand onIconClicked
+645f159 WindowManagerService : Ensure we update both size/position
+8b36c5d bootanimation: fix check for system bootanimation
+4c9598a Revert "LLS: Fix logic in isKeyguardInteractiveAndShowing"
+83afd71 pm: Don't throw if invalid package setting or classname.
+bff6f74 Add hotword AudioService null check
+dd2ae38 LLS: Fix logic in isKeyguardInteractiveAndShowing
+1d543ee SysUI: Use VectorDrawable's for rendering battery The current implementation of BatteryMeterView uses arrays of points that are drawn programmatically.  This limits the ability to overlay or theme the battery.  By utilizing VectorDrawables and AnimatedVectorDrawables we can achieve the same look and feel of stock while allowing for more unique battery meters.
+c6c6297 SystemUI: fix blank qs tile issues
+b013c44 only use proximity checks on wakeup keys
+da028f1 SystemUI: fix potential NPE with Queue
+61e5094 am: Don't protect apps that atttempt to grant uri perms.
+7d28c57 Automatic translation import
+0c6ad97 Automatic translation import
+938cc29 CmRes: Attach themed cmsdk resources to assets
+3b8b785 RF cutback feature for SAR
+e458257 batteryservice: Use Alpha channel for segmented LED power level
+a400bbf am: Remove extraneous boostage
+81d7913 SystemUI: Update cached weather data when temperature unit changes
+5da1f1b perf: Send the process name and pid for launch boosts
+da24cbc SysUI: Make sure LLS focus is false when unlocking
+dc22a37 Add new options for call waiting response in InCallUI
+f4d0048 fw: Provide system context to EnableAccessibilityController.
+c285eb0 Themes: Expose manifest styles for framework activities
+23a8986 Revert "Themes: Expose manifest styles for themes"
+f68a496 Themes: Expose manifest styles for themes
+600f4b9 SystemUI: LiveDisplay is not translatable
+b39056e Lockscreen : Bunch-o-fixes
+8fbb60a server: modify network stat plugin framework
+45f93df SystemUI: bail out of recents-to-home animation when losing focus
+4bd3b68 SystemUI: implement properly saving tile locations
+c356dc6 Fix revert build breakage
+5bdc78c systemui: Fix the TrustDrawable animation state
+f61ae82 pms: Skip reinstall of prebundles correctly per user.
+660e23f Partially revert "Merge tag 'android-6.0.1_r22' of https://android.googlesource.com/platform/frameworks/base into cm-13.0"
+850d325 SysUI: Show keyguard when LLS dies and had focus
+d329d13 batteryservice: Add support for segmented power LEDs
+1021343 SystemUI: avoid lock screen shortcut picker crash
+
+   * kernel/motorola/msm8226/
+f9c9c6f Add new line character to some log messages
+23c35cd Input: aiptek - fix crash on detecting device without endpoints
+8c12ea9 Input: aiptek - adjust error-handling code label
+7eb26f1 netfilter: x_tables: fix unconditional helper
+cf10227 ipv4: Don't do expensive useless work during inetdev destroy.
+6ca01f3 USB: cdc-acm: more sanity checking
+7736bc0 usbnet: cleanup after bind() in probe()
+221dccf ALSA: hrtimer: Fix stall by hrtimer_cancel()
+b86416f pipe: limit the per-user amount of pages allocated in pipes
+dc82484 ALSA: timer: Harden slave timer list handling
+5ce944e ALSA: timer: Fix race among timer ioctls
+9ac98a9 ALSA: timer: Fix double unlink of active_list
+412733a ALSA: usb-audio: avoid freeing umidi object twice
+
+   * packages/apps/CMBugReport/
+24434f5 Automatic translation import
+
+   * packages/apps/CMFileManager/
+6fac9aa Automatic translation import
+
+   * packages/apps/Calendar/
+32409dd Automatic translation import
+
+   * packages/apps/Contacts/
+6e5e658 Automatic translation import
+ef6fa49 Automatic translation import
+
+   * packages/apps/Dialer/
+b3d9925 Automatic translation import
+
+   * packages/apps/Email/
+2ad31cb Automatic translation import
+cb45162 Automatic translation import
+
+   * packages/apps/Gallery3/
+9cfb25e Automatic translation import
+
+   * packages/apps/Gello/
+9a28000 Automatic translation import
+
+   * packages/apps/InCallUI/
+733c29e Automatic translation import
+
+   * packages/apps/Messaging/
+ffec127 Automatic translation import
+4ac5e9a Automatic translation import
+
+   * packages/apps/Screencast/
+481ce58 Automatic translation import
+
+   * packages/apps/Settings/
+ad57ad1 Cleanup cm_arrays
+c38fa4f Profiles: Disable notification item if ringtone & notification volumes are linked
+5f5b430 Settings : Filter livelockscreen, button for secondary users
+dd5e281 Disable cellular networks settings menu if airplane mode is enabled
+c2a10db Add config to hide/show weather menu
+dd25cb5 Automatic translation import
+5b69504 Automatic translation import
+c709a5c Disable battery pulsing if segmented battery LED is enabled
+0680ecc Add option to select temperature unit
+3c92988 Update power control widget preview image.
+1e0bd16 WifiSettings : Fix forgetting saved networks crash after rotation
+d73fb65 Settings: sync qs invert color with color inversion in Settings
+ddac3b5 Partial revert "Settings : Add per app internet/data control"
+896f83c Protected apps: fix rotation states
+0a084c4 LockPatternView: persist state across rotates
+7d8534d LLS: Load title and summary from ext. package if avail.
+
+   * packages/apps/SetupWizard/
+3efc817 SetupWizard: Alway show google pages if gms present
+
+   * packages/apps/Snap/
+0867b7a Automatic translation import
+19734fa Automatic translation import
+a362aff Snap: force enable zsl for lge hdr
+
+   * packages/apps/SoundRecorder/
+8c2fa9f Automatic translation import
+
+   * packages/apps/ThemeChooser/
+bab1603 Automatic translation import
+
+   * packages/apps/Trebuchet/
+e93e2ee Automatic translation import
+
+   * packages/providers/DataUsageProvider/
+7a08b17 Automatic translation import
+97e923c Automatic translation import
+
+   * packages/services/LiveLockScreenService/
+e672873 Automatic translation import
+
+   * packages/services/Telephony/
+60af7ef Automatic translation import
+
+   * system/core/
+2bf6998 Use fsck.f2fs -a instead of -f for faster boot
+1659628 Revert "Revert "fs_mgr: let fsck.f2fs actually attempt a fix""
+
+
+   * frameworks/opt/telephony/
+7b06433 SubscriptionController: load all subs before setting defaults
+
+   * hardware/qcom/audio-caf/msm8974/
+da55887 Merge remote-tracking branch 'caf/LA.BF.1.1.3_rb1.13' into cm-13.0-caf-8974
+
+   * hardware/qcom/display-caf/msm8974/
+59e66c6 Merge remote-tracking branch 'caf/LA.BF.1.1.3_rb1.13' into cm-13.0-caf-8974
+91790fc Revert "gralloc: fall back to old pixel alignment on old blobs"
+c26ee91 Revert "gralloc: allow forcing old pixel alignment"
+
+   * packages/apps/Contacts/
+af31083 Use JobService for periodic InCallMetrics reporting
+f1e17cb Contacts : prompt run time READ_SMS permission for M
+d90403f Contacts InCall metrics test
+
+   * packages/apps/Dialer/
+11118df Add additional permissions needed to utilize BlacklistUtils
+d2095b5 [2/2] Credit text and action should be limited to single line
+6eceee2 InCallApi plugin strings not updated on locale change
+79a94cb Metrics fixes and switching to job sched
+c64a3f4 NPE: make sure search fragment is visible
+98e0b00 Fix SuperNotCalledException
+388f636 Fix NPE within CallLogFragment
+
+   * packages/apps/InCallUI/
+3210555 Fixed crash in InCallActivity.
+77f56a5 Best fix for the case where ModButtonPresenter UI wasn't updating properly in onResume cases.
+71aba70 Mod buttons only enabled when incall
+8404300 Don't query incall plugin invite intent until its actually needed
+
+   * packages/apps/PhoneCommon/
+281a48f AmbientDataSubscription: don't post results for unknown plugins
+
+   * vendor/cmsdk/
+6866528 CMSettings : Move force_show_navbar to global
+5cb275d Automatic translation import
+48f8362 Merge remote-tracking branch 'upstream/cm-13.0' into HEAD
+638da93 Automatic translation import
+
+   * vendor/XPe/
+34ec66e sepolicy: Allow recovery to mount on tmpfs
+96c7ce7 Add overlay for fingerprint help URL
+1ee1848 cm: Build DataUsageProvider
+e9dd4dc Prep for C-Apps support
+f66dae5 Update Ambient SDK to 1.5.8
+c24bf25 cm: Add SE policy for iop service
+5014ada change supersu from beta to stable
+
+====================
+     05-13-2016
+====================
+
+   * frameworks/opt/telephony/
+7b06433 SubscriptionController: load all subs before setting defaults
+
+
+   * external/skia/
+2673286 skia: qc-perf: link against libqc-opt for msm8916
+
+   * frameworks/av/
+8436846 Revert "nuplayer: Fix audio EOS notifiy on AudioSink not ready"
+
+   * frameworks/native/
+bd41ea3 SurfaceFlinger : Ensure position changes are drawn with correct buffer size
+
+   * hardware/invensense/
+85c5a9a invensense: Use sensor HAL only if device specific HAL is not present
+
+   * hardware/qcom/audio-caf/msm8974/
+da55887 Merge remote-tracking branch 'caf/LA.BF.1.1.3_rb1.13' into cm-13.0-caf-8974
+91790fc Revert "gralloc: fall back to old pixel alignment on old blobs"
+c26ee91 Revert "gralloc: allow forcing old pixel alignment"
+
+
+   * hardware/qcom/audio-caf/msm8960/
+fd42377 hal: Clean up from merge
+
+   * packages/apps/Contacts/
+af31083 Use JobService for periodic InCallMetrics reporting
+f1e17cb Contacts : prompt run time READ_SMS permission for M
+d90403f Contacts InCall metrics test
+
+   * packages/apps/Dialer/
+11118df Add additional permissions needed to utilize BlacklistUtils
+d2095b5 [2/2] Credit text and action should be limited to single line
+6eceee2 InCallApi plugin strings not updated on locale change
+79a94cb Metrics fixes and switching to job sched
+c64a3f4 NPE: make sure search fragment is visible
+98e0b00 Fix SuperNotCalledException
+388f636 Fix NPE within CallLogFragment
+b441ca6 Make sure search fragment is visible and attached
+6251ca1 NPE: Providers might not have a singlecolorbrandicon
+906b8d8 NPE: mBadgeIcon is sometimes null
+
+   * packages/apps/InCallUI/
+3210555 Fixed crash in InCallActivity.
+77f56a5 Best fix for the case where ModButtonPresenter UI wasn't updating properly in onResume cases.
+71aba70 Mod buttons only enabled when incall
+8404300 Don't query incall plugin invite intent until its actually needed
+
+   * packages/apps/PhoneCommon/
+ff03279 [1/2] Credit text and action should be limited to single line
+281a48f AmbientDataSubscription: don't post results for unknown plugins
+
+   * vendor/cmsdk/
+6113701 PerformanceManagerService: drop requests if system is not yet ready
+6866528 CMSettings : Move force_show_navbar to global
