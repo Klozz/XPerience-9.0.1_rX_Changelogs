@@ -1,0 +1,446 @@
+====================
+     05-28-2016
+====================
+
+
+   * android/
+912a0a2 qc hals: Add 8937/8953 variants
+
+   * build/
+a9bc22c qcom: Support 8937/8953
+
+   * device/motorola/falcon/
+53174ee falcon: init: Enable sim2gsmonly old RIL feature
+
+   * frameworks/base/
+0d50815 appops: Respect screen interactivity before creating dialogs.
+f3bd53a appops: Implement concept of delayedcount.
+5f4605e Automatic translation import
+bec55e2 Add XPe version to dropbox entries
+e5a1b55 SystemUI: fix qs pulldown on certain themes
+e9c4631 pm: Use sourcerecord if available for protected app validation.
+a460b59 SystemUI: improve keyguard with SIM PIN interactions
+db2b729 StatusBar: Do not just define vars...
+6e6e75f fw: Move HOME key interception logic to interceptKeyBeforeDispatching
+abb1345 SystemUI: improve layout of qs detail panel
+9d157db Only call uncrypt when we're encrypted
+2a161a3 SysUI: Use linear interpolator for battery level
+a4d743f SysUI: Fix coloring of frame and bolt
+308bedb SysUI: Allow styling of battery text/charge blend mode
+d9af1ff fw: Repurpose PREVENT_POWER_KEY for preventing multiple system keys.
+b93035d SystemUI: fix multi touch gestures and extra jank
+e4ed9ab SystemUI: Filter out unsupported values off perf profile tile
+77152e5 bootanim: Cleanup
+e118163 frameworks/base: Support for third party NFC features
+7d5af12 SysUI: Only set mKeyguardBlurEnabled if supported
+83971e4 Fix NL translation after r22 revert
+
+   * frameworks/native/
+396a8d0 dumpstate: add XPE version to output
+
+   * kernel/motorola/ghost/
+4b6eb71 Merge commit 'db3ad6311496e519336d432331d22b77b6f53c6e' into xpe-10.0
+6a2a056 add missing files D:
+db3ad63 bump to 7x rev
+e07a6fa msm:pproc:Freed the vpe prameters to avoid memleak
+ac921a5 msm:pproc:freed pointer in error case
+ec1d762 msm: camera: Enable interrupts before returning during Invalid Image mode.
+0ccdcd7 msm: camera: Sanity check in ispif release Add BUG_ON for ispif address and check ispif base address validity in ispif release function.
+edfcb5e kernel:Dont set stop_issued flag in stop recording
+1d32f69 msm: wfd: Free ion memory properly during a ion failure
+3b803cc msm: camera: Clear frame stucture before use
+ddc3760 msm-camera: Assign NULL after freeing memory
+59add7f msm-camera: Add mutex unlock during get event payload ioctl.
+755bc6b Flash LED tps61310: use alloc_workqueue() instead of create_workqueue()
+f27e3dd msm: camera: Make AXI stop/abort/reset and overflow recovery mutually exclusive.
+bfa7aaf msm:camera: Copy data from user to kernel space before access
+d895c92 msm-camera : Fix for Unbounded copy in msm_camera_v4l2_private_control
+5eb9112 msm:camera: Initialize the structure before to pass userspace.
+2b7083f msm:camera: Initialize a structure before usage
+b6d05f2 msm-camera: fix to prevent untrusted pointer to lead DoS in  Actuator
+dc530dd msm-camera: Fix to prevent kernel heap buffer overflow in actuator
+935f71d msm-camera: Bound check for step position value in Actuator driver.
+bc055b4 msm: camera: Add debugfs support for VFE.
+e61cc21 msm-camera: Bound check num_cid from userspace in csid driver
+42d96d9 msm-camera: Fix various small issues in Actuator driver
+b2200ec ion.c:add missing semicolon Q___Q ;
+f545919 rbtree.h:FIX: include/linux/rbtree.h:36:2: error: two or more data types in declaration specifiers   unsigned long  __rb_parent_color;
+16567b6 fs/ext4: use rbtree postorder iteration helper instead of opencoding
+4dafd72 rbtree: fix rbtree_postorder_for_each_entry_safe() iterator
+2f52ea3 trace/trace_stat: use rbtree postorder iteration helper instead of opencoding
+1b9b636 rbtree: add rbtree_postorder_for_each_entry_safe() helper
+fc87e18 rbtree: add postorder iteration functions
+dd19178 rbtree: include linux/compiler.h for definition of __always_inline
+3a05898 rbtree: fix incorrect rbtree node insertion in fs/proc/proc_sysctl.c
+d2b2050 lib/rbtree.c: avoid the use of non-static __always_inline
+c798bb3 rbtree: move augmented rbtree functionality to rbtree_augmented.h
+f486b3a rbtree: add RB_DECLARE_CALLBACKS() macro
+cfebe41 rbtree: remove prior augmented rbtree implementation
+87d6a12 rbtree: faster augmented rbtree manipulation
+bb7302c rbtree: low level optimizations in rb_erase()
+d6577c0 rbtree: handle 1-child recoloring in rb_erase() instead of rb_erase_color()
+398ec70 rbtree: place easiest case first in rb_erase()
+d2f2bcc rbtree: add __rb_change_child() helper function
+eda01cd rbtree: optimize fetching of sibling node
+4eea576 rbtree: coding style adjustments
+356c404 rbtree: low level optimizations in __rb_erase_color()
+7068f4b rbtree: optimize case selection logic in __rb_erase_color()
+6cee110 rbtree: adjust node color in __rb_erase_color() only when necessary
+019e6e1 perf tools: Fix build for another rbtree.c change
+8b81d1a rbtree: low level optimizations in rb_insert_color()
+0c96822 rbtree: adjust root color in rb_insert_color() only when necessary
+3a5bc0c rbtree: break out of rb_insert_color loop after tree rotation
+57b8d7a rbtree: reference Documentation/rbtree.txt for usage instructions
+20f9823 rbtree: move some implementation details from rbtree.h to  rbtree.c
+a1482ba rbtree: empty nodes have no color
+7a73512 regmap: rbtree: Don't bother checking for noop updates
+bc47d58 Fix typo
+5f8556c msm: vpe: Check for NULL pointers
+98f7045 msm: camera: Fix potential null pointer access Add check for null pointer in v4l2 subscribe/unsubscribe to prevent null pointer dereferences.
+0bdcd36 msm: camera: Add checks for integer overflow Adding checks to catch integer overflow conditions.
+991049a msm: camera: Add check to prevent array index out of bounds Add checks to prevent array index out of bounds error.
+223b52d msm: camera: Add checks for integer overflow
+58cc712 msm: camera: Fix off by one error
+f1b4757 msm: camera: Check for array index out of bounds Add checks in msm_mctl_pp_reserve_free/release_frame to prevent index out of bounds.
+3f95fcc wcnss: Fix for Static analysis issues
+c26714d videobuf2-core: Avoid locking userpages if no current->mm If vb2_qbuf is called within the context of a kthread with no user
+706497e msm: vidc: Add VP8 version set-up via Profile and Level VP8 specification does not define level or profile concept but specify a version. The OpenMax IL version 1.1.2 specify a single profile and multiple levels for VP8 codec, the levels are indeed the version numbers. The way of setting the codec version using level field comes from the definitions at OpenMax IL. Since is a single profile, level value is use to set-up the version but FW expects the version value to be pass in the profile field, for that reason incoming level is copy to FW profile.
+18b9564 add vp8 msm: vidc: Add 5.2 level support Signed-off-by: klozz <xxx.reptar.rawrr.xxx@gmail.com>
+7d4ddc4 msm: camera: Set cropinfo pointer to NULL after free
+e1e1d3f msm: remove references to CONFIG_ANDROID_PMEM
+44a4863 msm: Fixes for static analysis issues - set 1 Resolved the following issues reported by static analysis scan on mach-msm.
+242fb00 msm: vidc: Increase the secure buffer size for widewine dash -Present 64MB is defined for widewine dash playback. Plyaback is failing due to allocation request is for 22 buffers of size each 3MB.
+3a118cd Increase ION MMHeap from 56MB to 72MB Increase ION MMHeap size from 56MB to 72MB to support 1080p widevine playback over 720p WFD session. The heap size is made a multiple of 4MB due to CMA Alignment requirement.
+159b4a1 msm: camera: add check for csid_cid to prevent of overwrite memory
+
+   * packages/apps/CMFileManager/
+1f47310 Fix crash when rotate to landscape without grant permission
+
+   * packages/apps/CellBroadcastReceiver/
+d6461d6 Correct the broadcast channel for Colombia
+
+   * packages/apps/DeskClock/
+355c877 DeskClock: dont use DayNight for action bar menu
+feac0b3 Automatic translation import
+
+   * packages/apps/Messaging/
+4cc542b Automatic translation import
+ddf7c99 [SMS] Replace message content for protocol 0x41-0x47
+
+   * packages/apps/OmniSwitch/
+7719e68 OmniSwitch: cleanup BitmapCache handling
+b8b1e2e Automatic translation import
+
+   * packages/apps/Screencast/
+1ecd521 Automatic translation import
+
+   * packages/apps/Settings/
+6575cca Automatic translation import
+2fc449a Settings: Disable cancelable with multi-windows confirm dialog
+d37a148 Settings: Update oem unlocking status with back button
+5007aed Settings: Update oem unlocking status when dismiss
+73f4e70 Fix NPE when user has his lockscreen set to "None"
+cddb1f5 Settings: Remove redundant definition of SoundSettingsActivity.
+46ba8c1 Settings: Fix blur preference removal
+
+   * packages/apps/SetupWizard/
+9e096d3 SetupWizard: Ensure language picker is enabled onResume
+
+   * packages/apps/Snap/
+7ed1fb8 SnapdragonCamera: add storage path switch for gallery app
+d39d980 fix merge
+8c2a635 SnapdragonCamera: remove storage menu if no external storage available
+8290cf6 Snap: Update comment to reflect audio focus changes
+505491f SnapdragonCamera: Release audio focus when video recording is done
+bd72d2c SnapdragonCamera: request audio focus before starting video recording
+71796d1 SnapdragonCamera: Recording screen to be dynamic
+b0bf7af SnapdragonCamera: Fix the memory leak on view.
+b126738 Snap: Use new window manager flag for prevent system keys.
+
+   * packages/apps/Trebuchet/
+93e949f Wallpaper: Allow multiple partners to be loaded
+
+   * packages/services/Telephony/
+1262004 Automatic translation import
+
+   * system/core/
+4c82035 debuggerd: add xpe version to tombstone
+
+   * vendor/XPe/
+9f0ee34 Don't dex-preopt Gello
+93a62e8 cm: Remove GMS guard
+266a600 cm: Fix the backuptool importation logic
+ed86e8b Fix GMS guard
+b0bc4f3 Update ambientsdk version 1.5.11
+
+   * vendor/cmsdk/
+1150d1e Merge remote-tracking branch 'upstream/cm-13.0' into HEAD
+c9226a8 Add XPe version to dropbox entries [2/2]
+
+====================
+     05-27-2016
+====================
+
+
+   * kernel/motorola/ghost/
+4a42b61 prima: memset the command buffer in GetCommandBuffer routine Currently command buffer returned by GetCommandBuffer routine is not memset to zero. If all the fields are not populated, there could be some stale entries which could result in crash. This change set fixes the issue by setting command buffer to zero before returning it to the caller.
+c9f3bc6 sensors: add the sensors class support Add a new sensors sysfs class and put all the sensors device driver information in sensor class folder.
+3be67ca msm: camera: validate user space parameter for max and min value Validate input user space parameter in actuator driver for maximal and minimal value to prevent error.
+2b2f4fd nose D:
+15124e1 Linux 3.4.105
+30a226a l2tp: fix race while getting PMTU on PPP pseudo-wire
+3eeaed7 ixgbevf: Prevent RX/TX statistics getting reset to zero
+948f7fe net: Do not enable tx-nocache-copy by default
+7a5a13a ipv6: reuse ip6_frag_id from ip6_ufo_append_data
+9986a4b rtl8192ce: Fix null dereference in watchdog
+e4d43c0 ipv4: disable bh while doing route gc
+5ff0a07 ipv4: avoid parallel route cache gc executions
+dbbecea ipv4: move route garbage collector to work queue
+bd2a1a3 Fix spurious request sense in error handling
+66e22b0 dm crypt: fix access beyond the end of allocated space
+de066ab perf: Handle compat ioctl
+7b9710c NFS: fix stable regression
+13eb184 ext4: avoid trying to kfree an ERR_PTR pointer
+4a6fa9a ext4: propagate errors up to ext4_find_entry()'s callers
+31b20f3 nl80211: clear skb cb before passing to netlink
+e48b4f2 genhd: fix leftover might_sleep() in blk_free_devt()
+1435d93 init/Kconfig: Hide printk log config if CONFIG_PRINTK=n
+d31efd0 perf: fix perf bug in fork()
+fea9a85 mm: migrate: Close race between migration completion and mprotect
+51207c3 ARM: 8165/1: alignment: don't break misaligned NEON load/store
+13d5615 shmem: fix nlink for rename overwrite directory
+0984595 ocfs2/dlm: do not get resource spinlock if lockres is new
+447c552 nilfs2: fix data loss with mmap()
+d698e34 MIPS: mcount: Adjust stack pointer for static trace in MIPS32
+9bbc042 cpuset: PF_SPREAD_PAGE and PF_SPREAD_SLAB should be atomic flags
+2f8d6a7 sched: add macros to define bitops for task atomic flags
+b50b881 sched: Fix unreleased llc_shared_mask bit during CPU hotplug
+9919cee parisc: Only use -mfast-indirect-calls option for 32-bit kernel builds
+9434a8b Fix nasty 32-bit overflow bug in buffer i/o code.
+95c487f ALSA: pcm: fix fifo_size frame calculation
+5e0b7ff can: at91_can: add missing prepare and unprepare of the clock
+9a4c17a can: flexcan: put TX mailbox into TX_INACTIVE mode after tx-complete
+7d92f0c can: flexcan: implement workaround for errata ERR005829
+10ed502 can: flexcan: correctly initialize mailboxes
+a423501 can: flexcan: mark TX mailbox as TX_INACTIVE
+4d63dd1 USB: storage: Add quirks for Entrega/Xircom USB to SCSI converters
+d3ca464 USB: storage: Add quirk for Ariston Technologies iConnect USB to SCSI adapter
+af46c80 USB: storage: Add quirk for Adaptec USBConnect 2000 USB-to-SCSI Adapter
+6fd16b4 libiscsi: fix potential buffer overrun in __iscsi_conn_send_pdu
+135aaea NFSv4: Fix another bug in the close/open_downgrade code
+639aa09 iscsi-target: avoid NULL pointer in iscsi_copy_param_list failure
+47f7fa7 iscsi-target: Fix memory corruption in iscsit_logout_post_handler_diffcid
+617dfc0 Input: i8042 - add nomux quirk for Avatar AVIU-145A6
+f058b9e Input: i8042 - add Fujitsu U574 to no_timeout dmi table
+1d93aff ASoC: samsung-i2s: Check secondary DAI exists before referencing
+ba3a9f1 perf: Fix a race condition in perf_remove_from_context()
+4e31bd3 MIPS: ZBOOT: add missing <linux/string.h> include
+a5757b8 alarmtimer: Lock k_itimer during timer callback
+39e68fb alarmtimer: Do not signal SIGEV_NONE timers
+5891b430 alarmtimer: Return relative times in timer_gettime
+0e42684 futex: Unlock hb->lock in futex_wait_requeue_pi() error path
+956fbde xhci: Fix null pointer dereference if xhci initialization fails
+1ddb896 storage: Add single-LUN quirk for Jaz USB Adapter
+65a580c usb: hub: take hub->hdev reference when processing from eventlist
+8725812 Input: serport - add compat handling for SPIOCSTYPE ioctl
+46fe5cb libceph: do not hard code max auth ticket len
+2c3e419 libceph: add process_one_ticket() helper
+89997b4 libceph: gracefully handle large reply messages from the mon
+76c144b Input: synaptics - add support for ForcePads
+720ad7d uwb: init beacon cache entry before registering uwb device
+437b482 USB: ftdi_sio: Add support for GE Healthcare Nemo Tracker device
+f7fd2e9 Input: elantech - fix detection of touchpad on ASUS s301l
+c15683e usb: host: xhci: fix compliance mode workaround
+cff4c72 drm/radeon: add connector quirk for fujitsu board
+d23641f ahci: add pcid for Marvel 0x9182 controller
+cf5ddb1 don't bugger nd->seq on set_root_rcu() from follow_dotdot_rcu()
+2729aaa block: Fix dev_t minor allocation lifetime
+9c8b4b0 xen/manage: Always freeze/thaw processes when suspend/resuming
+e176dd1 USB: sierra: add 1199:68AA device ID
+1d07b2a USB: sierra: avoid CDC class functions on "68A3" devices
+e4555fe USB: ftdi_sio: add support for NOVITUS Bono E thermal printer
+8734dc9 ata_piix: Add Device IDs for Intel 9 Series PCH
+bc2407d ahci: Add Device IDs for Intel 9 Series PCH
+cee590a rtlwifi: rtl8192cu: Add new ID
+ad7fd9e cgroup: reject cgroup names with ' '
+3aa9305 percpu: free percpu allocation info for uniprocessor system
+1825d79 percpu: perform tlb flush after pcpu_map_pages() failure
+8816c93 percpu: fix pcpu_alloc_pages() failure path
+99680a2 regulatory: add NUL to alpha2
+00c4a6d ACPI / cpuidle: fix deadlock between cpuidle_lock and cpu_hotplug.lock
+fd1aa00 ALSA: hda - Fix COEF setups for ALC1150 codec
+2b220b8 drm/vmwgfx: Fix a potential infinite spin waiting for fifo idle
+9e8f90f drm/i915: Remove bogus __init annotation from DMI callbacks
+55d64ae regmap: Fix handling of volatile registers for format_write() chips
+995c174 KVM: s390: Fix user triggerable bug in dead code
+4ca5bd2 get rid of propagate_umount() mistakenly treating slaves as busy.
+
+   * packages/apps/Bluetooth/
+8a156be Automatic translation import
+
+   * packages/apps/CMBugReport/
+9ff9513 Automatic translation import
+
+   * packages/apps/CMFileManager/
+7201e71 Remove set as home menu item for secure storage
+bbf2266 PickerActivity: Grant read url permission
+
+   * packages/apps/Calendar/
+411ad09 Automatic translation import
+
+   * packages/apps/CellBroadcastReceiver/
+eadcfcd Automatic translation import
+
+   * packages/apps/Contacts/
+ffaa045 Automatic translation import
+f05914c Contacts : fix FAB when an InCall plugin tab is in focus
+
+   * packages/apps/ContactsCommon/
+f759863 Automatic translation import
+
+   * packages/apps/Dialer/
+b4316ea Automatic translation import
+03c2c84 Alias Dialer's settings activity for use as caller-info settings
+bafc8fd Fix NPE in caller-info settings migration component
+
+   * packages/apps/Gello/
+f4d3ccf Automatic translation import
+
+   * packages/apps/InCallUI/
+241d00a Automatic translation import
+84db99a Fix copy constructor of ContactInfoCache
+
+   * packages/apps/Messaging/
+26db7cf Automatic translation import
+
+   * packages/apps/PhoneCommon/
+2c6c8d3 Automatic translation import
+
+   * packages/apps/Profiles/
+77051de Automatic translation import
+
+   * packages/apps/Screencast/
+1ad771f Fix reference to a renamed string
+e66278d Automatic translation import
+
+   * packages/apps/SoundRecorder/
+0023df8 Automatic translation import
+
+   * packages/apps/Trebuchet/
+cb3431d Automatic translation import
+
+   * packages/providers/DataUsageProvider/
+c42d795 Automatic translation import
+
+   * packages/services/LiveLockScreenService/
+ba3b4f9 Automatic translation import
+
+   * packages/services/Telephony/
+1554030 Automatic translation import
+926776b Move IMS strings to proper resource file
+
+   * vendor/cmsdk/
+970f0b6 Automatic translation import
+
+   * vendor/motorola/
+0846a9f clark: move init.mmi.touch.sh to ramdisk
+
+====================
+     05-26-2016
+====================
+
+
+   * packages/apps/Contacts/
+765f3a0 Contacts: only schedule metrics JobService if Ambient exists
+
+   * packages/apps/Dialer/
+5b9db20 Add migrations for CallerInfo related settings
+
+   * packages/apps/Messaging/
+a29d139 Integrate CallerInfo with notifications
+110cdf8 Add handling of MMS Read report.
+
+   * packages/services/Telephony/
+f228ce1 Switch back to Auto selection if Manual fail's
+
+====================
+     05-25-2016
+====================
+
+
+   * cts/
+978b415 Merge "DO NOT MERGE ANYWHERE: Update CTS to 6.0R7" into marshmallow-cts-release
+63ce966 DO NOT MERGE ANYWHERE: Update CTS to 6.0R7
+
+   * device/qcom/sepolicy/
+d42ae50 sepolicy: Add hand biometrics manager permission
+314957c sepolicy: Add improveTouch gesture manager permission
+
+   * external/koush/ion/
+3bee672 Ion: Ignore get exif rotation exception
+
+   * frameworks/native/
+0921754 Add dalvik heap/hwui overrides for xxhdpi phone with 3072MB RAM
+
+   * packages/apps/CellBroadcastReceiver/
+89bcf56 Enable broadcast channels for Colombia
+25e7ce5 Support playing the alert and vibrate until dismissed
+
+   * packages/apps/Dialer/
+560f3a8 Crash Fix When DeepLinkEnabled callback returns to a null Context.
+
+   * packages/apps/Messaging/
+9da3129 Revert "[SMS] Replace message content can't be replaced"
+88b174e [SMS] Replace message content can't be replaced
+54374cf Added support for video and audio mms attachments
+
+   * packages/providers/ContactsProvider/
+e78a3c7 Obtain region config from system-property for Contacts pre-loading
+
+   * packages/providers/TelephonyProvider/
+f320e09 Support playing the alert and vibrate until dismissed
+
+====================
+     05-24-2016
+====================
+
+
+   * external/android-clat/
+8ac9b35 clatd: Fix packet corruption seen with GRO packets
+
+   * frameworks/av/
+8f270dc audiopolicy: engineconfigurable: Don't include the example
+af1fa68 stagefright: Correct Exynos4 stride alignment
+
+   * frameworks/opt/telephony/
+514c79b Telephony: don't show unsupported transfer on IMS
+
+   * hardware/qcom/audio-caf/msm8937/
+e1b5f35 make: Fixup cross-platform guards
+
+   * hardware/qcom/display-caf/msm8937/
+9f98625 make: Adjust to dynamic paths
+
+   * hardware/qcom/media-caf/msm8937/
+3965563 make: Adjust to dynamic paths
+
+   * packages/apps/Contacts/
+5391aed Request storage permission for gallery access
+91aeaed Contacts : added a flag to track soft vs hard signed out state
+
+   * packages/apps/Dialer/
+5f5b6ad Overflow popup menu may be null when overflow menu button is not null
+9bee3a3 Mark contact info obtained from a lookup provider with remote source-type
+00ddbb6 View Note: removes the ability to make multiple notes for the same call.
+
+   * packages/apps/InCallUI/
+f4a606b View Note: Use the DeepLinkIntegrationManager method for view note
+
+   * packages/apps/Messaging/
+761d4cc Add UI/UX capability to attach a saved video to a MMS message
+
+   * packages/apps/Nfc/
+6e8f825 NFC: Adding new vendor specific interface to NFC Service
+
+   * vendor/motorola/
+52a9298 Merge pull request #244 from SkrilaxCZ/cm-13.0
