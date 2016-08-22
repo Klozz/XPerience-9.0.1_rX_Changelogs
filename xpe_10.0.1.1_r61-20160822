@@ -1,0 +1,379 @@
+====================
+     22-08-2016
+====================
+
+
+project android/
+0fe0075 Add CM Weather service repo
+793bf2c AddHexoLibre to manifest!
+
+project build/
+78507f3 build: Add dt.img and kernel target
+16b7de6 generate_extra_images: Rename targets and add 'sec' prefix
+cb081e6 core_minimal.mk: Remove duplicate packages
+9d5c55e build: Source a CM-specific global BoardConfig
+12eb41f build: Allow all possible JDK editions by default
+
+project device/htc/a5-common/
+49c9b2c test
+aa1d122 updated kernel coz whe i build on mac this kernel not boot :c
+fea6141 nfc 544
+f2bbb03 a5-common: let Gello take part of the builds
+5c00ad1 add f2fs cache formattable, and not trim zram
+49ae7b6 updated dt.img
+
+project device/htc/a5ul/
+f5eab61 Updated to v2 of XPerience Kernel
+9c484d0 Add ANT+
+3c98cb2 add nfc libs
+5e61d8d x_x i deleted this xD
+328f701 nose
+3c0a66b NFC missing xml
+77b56b1 Updated Kernel
+b1290f6 a5ul: Enable APN settings for CDMA devices
+2e36854 a5ul: Fix libinit_msm removal
+8bb21a6 Add prebuilt kernel add gitignore
+c4f01eb fix libinit
+2a4649e x_x
+08c0660 Merge https://github.com/XPerience-AOSP-Lollipop/android_device_htc_a5 into cm-13.0
+621c6d5 a5: Switch to standalone libinit
+
+project device/motorola/falcon/
+981fb1e falcon: mixer_paths: fix compress-voip derp
+d31de92 Revert "falcon: Enable proximity check on wake"
+
+project device/motorola/ghost/
+63a99cf ghost: Shrink userdata for footer space
+5be73c1 readme: update supported models
+
+project device/motorola/msm8226-common/
+3292edd fix derp
+4ef20cd cmhw: use common DisplayColorCalibration
+babed80 Automatic translation import
+053d368 Automatic translation import
+23e5103 Automatic translation import
+29ea0f8 Automatic translation import
+003611d cmhw: Use cmsdk FileUtils
+5d36f9c Automatic translation import
+48c5ed4 Automatic translation import
+5c4f39e add kernel repo
+
+project device/motorola/msm8960dt-common/
+5a4435f msm8960dt: sepolicy: Fix vold denials when default decrypting
+40ba93f msm8960dt: doze: Code cleanup
+
+project device/qcom/common/
+1a2515c power-8916: Simplify missed soc_id check in 9e40a0e
+
+project external/ffmpeg/
+0a27fb6 Revert "ffmpeg: Additional APE extradata"
+b0f5859 Merge branch 'release/3.0' of https://github.com/FFmpeg/FFmpeg into cm-13.0
+66bd740 avcodec/h264: Put context_count check back
+534dc63 Update for 3.0.3
+09d1854 cmdutils: remove the current working directory from the DLL search path on win32
+ab96164 avcodec/raw: Fix decoding of ilacetest.mov
+e7c00a2 avcodec/ffv1enc: Fix assertion failure with non zero bits per sample
+2a8441e avformat/oggdec: Fix integer overflow with invalid pts
+7876fd6 ffplay: Fix invalid array index
+8b3d9c3 avcodec/vp9_parser: Check the input frame sizes for being consistent
+c575726 libavformat/rtpdec_asf: zero initialize the AVIOContext struct
+6e6609f libavutil/opt: Small bugfix in example.
+6e13aca libx264: Increase x264 opts character limit to 4096
+a5680d8 avformat/mov: Check sample size
+811d560 avformat/format: Fix registering a format more than once and related races
+c34f061 avformat/flacdec: Fix seeking close to EOF
+96ce6f6 avcodec/flac_parser: Raise threshold for detecting invalid data
+13b6852 avformat/flvdec: Accept last size if its off by 1
+d13ba39 tests/api/api-codec-param-test: Do not directly access caps_internal
+19b86db avcodec: Add avpriv_codec_get_cap_skip_frame_fill_param()
+694d37e avfilter/vf_telecine: Make frame writable before writing into it
+4e5d1c4 avformat/mpegts: adjust probe score for low check_count
+2577cfd avcodec/mpc8: Correct end truncation
+280587b avformat/mp3dec: Increase probe score slightly when the whole data from begin to end is mp3
+5bf1122 avcodec/cfhd: Set dimensions unconditionally
+679e869 avcodec/mpegvideo: Do not clear the parse context during init
+7216068 MAINTAINERs cleanup (remove myself from things i de facto dont maintain)
+e7a064e avcodec/h264: Fix off by 1 context count
+a004e2e avcodec/alsdec: Check r to prevent out of array read
+f50f7ad avcodec/alsdec: fix max bits in ltp prefix code
+9cf8541 avcodec/utils: check skip_samples signedness
+b3fe93e avformat/mpegts: Do not trust BSSD descriptor, it is sometimes not an S302M stream
+603fd4f avcodec/bmp_parser: Check fsize
+76a2397 avcodec/bmp_parser: reset state
+fca62cc avcodec/bmp_parser: Fix remaining size
+9f1e8b4 avcodec/bmp_parser: Fix frame_start_found in cross frame cases
+b2a2b1a avfilter/af_amix: dont fail if there are no samples in output_frame()
+f3c1a76 avformat/allformats: Making av_register_all() thread-safe.
+
+project external/wpa_supplicant_8/
+dc6ca43 Merge branch 'wlan-service.lnx.1.0-rel.1.0' of git://codeaurora.org/platform/external/wpa_supplicant_8 into cm-13.0
+
+project frameworks/av/
+16d14e1 stagefright: Disable thumbnail mode for 8996-class devices
+e4575ae audioflinger: Always process volume commands from a latest track
+6fde774 audioflinger: set flush pending on invalidating offload track
+e72652f Don't place large objects on the stack
+
+project frameworks/base/
+e5a3ec8 Ensure packages on adopted media do not move when updated
+e2c0b00 Apps on adopted storage should stay there during update
+cfe8e75 SystemUI: Fix build without jack
+cdddff5 am: Account for time changes when showing recent activities
+7850198 Automatic translation import
+864f973 Fix slow anim when using a gesture to open status bar pulldown
+
+project frameworks/native/
+2e75226 surfaceflinger: Add support for Exynos HWC services
+c3a1303 Fix xxhdpi 3072 heap sizes
+39be3ce Fix xxxhdpi 3072 heap sizes
+f8af4b0 dalvik: rework 3 and 4-GB dalvik heap configurations
+5b4eb1b surfaceflinger: Access s3d flags only for valid display ID.
+
+project frameworks/opt/net/wifi/
+19adf48 Fix potential memory leak
+cab7889 wifi: Stop spamming logs
+709a459 Wifi: Do full DHCP if framework roam to a new SSID
+6d461a7 Do not process the results array if no results are received
+37cde44 Reply with a FAILURE if enable network is received for invalid id
+6501ec3 WifiService:Fix profile can't be updated when SIM changed
+4bbf00c Wifi: Issue Disconnect when Ip is changed
+875d895 wifi: Create new WifiConfiguration for savedConfig in addOrUpdateNetworkNative
+
+project hardware/libhardware/
+a900556 keymaster: Add SOTER tags and API definations
+
+project kernel/motorola/msm8226/
+ed5e78a ashmem: Validate ashmem memory with fops pointer
+a098a85 msm: kgsl: Defer adding the mem entry to a process
+42823a5 netfilter: x_tables: make sure e->next_offset covers remaining blob size
+48a4486 HID: hiddev: validate num_values for HIDIOCGUSAGES, HIDIOCSUSAGES commands
+65c8893 net: validate the range we feed to iov_iter_init() in sys_sendto/sys_recvfrom
+f12aff2 mnt: Fail collect_mounts when applied to unmounted mounts
+be7568c KEYS: potential uninitialized variable
+1317cd6 msm: camera: ispif: Validate VFE num input during reset
+56d4428 ASoC: msm: audio-effects: fix stack overread and heap overwrite
+58fcdcc ASoC: msm: audio-effects: Check for array index
+8018100 ASoC: msm: disable unwanted module
+28744c2 prima: Fix buffer overwrite problem in CCXBEACONREQ
+a3370ad msm: kgsl: Add missing checks for alloc size and sglen
+2e6b51e msm: mdss: fix possible out-of-bounds and overflow issue in mdp debugfs
+a003ef5 USB: usbfs: fix potential infoleak in devio
+9eda8f2 ppp: take reference on channels netns
+bc422fc Revert "ASoC: wcd9306: Fix the HPH and Lineout volume range"
+
+project packages/apps/AudioFX/
+47248a0 Automatic translation import
+
+project packages/apps/CMBugReport/
+f8fb93b Automatic translation import
+
+project packages/apps/CMFileManager/
+dd4956d CMFM: Recognise .opus file extension
+
+project packages/apps/Camera2/
+e3d02a2 Automatic translation import
+
+project packages/apps/CellBroadcastReceiver/
+b35b459 Automatic translation import
+
+project packages/apps/Contacts/
+a5730ba Contacs: Fix build without jack
+09dccf0 Automatic translation import
+
+project packages/apps/ContactsCommon/
+60a394e Fix crash when block incoming call without caller ID
+ec49830 Automatic translation import
+
+project packages/apps/Dialer/
+7f23b87 Dialer: Fix build without jack
+
+project packages/apps/Eleven/
+c7f1f86 Convert to new media button receiver logic.
+
+project packages/apps/Exchange/
+4758359 Automatic translation import
+
+project packages/apps/FMRadio/
+1f5e945 Automatic translation import
+
+project packages/apps/Gallery3/
+456bd4e Merge remote-tracking branch 'upstream/cm-13.0' into HEAD
+a0ee497 Gallery: Remove more possible NPEs
+
+project packages/apps/Gello/
+8fb25f4 Automatic translation import
+cf74c29 Gello: Make incognito sentence fully translatable
+
+project packages/apps/LockClock/
+fa73ab0 LockClock: Clean up proguard, fix build without jack
+968e746 LockClock: Don't forcefully enable widget calendar on resume
+f03e72b Automatic translation import
+
+project packages/apps/Messaging/
+6086e51 Unachive conversations from unblocked participants
+8f1ecd7 Automatic translation import
+
+project packages/apps/OmniSwitch/
+794d8af OmniSwitch: launcher: no ripple no fun
+f884631 OmniSwitch: revert recent apps should not change order in quick switcher
+87ef784 OmniSwitch: launcher: change essentials launch intents
+e618f39 OmniSwitch: launcher: dont force using a chooser for the set wallpaper intent
+01d7ec7 OmniSwitch: handle overlay permission failures gracefully
+
+project packages/apps/PhoneCommon/
+f3ceccc Automatic translation import
+
+project packages/apps/Settings/
+901b96c Automatic translation import
+5bbfdd5 Settings: move high touch sensitivity setting to Display
+6cd858b Settings:Fix mImsi null cause ApnSettings crash
+b5447f8 Settings: remove wifi hotspot timeout when hotspot settings are removed
+ebad247 Settings: Show only one tab on PrivacyGuard direct access
+ae3cea3 Settings: Root appops access in developer settings
+
+project packages/apps/SetupWizard/
+339a756 fix location :P from last patch
+1ed496f If the device has FRP, prompt the user to set up a lockscreen
+
+project packages/apps/Snap/
+a39193a Snap: Make developer menu more accessible
+5deea04 SnapdragonCamera: Force removing preview cover for camcorder
+18ccb63 SnapdragonCamera: Fix NPE caused by empty permission result
+b3cb427 snap: Change to target SDK 23
+3a4aabf SnapdragonCamera: Remove custom location permission request window
+3350ceb Minimum viable Android M runtime permissions handling for H.
+82d575d SnapdragonCamera: Force removing preview cover
+6286c4e SnapdragonCamera: Adjusting view initialization
+407f32c SnapdragonCamera: Turn off LONGSHOT on ubifocus scene mode
+735ebf0 Automatic translation import
+909acc8 Snap: String improvements
+20e4536 Snap: Support 9.6 MP 16:9 picture resolution
+
+project packages/apps/Stk/
+6d21c05 Stk: Don't override back button behavior.
+
+project packages/apps/ThemeChooser/
+dd53b04 Automatic translation import
+
+project packages/apps/Trebuchet/
+cef6d9c Automatic translation import
+
+project packages/apps/TvSettings/
+514c721 Automatic translation import
+
+project packages/inputmethods/LatinIME/
+ff8efcf Revert "LatinIME: add shortcut functionality" Fix broken build from incomplete checkin for this change This reverts commit 877f8b481a6c6452a3894df14ec527c21d8e2d8c.
+877f8b4 LatinIME: add shortcut functionality
+fa3518f Automatic translation import
+
+project packages/providers/CalendarProvider/
+4066adb Automatic translation import
+
+project packages/providers/CallLogProvider/
+ba2ea00 Automatic translation import
+
+project packages/providers/ContactsProvider/
+4346f8e ContactsProvider: Fix build without jack
+
+project packages/providers/DataUsageProvider/
+51d9963 Automatic translation import
+
+project packages/providers/MediaProvider/
+876ce08 MediaProvider: catch data exception to avoid crash
+d38f5fe MediaProvider: Fix failure in android.provider.cts.MediaStore_FilesTest
+daf4128 Gallery2: Fix thumbnails of new edit photos display wrongly in Documents.
+97020c4 Music: Fix force closed when plug out the SD card while music is playing.
+7c4bd66 MediaProvider: Fix SQLiteDiskIOException.
+
+project packages/providers/TelephonyProvider/
+490a177 Automatic translation import
+
+project packages/services/CMAudioService/
+4f029e0 Automatic translation import
+2087f64 CMAudioService: sign with private keys if available
+1127d85 CMAudioService: add icons
+
+project packages/services/LiveLockScreenService/
+09b857e LiveLockScreenService: Fix build without jack
+
+project packages/services/Telecomm/
+7ee39a5 Automatic translation import
+
+project packages/services/Telephony/
+a686e01 Automatic translation import
+
+project packages/services/ThemeManagerService/
+93d9504 Automatic translation import
+1e9e7cd ThemeManager: add icon
+
+project packages/services/WeatherService/
+5f53cda WeatherManagerService: Fix build without jack
+42edf42 Allow Weather service to write to secure settings
+
+project packages/themes/HexoLibre/
+18ba8af Kover Libre
+e9a9feb Remove custom package signature
+792b24b Remove device specific assignments.
+
+project packages/wallpapers/LivePicker/
+39dc141 Automatic translation import
+
+project packages/wallpapers/MagicSmoke/
+b204d0b Automatic translation import
+
+project prebuilts/cmsdk/
+755b224 prebuilts/cmsdk: Provide release artifact for Fig.
+44c0ebb prebuilts/cmsdk: Add future release artifact for Fig.
+6b14c52 prebuilts/cmsdk: Bump pom enumaration.
+96707cf prebuilts/cmsdk: Cement api 6 release.
+
+project system/keymaster/
+dc06a0f keymaster: Add SOTER support
+
+project system/netd/
+a178f13 Listen to xt_quota2 kobject event for quota
+8ff7082 TetherController: fix forwarding request aggregation logic
+
+project system/security/
+6b8a2a3 keystore: Fix SoterTest issues
+b926925 keystore: Add SOTER support in keystore
+
+project vendor/XPe/
+e9fd1c6 Add Alessa Kernel Tweaker v2.1.4
+c66f068 cm: "Released" means current.
+11b6e31 charger: Add 640dpi support
+09f0ec4 apns: Fix T-Mobile MK DATA access
+4ebe73b cm: Allow LiveDisplay to write to display misc dir
+27049c1 cm: charger: Export the RTC Clock and Alarm timestamps
+e2b4b13 cm: charger: Add support for double backlight displays
+59e9887 cm: Add custom off-mode charging screen
+0786120 extract-utils: Add pinning support
+2b352a4 config: Add WeatherManagerService to PRODUCT_PACKAGES
+410e348 cm: Build HexoLibre as part of common_full
+
+project vendor/cmsdk/
+67a5d40 Merge remote-tracking branch 'upstream/cm-13.0' into HEAD
+c349280 cmsdk: Finalize api level 6 (Fig).
+e1ba940 CMSDK : Fix generateAlertColorFromDrawable for non BitmapDrawable
+4ceac56 Automatic translation import
+dbd0ccb Merge remote-tracking branch 'upstream/cm-13.0' into HEAD
+c487191 CMSDK: Broker out WeatherManagerService
+4f4b065 Animation is here!
+da1776a cmsdk: allow MANAGE_AUDIO_SESSIONS to be whitelisted
+
+project vendor/cmsdk/samples/weatherproviderservice/OpenWeatherMapProvider/
+2661188 Fix string
+afe47bc Refactor OpenWeatherMap weather provider service
+
+project vendor/motorola/
+65aedab Merge pull request #255 from gmrt/cm-13.0
+5a290bd msm8226-common thea titan peregrine falcon: Regenerate makefiles
+b1c6f76 Merge pull request #254 from Rashed97/quark-blur
+6a52ec0 quark: Enable uiblur
+8a532f4 quark: Use new generic blobs extraction scrips
+3c57dc1 Merge pull request #253 from luk1337/cm-13.0
+fde0351 Merge pull request #252 from MotoX-2015/cm-13.0
+026cb79 clark: remove charge_only_mode
+1737e6a Merge pull request #251 from razrqcom-dev-team/cm-13.0
+69111ba qcom-common: Add libuiblur
+
