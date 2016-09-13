@@ -1,0 +1,331 @@
+====================
+     09-13-2016
+====================
+
+
+   * android/
+f189c04 track frameworks/av from cm
+
+   * device/motorola/msm8960dt-common/
+3649986 msm8960dt-common: common fixes
+9f24ce0 remove duplicated path
+b42a960 ghost: Add custom QComOMXMetadata header again
+
+   * frameworks/base/
+092426d Frameworks:Base: Add Volume Key Answer (1/2)
+
+   * packages/apps/Trebuchet/
+2490435 Trebuchet: fix potential NPE when info is null
+6fa6ff6 Trebuchet: STK app rename customization for latam region.
+
+   * vendor/XPe/
+b7cee12 2
+
+   * vendor/motorola/
+e734d2c clark: stock libril/rild
+
+====================
+     09-12-2016
+====================
+
+
+   * frameworks/av/
+3f6bb68 libcameraservice: Don't pass NULL args on setCallbacks call
+
+   * hardware/qcom/audio-caf/msm8937/
+543e8fa msm8937: policy_hal: Don't fill in offload information for unsupported streams
+
+   * packages/apps/AudioFX/
+d6b01bb Merge "Automatic translation import" into cm-13.0
+
+   * packages/apps/CMBugReport/
+f384085 Automatic translation import
+
+   * packages/apps/CMFileManager/
+9ba3d97 Automatic translation import
+
+   * packages/apps/CellBroadcastReceiver/
+fb97d9a Automatic translation import
+
+   * packages/apps/ThemeChooser/
+b266a27 Automatic translation import
+
+   * packages/providers/WeatherProvider/
+4a176fd Automatic translation import
+
+   * packages/services/CMAudioService/
+fe7240b Automatic translation import
+
+   * packages/wallpapers/Galaxy4/
+3cf4e1c Automatic translation import
+
+====================
+     09-11-2016
+====================
+
+
+   * packages/apps/AudioFX/
+c24a31d Automatic translation import
+
+   * packages/apps/CMBugReport/
+ae9f58f Automatic translation import
+
+   * packages/apps/CMFileManager/
+236a8ef Automatic translation import
+
+   * packages/apps/CellBroadcastReceiver/
+bdf16e2 Automatic translation import
+
+   * packages/apps/Eleven/
+89f5a4d eleven: Runtime permissions
+
+   * packages/apps/ThemeChooser/
+80e6de7 Automatic translation import
+
+   * packages/providers/WeatherProvider/
+766f7d5 Automatic translation import
+
+   * packages/services/CMAudioService/
+8f79b7d Automatic translation import
+
+   * packages/wallpapers/Galaxy4/
+c56c0fc Automatic translation import
+
+====================
+     09-10-2016
+====================
+
+
+   * android/
+a4b33a1 track own frameworks/av
+0834a8c untrack frameworks/av from cm
+
+   * frameworks/base/
+bacd337 Revert "Torch: Add legacy check for camera hardware"
+
+   * packages/apps/AudioFX/
+c54ad72 Automatic translation import
+
+   * packages/apps/Settings/
+3d97bd3 Settings: Add Volume Key Answer (2/2)
+
+====================
+     09-09-2016
+====================
+
+
+   * cts/
+2f0cd21 Merge "DO NOT MERGE:Updated the test to use Build.VERSION.SECURITY_PATCH Updated the test for August 2016" into marshmallow-cts-release
+3374a18 DO NOT MERGE:Updated the test to use Build.VERSION.SECURITY_PATCH Updated the test for August 2016
+
+   * device/xiaomi/cancro/
+aa4a53c remove for now2
+9478dc3 remove for now
+8228ee6 set to permisive
+49669f0 remove unneeded flags
+c25ad99 xperienced! 2
+a7138a9 xperienced!
+
+   * hardware/qcom/audio-caf/msm8937/
+f0dd612 msm8937: acdb: Make acdb reloading optional
+
+   * kernel/xiaomi/cancro/
+175bb66 extra shit
+
+   * packages/apps/Dialer/
+2092d2d Fix tab position handling for RTL languages.
+
+   * vendor/XPe/
+1ef8e62 remove jdk check
+
+   * vendor/motorola/
+4b9dd8a Merge pull request #257 from elektroschmock/MOB31E
+
+
+
+====================
+     09-07-2016
+====================
+
+
+   * android/
+6787b0d android-6.0.1_r61->android-6.0.1_r66
+
+   * build/
+06329ac dt_image: Rename target
+6bc8195 Merge tag 'android-6.0.1_r66' into HEAD
+
+   * external/bouncycastle/
+e73530d Merge tag 'android-6.0.1_r66' into HEAD
+
+   * external/flac/
+4523c1d Merge tag 'android-6.0.1_r66' into HEAD
+
+   * external/libavc/
+f94f384 Merge tag 'android-6.0.1_r66' into HEAD
+
+   * external/libvpx/
+883c0ae Merge tag 'android-6.0.1_r66' into HEAD
+
+   * external/sonivox/
+3511c9d Merge tag 'android-6.0.1_r66' into HEAD
+
+   * frameworks/av/
+d9a8909 Merge tag 'android-6.0.1_r66' into HEAD
+
+   * frameworks/base/
+a06eed8 Merge tag 'android-6.0.1_r66' into HEAD
+a98a0ef Torch: Add legacy check for camera hardware
+
+   * frameworks/native/
+7553e5d Merge tag 'android-6.0.1_r66' into HEAD
+
+   * frameworks/opt/telephony/
+f837c69 Merge tag 'android-6.0.1_r66' into HEAD
+af78053 Revert "Revert "Fix problem with cell data service after SIM swap""
+
+   * libcore/
+decc545 Merge tag 'android-6.0.1_r66' into HEAD
+
+   * packages/apps/AudioFX/
+5d47be9 Automatic translation import
+
+   * packages/apps/CMFileManager/
+c6fab43 Automatic translation import
+
+   * packages/apps/Dialer/
+0bc1dbd Automatic translation import
+
+   * packages/apps/Email/
+b7d0aee Merge tag 'android-6.0.1_r66' into HEAD
+
+   * packages/apps/Gello/
+5148683 Automatic translation import
+
+   * packages/apps/InCallUI/
+9eb99c1 [Glowpad] Remove marginBottom
+5dfaf36 Automatic translation import
+
+   * packages/apps/Messaging/
+5593d34 Messaging: fix bad recycle on sending two mms in a row
+d0145f1 Automatic translation import
+
+   * packages/apps/Profiles/
+ecadba2 Automatic translation import
+
+   * packages/apps/Screencast/
+b2142fc Automatic translation import
+
+   * packages/apps/Settings/
+e007f24 Merge tag 'android-6.0.1_r66' into HEAD
+
+   * packages/apps/Snap/
+54b3320 Automatic translation import
+
+   * packages/apps/SoundRecorder/
+2a7a6ad Automatic translation import
+
+   * packages/apps/ThemeChooser/
+4075c50 Automatic translation import
+
+   * packages/apps/Trebuchet/
+e37cfee Automatic translation import
+
+   * packages/apps/TvSettings/
+f2e84e8 Automatic translation import
+
+   * packages/providers/DataUsageProvider/
+2473a6a Automatic translation import
+
+   * packages/providers/WeatherProvider/
+823d00c Automatic translation import
+
+   * packages/services/CMAudioService/
+6e6b71a Automatic translation import
+
+   * packages/services/LiveLockScreenService/
+b58a3cc Automatic translation import
+
+   * packages/services/Telephony/
+1d471d0 Merge tag 'android-6.0.1_r66' into HEAD
+5aabd63 Automatic translation import
+
+   * packages/services/ThemeManagerService/
+449b0bb Automatic translation import
+
+   * packages/services/WeatherService/
+9aebfe4 Automatic translation import
+
+   * packages/wallpapers/Galaxy4/
+a630c40 Automatic translation import
+
+   * system/core/
+4d9ad1b fix this
+710c6ec Merge tag 'android-6.0.1_r66' into HEAD
+
+   * vendor/XPe/
+54f0761 r66
+
+====================
+     09-06-2016
+====================
+
+
+   * device/motorola/msm8960dt-common/
+0683a32 msm8960dt: Use custom header for metadata mode recording
+
+====================
+     09-05-2016
+====================
+
+
+   * hardware/qcom/audio-caf/msm8916/
+255a26d policy_hal: Invert standard build flags
+7b2112b Revert "policy_hal: Fix build with Clang"
+
+   * hardware/qcom/media-caf/msm8916/
+7c1a7af Fix duplicated OMX.qcom.audio.decoder.aac entry
+
+   * packages/apps/ThemeChooser/
+fa08a0a Remove BootReceiver
+
+====================
+     09-04-2016
+====================
+
+
+   * packages/apps/AudioFX/
+d4ff380 AudioFX: Resync with AOSP translations
+
+   * packages/apps/ThemeChooser/
+3f9abe2 Capitalize app name
+78efee5 String updates
+2587e7f Fix line wrapping for crowdin
+
+====================
+     09-03-2016
+====================
+
+
+   * device/motorola/msm8960dt-common/
+ce9f755 TEST:some charger CM fixes
+9dfa072 track new charger mode from CM
+
+   * frameworks/base/
+aa2d112 connectivity-service: fix/improve unique hostname
+2d7d0e0 Ensure DHCP requests have nonempty hostnames
+3dea5b9 Automatic translation import
+0205d1f SystemUI: Don't pad when config_showScreenOnLockScreenHints is false
+36d5c47 Themes: Give power dialogs own set of volume icons for themes
+1709c34 Prevent invocation of startNavigating() when GPS is off
+7597d78 services: core: use proper tags when logging
+
+   * packages/apps/ThemeChooser/
+f40ac25 Move actions in theme card to overflow menu
+
+   * system/core/
+be8dd72 libutils: fix deadlock in elapsedRealtimeNano
+
+   * vendor/XPe/
+72eb6a9 charger: Fix 640dpi symlink
+
