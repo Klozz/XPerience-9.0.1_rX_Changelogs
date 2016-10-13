@@ -1,0 +1,327 @@
+====================
+     10-13-2016
+====================
+
+
+   * build/
+4399a04 Track again Generate changelog [1/2] For N
+0c45e70 ninja: increase maximum suffix length
+
+   * device/motorola/msm8960dt-common/
+ded8b40 more config for hal1
+22d8d0b rever malloc this work fine but some times make lag :(
+
+   * frameworks/av/
+5dcd724 CameraService: Allow to use CameraSource as metadata buffer type
+72e6f6c Allow devices to re-integrate cameraserver and mediaserver
+
+   * frameworks/base/
+1b5688a Lockscreen: Introduce window type TYPE_KEYGUARD_PANEL
+497f248 input: Add option to toggle pointer icon when using stylus
+737608c GlobalActions: Use circular user avatars
+e3fbbbd Move high touch sensitivity and hovering to InputService
+10a36c5 statusbar: fix overlapping backgrounds when expanded
+b2cc883 Keyguard: Get your weather on... the lock screen [1/3]
+f873a18 Add Weather Content Provider [5/5]
+
+   * kernel/motorola/ghost/
+75487fb Regenerate defconfig
+776f833 BACKPORT: fs: Add TTY PM IOCTLs to compat table
+44175f2 CPU hotplug, debug: detect imbalance between get_online_cpus() and put_online_cpus()
+7f26ba2 smp: Relax irqs_disable() warning in smp_call_function_single()
+4ae98a4 block: deadline: Optimize for non-rotational
+34bf4d7 xz: Optimize Sfck Compression
+557e02e mmc: Disable crc check
+5a3a325 zlib: clean up some dead code
+99ee525d power: msm_battery: Increase battery check interval from 5 seconds to 15 seconds.
+bd8a305 tcp: fix timing issue in CUBIC slope calculation
+33b0148 netfilter: idletimer: Fix trivial lockdep warning
+10c9866 mm: Increase number of GFP masks
+9f9117d UPSTREAM: proc: actually make proc_fd_permission() thread-friendly
+cccd858 UPSTREAM: proc: make proc_fd_permission() thread-friendly
+083f882 msm: video: Checks for code robustness
+a637157 msm_fb: display: validate input args of mdp4_argc_process_write_req
+93c5b9e msm: ipc: Add check to avoid integer & buffer overflow
+82db1d0 msm: cpuidle: use format string in snprintf
+95df114 soc: qcom: rq_stats: Always show idle time left
+9298a02 msm: rq_stats: update related_cpus in the cpu_load runtime
+d67c7b9 msm: rpm-smd: Fix uninitialized variables in a function
+d9d8bc3 msm: rpm-smd: Fix bug of accessing a free'd data structure
+e3d13e9 msm: rpm-smd: Send notifications during send_data
+bea6c66 msm: tracing: Add ftrace support for RPM driver
+5e2e1bd msm: rpm_smd: Fix issue of RPM ACK not getting processed
+5cf9880 msm: rpm-smd: Fix locking performance issues
+438d665 msm: rpm-smd: Fix memory leak on free_request
+097fbc6 msm: mpm-of: set wakeup interrupt as NO_SUSPEND
+66d82d0 msm: mpm-of: Fix NULL pointer and buffer overflow errors
+3284526 msm: mpm-of: Remove explicit freeing managed resources
+08833a5 msm: mpm-of: Fix buffer overflow errors.
+457dc59 msm: mpm-of: Clear virtual MPM status register
+7a048d9 sched: Set MC (multi-core) sched domain's busy_factor attribute to 1
+9d90422 sched: fix rq->lock recursion
+1a1e574 sched: fix the theoretical signal_wake_up() vs schedule() race
+c10ae22 sched: Fix reference to stale task_struct in try_to_wake_up()
+22b16dd sched: fix race between try_to_wake_up() and move_task()
+02f5750 sched: Remove redundant update_runtime notifier
+5b504fb sched: convert WARN_ON() to printk_sched() in try_to_wake_up_local()
+9e5c000 sched/debug: Make sysrq prints of sched debug data optional
+c9c7bec tracing/sched: add load balancer tracepoint
+a2c5a61 sched: Fix clear NOHZ_BALANCE_KICK
+b877499 sched: change WARN_ON_ONCE to WARN_ON in try_to_wake_up_local()
+f39b9c8 tracing/sched: Track per-cpu rt and non-rt cpu_load.
+ecc5f17 sched: fix reference to wrong cfs_rq
+b99a63c sched: Fix SCHED_HRTICK bug leading to late preemption of tasks
+0fc6105 sched: Mark schedule_io_timeout() with EXPORT_SYMBOL
+08aa1ba stop_machine: Mark per cpu stopper enabled early
+9842924 arm: Use generic idle thread allocation
+fd22f18 rcu: Use smp_hotplug_thread facility for RCUs per-CPU kthread
+1da40aa rcu: Yield simpler
+36a236d ksoftirqd: Enable IRQs and call cond_resched() before poking RCU
+3d5599a softirq: Use hotplug thread infrastructure
+61bf7c9 smpboot: Add missing get_online_cpus() in smpboot_register_percpu_thread()
+0db1d4c kthread: Fix the race condition when kthread is parked
+f5eb6b69 kthread: Prevent unpark race which puts threads on the wrong cpu
+3647833 kthread: Implement park/unpark facility
+1df3c16 stop_machine: Use smpboot threads
+fc39675 stop_machine: Store task reference in a separate per cpu variable
+7ef56f9 smpboot: Allow selfparking per cpu threads
+3468c3e hotplug: Fix UP bug in smpboot hotplug code
+8217398 smpboot: Provide infrastructure for percpu hotplug threads
+ed30ca4 smpboot, idle: Fix comment mismatch over idle_threads_init()
+9d296ea smpboot, idle: Optimize calls to smp_processor_id() in idle_threads_init()
+de9e462 smp, idle: Allocate idle thread for each possible cpu during boot
+919f62e smp: Provide generic idle thread allocation
+bfc6e68 smp: Add task_struct argument to __cpu_up()
+969e423 smp: Add generic smpboot facility
+7ef6553 msm8960dt: Enable RCU_FAST_NO_HZ
+d97fe28 timer: Fix mod_timer_pinned() header comment
+726c08d rcu: Stop rcu_do_batch() from multiplexing the "count" variable
+d8b55e0 rcu: Make rcu_barrier() less disruptive
+8c01a45 rcu: Precompute RCU_FAST_NO_HZ timer offsets
+863f9c0 rcu: Move RCU_FAST_NO_HZ per-CPU variables to rcu_dynticks structure
+2f02f7e rcu: Update RCU_FAST_NO_HZ tracing for lazy callbacks
+b88fc01 rcu: Explicitly initialize RCU_FAST_NO_HZ per-CPU variables
+db89f17 rcu: Make RCU_FAST_NO_HZ handle timer migration
+02e904e rcu: Make exit_rcu() more precise and consolidate
+3250780 rcu: Ensure that RCU_FAST_NO_HZ timers expire on correct CPU
+6036a3a rcu: Add warning for RCU_FAST_NO_HZ timer firing
+4140e39 rcu: Make RCU_FAST_NO_HZ account for pauses out of idle
+4a61c6d rcu: Make RCU_FAST_NO_HZ use timer rather than hrtimer
+e18b5ea rcu: Add RCU_FAST_NO_HZ tracing for idle exit
+32a3ed7 rcu: Add a module parameter to force use of expedited RCU primitives
+a25155b Input: optimize events_per_packet count calculation
+977d514 CPU hotplug, perf: Fix CPU hotplug callback registration
+7a58cf4 cpu: fix section mismatch warnings with __hotcpu_register
+8383d30 drivers/base/topology.c: Fix CPU hotplug callback registration
+bcc1fa1 arm, hw-breakpoint: Fix CPU hotplug callback registration
+dd86675 net/core/flow.c: Fix CPU hotplug callback registration
+d0b10df net: flow: Prevent bringing up new CPUs during per-CPU initialization
+35971f3 mm, vmstat: Fix CPU hotplug callback registration
+13bebf8 perf, cpu hotplug: Use cached value of smp_processor_id()
+8fb371d perf, cpu hotplug: Run CPU_STARTING notifiers with irqs disabled
+8c06204 Doc/cpu-hotplug: Specify race-free way to register CPU hotplug callbacks
+a0ba767 profile: Fix CPU hotplug callback registration
+9ff7cfa trace, ring-buffer: Fix CPU hotplug callback registration
+8303b47 CPU hotplug: Provide lockless versions of callback registration functions
+07603c0 mm/slub: don't wait for high-order page allocation
+
+   * manifest/
+3e8793c xD my bad track audio one and nod display
+2686dd4 track xperience one
+
+   * packages/apps/CMParts/
+f56aee5 cmparts: Implement SummaryProvider for a few components
+e597447 cmparts: Add PartsRefresher for updating remote UI components
+35cd230 cmparts: Weather service settings
+6c5cc88 Fix fragment launching
+0332154 Fix reaching PrivacySettings menu
+b73e01f cmparts: Reposition a few dashboard items
+bf9385e cmparts: Search improvements
+
+   * packages/apps/Settings/
+7a8d416 settings: Add permissions for CMParts
+8af6d79 settings: Add link to Weather settings in CMParts
+c82ae3b Keyguard: Get your weather on... the lock screen [3/3]
+
+   * system/core/
+58833e9 allow cameraserver to have the same UID as mediaserver
+
+   * vendor/XPe/
+baadb1a sepolicy: Allow apps to find the weather service
+e8334c9 extract_utils: Do not change app SRC if there are arguments
+31e645e track Alessa again
+
+   * vendor/cmsdk/
+9a4cc42 cmsdk: Update API
+ea99c01 cmsdk: Add support for PartsRefresher to CMPartsPreference
+c239fdc cmsdk: Migrate STYLUS_ICON_ENABLED to CMSettings
+298f26b cmsdk: Remove duplicate legacy system element
+1bafb17 cmsdk: Start Weather service in onUnlockUser
+
+====================
+     10-12-2016
+====================
+
+
+   * device/motorola/msm8960dt-common/
+91bd36c msm8960dt-common: Camera hax
+b2f25ef track blobs
+
+   * frameworks/base/
+ae965cc Release SQLite page cache as much as it can
+233425c Fix crashes after notifying bad notification
+daf12c6 [Watchdog]:Avoid the system server hang forever.
+1183e58 Modify the case in adjustFocus when the mFocusedActivity is null
+ca162d7 webview_packages: prefer the more powerful webview packages
+
+   * packages/apps/CMParts/
+ad8a608 some updates
+3361700 remove some shits
+
+   * packages/apps/Settings/
+dbbc141 Change icon and use vector drawable for alessa
+5238bbf Launch Alessa kernel Tweaker from Settings
+
+   * vendor/XPe/
+38eb2b9 Add new Browser
+213988e Change Codename
+
+====================
+     10-11-2016
+====================
+
+
+   * device/qcom/sepolicy/
+f7a12e8 Sepolicy: Allow mediaserver to access media_settings_xml_prop
+47ef8dd Sepolicy: Allow mediaserver/mediacodec to access media.msm8956hw
+
+   * packages/apps/Nfc/
+3982619 Nfc: read extra properties of Mifare Classic
+
+====================
+     10-10-2016
+====================
+
+
+   * build/
+7ad0f4d Add LOCAL_AIDL_FLAGS
+
+   * device/motorola/msm8226-common/
+4234adc msm8226-common: Set Qualcomm Bluetooth SOC ID
+74d0b5e msm8226-common: cmactions: Integrate with Settings
+64137ee msm8226-common: cmactions: Remove back button from action bar
+ba2bb67 msm8226-common: Set debugfs mode with mount
+1a761d2 msm8226-common: init: mount debugfs
+
+   * frameworks/av/
+135af12 mediaserver: Fix LOCAL_CFLAGS
+aa07766 stagefright: omx: Don't signal dataspace change on legacy QCOM
+
+   * frameworks/base/
+798f8f9 SystemUI: Enable three icon switching within QS DND tile
+5c6b3f1 SystemUI: statusbar: Fix status bar brightness control feature
+446c745 Revert "SystemUI: Add support for charging animation"
+4441790 SystemUI: statusbar: Fix QS quick pulldown feature
+41874f9 SystemUI: tuner: Fix up button navigation in activity
+
+   * manifest/
+a2329e2 xD my bad
+999a2c4 track cm system_tools_aidl
+
+   * packages/apps/CMParts/
+4153c17 CMParts: Notification light: Fix for app customization
+28d8531 cmparts: Make CMParts searchable
+2c6f7d8 cmparts: Change how parts are launched
+dd24399 CMParts: statusbar: Add double-tap to sleep switch
+e6306dc CMParts: Navigate back only when up button is enabled
+
+   * packages/apps/LockClock/
+b6674c2 lockclock: Use protected broadcasts when talking to SystemUI
+
+   * packages/apps/Settings/
+e8262de settings: Correctly index SwitchPreferences
+86ffd9a Settings: Fix possible NPE
+c67a7bc Settings: add package name to app info
+3bd248e Revert "Settings: Display percentage power"
+
+   * packages/providers/WeatherProvider/
+a4ec0a0 weatherprovider: Make direct-boot aware
+
+   * packages/services/WeatherService/
+15c3bd4 weatherservice: Update target SDK
+
+   * vendor/XPe/
+2ec4512 Thnks for donate bro :D
+
+   * vendor/cmsdk/
+323599e cmsdk: Add constraints support for CMHardware features
+122a5ee cmsdk: Re-enable use of custom AIDL generation
+19612ed cmsdk: Add search resources plumbing for CMParts
+57034c4 cmsdk: Change how parts are launched
+
+====================
+     10-09-2016
+====================
+
+
+   * device/motorola/msm8960dt-common/
+1bbfb12 msm8960dt-common: Add malloc flag
+a1b9ca8 msm8960dt-common: Set the correct flag about text relocations.
+12cad23 msm8960dt-common:sepolicy: some policy test
+2bd0202 msm8960dt-common: some Nougat defines for filesystem config
+e1fc036 msm8960dt-common: Set Qualcomm Bluetooth SOC ID
+743751c msm8960dt-common: add android fs config [Do not merge]
+d5dcbd8 Update: ANDROID_FILESYSTEM_CONFIG
+146ff1e msm8960dt-common: Add cameraserver to allow socket
+7c1a914 msm8960dt-common: Enable camera for HAL1
+
+   * device/qcom/common/
+84910f1 Merge pull request #5 from CyanogenMod/cm-14.0
+
+   * kernel/motorola/ghost/
+781e8a2 Regenerate defconfig for N
+c3e33f3 USB: android: Fix memory leak in mass_storage_function_init()
+cd897ba seccomp: Use atomic operations that are present in kernel 3.4.
+10f0fd4 seccomp: implement SECCOMP_FILTER_FLAG_TSYNC
+e9ead3a seccomp: allow mode setting across threads
+9a638f6 seccomp: introduce writer locking
+c41bd87 seccomp: split filter prep from check and apply
+7124966 ARM: add seccomp syscall
+a829588 seccomp: add "seccomp" syscall
+4704f63 seccomp: split mode setting routines
+48559de seccomp: extract check/assign mode helpers
+6328797 seccomp: create internal mode-setting function
+69e267a MAINTAINERS: create seccomp entry
+f82fb52 CHROMIUM: ARM: r1->r0 for get/set arguments
+3154fe0 CHROMIUM: seccomp: set -ENOSYS if there is no tracer
+f5a371e CHROMIUM: ARM: arch/arm: allow a scno of -1 to not cause a SIGILL
+16ba6cc CHROMIUM: arch/arm: add asm/syscall.h
+abff932 samples/seccomp: fix dependencies on arch macros
+3ed5d50 seccomp: fix build warnings when there is no CONFIG_SECCOMP_FILTER
+be259cf seccomp: ignore secure_computing return values
+715e5dc seccomp: use a static inline for a function stub
+6f3e5b9 Documentation: prctl/seccomp_filter
+b9133a9 change x86 config Change-Id: I7c9d49079d4e18390c2d520513a4afd55e6eaa3e
+70ea9d4 ptrace,seccomp: Add PTRACE_SECCOMP support
+ba73e0d seccomp: Add SECCOMP_RET_TRAP
+a6b51bc signal, x86: add SIGSYS info and make it synchronous.
+75d1f76 seccomp: add SECCOMP_RET_ERRNO
+fbbc471 seccomp: remove duplicated failure logging
+d51f02d seccomp: add system call filtering using BPF
+868cd55 arch/x86: add syscall_get_arch to syscall.h
+e6f4e9f asm/syscall.h: add syscall_get_arch
+d131dd4 seccomp: kill the seccomp_t typedef
+
+   * packages/apps/Settings/
+2f2bde9 DeviceInfoSettings: remove unused code
+93f0930 Revert "Revert "Add processor info in device info screen""
+18b6894 deviceinfo: Add release type and CodeName
+35959cc Add Donators support
+6de8a7e Add support to Changelog
+
+   * packages/services/CMAudioService/
+2f89384 cmaudioservice: Make direct boot aware
+
+   * system/tools/aidl/
+5a7cbce AIDL: Add option to generate No-Op methods
+6d7e0fa aidl: Support for duplicate methods having different arguments
