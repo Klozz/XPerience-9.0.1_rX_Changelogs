@@ -1,0 +1,227 @@
+====================
+     11-20-2016
+====================
+
+
+   * frameworks/base/
+0eced8d XPerience Ambient display [1/2] based on Omni ambient
+51f16f1 SystemUI: Use takeScreenshotPartial by default
+f32e13c Base: Pixel NavBar: Icons
+b87c5e4 Base: UI: Use application 7.1 round icons when available  * Enables config_useRoundIcon by default
+
+   * frameworks/native/
+a65fd55 native: Increase ART heap limit to 192MB for 1024MB RAM devices
+
+   * packages/apps/Settings/
+2691d1c  XPerience Ambient display [2/2]
+
+====================
+     11-19-2016
+====================
+
+
+   * device/motorola/msm8916-common/
+0a9bb26 msm8916-common: Specify we have a cache partition
+b603a70 msm8916-common: cmactions: Remove inexistent activity
+
+   * device/motorola/osprey/
+034ade4 osprey: Set cache partition size
+
+   * kernel/motorola/msm8916/
+449e487 Enable powersuspend fix xperience gov
+c6d6078 xperience: Remove duplicated parameters my bad.
+e6b3426 xperience:Add missing parameters to fix the build on 3.10 kernel
+3767510 cpufreq:xperience:Add cpu utilization statistics to aid decisions made by userspace.
+1c99b58 Revert "Drop the powersuspend hooks"
+e4dc23a xperience: tweak governor for osprey and enable on defconfig
+c2e6fc1 XPerience_governor: Initial port of my own governor XPerience Governor
+159aa62 Wait 1 second to turn off a cpu
+2b5079c Port DT2W for osprey,surnia,merlin.
+f5b61c5 Impement LCD_NOTIFY
+39ff5de Regenerate defconfig
+3a2bed2 touch: sweep2sleep: few adjustments
+66b75d0 touch: sweep2sleep
+95fa2b3 update defconfig
+58c2c86 Add 1.8 Ghz cpu + 650 Mhz gpu oc for osprey
+a103444 Keep dynamic fsync on
+3117208 fs: dynamic sync 2.0
+3dad8377 Dynamic Fsync 1.2 for linux 3.10
+58ffaef Revert "Added fsync on/off support."
+ac39183 Revert "fs: Disable fsync by default"
+0ee8d35 adreno_idler: fix typos :)
+370c4e4 adreno_idler: fix-up some comments
+f2bf692 adreno_idler: fix-up type definitions
+bc6e423 adreno_idler: remove frequency bump
+cf1555d adreno_idler: switch to count based instead of time based
+8dd8f51 Introduce Adreno idler for devfreq-based Adreno devices
+208f50f tcp_output: set initial TCP window size to 64K (speed improvement)
+eb23954 Implemented Add sound control 3.6 *need to merge cajon changes
+9a2e2cd net: sched: Add fq_pie to 3.10.y
+50de07f22 display: add a simple api to query the display state (on/off) at any point in time
+3c6ca36 osprey: Enable Sound Control
+acdf59b fs: Disable fsync by default
+8326149 random: entropy tweaks are all the rage nowadays
+f77da37 ASoC: msm8x16-wcd: Sound control: add mic gain
+b7101f1 ASoC: msm8x16-wcd: Sound control
+5f3ec62 usb: add usb fast charge
+17c81ab msm: mdss: kcal: Only apply updates on index 0
+c0f64e4 msm: mdss: kcal: Use PCC for negative display mode
+6202fb1 msm: mdss: KCAL: Send a pp display commit when changes are made
+0b95058 msm: mdss: KCAL: Do not read from picture adjustment registers
+755010d msm: mdss: KCAL: Read values from MDP registers wherever possible
+e4d73de msm: mdss: KCAL: Apply default values on boot
+10a5977 msm: mdss: KCAL: Queue changes when panel is powered off
+4b79515 msm: mdss: KCAL: Remove MODULE_DESCRIPTION
+aa656dd msm: mdss: KCAL: Update Kconfig description
+316973d msm: mdss: KCAL: Update according to linux guidelines and checkpatch.pl
+48d79cf msm: mdss: KCAL: Check panel power state before applying values
+5f3dd19 msm: mdss: KCAL: Allow kcal_enable to control all post-processing features
+4b2dbc8 msm: mdss: Keep KCAL within its own source file
+0251230 msm: mdss: Add pa_v2 support to KCAL
+3e532a0 msm: mdss: Replace PGC implementation with PCC for KCAL
+252bb0c msm: mdss: Remove deprecated __dev* markings
+62bdd2f msm: mdss: Add KCAL support for post processing control [v2]
+8ddefe2 Added fsync on/off support.
+
+====================
+     11-18-2016
+====================
+
+
+   * device/motorola/msm8916-common/
+14cfe7c sepolicy: fix libsepol.context_from_record: type persist_block_device is not defined
+
+   * hardware/qcom/display/
+eaedadc display: Don't use gnu-oldstyle field designators
+
+   * packages/services/Telecomm/
+bbf1d24 telecom: Ensure that we always update bluetooth in dsda case
+
+====================
+     11-17-2016
+====================
+
+
+   * build/
+2a1223d  qcom_target: Remove unused support for CAF manifests
+0b34cab qcom_target: Remove unused sony HAL suppor
+5c9c1ae qcom_target: Restore original AOSP hardware/qcom/media  pathmap
+35a6d69 build: kernel: Set prefix based on KERNEL_ARCH
+e92d793 Merge tag 'android-7.1.0_r7' into HEAD
+c9a42ba core: Remove more color leftovers
+b8f3aba core: Remove color leftover
+f1368a5 build: Require devices to opt-in for SDCLANG
+
+   * device/htc/a5-common/
+451b779 a5-common: Use device header path for camera stuff
+d4a1231 remove gcc definition of 4.8gcc we are using 4.9
+9445677 Common bug fixes for Nougat * Repo cleanup * Remove some unused things * Remove rild and I used the proposed by bigsupersquid * Update media_codec from flo * add android FS_config * Add seccomp policy
+
+   * device/htc/a5ul/
+bc87c98 Common updates for N * Added again charger images * updated eri files
+
+   * device/motorola/msm8916-common/
+fac8c38 fix dependencies I merged bson into XPE
+e665ffb xperience love fix
+cb6a49d Add XPerience Love part2
+974fda5 msm8916-common: Fix libbson dependency
+
+   * device/motorola/osprey/
+74511b5 well are now 2016 and XPerience    *
+ce14b65 Add XPerience love
+
+   * device/qcom/common/
+6a12ca0 Merge pull request #8 from CyanogenMod/cm-14.1
+
+   * frameworks/base/
+fa7dac8 Base: fix the default icon for lockscreen shortcuts customisation
+ac3d848 SystemUI: Fix volume panel inconsistencies
+4643b9a Include material ringtones and notification sounds
+5afcd1c Sounds: Cleanup duplicate ringtones/alarms
+4954e1b Revert "zygote: Allow device to append extra whitelisted paths"
+b65a21f Add back button to navbar tuner
+661fd92 Handle onOptionsItemSelected for TunerActivity
+5a057f6 Tuner: allow power notif controls to be launched externally
+c908183 Tuner: hide settings item in dashboard
+5dc1f65 PowerManager: don't pass NULL pointers to power HAL (2)
+15cdd5c systemui: Fix NPE when changing importance
+c789e50 Turn on Power Notification Controls by default (1/2)
+83607ba SystemUI: add more buttons to NavBar Tuner
+60154f1 GlobalActions: Long press screenshot action to take a partial screenshot
+7b27a5b zygote: Allow device to append extra whitelisted paths
+227aee8 base: Rename reboot to restart in Power menu
+f32e3c4 batteryservice: Remove remnants of CAF's HVDCP changes
+5afea72 Add CMSDK resource APK to Zygote FD whitelist
+1602dc1 Merge tag 'android-7.1.0_r7' into HEAD
+40cd73b PackageInstallerSession: use ftruncate if fallocate is ENOTSUP
+
+   * frameworks/native/
+0dfc8e8 binder: Squashed commit of MemoryHeapBaseIon
+
+   * kernel/htc/msm8974/
+d829b2c change lz4 to xz
+f8d7db4 Merge remote-tracking branch 'upstream/cm-14.1' into HEAD
+76b6c75 af_unix: speedup /proc/net/unix
+
+   * manifest/
+8b65356 android-7.1.0_r4 -> android-7.1.0_r7
+
+   * packages/apps/CMParts/
+988ee86 cmparts: Rename reboot to restart in Power menu
+6322d78 CMParts: rotation: Clean up UI and code
+
+   * packages/apps/Settings/
+694dfd3 Fix NPE when ejecting the portable storage
+bbd45e9 settings: Move Emergency broadcasts to Wireless & networks
+fe8c431 Settings : Improve app info screen
+7a636f0 Settings: add marquee to Device administrators screen
+b28608d Settings: Use correct icon for ring volume
+5e84a7a Settings: notifications: add tuner's importance level shortcut
+7e60974 Turn on Power Notification Controls by default (2/2)
+636f93c settings: nfc: Forward port Android Pay removal
+b6604d1 settings: Rename reboot to restart in Power menu
+04bac6b Merge tag 'android-7.1.0_r7' into HEAD
+
+   * packages/inputmethods/LatinIME/
+ed9724f LainIME: add unicode 9.0 chars
+
+   * system/core/
+912680f init: Allow devices to opt-out of fsck'ing on power off
+b758a50 healthd: allow custom charger images
+f807781 init: Fix possible open file pointer
+fe76c10 healthd: dock battery
+8c1e160 healthd: Detect power supply type for all charger devices
+150784b Revert "healthd: dock battery"
+f2da65d Merge tag 'android-7.1.0_r7' into HEAD
+
+   * system/sepolicy/
+4136baf Merge tag 'android-7.1.0_r7' into HEAD
+5fab9e3 Add rules required for TARGET_HAS_LEGACY_CAMERA_HAL1
+
+   * vendor/XPe/
+c5ab307 apns: Remove loop and bpl mobile
+f1b9057 apns: Add Reliance Jio apn's
+92318b3 config: Add missing \ in bootanimation pick
+b86b6e5 fix bootanimation sort
+177355d common: add quotes to satisfy kati/bash/make/whatever
+
+   * vendor/cmsdk/
+db2815a PerformanceManager: Fix power hint values
+c2fb2b5 cmhw: Fix boot handling
+
+   * vendor/htc/
+21a2531 Track changes from bigsupersquid
+
+   * vendor/motorola/
+15729a8 Merge pull request #1 from TheMuppets/cm-14.1
+
+====================
+     11-16-2016
+====================
+
+
+   * hardware/qcom/media/
+0124a88 media: Add missing links
+
+   * packages/apps/Bluetooth/
+168ecad bluetooth: Prevent null pointer crashes in A2DP initNative
