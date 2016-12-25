@@ -1,0 +1,171 @@
+====================
+     12-25-2016
+====================
+
+   * build/
+136e529  envsetup: Split cached vars  [klozz]
+   * frameworks/base/
+d3d1c68  Automatic translation import  [klozz]
+c95b734  Automatic translation import  [klozz]
+fbcef90  Automatic translation import  [klozz]
+25515ff  Automatic translation import  [klozz]
+2259d0a  Automatic translation import  [klozz]
+5ed16ed  ConnectivityService: set user-defined hostname  [klozz]
+   * kernel/motorola/msm8916/
+bf34805  Merge remote-tracking branch 'upstream/cm-14.1' into xpe-11.1  [klozz]
+73c9a6e  alessa_thermal: rename to alessa_thermal.c fix build  [klozz]
+f377f65  alessa_thermal :1.2.1 bump to make compatible with last changes of msm thermal  [klozz]
+4041a8a  Alessa_thermal:Add support to get cluster topology info in KTM  [klozz]
+9dd51fb  alessa_thermal: fix when you build the module with AOSP  [klozz]
+564301c  alessa_thermal: fix build issues  [klozz]
+ef20299  Alessa_thermal: 1.0 alessa_thermal is a replacement for the existing Qualcomm msm_thermal engine. You can configure how it work :)  [klozz]
+43e974d  Alessa_plug:added support to octacore device  [klozz]
+   * vendor/XPe/
+65eaa5e  :v remove unused Alessa hootplug config  [klozz]
+06598b4  Update Alessa kernel tweaker Fix Setonboot issue Add support to new Alessa_hotplug add support to new Alessa thermal fixes fixes everywhere  [klozz]
+ee63599  apn:update OMVs mexico  [klozz]
+a9c7cf7  sepolicy: Address new bluetooth denial  [klozz]
+e5858f7  xpe: common: Remove Launcher3 makefile entry  [klozz]
+1e90dca  Contributors: Add maintainer for ARK Benefit A3(peach)  [klozz]
+8b57d15  fix warnings on build script  [klozz]
+
+====================
+     12-24-2016
+====================
+
+   * frameworks/av/
+85d28bf  libaudiopolicyservice: make legacy build with Werror  [Zhao Wei Liew]
+   * hardware/ril-caf/
+5291cf8  ril-caf: Only allow GET_CARRIER_RESTRICTIONS for ril versions >= 14  [Christopher R. Palmer]
+   * packages/apps/OmniClock/
+5e9e726  OmniClock: fix crash in landscape color picker  [Max Weninger]
+   * packages/apps/Settings/
+42dadea  Merge pull request #8 from mestreian/patch-1  [GitHub]
+6b925f3  Update xpe_strings.xml  [GitHub]
+   * packages/apps/Snap/
+2064b85  Snap: make openLegacy an option  [Daniel Hillenbrand]
+1a7d451  Snap: update caf icons  [Michael Bestas]
+d58b217  Snap: prevent NPE when checking if controls are visible  [Michael Bestas]
+c2427aa  Always set JPEG quality.  [Michael Bestas]
+95b4bc9  Initialize focus manager in onResume().  [Michael Bestas]
+f29da12  Modernize look of review controls.  [Michael Bestas]
+e600930  Clean up module switcher.  [Michael Bestas]
+a62bda4  Stop data loader on activity destroy.  [Michael Bestas]
+7bcdf0a  Improve RTL layout behaviour.  [Michael Bestas]
+2bf3a05  Use transparent navigation bar.  [Michael Bestas]
+3acc722  Use material versions of share/delete/edit icons.  [Michael Bestas]
+1e7ddd0  Fix some photo UI layout issues.  [Michael Bestas]
+
+====================
+     12-23-2016
+====================
+
+   * hardware/qcom/fm/
+14df45e  Automatic translation import  [clyde@build01]
+   * kernel/motorola/msm8916/
+3e4e125  ANDROID: trace: net: use %pK for kernel pointers  [Alberto97]
+   * packages/apps/AudioFX/
+4d98137  Automatic translation import  [clyde@build01]
+   * packages/apps/Bluetooth/
+f9c4f69  Automatic translation import  [clyde@build01]
+   * packages/apps/Browser/
+bf4c05f  Automatic translation import  [clyde@build01]
+   * packages/apps/CMBugReport/
+543a4ec  Automatic translation import  [clyde@build01]
+   * packages/apps/Calendar/
+8aa835e  Automatic translation import  [clyde@build01]
+   * packages/apps/CellBroadcastReceiver/
+f6cb3c9  Automatic translation import  [clyde@build01]
+   * packages/apps/Dialer/
+ca4ec9a  Automatic translation import  [clyde@build01]
+   * packages/apps/Eleven/
+88944d8  Automatic translation import  [clyde@build01]
+   * packages/apps/Email/
+45d5dd3  Automatic translation import  [clyde@build01]
+   * packages/apps/Gallery2/
+8aa6b2f  Automatic translation import  [clyde@build01]
+   * packages/apps/Gello/
+0b593cc  Automatic translation import  [clyde@build01]
+   * packages/apps/LockClock/
+090a73b  Automatic translation import  [clyde@build01]
+   * packages/apps/Messaging/
+f59dbac  Automatic translation import  [clyde@build01]
+   * packages/apps/Profiles/
+428f23c  Automatic translation import  [clyde@build01]
+   * packages/apps/Screencast/
+ed0007a  Automatic translation import  [clyde@build01]
+   * packages/apps/SoundRecorder/
+54a5886  Automatic translation import  [clyde@build01]
+   * packages/apps/ThemeChooser/
+b8bde93  Automatic translation import  [clyde@build01]
+   * packages/apps/Trebuchet/
+205a650  Automatic translation import  [clyde@build01]
+   * packages/apps/UnifiedEmail/
+b84ffe9  Automatic translation import  [clyde@build01]
+   * packages/providers/DataUsageProvider/
+ca6072f  Automatic translation import  [clyde@build01]
+   * packages/providers/DownloadProvider/
+6dc7968  Automatic translation import  [clyde@build01]
+   * packages/providers/ThemesProvider/
+e915719  Automatic translation import  [clyde@build01]
+   * packages/providers/WeatherProvider/
+673dd3e  Automatic translation import  [clyde@build01]
+   * packages/services/CMAudioService/
+7cbc9f4  Automatic translation import  [clyde@build01]
+   * packages/services/LiveLockScreenService/
+6439f07  Automatic translation import  [clyde@build01]
+   * packages/services/Telephony/
+42087ba  Automatic translation import  [clyde@build01]
+   * packages/services/ThemeManagerService/
+2c2fb8e  Automatic translation import  [clyde@build01]
+   * packages/services/WeatherService/
+2d94f5c  Automatic translation import  [clyde@build01]
+
+====================
+     12-22-2016
+====================
+
+   * device/qcom/sepolicy/
+d9d06c2  apq8084: Define qcal530_prop as property_type  [Ethan Chen]
+   * packages/apps/Settings/
+6b45348  Fix  [GitHub]
+
+====================
+     12-21-2016
+====================
+
+   * frameworks/opt/telephony/
+18a572d  Fix crash when importing contacts from SIM in Contacts app  [Zhao Wei Liew]
+   * hardware/qcom/audio-caf/msm8916/
+70b5aa3  hal: Make HUAWEI_SOUND_PARAM_PATH a board flag  [Matt Mower]
+   * hardware/qcom/audio-caf/msm8974/
+a0a31d2  hal: Make HUAWEI_SOUND_PARAM_PATH a board flag  [Matt Mower]
+   * hardware/qcom/fm/
+d415f9c  Automatic translation import  [blinky@build01]
+   * packages/apps/AudioFX/
+7873470  Automatic translation import  [blinky@build01]
+   * packages/apps/Bluetooth/
+70368cd  Automatic translation import  [blinky@build01]
+   * packages/apps/CMWallpapers/
+e32ea6d  Automatic translation import  [blinky@build01]
+   * packages/apps/Calendar/
+1cbc82e  Automatic translation import  [blinky@build01]
+   * packages/apps/Dialer/
+34e1602  Automatic translation import  [blinky@build01]
+   * packages/apps/Profiles/
+ba50716  Automatic translation import  [blinky@build01]
+   * packages/apps/Screencast/
+8944755  Automatic translation import  [blinky@build01]
+   * packages/apps/Terminal/
+dd51462  Automatic translation import  [blinky@build01]
+   * packages/services/CMAudioService/
+31804a5  Automatic translation import  [blinky@build01]
+   * packages/services/LiveLockScreenService/
+84adba1  Automatic translation import  [blinky@build01]
+   * packages/services/Telephony/
+606ad91  Automatic translation import  [blinky@build01]
+8a6c991  Automatic translation import  [inky@build01]
+   * packages/services/ThemeManagerService/
+604da51  Automatic translation import  [blinky@build01]
+   * packages/services/WeatherService/
+3651dcd  Automatic translation import  [blinky@build01]
