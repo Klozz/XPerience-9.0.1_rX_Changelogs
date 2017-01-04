@@ -1,0 +1,206 @@
+====================
+     01-04-2017
+====================
+
+   * device/motorola/msm8916-common/
+47d884c  msm8916-common: Drop eris  [klozz]
+8b63bc3  msm8916-common: sepolicy: Fix some bluetooth denials  [klozz]
+   * device/motorola/osprey/
+4704182  osprey: Drop no more needed CDMA things  [klozz]
+b3e7da7  osprey: libmot-qc-fd-offline moved to device  [klozz]
+   * frameworks/base/
+5d2058d  update api  [klozz]
+f4c0f3a  Expose QS battery  [klozz]
+3ec2043  Introduce MODIFY_OVERLAYS permission for user apps  [klozz]
+122c9a7  Fix wrong peek height of the notification panel  [klozz]
+80a26e2  SettingsProvider: Add missing INTERACT_ACROSS_USERS_FULL permission  [klozz]
+9f803c3  aapt: silence these warnings  [klozz]
+aaf2cfe  Google Audio: update effect sounds and add pixel sounds  [klozz]
+e17ed3c  OMS themes: prevent potential SysUI fc if no valid battery res  [klozz]
+4b32bd5  Battery icon: fix getDrawable for new Android API  [klozz]
+75a0488  Fix race condition in accessibility  [klozz]
+0273ad2  Zygote: Workaround for detecting open file descriptors  [klozz]
+2b161da  Fix incorrect FIFO cgroup assignment.  [klozz]
+b3eb49a  Zygote: Deleted files can still be fstat(restat) success.  [klozz]
+e359a23  Make sure Zygote is running at process priority 0 after VM has started.  [klozz]
+fcf9cda  Fix pms systemReady NullpointerException  [klozz]
+a1eb50b  Fix a memory leak.  [klozz]
+15d8077  Telephony: Don't crash for too long baseband version  [klozz]
+77e6677  SystemUI: Recents: Allow closing empty view via tapping  [klozz]
+5312d27  SystemUI: Initialize state linked volume  [klozz]
+d0588b9  fwb:sexyshutdown:change background to white, black letters and wine progress bar and remove some shit on the logo  [klozz]
+   * kernel/motorola/msm8916/
+7cb8550  revert old-new shit patch  [GitHub]
+8e758d4  Merge remote-tracking branch 'upstream2/cm-14.1' into HEAD  [klozz]
+cc5b66a  arm/dts: remove unused dt entries for ion system contig heap  [klozz]
+ac008ba  usb: Avoid exposing kernel addresses  [klozz]
+0aff49f  net: ping: check minimum size on ICMP header length  [klozz]
+e86b216  net: avoid signed overflows for SO_{SND|RCV}BUFFORCE  [klozz]
+111fb39  tcp: fix potential memory corruption  [klozz]
+3026f27  radio-iris: check argument values before copying the data  [Alberto97]
+434f304  ASoC: msm: set pointers to NULL after kfree  [Alberto97]
+223eafa0  BACKPORT: msm: camera: cpp: Add validation for v4l2 ioctl arguments  [Alberto97]
+9fdb9a3  usb: gadget: f_mtp:Fix issue of NULL pointer access in mtp_read  [Alberto97]
+a8c96af  arm: fix handling of F_OFD_... in oabi_fcntl64()  [Alberto97]
+   * packages/apps/CMParts/
+d025e28  CMParts: remove unused weather toggle for statusbar  [klozz]
+   * packages/apps/Settings/
+47c88ea  Bluetooth/Wifi: center empty view and set textAppearance to medium  [klozz]
+   * packages/apps/SetupWizard/
+f563d50  Create crowdin.yaml  [GitHub]
+   * packages/apps/XPerienceCenter/
+a80a1a5  fix thexperience   * won't allow https  [klozz]
+   * packages/services/Telecomm/
+9d6a21f  Telecomm: Fix error due to protected broadcast  [Michael W]
+   * vendor/cmsdk/
+285247f  cmsdk: rebrand to LineageOS  [klozz]
+8af6f25  cmsdk: Deprecate STATS_COLLECTION_REPORTED CMSetting  [klozz]
+45d2d40  Automatic translation import  [klozz]
+7d2884e  Automatic translation import  [klozz]
+b0764b5  Automatic translation import  [klozz]
+9f0ce62  Automatic translation import  [klozz]
+c4f78c3  Automatic translation import  [klozz]
+
+====================
+     01-03-2017
+====================
+
+   * build/
+5c7ab13  fix clang for ARM64  [klozz]
+91f8e1a  disable libntfs from new clang  [klozz]
+   * device/leeco/x2/
+933e147  again fix this  [GitHub]
+2488a60  fix json  [GitHub]
+   * frameworks/base/
+5dccd50  add wine color when you active battery saver  [klozz]
+39cfda3  fwb:Bring a sexy shutdown like miui :D  [klozz]
+   * hardware/qcom/display-caf/msm8996/
+12980ba  hwc2: Only set display_width and display_height when equal to zero  [Rashed Abdel-Tawab]
+   * kernel/motorola/msm8916/
+9c044a4  fix adreno idler build  [klozz]
+5afe784  temporarily enable MSM_TZ_LOG  [klozz]
+5054c67  defconfig: Enable config IP_NF_MATCH_RPFILTER  [klozz]
+7c3f93f  arm: fix handling of F_OFD_... in oabi_fcntl64()  [klozz]
+5cccff3  mm: cma: fix incorrect type conversion for size during dma allocation.  [klozz]
+2a9f839  ecryptfs: don't allow mmap when the lower fs doesn't support it  [klozz]
+541a33c  arm64: make sys_call_table const  [klozz]
+d0def8f  qcrypto: protect potential integer overflow.  [klozz]
+bdc7452  msm: kgsl: Reserve a context ID slot but don't populate immediately  [klozz]
+2d5a13e  net: rmnet_data: Change the print format for addresses  [klozz]
+cefdfb7  drm: Remove use of deprecated memory barriers  [klozz]
+3e36e59  kgsl/drm: Typecast pointer to type of correct size  [klozz]
+af872bd  kgsl/drm: Remove use of deprecated memory barriers  [klozz]
+7f79a4c  kgsl/drm: Get gpu address before calling MMU map  [klozz]
+f9bfb45  kgsl/drm: Featurize genlock support  [klozz]
+c2f69ff  kgsl/drm: Remove dependency with kgsl-drm.  [klozz]
+f788835  kgsl/drm: Avoid masking fake crtc irq  [klozz]
+7926f56  kgsl/drm: add mutexing with enable/event handler.  [klozz]
+bdde833  kgsl/drm: add self refresh workqueue to support updating.  [klozz]
+c211ebf  kgsl/drm: add fake vsync for WB operation.  [klozz]
+07f6f37  kgsl/drm: add drm_dev in private pointer.  [klozz]
+ff1bf8c  kgsl/drm: Fix resource leakage when there are some errors  [klozz]
+64df29e  kgsl/drm: Support clock control the register control.  [klozz]
+5e7b85c  kgsl/drm: Enable IRQ sharing from MDP  [klozz]
+c06c2ea  kgsl/drm/dts: Add drm dts file for kgsl-drm.  [klozz]
+5ba2d1a  kgsl/drm: Add IRQ feature for vsync.  [klozz]
+aacf7e2  kgsl/drm: Add read ops on kgsl_drm.  [klozz]
+72d52c9  kgsl/drm: Add platform device feature in kgsl-drm.  [klozz]
+427ea95  kgsl/drm: Add gem_info for memps.  [klozz]
+1455077  kgsl/drm: Change dma_buf api  [klozz]
+818a37a  kgsl/drm: Add prime feature for fd handling.  [klozz]
+8719e51  msm: mdss: Silence warning message on enabling DRM driver  [klozz]
+f4356a4  msm: camera: sensor: Validate eeprom_name string length  [klozz]
+3db3ea3  cgroup: prefer %pK to %p  [klozz]
+92c574a  msm: camera: cpp: Add validation for v4l2 ioctl arguments  [klozz]
+71a1063  qseecom: remove entry from qseecom_registered_app_list  [klozz]
+bc25ca2  msm: crypto: fix issues on digest buf and copy_from_user in qcedev.c  [klozz]
+81922ce  msm: cpp: Fix for buffer overflow in cpp.  [klozz]
+d490f6e  msm: camera: flash: Validate the power setting size  [klozz]
+6500b3f  msm: camera: Print kernel pointer using correct specifier  [klozz]
+3b745df  msm: camera: fix bound check of offset to avoid overread overwrite  [klozz]
+aa3c1c4  msm: sensor: Validationg function pointers before using them  [klozz]
+ebd079e  arm/dts: remove unused dt entries for ion system contig heap  [Sultan Qasim Khan]
+
+====================
+     01-02-2017
+====================
+
+   * build/
+ca05b5a  move to lineage  [GitHub]
+   * device/leeco/x2/
+c06e160  add vendor blobs  [GitHub]
+82aac40  fix init to track device name on xpe  [GitHub]
+38fbade  fix dependencies.  [GitHub]
+b2684a7  xpe love <3  [klozz]
+   * device/motorola/athene/
+ff8dd58  add vendor blobs  [GitHub]
+   * device/motorola/msm8226-common/
+998d7aa  vendor blobs  [GitHub]
+   * device/motorola/msm8916-common/
+b96422f  add f2fs cache support  [klozz]
+d6c832b  fix init.qcom.rc  [GitHub]
+f96d037  msm8916-common: add new blob for MPI24.241-15.3 release  [klozz]
+f81515e  msm8916-common: make libmot-qc-fd-offline device specific  [klozz]
+d61ab0e  msm8916-common: add support for harpia  [klozz]
+5fc2ea7  Revert "msm8916-common: Add VoLTE stuff"  [klozz]
+b2dd6ed  fix resources  [GitHub]
+   * device/motorola/victara/
+2e7a0c3  drop build with new clang  [GitHub]
+963bd41  fix fsck sepolicy  [klozz]
+b847ce8  add vendor blobs  [GitHub]
+3157e00  Bring some xpe love part2  [GitHub]
+a956279  bring some XPE love part 1  [GitHub]
+   * device/qcom/common/
+c163fc7  Merge pull request #10 from CyanogenMod/cm-14.1  [GitHub]
+   * device/wingtech/wt88047/
+dd20177  Update xpe.mk  [GitHub]
+   * kernel/motorola/msm8916/
+9a8dfd3  Regenerate defconfig to be like osprey and update osprey  [klozz]
+4f77bf5  updates to be inline with osprey  [GitHub]
+   * packages/apps/OmniClock/
+86afbe9  OmniClock: new CitiesActivity layout  [maxwen]
+   * vendor/motorola/
+0cc4a62  Drop irqbalance  [klozz]
+2f74bb7  addison: Update to MPNS24.104-44-7  [klozz]
+1416115  addison: Get rid of Potter libs  [klozz]
+c127fae  addison: Fix fingerprint  [klozz]
+3d41e09  addison: ims biatch!  [klozz]
+1076e51  addison: Import athene libjustshoot  [klozz]
+19ed776  addison: Add IPA support  [klozz]
+5cc34fe  addison: Remove perfd for now  [klozz]
+8e56c98  addison: Switch to athene DRM blobs  [klozz]
+c4a8b23  Add Moto Z Play (addison)  [klozz]
+fc3cb3d  Merge pull request #1 from TheMuppets/cm-14.1  [GitHub]
+
+====================
+     01-01-2017
+====================
+
+   * device/cyanogen/msm8916-common/
+d5e3e68  Update qcom-media.mk  [GitHub]
+f356867  Rename cm.dependencies to xpe.dependencies  [GitHub]
+   * device/wingtech/wt88047/
+403e3a8  Rename cm.dependencies to xpe.dependencies  [GitHub]
+4772e18  Update and rename cm.mk to xpe.mk  [GitHub]
+   * frameworks/opt/telephony/
+0663988  SubscriptionController: Make sure cis are not null  [Willi Ye]
+   * kernel/wingtech/msm8916/
+ec6f806  wt88047: Use `wt88047_defconfig` for building kernel  [nicknitewolf]
+   * vendor/motorola/
+3b473b7  harpia: initial blob set  [Tom Powell]
+c606cd8  msm8916-common: update blobs  [Tom Powell]
+31a4cdc  msm8916-common: make libmot-qc-fd-offline device specific  [Tom Powell]
+
+====================
+     12-31-2016
+====================
+
+   * kernel/motorola/msm8916/
+1c8a11a  usb: Avoid exposing kernel addresses  [Sultan Qasim Khan]
+5a7932b  net: ping: check minimum size on ICMP header length  [Sultan Qasim Khan]
+762f0cb  net: avoid signed overflows for SO_{SND|RCV}BUFFORCE  [Sultan Qasim Khan]
+c5e860d  tcp: fix potential memory corruption  [Sultan Qasim Khan]
+4d4fd95  cgroup: prefer %pK to %p  [Sultan Qasim Khan]
+3cd708f  msm: crypto: Fix integer over flow check in qce driver  [Sultan Qasim Khan]
+857907d  ecryptfs: don't allow mmap when the lower fs doesn't support it  [Sultan Qasim Khan]
+
