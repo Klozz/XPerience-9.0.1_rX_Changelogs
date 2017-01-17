@@ -1,0 +1,149 @@
+====================
+     01-17-2017
+====================
+
+   * build/
+06f90ae  Flash SuperSU [1/2]  [klozz (TeamMEX)]
+eb138a6  Revert "Revert "for now Revert "Revert "Add PRODUCT_BOOTANIMATION""""  [klozz (TeamMEX)]
+19e0baf  Revert "for now Revert "Revert "Add PRODUCT_BOOTANIMATION"""  [klozz]
+   * device/wingtech/wt88047/
+d6451b9  new kernel  [GitHub]
+ef4b415  Update xpe.dependencies  [GitHub]
+   * frameworks/base/
+5256331  another carrierlabel fix (?  [klozz]
+ad0cf8c  carrier label fix?  [klozz]
+c3f1bd7  GoogleAudio: update effect sound and add pixel sounds [1/2]  [klozz]
+   * hardware/qcom/fm/
+b516be3  Use BOARD_HAVE_QCOM_FM flag  [Ethan Chen]
+febb559  Revert "fm: do not build for BCM FM devices"  [Ethan Chen]
+   * packages/apps/Settings/
+dd1b8f0  remove bad header from bad merge  [GitHub]
+9a60fd8  add additional battery saver steps  [klozz]
+6b5b16c  Add Substratum dashboard tile  [klozz]
+433cfb1  Custom app dashboard icons: Update coloring location With this commit: http://review.projektsubstratum.com/#/c/259/, we need to make sure that the tint is applied like all of the other dashboard icons.  [klozz]
+cae0d11  Hide the "show/hide overlays" when no overlay installed  [klozz]
+227da31  Exclude overlays from the app counter  [klozz]
+   * system/sepolicy/
+b65c143  Revert "Patch to allow SuperSU to run in SELinux enforcing"  [klozz]
+b49eba1  first part f su changes in vendor/XPe  [klozz]
+930c209  Patch to allow SuperSU to run in SELinux enforcing a special thanks to @Chainfire for pointing me to the right places and @imoseyon for helping with the selinux rules  [klozz]
+8c8455a  Revert "Allow apps in /system/priv-app to call and execute su commands"  [klozz]
+ca550a2  Add policy to SELinux to allow ViPER4Android in enforcing mode  [klozz]
+2552058  Allow apps in /system/priv-app to call and execute su commands  [klozz]
+   * vendor/XPe/
+39fe881  fix su path  [klozz (TeamMEX)]
+d28e657  fix su path  [klozz (TeamMEX)]
+1ceb7d3  some support to enable apps on google play  [klozz (TeamMEX)]
+fe8dfda  Flash SuperSU [2/2]  [klozz (TeamMEX)]
+cc60d2b  remove 640 not used  [klozz (TeamMEX)]
+dc2164c  Update bootanimation  [klozz (TeamMEX)]
+399cf08  Revert "xpe: Rework boot animation generation"  [klozz (TeamMEX)]
+7788579  Revert "bootanim: Use a for loop to make part# folders"  [klozz (TeamMEX)]
+1f0247c  Revert "enable bootanimation"  [klozz (TeamMEX)]
+a1c6925  Revert "make ejecutable script"  [klozz (TeamMEX)]
+fb2bfa0  Revert "move to png's"  [klozz (TeamMEX)]
+110836a  move to png's  [klozz (TeamMEX)]
+f4b445a  make ejecutable script  [klozz]
+6823b5f  enable bootanimation  [klozz (TeamMEX)]
+2aec5e6  bootanim: Use a for loop to make part# folders  [klozz (TeamMEX)]
+805437e  xpe: Rework boot animation generation  [klozz (TeamMEX)]
+7f8530d  Set new pixel sounds as defaults  [GitHub]
+9142b01  Materialize NFC Tags Icon  [klozz]
+3ba2f3d  TelephonyProvider Icons  [klozz]
+7bd9c44  Enable assistant on all devices  [klozz]
+d26fe1d  overlays: pixel theme *Settings *EmergencyInfo *StorageManager *Framework-res  [klozz]
+a6b0ac4  fix su  [GitHub]
+cf75d31  vendor: Allow platform_app to run su_exec() (2/2)  [GitHub]
+ee9b72c  vendor: Allow platform_app to run su_exec() (2/2)  [GitHub]
+bc00f3d  vendor: sepolicy: Allow system_app to run su_exec()  [GitHub]
+
+====================
+     01-16-2017
+====================
+
+   * build/
+7804bfb  build: kernel: build arm kernel modules with -fno-pic  [GitHub]
+   * device/wingtech/wt88047/
+fa352e0  wt88047: enable adaptive LMK and adjust vm heapsize  [CarlosArriagaCM]
+00c00b7  wt88047: proprietary: Cleanup proprietary-files-qc  [CarlosArriagaCM]
+   * hardware/intel/common/omx-components/
+5abed81  omx-component: fix video corruption  [Jason Riordan]
+   * hardware/intel/img/psb_video/
+72b4180  Encode: correctly handle VAConfig attributes on medfield/CTP  [Jason Riordan]
+e987d59  Fix video encoding on clovertrail  [Jason Riordan]
+399140b  Add clovertrail support (based on the tree at 686e11709b57bc57ee94c3166f187fec959fd43b)  [Jason Riordan]
+747765a  Cleanup pvr_drv_video makefile for clovertrail support  [Jason Riordan]
+   * hardware/qcom/fm/
+4c0b246  fm: do not build for BCM FM devices  [David]
+   * packages/apps/Dialer/
+4ff2151  Dialer: Fix translations  [Michael Bestas]
+   * packages/apps/OmniClock/
+713d1e3  OmniClock: mark some strings translatable="false"  [Andreas Blaesius]
+   * packages/apps/Settings/
+e8a3390  Settings: Fix translations  [klozz]
+43a314f  Allow restricted profiles on phones  [klozz]
+66fbe5a  Settings: Improve hotspot timeout strings  [klozz]
+6b3a4be  Settings: Let's get to choose keyboard again in Settings.  [klozz]
+   * packages/apps/Snap/
+32825fc  Snap: CAF strings cleanup second interation  [Michael Bestas]
+   * vendor/XPe/
+aef3dcf  zplay  [GitHub]
+06ebf95  Disable SU by default  [klozz]
+79f13c8  overlay: Enable Visual Voicemail for Verizon devices  [klozz]
+f80ed7f  apns: Update H2O Wireless  [klozz]
+
+====================
+     01-15-2017
+====================
+
+   * device/wingtech/wt88047/
+88286a9  wt88047: do not set rtc poweron_alarm in init  [CarlosArriagaCM]
+a4da835  wt88047: art: Remove ART small mode  [CarlosArriagaCM]
+dbc63f6  wt88047: audio: remove unused devices  [CarlosArriagaCM]
+   * packages/apps/Bluetooth/
+36ec67c  cleanup unused resource strings  [Adrian DC]
+   * packages/services/Telephony/
+0245fca  Telephony: Fix translations  [Michael W]
+
+====================
+     01-14-2017
+====================
+
+   * device/wingtech/wt88047/
+902aa7a  Update README.md  [GitHub]
+   * packages/apps/Snap/
+65bec49  Snap: Fix missing untranslatables  [Michael W]
+   * system/bt/
+cc99880  bt: Allowed WBS to be disabled when building with QTI_SW  [Christopher R. Palmer]
+   * vendor/qcom/binaries/
+a78a120  msm8952: Add graphics blobs  [Rashed Abdel-Tawab]
+
+====================
+     01-13-2017
+====================
+
+   * frameworks/base/
+e23f459  Pulse: forward port visualizer lock api  [klozz]
+   * kernel/motorola/msm8952/
+b73986d  sg_write()/bsg_write() is not fit to be called under KERNEL_DS  [Silesh K Nair]
+f113397  ALSA: pcm : Call kill_fasync() in stream lock  [Silesh K Nair]
+5cad678  splice: introduce FMODE_SPLICE_READ and FMODE_SPLICE_WRITE  [Silesh K Nair]
+f6f800e  netlink: Fix dump skb leak/double free  [Silesh K Nair]
+ef3ef11  netlink: Eliminate kmalloc in netlink dump operation.  [Silesh K Nair]
+5f3d2b4  ANDROID: mnt: remount should propagate to slaves of slaves  [Silesh K Nair]
+a0bd10f  msm: ipa: sync with LA.BR.1.3.6_rb1.11  [Silesh K Nair]
+   * packages/apps/Email/
+592c2e3  Revert "Add account"  [Dan Pasanen]
+   * packages/apps/OmniClock/
+dd35e66  OmniClock: fix old derp with silence after settings  [maxwen]
+   * packages/apps/RainbowUnicorn/
+873a6bb  Add Notification Drawer Fragment  [klozz (TeamMEX)]
+52d6f17  remove patch  [klozz (TeamMEX)]
+38f7387  add display fragment  [klozz (TeamMEX)]
+   * packages/apps/Snap/
+69b66d2  Fix camera controls rotation.  [Danny Baumann]
+2876bc5  Snap: Replace strings  [Michael W]
+   * vendor/qcom/binaries/
+dde8fac  Revert "msm8996: graphics: Add 32bit libmm-disp-apis and libmm-qdcm"  [Dan Pasanen]
+4eba500  Revert "msm8996: graphics: Update from display.lnx.3.0.r9-rel"  [Dan Pasanen]
+
