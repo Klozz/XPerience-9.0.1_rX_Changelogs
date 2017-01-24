@@ -1,0 +1,251 @@
+====================
+     01-24-2017
+====================
+
+   * device/motorola/athene/
+530ac09  Merge remote-tracking branch 'boul/cm-14.1' into xpe-11.1  [klozz]
+2e640b4  athene: fix cpusets values  [Shreps]
+5dd722e  athene: address new denials  [Shreps]
+   * device/motorola/msm8226-common/
+73615c2  msm8226-common: Enable blur  [klozz]
+   * device/motorola/msm8916-common/
+afdcb1e  msm8916-common: Use BOARD_HAVE_QCOM_FM flag  [klozz]
+21c8974  msm8916-common: Properly include libril and drop unused blobs  [klozz]
+7aa570a  msm8916-common: Add IMS shim  [klozz]
+85abaed  msm8916-common: Add fs_config support for custom binary  [klozz]
+df4bf7c  msm8916-common: Remove net_raw/net_admin from ims daemons.  [klozz]
+e20b8e1  msm8916-common: Add VoLTE stuff  [klozz]
+9cfe2cf  BoardConfig: Rename CHARGER_* to BOARD_CHARGER_*  [klozz]
+   * frameworks/base/
+ada806f  update api again  [klozz]
+   * kernel/motorola/msm8226/
+0f8d828  Merge remote-tracking branch 'upstream/cm-14.1' into xpe-11.1  [klozz]
+   * kernel/motorola/msm8916/
+59edd71  Merge remote-tracking branch 'upstream2/cm-14.1' into xpe-11.1  [klozz]
+   * packages/apps/RainbowUnicorn/
+f9f6120  fix display fragment it is void fix fc nothing added yet  [klozz]
+   * packages/apps/Settings/
+18a3beb  Add support to new xpe active display app  [klozz]
+   * packages/apps/Snap/
+e0a3c03  Correctly return to film strip after editing a picture.  [Danny Baumann]
+   * vendor/XPe/
+19b011b  add XPerience Display  [klozz]
+6abe815  add XPerience Display  [klozz]
+   * vendor/motorola/
+4293696  add blur lib  [klozz]
+27eccdd  osprey: Update proprietary files  [klozz]
+be27b39  athene: sync with NPJ25.93-14  [klozz]
+1a179dd  msm8960_jbbl: egl: Stop advertising ES3 context support  [klozz]
+be184f2  msm8916-common: Properly include prebuilt libril  [klozz]
+b3966a0  msm8916-common: Add IMS blobs  [klozz]
+4ec5ae4  msm8916-common: Remove no more used blobs  [klozz]
+ef7c878  merlin: Drop charge_only_mode  [klozz]
+8339b58  merlin: Use libmmcamera_faceproc.so from shamu to avoid text relocations  [klozz]
+ce09740  merlin: Import athene libjscore and libjustshoot  [klozz]
+0975720  merlin: Update proprietary files  [klozz]
+b674db5  merlin: initial blob set  [klozz]
+0b90cfb  shamu: Add missing CarrierServices.apk  [klozz]
+54e1ad7  shamu: Update blobs to N6F26Q  [klozz]
+
+====================
+     01-23-2017
+====================
+
+   * frameworks/base/
+83d6af8  update one handed drawables to pixel blue to match system  [klozz]
+32aca01  Add new feature of One-hand UI Mode  [klozz]
+fa180d7  fix bad parsing xml  [klozz]
+c4a383c  Return the receiver of bootreceiver it fix the cpuoverlay  [klozz]
+   * frameworks/native/
+73dbc7a  Add new feature of One-hand UI Mode Bug: 33118157 Test: builds, and test feature in bug 33118157  [klozz]
+   * hardware/qcom/audio-caf/msm8952/
+37f832f  Merge remote-tracking branch 'caf/LA.BR.1.3.6_rb1.12' into cm-14.1-caf-8952  [Ethan Chen]
+a2549f5  hal: Shush some debug logging  [Luca Stefani]
+   * hardware/qcom/display-caf/msm8952/
+5826a44  Merge remote-tracking branch 'caf/LA.BR.1.3.6_rb1.12' into cm-14.1-caf-8952  [Ethan Chen]
+   * packages/apps/RainbowUnicorn/
+a4d612c  Enable one hand ui mode  [klozz]
+   * packages/apps/masquerade/
+1c402c5  Release 20P: Initiate the caller package checking system  [Nicholas Chum]
+   * system/extras/su/
+bce2976  su: Enable Wall and fix build  [Luca Stefani]
+
+====================
+     01-22-2017
+====================
+
+   * hardware/qcom/display-caf/msm8952/
+d7f8861  gralloc: allow forcing old pixel alignment  [LuK1337]
+   * kernel/motorola/msm8916/
+dcfe703  UPSTREAM: l2tp: fix racy SOCK_ZAPPED flag check in l2tp_ip{,6}_bind()  [Alberto97]
+11175d3  defconfig: Disable CORE_CTL_HELPER  [Alberto97]
+9eadc87  mnt: remount should propagate to slaves of slaves  [Alberto97]
+
+====================
+     01-21-2017
+====================
+
+   * device/motorola/athene/
+2f0acae  ipacm: Fix KW issues  [Shreps]
+a86721c  athene: address some kernel denials  [Shreps]
+42056b5  athene : Use BOARD_HAVE_QCOM_FM flag  [Shreps]
+   * device/wingtech/wt88047/
+1eb94f8  new lib for blur efect  [GitHub]
+559d6bd  wt88047: Enable blur  [GitHub]
+74b16b5  move to rainbowunicorn blobs  [GitHub]
+   * frameworks/base/
+b164d91  fingerprint: disable when device is in pocket  [klozz]
+d3d5b36  policy: introduce pocket lock  [klozz]
+b4c149c  pocket: introduce pocket judge  [klozz]
+90123be  FWB: fix multi-sim colors this commit partial reverts  [GitHub]
+   * frameworks/native/
+b749db6  Fix clang static analyzer warnings.  [klozz]
+4d67a83  Release resources when repeating dlopen-dlcose.  [klozz]
+   * hardware/qcom/display-caf/msm8952/
+ee2bb0e  Fix duplicate copy file rules  [Luca Stefani]
+   * manifest/
+b0e7833  Add revision to unicorn  [GitHub]
+   * packages/apps/OmniClock/
+f0ea321  OmniClock: correcly center digitial widget for am/pm mode  [maxwen]
+   * vendor/XPe/
+1f9c2cf  drop grouper, add wt88047  [GitHub]
+cf899d0  Update changelog  [GitHub]
+   * vendor/motorola/
+2b11441  Add blur support  [klozz]
+
+====================
+     01-20-2017
+====================
+
+   * build/
+8fac183  Revert "Flash SuperSU [1/2]"  [klozz]
+a5586f1  build sign_target_files_apks.py: clean tmp on exit  [klozz]
+f7672fe  build: Append -dtb to kernel image name if TARGET_KERNEL_APPEND_DTB is set  [klozz]
+7958d25  Revert "Clang: Use O3"  [klozz]
+96d5878  Revert "clang: Use 3.8"  [klozz]
+de89265  Revert "DragonTC and Polly support Test 12 [NOUGAT]"  [klozz]
+3a12898  Revert "DTC: Disable all stagefright libraries"  [klozz]
+642b59b  Revert "DTC Updates"  [klozz]
+f303a04  Revert "fix missing endif"  [klozz]
+144d406  Revert "Fix modules not supported polly arm"  [klozz]
+5621b24  Revert "Add support to disable clang optimization"  [klozz]
+5f92cb6  Revert "disable libntfs from new clang"  [klozz]
+acc7d4c  Revert "fix clang for ARM64"  [klozz]
+72749a6  Revert "disable clang for now"  [klozz]
+   * device/motorola/addison/
+4a0464f  add blur lib  [GitHub]
+570313d  Addison: Enable blur  [GitHub]
+9ac0713  label /persist block device and allow fsck access  [klozz]
+4607af1  enable burn in protect  [klozz]
+2eea4d1  move to xpe  [klozz]
+   * device/motorola/msm8226-common/
+910fec2  msm8226-common: Enable BOARD_HAVE_QCOM_FM  [klozz]
+4548734  msm8226-common: Remove our custom mkbootimg  [klozz]
+   * device/qcom/common/
+38fe4f3  Merge remote-tracking branch 'upstream/cm-14.1' into xpe-11.1  [klozz]
+   * device/wingtech/wt88047/
+69d1270  wt88047: Use original Adaptive LMK values  [CarlosArriagaCM]
+e410aa2  wt88047: fstab: Update flags and mount points  [CarlosArriagaCM]
+6d3cc46  wt88047: init: Update board_id parsing method  [CarlosArriagaCM]
+70c2ea2  wt88047: audio: Disable fluence mode  [CarlosArriagaCM]
+f80ae12  Revert "wt88047: Disable fluence in voicecall"  [CarlosArriagaCM]
+590fdba  fix typo  [GitHub]
+52f844d  fix typo  [GitHub]
+   * external/sqlite/
+d61366c  sqlite: upgrade to SQLite 3.16.2  [klozz]
+3a18828  sqlite: upgrade to SQLite 3.16.1  [klozz]
+96c3a78  sqlite: upgrade to SQLite 3.16.0  [klozz]
+373d5e9  sqlite: Disable SDCLANG  [klozz]
+55dc7c5  sqlite: upgrade to SQLite 3.15.2  [klozz]
+64bac3f  sqlite: upgrade to SQLite 3.15.1  [klozz]
+813bdbd  sqlite: upgrade to SQLite 3.15.0  [klozz]
+6307208  build: export sqlite include path  [klozz]
+f7a7efe  external/sqlite/android cleanup.  [klozz]
+8b19e90  sqlite: upgrade to SQLite 3.14.1  [klozz]
+849f56d  sqlite: upgrade to SQLite 3.14.0  [klozz]
+3c1d439  sqlite: upgrade to SQLite 3.13.0  [klozz]
+1f3c170  Maybe fix mac build  [klozz]
+342f3a6  reduce differences between Android and upstream  [klozz]
+   * frameworks/base/
+f742ce1  fix bootanimation inclusion to give support on substratum  [klozz]
+8ddbd00  N-Extras: Add dynamic theme BootAnimation support  [klozz]
+1758e61  doze: allow grayscale even if invert boolean is false  [klozz]
+f38d458  OMS: StrictMode and files under /data/system/theme/  [klozz]
+362ea66  Themes: Expose manifest styles for themes  [klozz]
+aad27b5  remove missmerge  [klozz]
+abd4bf6  windowmanager: Add support for blur effects  [klozz]
+819298b  SystemUI: add Notification volume stream title  [klozz]
+4f1acbb  Readded Platinum Alarm sound as I miss it in newer builds.  [klozz]
+9cb4147  AudioService: Launch default music player on headset connect  [klozz]
+319bc00  NetworkManagement : Add ability to restrict app data/wifi usage  [klozz]
+f989908  sensors: Allow opting out of default batch size  [klozz]
+5f387a4  [SQUASHED] Frameworks: Cleanup and remove duplicate sounds  [klozz]
+1191153  Revert "UserController: Introduce Bootup Boost"  [klozz]
+e4e31e8  DefaultPermissionGrantPolicy: Pass correct arguments  [klozz]
+5adbfa3  UserController: Introduce Bootup Boost  [klozz]
+29d79f2  Fix clipping for edit screen of Quick Settings  [klozz]
+8daee19  Fix guts not expanding when QSPanel is expanded  [klozz]
+65d3b39  fix IndexOutOfBoundsException in AccessibilityManagerService..manageServicesLocked  [klozz]
+5c0defd  add NFC tile  [klozz]
+ac72e82  spinner: make the loading "spinner" animation smoother in non-holo apps  [klozz]
+   * frameworks/native/
+6f6357d  Fix surfaceflinger file descriptor leak  [klozz]
+   * hardware/qcom/audio-caf/msm8937/
+38090b9  msm8937: define missing reference to platform_set_snd_name (it make audio lib buildable for addison)  [klozz]
+   * kernel/motorola/msm8953/
+0089959  f2fs: fix missing read/write function pointers  [klozz]
+   * kernel/wingtech/msm8916/
+1b89209   ASoC: Re-restore previous WT88047 resistances config  [GitHub]
+1e4f61e  msm8916: defconfig: Regenerate defconfig  [GitHub]
+   * manifest/
+5f6a2da  track our sqlite  [GitHub]
+6f9c303  remove custom clang it make hard battery drain  [GitHub]
+   * packages/apps/CMParts/
+c8bd81a  remove more things related to battery  [klozz]
+c61dfd6  remove more things about battery  [klozz]
+04adf57  remove battery styles cuz it waz move to battery section like AOSPA(aka paranoid)  [klozz]
+   * packages/apps/RainbowUnicorn/
+96ed56c  fix malformed xml  [klozz]
+dabe19e  add toggle for heads up notifications on notification drawer setting  [klozz]
+   * packages/apps/Settings/
+b88ef6a  Revert "Settings: Add toggle for heads up notifications"  [klozz]
+fc09319  Revert "settings: Remove lock screen blur stuff breaking build"  [klozz]
+db6151b  Settings: Launch default music player on headset connect  [klozz]
+1b0a026  Settings: Add volume link notification switch  [klozz]
+e9871b0  Move notif volume pref on top of increasing ring pref  [klozz]
+5e6da3d  Settings: per-app cellular data and wifi restrictions  [klozz]
+f52fba9  Settings: update About screen device model fields  [klozz]
+31f9ee7  battery icon option based on aospa ps2: fix build using cm sdk  [klozz]
+   * system/sepolicy/
+e6c3f4b  Allow apps in /system/priv-app to call and execute su commands  [klozz]
+0a88f5b  domain: Create a dummy domain for qc's rmt and let it access /dev/mem  [klozz]
+ccc8b3d  Merge remote-tracking branch 'xpe/xpe-11.1' into xpe-11.1  [klozz]
+d70d268  isolated_app.te: Give permissions for using sdcardfs  [klozz]
+b5493be  isolated_app: allow access to pre-opened sdcard FDs  [klozz]
+b95c234  sepolicy: move sdcardfs media_rw_data_file rules to app.te  [klozz]
+8b015ed  sepolicy: allow sdcardd to remount sdcardfs  [klozz]
+3a67240  sepolicy: init: Workaround for tracing_on labeling issue  [klozz]
+   * vendor/XPe/
+aeb9ad5  Disable verbosity  [klozz]
+4a92178  ove mkdir to build script  [klozz]
+3f2caaf  ove mkdir to build script  [klozz]
+60eec28  ove mkdir to build script  [klozz]
+bce9977  ove mkdir to build script  [klozz]
+83ef021  move mkdir to build script  [klozz]
+29786ed  xperiasupport:Generate dirs  [klozz]
+d970aff  xperiasupport:make it executable  [klozz]
+42ff4f1  fix separattor  [klozz]
+3f50cb8  Enable SU  [klozz]
+0d4692e  build.sh: Fix ./rom-build.sh: line 108: [: missing `]'  [klozz]
+5760b7f  sepolicy: Add priv_app to neverallow rule  [klozz]
+9987d49  Merge remote-tracking branch 'xpe/xpe-11.1' into xpe-11.1  [klozz]
+832cc14  extract_utils: Detect output existence before moving it for backup  [klozz]
+ceceb30  Sepolicy: Add perm for find cmstatusbar  [klozz]
+f627209  cm: config: Remove obsolete props  [klozz]
+   * vendor/cmsdk/
+f5fd87c  update translations  [klozz]
+b7f9aed  update translations to be acording to xpe name sed -i s/LineageOS/XPerience/ values-*/strings.xml  [klozz]
+3ca5829  cmsdk: Fix @deprecated annotation mismatch warnings  [klozz]
+   * vendor/motorola/
+71d8ce9  Add Qcom Display Color Modes support  [klozz]
+b50af59  addison: Update from Potter (NPN25.115)  [klozz]
