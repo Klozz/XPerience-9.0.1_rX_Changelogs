@@ -1,0 +1,350 @@
+====================
+     01-30-2017
+====================
+
+   * build/
+dd5e5e5  change some information about the    *  [klozz]
+caf8995  envsetup: Use GNU sed commands if GNU sed is detected  [klozz]
+f4c1e98  build: qcom_target: Clean up QCOM_HARDWARE_VARIANT checks  [klozz]
+7719f4a  Always copy bootable images in BOOTABLE_IMAGES/  [klozz]
+e70ccd6  Revert "releasetools: Don't extract BOOTABLE_IMAGES when signing target files"  [klozz]
+e220662  Move ro.bootimage.build.fingerprint to build.prop  [klozz]
+3157bf6  core: Fix unified trees with no TARGET_OTA_ASSERT_DEVICE  [klozz]
+5638d01  core: include libf2fs_fmt_host_dyn in otatools  [klozz]
+d6cf48b  ota_from_target_files: Remove device dependent arguments  [klozz]
+dc6f9a7  releasetools: support reading release keys out of some sort of command  [klozz]
+494b4a9  releasetools: Add script to sign zips  [klozz]
+   * device/cyanogen/msm8916-common/
+1144ecb  msm8916-common: Use GID "wakelock" to control access to kernel wakelock  [CarlosArriagaCM]
+3d2bcae  msm8916-common: add system group to netmgrd process  [CarlosArriagaCM]
+0be02b7  msm8916-common: Use BOARD_HAVE_QCOM_FM flag  [CarlosArriagaCM]
+6054198  releasetools: Allow asserting baseband version  [CarlosArriagaCM]
+   * device/qcom/common/
+e89f783  Merge remote-tracking branch 'upstream/cm-14.1' into HEAD  [klozz]
+   * frameworks/av/
+e690119  libstagefright: Restore AOSP's handling of 24/32-bit wav files  [Christopher R. Palmer]
+   * frameworks/base/
+4695d1a  fwb:carrier label:another try to fix carrier label move to CM api  [klozz]
+fca0cc1  Correctly name LID_STATE_CHANGED broadcast  [klozz]
+e6f53a1  Automatic translation import  [klozz]
+eefcfb5  fbw:add correct check if blur has enabled or not  [klozz]
+e9b312e  Revert "Add overlay option for Settings.System.ACCELEROMETER_ROTATION_ANGLES"  [klozz]
+e975dbd  Fix window transformation related issue  [klozz]
+dde38d3  Make sure Zygote is running at process priority 0 after VM has started.  [klozz]
+b43447b  QS: Fix QuickQS visibility at non-first page  [klozz]
+950987c  Allow lid to send a generic COVER_CHANGED broadcast  [klozz]
+9db4e15  SystemUI: HotspotTile: Don't reset the number of connected clients  [klozz]
+204a3da  [2/3] Re-introduce custom charging on/off sounds  [klozz]
+b4da3b7  Update translations  [klozz]
+   * hardware/qcom/audio-caf/msm8937/
+4c9af62  msm8937: define missing reference to platform_set_snd_name (it make audio lib buildable for addison)  [klozz]
+   * kernel/motorola/msm8953/
+abef7e7  msm: kgsl: Fix overflow in sharedmem cache range operation function  [klozz]
+   * manifest/
+23322de  add the missing remote  [GitHub]
+0c08add  manifest: switch to LineageOS recorder remove aosp soundrecorder and cm screencast  [klozz]
+b1f6d3e  move to lineage chromium  [GitHub]
+   * packages/apps/CMParts/
+0c469fe  fix build  [klozz]
+3333f56  CMParts: Add reading mode strings  [klozz]
+aca6cec  [1/3] CMParts: Add CM charging sounds settings  [klozz]
+3ad79ee  Use valid network resources in getNetworkModeString()  [klozz]
+1ae5ded  CMParts: profiles: Remove old PagerTabStrip hack  [klozz]
+dea0622  ButtonBacklight: Preview timeout once user stops dragging  [klozz]
+b790d08  CMParts: Update button backlight brightness in real time  [klozz]
+ce4caca  ExpandedDesktop: Don't re-populate the app list in rebuild()  [klozz]
+edf4507  CMParts: Fix expandable desktop  [klozz]
+5ac9b73  fix arrays from the last change related to clock position  [klozz]
+f3b378e  update translations  [klozz]
+56b418c  CMParts: Match pulse speed to frameworks default  [klozz]
+2fbd31c  Fix handling of auto power save summary.  [klozz]
+a7e89dc  CMParts: bugreport_in_power_menu lives in Global Settings  [klozz]
+fa9a8ef  CMParts: Add UPDATE_POWER_MENU protected-broadcast  [klozz]
+5d5514f  XPeParts: Properly fix auto-power-save string format exception We were originally encountering an issue when formatting the auto-power-save ListPreference summary.  [klozz]
+   * packages/apps/RainbowUnicorn/
+293551a  Update Crowdin configuration file  [klozz]
+1106667  update traslations  [klozz]
+fbd329f  Create crowdin.yaml  [klozz]
+   * packages/apps/Recorder/
+8e9a287  Recorder: grant permissions to read opened files to apps started from notifications  [Joey Rizzoli]
+29a86fe  Recorder: tmp app icon  [Joey Rizzoli]
+5231b70  Recorder: update gradle plugin  [Joey Rizzoli]
+   * packages/apps/Settings/
+f917e1c  Settings: point to XPerience Updater  [klozz]
+08999e2  Settings: Don't crash in SUW if no talkback service is installed  [klozz]
+3843138  Automatic translation import  [klozz]
+e81e4d1  Handle SubSettings instance leaks in Index.java  [klozz]
+b3c731f  SoundSettings: Prevent NPE due to linked volumes change  [klozz]
+2fd893b  [3/3] Settings: Add CMParts charging sound settings preference  [klozz]
+951efe7  translations  [klozz]
+720debf  update translations  [klozz]
+   * vendor/XPe/
+bce96e5   mergeshits  [klozz]
+77c55a4  add LineageOS recorder * remove aosp soundrecorder and cm screencast * add only on full builds  [klozz]
+1bb4051  add LineageOS recorder * remove aosp soundrecorder and cm screencast * add only on full builds  [klozz]
+7970e3d  apns: Remove differentiation between FreedomPop GSM APNs  [klozz]
+0fd49c0  apns: Correct FreedomPop US LTE APN  [klozz]
+b1900a9  apns: Add differentiation to FreedomPop Global GSM APN  [klozz]
+76d58ae  apns: Add FreedomPop US LTE sim APN  [klozz]
+d89fea0  apns: Correct FreedomPop Global GSM APN  [klozz]
+62b8c91  apns: Add Freedompop foggmobile APN  [klozz]
+abc35a1  extract_utils: Detect output existence before moving it for backup  [klozz]
+b016a6a  http_prebuilt: Improve retrieval of artifacts from archive  [klozz]
+591505f  http_prebuilt: Implement archive of artifacts * checksum will be downloaded and asserted to prevent a     redownload every clean * Archives will exist (invisibly) at vendor/cm/prebuilt/arch  [klozz]
+022f6e9  extract_utils: Update smali/backsmali to v2.2b4  [klozz]
+41f06fd  tools: getb64key - print the base64 version of a PEM public key file  [klozz]
+27d01f1  common: Correct indentation Indentation should be 4 spaces here.  [klozz]
+
+====================
+     01-29-2017
+====================
+
+   * device/motorola/msm8960dt-common/
+57f141d  Merge https://github.com/XPerience-AOSP-Lollipop/android_device_motorola_msm8960dt-common into HEAD  [klozz]
+cf2ae53  msm8960dt-common: Add GraphicBuffer shim export it later if needed  [klozz]
+86a1c7f  msm8960dt-common: Shim some binaries thermald,qseecomd,time_daemon,rmt_storage binary needs this function "__android_log_loggable" rild needs this symbol "_ZN7android6Parcel13writeString16EPKtj"  [klozz]
+e828a9c  fix sepolicy Multiple same specifications for /dev/smd3. Multiple same specifications for /system/etc/init\.qcom\.bt\.sh.  [klozz]
+5c35595  fsck isnt supported xd  [klozz]
+52c5b15  sepolicy: remove duplicated policy  [klozz]
+6bfa448  fix sepolicy Multiple same specifications for /dev/smd3. Multiple same specifications for /system/etc/init\.qcom\.bt\.sh.  [klozz]
+32b5901  fsck isnt supported xd  [klozz]
+98ff324  sepolicy: remove duplicated policy  [klozz]
+b412d26  hax to enable :v adb lazy process  [klozz]
+19cd97c  msm8960dt-common: Address bootmodem denials  [klozz]
+bc3eaab  msm8960dt-common address fsck denials  [klozz]
+7c59495  msm8960dt-common: Address some denials  [klozz]
+   * device/qcom/common/
+58bf7c3  extractors: Set INITIAL_COPYRIGHT_YEAR  [Michael Bestas]
+   * hardware/qcom/audio-caf/msm8996/
+25bbb88  Merge tag 'LA.UM.5.5.r1-02500-8x96.0' into cm-14.1-caf-8996  [Ethan Chen]
+0c8637a  Revert "post proc : volume listener : fix effect release crash"  [Ethan Chen]
+   * hardware/qcom/display-caf/msm8996/
+b55e7d6  Merge tag 'LA.UM.5.5.r1-02500-8x96.0' into cm-14.1-caf-8996  [Ethan Chen]
+   * hardware/qcom/media-caf/msm8996/
+a0bb242  Merge tag 'LA.UM.5.5.r1-02500-8x96.0' into cm-14.1-caf-8996  [Ethan Chen]
+   * kernel/motorola/ghost/
+3ebd80e  drivers: gpu: Sync with google sources and use commits from here https://github.com/AdrianDC/android_kernel_sony_msm8960t/commits/cm-14.1/drivers/gpu/msm  [klozz]
+   * packages/apps/Snap/
+a425da8  Snap: store module index  [Ethan Chen]
+2bc5051  Snap: Fix NPE when parameters.getSupportedVideoSizes() is null  [Ethan Chen]
+   * packages/services/Telecomm/
+51d6bb0  CallAudioModeStateMachineTest: fix compilation  [Simon Shields]
+   * vendor/motorola/
+2da4b46  move to qcom binary yes im too lazy to delete old binary from here and I only remove the link  [klozz]
+
+====================
+     01-28-2017
+====================
+
+   * build/
+00ce963  security: new recovery key  [klozz]
+   * device/motorola/addison/
+fd2a362  Update camera blobs list  [klozz]
+4366da6  Update build fingerprint  [klozz]
+   * hardware/broadcom/libbt/
+4ee210c  Broadcom BT: Add support fm/bt via v4l2.  [Nickolay Semendyaev]
+   * hardware/qcom/audio-caf/msm8916/
+ce91b1e  Merge remote-tracking branch 'caf/LA.BR.1.2.9_rb1.11' into HEAD  [Luca Stefani]
+   * kernel/motorola/msm8952/
+f544721  fix power efficiency  [klozz]
+59560c9  enable alessa  [klozz]
+96d7fdc  Alessa_plug:added support to octacore device  [klozz]
+30cbb0b  Alessa_plug: Remove Alessa_plug name from the version number  [klozz]
+fe9e1b5  Alessa_plug: Remove the hax aren't needed here ;) and Enable alessa  [klozz]
+b88ed80  Alessa_plug: v2.0.0 Improve hotplug algorithm  [klozz]
+5d1abfd  alessa_plug:debug disable debug messages  [klozz]
+aebfde4  Alessa_plug: 1.4.5 code cleanup  [klozz]
+94ecf8f  Alessa_plug:fix some logic  [klozz]
+0a5ce19  update alessaplug and changes update alessa to 1.4.2 alessa_plug: 1.4.2 Add some cpu idle info required if aren't present on cpufreq.c  [klozz]
+593c57f  Alessa Plug: Change powersuspend to lcd_notifier  [klozz]
+53f1af0  Alessa_PLUG: enable option to enable or disable hotplug  [klozz]
+b73f14c  Alessa_Plug: Update to 1.3 * v1.2.1 Sampling rate tunable- * v1.3 Fix some endurance mode * Threshold are now tunable  [klozz]
+79fd838  Added New Alessa_Plug: Optimized for QuadCore devices: * It plugs down 3 cores * when the device suspends and brings them online only when awake leading to * significant power savings  [klozz]
+78e7e8f  lcd_notify: Only pass display state to lcd_notifer_call_chain - We can pass 'NULL' directly to blocking_notifier_call_chain - Remove unused struct 'lcd_event'  [klozz]
+d3107a7  msm: mdss: Adding lcd notifier  [klozz]
+91c6076  Enhance power efficiency: Series of patches on some critical blocking code paths to allow the CPU to relax instead of busy spinning thus lowering the load_average and lowering power consumption.  [klozz]
+54d6c9d  merge upstream into xpe-11.1  [klozz]
+   * kernel/motorola/msm8953/
+23ccfa8  Enhance power efficiency: Series of patches on some critical blocking code paths to allow the CPU to relax instead of busy spinning thus lowering the load_average and lowering power consumption.  [klozz]
+01e0f8f  drivers: wakeup: bypass two WiFi wakelocks  [klozz]
+29798b0  power: wakeup: prevent IPA_WS wakelock from being acquired by default  [klozz]
+1922f50  power:qpnp-charger: extended charge time from 30s to 100s when battery status is near to full  [klozz]
+2c953af  qcom: msm-core: uninterruptible wait - you can kiss my arse goodbye  [klozz]
+a75d7f8  msm: Use interruptible wait to not affect load average  [klozz]
+0f2f2bf  qcom: mpm: use interruptible wait to reduce load avg  [klozz]
+0dfd8e1  msm: kgsl: Report correct GPU frequency in sysfs  [klozz]
+b40ebe0  lowmemorykiller: account for unevictable pages  [klozz]
+21e8c36  sound: msm: qdsp6v2: optimize for size * otherwise there is miscommunication between kernel and our DSP Signed-off-by: Alex Naidis <alex.naidis@linux.com>  [klozz]
+   * kernel/motorola/msm8974/
+070567f  fix savoca's kcal  [klozz]
+ee48bce  msm: Fix high load average from uninterruptible waits (cyanogen)  [klozz]
+09b60ad  Add Savoca's KCAL Control  [klozz]
+e2e7a4e  Merge remote-tracking branch 'xpe/xpe-11.1' into xpe11  [klozz]
+   * manifest/
+bf289d5  Track new updater based on lineage updater  [GitHub]
+   * packages/apps/Settings/
+6902c71  Update translations  [klozz]
+   * packages/apps/XPeUpdater/
+ce9d28c  remove this xd  [GitHub]
+2f8c9fd  rename package to xperience change colors too  [klozz]
+15f0787  Enable check signature again  [klozz]
+7abd907  updater: Allow to give propper URI of download files disable signature verification for now.  [klozz]
+   * packages/apps/masquerade/
+b5b1004  Release 20P: Initiate the caller package checking system  [Nathan Chancellor]
+   * vendor/XPe/
+44f1526  Don't track XPerience Center anymore  [klozz]
+e6d1ce7  common: Some fixes Some fixes for the new updater  [klozz]
+   * vendor/motorola/
+c8d0a44  Track vulkan lib from addison motorola package: NPN25.137-15-2  [klozz]
+379e30a  addison: Update GPS blobs  [klozz]
+a30c170  addison: Update Camera blobs  [klozz]
+
+====================
+     01-27-2017
+====================
+
+   * bionic/
+2ca6bea  linker: allow text relocations on user builds  [Dan Pasanen]
+   * kernel/motorola/msm8953/
+57b4b09  touch: sweep2sleep  [klozz]
+d3d07fa  platform/msm: haptic: expose vibrate function  [klozz]
+f936893  msm: mdss: KCAL: disable igc update  [klozz]
+9370d6d  Reformat defconfig  [klozz]
+eb9c74b  msm: mdss: KCAL: Send a pp display commit when changes are made  [klozz]
+da1dd63  mdss mdp: kcal for mdss_mdp_v1_7  [klozz]
+4c24443  usb: gadget: mass_storage: added sysfs entry for cdrom to LUNs  [klozz]
+34682dd  msm: vidc: disable CPU L2 cache PC during video sessions  [klozz]
+246f98c  PM: devfreq: Use high priority workqueue  [klozz]
+14e0888  SIO: update for linux 3.18  [klozz]
+985e97b  FIOPS: update for linux 3.18  [klozz]
+caef5f5  Add SIO and FIOPS i/o schedulers  [klozz]
+e7a8aad  mm: slub: Default slub_max_order to 0  [klozz]
+3774395  tcp_cubic: do not set epoch_start in the future  [klozz]
+ba8211c  tcp_cubic: better follow cubic curve after idle period  [klozz]
+6c59082  tcp: fix timing issue in CUBIC slope calculation  [klozz]
+c03bece  mmc: move to a SCHED_FIFO thread  [klozz]
+   * packages/apps/XPeUpdater/
+e5ead6a  fix check of xpe  [klozz]
+76b2bed  downloadservice:allow support for custom servers(for maintainers) set to build.prop xpe.update.uri=url  [klozz]
+b303b63  Add support to XPerience  [klozz]
+   * packages/services/Telephony/
+dab2cbf  MobileNetworkSettings: Read and write USER_NETWORK_MODE  [Danny Baumann]
+   * vendor/wingtech/
+91090d1  wt88047: Add IMS blobs  [nicknitewolf]
+
+====================
+     01-26-2017
+====================
+
+   * device/motorola/addison/
+da4e3ea  sepolicy: address more init denials  [klozz]
+1d12ce7  sepolicy: address rild denials  [klozz]
+2d3232b  sepolicy: more denials of mmi_touch_sh  [klozz]
+421d212  sepolicy: mmi_touch_sh fix parsing policy  [klozz]
+68f096f  priv_app fix  [klozz]
+16428a1  sepolicy: Allow more denials mmi_touch [    3.332083,0] type=1400 audit(33408.703:7): avc: denied { read } for uid=0 pid=484 comm="init.mmi.touch." name="vendor" dev="sysfs" ino=26721 scontext=u:r:mmi_touch_sh:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1 [    3.332535,0] type=1400 audit(33408.703:8): avc: denied { open } for uid=0 pid=484 comm="init.mmi.touch." path="/sys/devices/virtual/touchscreen/s3508sga/vendor" dev="sysfs" ino=26721 scontext=u:r:mmi_touch_sh:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1 [    3.335212,3] type=1400 audit(33408.706:9): avc: denied { getattr } for uid=0 pid=475 comm="init.mmi.touch." path="/sys/devices/soc/78b7000.i2c/i2c-3/3-0020/doreflash" dev="sysfs" ino=34442 scontext=u:r:mmi_touch_sh:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1 [    3.361857,0] type=1400 audit(33408.733:10): avc: denied { setattr } for uid=0 pid=496 comm="chmod" name="reporting" dev="sysfs" ino=26695 scontext=u:r:mmi_touch_sh:s0 tcontext=u:object_r:sysfs_mmi_touch:s0 tclass=file permissive=1 [    3.414860,0] type=1400 audit(33408.786:11): avc: denied { setattr } for uid=0 pid=503 comm="chmod" name="c113_consistency_thresh" dev="sysfs" ino=34408 scontext=u:r:mmi_touch_sh:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1 [    4.938708,7] type=1400 audit(33410.310:12): avc: denied { getattr } for uid=0 pid=681 comm="chmod" path="/sys/devices/soc/78b7000.i2c/i2c-3/3-0020/f54/pixel_touch_threshold" dev="sysfs" ino=34366 scontext=u:r:mmi_touch_sh:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1 [    4.939201,7] type=1400 audit(33410.310:13): avc: denied { setattr } for uid=0 pid=681 comm="chmod" name="pixel_touch_threshold" dev="sysfs" ino=34366 scontext=u:r:mmi_touch_sh:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1 [    5.298043,7] type=1400 audit(33410.670:14): avc: denied { getattr } for uid=0 pid=777 comm="chmod" path="/sys/devices/soc/78b7000.i2c/i2c-3/3-0020/f54/reset" dev="sysfs" ino=34301 scontext=u:r:mmi_touch_sh:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1 [    5.302125,7] type=1400 audit(33410.673:15): avc: denied { setattr } for uid=0 pid=777 comm="chmod" name="reset" dev="sysfs" ino=34301 scontext=u:r:mmi_touch_sh:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1  [klozz]
+b2f345f  missing:     sepolicy: allow more denials priv_app     scontext=u:r:priv_app:s0:c512,c768 tcontext=u:object_r:persist_file:s0 tclass=filesystem permissive=1     [  179.341062,4] type=1400 audit(1485397559.589:56): avc: denied { read } for uid=10032 pid=7616 comm="Binder:7616_2" name="/" dev="tmpfs" ino=887 scontext=u:r:priv_app:s0:c512,c768 tcontext=u:object_r:device:s0 tclass=dir permissive=1     [  179.341175,4] type=1400 audit(1485397559.589:57): avc: denied { open } for uid=10032 pid=7616 comm="Binder:7616_2" path="/dev" dev="tmpfs" ino=887 scontext=u:r:priv_app:s0:c512,c768 tcontext=u:object_r:device:s0 tclass=dir permissive=1     [  101.875219,4] type=1400 audit(1485397482.122:49): avc: denied { getattr } for uid=10032 pid=7616 comm="Binder:7616_2" name="/" dev="mmcblk0p30" ino=2 scontext=u:r:priv_app:s0:c512,c768 tcontext=u:object_r:persist_file:s0 tclass=filesystem permissive=1     [  102.148356,4] type=1400 audit(1485397482.395:50): avc: denied { read } for uid=10032 pid=7616 comm="Binder:7616_2" name="/" dev="tmpfs" ino=887 scontext=u:r:priv_app:s0:c512,c768 tcontext=u:object_r:device:s0 tclass=dir permissive=1     [  102.148444,4] type=1400 audit(1485397482.395:51): avc: denied { open } for uid=10032 pid=7616 comm="Binder:7616_2" path="/dev" dev="tmpfs" ino=887 scontext=u:r:priv_app:s0:c512,c768 tcontext=u:object_r:device:s0 tclass=dir permissive=1     [   77.738449,5] type=1400 audit(1485397457.985:43): avc: denied { getattr } for uid=10032 pid=6638 comm="Binder:6638_2" name="/" dev="mmcblk0p30" ino=2 scontext=u:r:priv_app:s0:c512,c768 tcontext=u:object_r:persist_file:s0 tclass=filesystem permissive=1     [   77.756903,4] type=1400 audit(1485397458.002:44): avc: denied { read } for uid=10032 pid=6638 comm="Binder:6638_2" name="/" dev="tmpfs" ino=887 scontext=u:r:priv_app:s0:c512,c768 tcontext=u:object_r:device:s0 tclass=dir permissive=1     [   77.757027,4] type=1400 audit(1485397458.002:45): avc: denied { open } for uid=10032 pid=6638 comm="Binder:6638_2" path="/dev" dev="tmpfs" ino=887 scontext=u:r:priv_app:s0:c512,c768 tcontext=u:object_r:device:s0 tclass=dir permissive=1  [klozz]
+504a849  sepolicy: more denials  [klozz]
+be8bf0d  sepolicy: allow more denials priv_app scontext=u:r:priv_app:s0:c512,c768 tcontext=u:object_r:persist_file:s0 tclass=filesystem permissive=1 [  179.341062,4] type=1400 audit(1485397559.589:56): avc: denied { read } for uid=10032 pid=7616 comm="Binder:7616_2" name="/" dev="tmpfs" ino=887 scontext=u:r:priv_app:s0:c512,c768 tcontext=u:object_r:device:s0 tclass=dir permissive=1 [  179.341175,4] type=1400 audit(1485397559.589:57): avc: denied { open } for uid=10032 pid=7616 comm="Binder:7616_2" path="/dev" dev="tmpfs" ino=887 scontext=u:r:priv_app:s0:c512,c768 tcontext=u:object_r:device:s0 tclass=dir permissive=1 [  101.875219,4] type=1400 audit(1485397482.122:49): avc: denied { getattr } for uid=10032 pid=7616 comm="Binder:7616_2" name="/" dev="mmcblk0p30" ino=2 scontext=u:r:priv_app:s0:c512,c768 tcontext=u:object_r:persist_file:s0 tclass=filesystem permissive=1 [  102.148356,4] type=1400 audit(1485397482.395:50): avc: denied { read } for uid=10032 pid=7616 comm="Binder:7616_2" name="/" dev="tmpfs" ino=887 scontext=u:r:priv_app:s0:c512,c768 tcontext=u:object_r:device:s0 tclass=dir permissive=1 [  102.148444,4] type=1400 audit(1485397482.395:51): avc: denied { open } for uid=10032 pid=7616 comm="Binder:7616_2" path="/dev" dev="tmpfs" ino=887 scontext=u:r:priv_app:s0:c512,c768 tcontext=u:object_r:device:s0 tclass=dir permissive=1 [   77.738449,5] type=1400 audit(1485397457.985:43): avc: denied { getattr } for uid=10032 pid=6638 comm="Binder:6638_2" name="/" dev="mmcblk0p30" ino=2 scontext=u:r:priv_app:s0:c512,c768 tcontext=u:object_r:persist_file:s0 tclass=filesystem permissive=1 [   77.756903,4] type=1400 audit(1485397458.002:44): avc: denied { read } for uid=10032 pid=6638 comm="Binder:6638_2" name="/" dev="tmpfs" ino=887 scontext=u:r:priv_app:s0:c512,c768 tcontext=u:object_r:device:s0 tclass=dir permissive=1 [   77.757027,4] type=1400 audit(1485397458.002:45): avc: denied { open } for uid=10032 pid=6638 comm="Binder:6638_2" path="/dev" dev="tmpfs" ino=887 scontext=u:r:priv_app:s0:c512,c768 tcontext=u:object_r:device:s0 tclass=dir permissive=1  [klozz]
+6ef4e81  selinux: Fix ueventd denials [    2.036217,0] audit: type=1400 audit(29648.410:3): avc:  denied  { relabelfrom } for  uid=0 pid=403 comm="ueventd" name="rmi0" dev="tmpfs" ino=13512 scontext=u:r:ueventd:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1 [    2.036246,0] audit: type=1400 audit(29648.410:4): avc:  denied  { relabelto } for  uid=0 pid=403 comm="ueventd" name="rmi0" dev="tmpfs" ino=13512 scontext=u:r:ueventd:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1  [klozz]
+43e4fdb  selinux: mmi_touch_sh denials [    3.259087,2] type=1400 audit(28936.673:4): avc: denied { getattr } for uid=0 pid=479 comm="init.mmi.touch." path="/system/bin/toybox" dev="mmcblk0p53" ino=476 scontext=u:r:mmi_touch_sh:s0 tcontext=u:object_r:toolbox_exec:s0 tclass=file permissive=1  [klozz]
+1de26f4  sepolicy: more selinux denials  [klozz]
+b655df8  sepolicy: Fix more fingerprintd denials [14130.201666,6] type=1400 audit(1485385749.793:121): avc: denied { write } for uid=1000 pid=3171 comm="fingerprintd" name="clk_enable" dev="sysfs" ino=26772 scontext=u:r:fingerprintd:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1  [klozz]
+7242730  sepolicy: Fix more fingerprintd denials [14130.201666,6] type=1400 audit(1485385749.793:121): avc: denied { write } for uid=1000 pid=3171 comm="fingerprintd" name="clk_enable" dev="sysfs" ino=26772 scontext=u:r:fingerprintd:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1  [klozz]
+86134b2  sepolicy: Consolidate FP denials  [klozz]
+   * device/motorola/msm8226-common/
+4889deb  msm8226-common: Move to SELinux Enforced  [GitHub]
+   * frameworks/opt/hardware/
+50db0be  Revert "Add tap-to-wake class definition"  [Zhao Wei Liew]
+   * hardware/qcom/fm/
+982bdf1  Automatic translation import  [Abhisek Devkota]
+   * kernel/motorola/msm8952/
+e12c2c9  lowmemorykiller: account for unevictable pages  [Silesh K Nair]
+   * kernel/motorola/msm8953/
+c591480  binfmt_elf.c: use get_random_int() to fix entropy depleting  [klozz]
+d1421ab  mmc:core: disable crc check  [klozz]
+356db51  ASoC: msm-lsm-client: cleanup ioctl functions  [klozz]
+1fdcb21  Android: binder: check set_context_mgr permission on time.  [klozz]
+06e653b  ASoC: qdsp6v2: prevent null pointer dereference for _vol_cmds  [klozz]
+959a5f0  ASoC: soc: msm: initialize buffer to prevent kernel data leakage  [klozz]
+9ed1ddc  msm: sps: add the checking of userspace input length  [klozz]
+3df1f83  sound:soc: Optimize for size  [klozz]
+5a4e8eb  msm: mdss: Fix potential deferencing of null pointer  [klozz]
+6dfb6dd  msm-camera: Validation of input parameter  [klozz]
+   * packages/apps/AudioFX/
+2baaf7e  Automatic translation import  [Abhisek Devkota]
+   * packages/apps/Bluetooth/
+cf8c96d  Automatic translation import  [Abhisek Devkota]
+   * packages/apps/Browser/
+99f5e4c  Automatic translation import  [Abhisek Devkota]
+   * packages/apps/CMBugReport/
+94ff9c7  Automatic translation import  [Abhisek Devkota]
+   * packages/apps/CMFileManager/
+8cf2b73  Automatic translation import  [Abhisek Devkota]
+   * packages/apps/Calendar/
+1ffaf69  Automatic translation import  [Abhisek Devkota]
+   * packages/apps/CellBroadcastReceiver/
+982f013  Automatic translation import  [Abhisek Devkota]
+   * packages/apps/Dialer/
+68611c6  Automatic translation import  [Abhisek Devkota]
+   * packages/apps/Eleven/
+4feae4e  Automatic translation import  [Abhisek Devkota]
+   * packages/apps/Email/
+bc8c771  Automatic translation import  [Abhisek Devkota]
+   * packages/apps/Gallery2/
+581c0bd  Automatic translation import  [Abhisek Devkota]
+   * packages/apps/Gello/
+15c3b34  Automatic translation import  [Abhisek Devkota]
+   * packages/apps/LockClock/
+b642154  Remove Google Play Services dependency  [Zhao Wei Liew]
+c52268f  Automatic translation import  [Abhisek Devkota]
+   * packages/apps/Messaging/
+af87f9d  Automatic translation import  [Abhisek Devkota]
+   * packages/apps/PackageInstaller/
+11eeb5d  Automatic translation import  [Abhisek Devkota]
+   * packages/apps/Profiles/
+e900fa7  Automatic translation import  [Abhisek Devkota]
+   * packages/apps/Snap/
+166d4df  Automatic translation import  [Abhisek Devkota]
+   * packages/apps/ThemeChooser/
+3e714b2  Automatic translation import  [Abhisek Devkota]
+   * packages/apps/Trebuchet/
+c846068  Automatic translation import  [Abhisek Devkota]
+   * packages/apps/UnifiedEmail/
+024599b  Automatic translation import  [Abhisek Devkota]
+   * packages/apps/XPeUpdater/
+4b122c0  Automatic translation import  [Abhisek Devkota]
+   * packages/providers/DataUsageProvider/
+479fd88  Automatic translation import  [Abhisek Devkota]
+   * packages/providers/DownloadProvider/
+ae28f35  Automatic translation import  [Abhisek Devkota]
+   * packages/providers/MediaProvider/
+ef31411  Automatic translation import  [Abhisek Devkota]
+   * packages/providers/ThemesProvider/
+841405e  Automatic translation import  [Abhisek Devkota]
+   * packages/providers/WeatherProvider/
+c5a0f79  Automatic translation import  [Abhisek Devkota]
+   * packages/resources/devicesettings/
+21da045  Automatic translation import  [Abhisek Devkota]
+   * packages/services/CMAudioService/
+904c90c  Automatic translation import  [Abhisek Devkota]
+   * packages/services/LiveLockScreenService/
+e767bd9  Automatic translation import  [Abhisek Devkota]
+   * packages/services/Telephony/
+5c1667e  Automatic translation import  [Abhisek Devkota]
+   * packages/services/ThemeManagerService/
+aa8afb9  Automatic translation import  [Abhisek Devkota]
+   * packages/services/WeatherService/
+12ace37  Automatic translation import  [Abhisek Devkota]
+   * packages/wallpapers/LivePicker/
+effdc0f  Automatic translation import  [Abhisek Devkota]
+   * vendor/cmsdk/
+2fba62c  cmsdk: cmhw: Deprecate TAP_TO_WAKE feature  [klozz]
+bcaa397  Add generic support for Lid Cover Apps  [klozz]
+   * vendor/wingtech/
+4b6b710  wt88047: Import bullhead widevine  [nicknitewolf]
+12302d3  wt88047: Remove CNE, DPM, QC location  [nicknitewolf]
+bd62b3a  wt88047: Use graphics blobs from the shared repo  [nicknitewolf]
+3a5eacc  wt88047: Replace mpdecision with perfd  [nicknitewolf]
+cf1327b  wt88047: gps: HAX  [nicknitewolf]
+e9e2234  wt88047: RIL blobs from Bacon  [nicknitewolf]
