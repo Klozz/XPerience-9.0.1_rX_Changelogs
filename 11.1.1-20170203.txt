@@ -1,0 +1,263 @@
+====================
+     02-02-2017
+====================
+
+   * device/motorola/addison/
+8f46a53  Rever: "addison:remove audio flag it break build"  [klozz]
+241c945  Misc configs update  [klozz]
+b3bbf47  Clean up camera shim  [klozz]
+   * device/qcom/common/
+69c6879  Merge remote-tracking branch 'upstream/cm-14.1' into xpe-11.1  [klozz]
+b136210  power: Remove POWER_HINT_AUDIO  [Zhao Wei Liew]
+   * kernel/motorola/msm8953/
+6928479  Merge remote-tracking branch 'alberto/cm-14.1' into xpe-11.1  [klozz]
+   * packages/apps/Settings/
+a4aba31  Merge remote-tracking branch 'xpe/xpe-11.1' into xpe-11.1  [klozz]
+b02e99f  Settings: gesture: Add CMParts touchscreen gesture settings  [klozz]
+
+====================
+     02-01-2017
+====================
+
+   * build/
+7063b2f  Merge tag 'android-7.1.1_r13' into xpe-11.1  [klozz]
+   * frameworks/av/
+7109c7a  Merge tag 'android-7.1.1_r13' into xpe-11.1  [klozz]
+f1df5a6  Camera service: Speed up camera service startup on boot  [klozz]
+   * frameworks/base/
+0a62af2  SystemUI: improve MemBar animation  [klozz]
+0b79a050  FWB:MemBar:Auto update memory status  [klozz]
+70cddc7  FWB: membar some UI changes  [klozz]
+d540fec  FWB: add recents memory view  [klozz]
+c15fe35  SystemUI: remove 'hide clock' option from clock position  tunable  [klozz]
+c7c7b35  fixes for carrierlabel  [klozz]
+d962510  PhoneWindowManager: Support multiple key handlers  [klozz]
+b887626  SystemUI: Never link nofication volume on non-voice capable devices  [klozz]
+bf2ad21  Merge tag 'android-7.1.1_r13' into xpe-11.1  [klozz]
+   * frameworks/native/
+21155af  Merge tag 'android-7.1.1_r13' into xpe-11.1  [klozz]
+6c00f61  Preserve app data if neither ce nor de have xattr user.default  [klozz]
+88514f7  gralloc1: Acquire mutex early in release  [klozz]
+83124b6  sf1 : Avoid resetting skip flag for dim layer  [klozz]
+f0178b3  surfaceflinger: Increase SurfaceFlinger dump buffer size to 16k.  [klozz]
+   * frameworks/opt/hardware/
+3a49878  cmhw: Add TouchscreenGestures API  [Zhao Wei Liew]
+   * hardware/libhardware/
+f29cb1f  hardware: power: Remove POWER_HINT_AUDIO  [Zhao Wei Liew]
+4be06d8  Revert "power: Add support for camera preview in powerHAL"  [Zhao Wei Liew]
+   * hardware/qcom/fm/
+a02172a  Automatic translation import  [Abhisek Devkota]
+   * kernel/motorola/msm8953/
+2a4b988  ANDROID: sdcardfs: switch to full_name_hash and qstr  [Alberto97]
+638ceca  ANDROID: sdcardfs: Add GID Derivation to sdcardfs  [Alberto97]
+   * manifest/
+f906d0c  add genesis  [GitHub]
+8275b8b  Manifest for Android 7.1.1 Release 13  [GitHub]
+d10c1ec  move to own frameworks av  [GitHub]
+9a9ff81  untrack lineage AV  [GitHub]
+   * packages/apps/AudioFX/
+68476c6  Automatic translation import  [Abhisek Devkota]
+   * packages/apps/Bluetooth/
+8fc4ad3  Automatic translation import  [Abhisek Devkota]
+   * packages/apps/CMBugReport/
+b23a2ac  Automatic translation import  [Abhisek Devkota]
+   * packages/apps/CMFileManager/
+ff821d4  Automatic translation import  [Abhisek Devkota]
+   * packages/apps/CMParts/
+77baaa0  CMParts: Add touchscreen gesture settings and keyhandler  [klozz]
+15eb628  CMParts: Move status bar tap to sleep pref to Settings  [klozz]
+3ceebce  CMParts: buttons: Remove double tap power for camera setting  [klozz]
+   * packages/apps/Calendar/
+e7899e8  Automatic translation import  [Abhisek Devkota]
+   * packages/apps/CellBroadcastReceiver/
+7f56ce1  Automatic translation import  [Abhisek Devkota]
+   * packages/apps/Dialer/
+35acdb7  Automatic translation import  [Abhisek Devkota]
+   * packages/apps/Eleven/
+bb82223  Automatic translation import  [Abhisek Devkota]
+   * packages/apps/Gello/
+794fdd5  Automatic translation import  [Abhisek Devkota]
+   * packages/apps/Genesis/
+fc5a3b7  add org.cyanogenmod.platform.internal  [GitHub]
+7bd1e2e  genesis: Fix packagemanager  [klozz]
+dbdeb07  hello its GENESIS  [klozz]
+e2622ff  :lollipop: Added .gitattributes & .gitignore files  [klozz (TeamMEX)]
+   * packages/apps/LockClock/
+1cfcb29  Automatic translation import  [Abhisek Devkota]
+   * packages/apps/Messaging/
+196421b  Automatic translation import  [Abhisek Devkota]
+   * packages/apps/Settings/
+d58201c  Settings: Add status bar tap to sleep pref to gestures  [klozz]
+7ea1d65  Settings: gesture: Add CMParts touchscreen gesture settings  [klozz]
+a571a3e  development: Add setting for updating recovery  [klozz]
+   * packages/apps/SetupWizard/
+9892994  Remove Google Play Services dependency  [klozz]
+6d2b711  Temp: Always disable D2D since its broken atm  [klozz]
+   * packages/apps/Snap/
+289e677  Automatic translation import  [Abhisek Devkota]
+   * packages/apps/ThemeChooser/
+ed41164  Automatic translation import  [Abhisek Devkota]
+   * packages/apps/Trebuchet/
+3778f4d  Automatic translation import  [Abhisek Devkota]
+   * packages/providers/DataUsageProvider/
+be55cf6  Automatic translation import  [Abhisek Devkota]
+   * packages/providers/DownloadProvider/
+e346efc  Automatic translation import  [Abhisek Devkota]
+   * packages/providers/WeatherProvider/
+67824b6  Automatic translation import  [Abhisek Devkota]
+   * packages/resources/devicesettings/
+b857442  Automatic translation import  [Abhisek Devkota]
+   * packages/services/CMAudioService/
+9d998c1  Automatic translation import  [Abhisek Devkota]
+   * packages/services/Telephony/
+335b81f  Automatic translation import  [Abhisek Devkota]
+   * packages/services/ThemeManagerService/
+149b09d  Automatic translation import  [Abhisek Devkota]
+   * packages/services/WeatherService/
+dc3564a  Automatic translation import  [Abhisek Devkota]
+   * vendor/XPe/
+cadf599  move to R13 part1  [GitHub]
+c430079  cm: overlay: Settings: Enable gesture settings  [klozz]
+   * vendor/cmsdk/
+0c39a5a  cmsdk: Add touchscreen gestures support  [klozz]
+61e1db7  cmsdk: Add DeviceKeyHandler overlays  [klozz]
+
+====================
+     01-31-2017
+====================
+
+   * build/
+4f512be  core: finish using PRIVATE_RECOVERY_OUT rather than hard-coding "RECOVERY"  [klozz]
+83ce1e5  Avoid adding an extra slash if OUT_DIR_COMMON_BASE ends in a slash  [klozz]
+3895598  fix  [GitHub]
+   * device/motorola/msm8226-common/
+a9b0c64  stop asking shit I enable this shit god -.-  [GitHub]
+   * kernel/motorola/msm8953/
+c3f8a83  ANDROID: sdcardfs: Remove redundant operation  [Alberto97]
+c9b6f4f  ANDROID: sdcardfs: add support for user permission isolation  [Alberto97]
+11606cf  ANDROID: sdcardfs: Refactor configfs interface  [Alberto97]
+afe4bd2  ANDROID: sdcardfs: Allow non-owners to touch  [Alberto97]
+5d6a7d6  UPSTREAM: FROMLIST: 9p: fix a potential acl leak  [Alberto97]
+1e8a2b3  BACKPORT: posix_acl: Clear SGID bit when setting file permissions  [Alberto97]
+
+====================
+     01-30-2017
+====================
+
+   * build/
+ed1de53  build: envsetup: Update CAF remote  [GitHub]
+50a7b72  mb. fix this typo  [klozz]
+dd5e5e5  change some information about the    *  [klozz]
+caf8995  envsetup: Use GNU sed commands if GNU sed is detected  [klozz]
+f4c1e98  build: qcom_target: Clean up QCOM_HARDWARE_VARIANT checks  [klozz]
+7719f4a  Always copy bootable images in BOOTABLE_IMAGES/  [klozz]
+e70ccd6  Revert "releasetools: Don't extract BOOTABLE_IMAGES when signing target files"  [klozz]
+e220662  Move ro.bootimage.build.fingerprint to build.prop  [klozz]
+3157bf6  core: Fix unified trees with no TARGET_OTA_ASSERT_DEVICE  [klozz]
+5638d01  core: include libf2fs_fmt_host_dyn in otatools  [klozz]
+d6cf48b  ota_from_target_files: Remove device dependent arguments  [klozz]
+dc6f9a7  releasetools: support reading release keys out of some sort of command  [klozz]
+494b4a9  releasetools: Add script to sign zips  [klozz]
+   * device/motorola/addison/
+5b8db5f  addison:remove audio flag it break build  [klozz]
+7b53c12  add blobs  [GitHub]
+   * device/qcom/common/
+e89f783  Merge remote-tracking branch 'upstream/cm-14.1' into HEAD  [klozz]
+   * frameworks/base/
+fca0cc1  Correctly name LID_STATE_CHANGED broadcast  [klozz]
+e6f53a1  Automatic translation import  [klozz]
+eefcfb5  fbw:add correct check if blur has enabled or not  [klozz]
+e9b312e  Revert "Add overlay option for Settings.System.ACCELEROMETER_ROTATION_ANGLES"  [klozz]
+e975dbd  Fix window transformation related issue  [klozz]
+dde38d3  Make sure Zygote is running at process priority 0 after VM has started.  [klozz]
+b43447b  QS: Fix QuickQS visibility at non-first page  [klozz]
+950987c  Allow lid to send a generic COVER_CHANGED broadcast  [klozz]
+9db4e15  SystemUI: HotspotTile: Don't reset the number of connected clients  [klozz]
+204a3da  [2/3] Re-introduce custom charging on/off sounds  [klozz]
+b4da3b7  Update translations  [klozz]
+   * hardware/qcom/display-caf/msm8996/
+c372a9b  Revert "display: Add color metadata definition"  [Christopher R. Palmer]
+d714c70  Revert "sdm: Use ColorMetadata in SDM"  [Christopher R. Palmer]
+   * hardware/qcom/media-caf/msm8996/
+86c766c  Revert "mm-video-v4l2: vdec: Support for HDR Info extension"  [Christopher R. Palmer]
+524280d  Revert "mm-video-v4l2: vdec:Metadata for HDR and ColorAspects"  [Christopher R. Palmer]
+bb55321  Revert "mm-video-v4l2: vdec: Convert maximum display luminance in cd/m2"  [Christopher R. Palmer]
+   * kernel/motorola/msm8953/
+abef7e7  msm: kgsl: Fix overflow in sharedmem cache range operation function  [klozz]
+   * manifest/
+23322de  add the missing remote  [GitHub]
+0c08add  manifest: switch to LineageOS recorder remove aosp soundrecorder and cm screencast  [klozz]
+b1f6d3e  move to lineage chromium  [GitHub]
+   * packages/apps/CMParts/
+0c469fe  fix build  [klozz]
+3333f56  CMParts: Add reading mode strings  [klozz]
+aca6cec  [1/3] CMParts: Add CM charging sounds settings  [klozz]
+3ad79ee  Use valid network resources in getNetworkModeString()  [klozz]
+1ae5ded  CMParts: profiles: Remove old PagerTabStrip hack  [klozz]
+dea0622  ButtonBacklight: Preview timeout once user stops dragging  [klozz]
+b790d08  CMParts: Update button backlight brightness in real time  [klozz]
+ce4caca  ExpandedDesktop: Don't re-populate the app list in rebuild()  [klozz]
+edf4507  CMParts: Fix expandable desktop  [klozz]
+5ac9b73  fix arrays from the last change related to clock position  [klozz]
+f3b378e  update translations  [klozz]
+56b418c  CMParts: Match pulse speed to frameworks default  [klozz]
+2fbd31c  Fix handling of auto power save summary.  [klozz]
+a7e89dc  CMParts: bugreport_in_power_menu lives in Global Settings  [klozz]
+fa9a8ef  CMParts: Add UPDATE_POWER_MENU protected-broadcast  [klozz]
+5d5514f  XPeParts: Properly fix auto-power-save string format exception We were originally encountering an issue when formatting the auto-power-save ListPreference summary.  [klozz]
+   * packages/apps/RainbowUnicorn/
+293551a  Update Crowdin configuration file  [klozz]
+1106667  update traslations  [klozz]
+fbd329f  Create crowdin.yaml  [klozz]
+   * packages/apps/Settings/
+f917e1c  Settings: point to XPerience Updater  [klozz]
+08999e2  Settings: Don't crash in SUW if no talkback service is installed  [klozz]
+3843138  Automatic translation import  [klozz]
+e81e4d1  Handle SubSettings instance leaks in Index.java  [klozz]
+b3c731f  SoundSettings: Prevent NPE due to linked volumes change  [klozz]
+2fd893b  [3/3] Settings: Add CMParts charging sound settings preference  [klozz]
+951efe7  translations  [klozz]
+720debf  update translations  [klozz]
+   * packages/apps/Snap/
+9936197  Fix thumbnail sometimes not being shown initially in video mode.  [Danny Baumann]
+7cf0bf3  Fix shutter button pressed state tracking issues.  [Danny Baumann]
+   * vendor/XPe/
+2c69a7c  :D thnks  [GitHub]
+bce96e5   mergeshits  [klozz]
+77c55a4  add LineageOS recorder * remove aosp soundrecorder and cm screencast * add only on full builds  [klozz]
+1bb4051  add LineageOS recorder * remove aosp soundrecorder and cm screencast * add only on full builds  [klozz]
+7970e3d  apns: Remove differentiation between FreedomPop GSM APNs  [klozz]
+0fd49c0  apns: Correct FreedomPop US LTE APN  [klozz]
+b1900a9  apns: Add differentiation to FreedomPop Global GSM APN  [klozz]
+76d58ae  apns: Add FreedomPop US LTE sim APN  [klozz]
+d89fea0  apns: Correct FreedomPop Global GSM APN  [klozz]
+62b8c91  apns: Add Freedompop foggmobile APN  [klozz]
+abc35a1  extract_utils: Detect output existence before moving it for backup  [klozz]
+b016a6a  http_prebuilt: Improve retrieval of artifacts from archive  [klozz]
+591505f  http_prebuilt: Implement archive of artifacts * checksum will be downloaded and asserted to prevent a     redownload every clean * Archives will exist (invisibly) at vendor/cm/prebuilt/arch  [klozz]
+022f6e9  extract_utils: Update smali/backsmali to v2.2b4  [klozz]
+41f06fd  tools: getb64key - print the base64 version of a PEM public key file  [klozz]
+27d01f1  common: Correct indentation Indentation should be 4 spaces here.  [klozz]
+
+====================
+     01-29-2017
+====================
+
+   * device/motorola/msm8960dt-common/
+57f141d  Merge https://github.com/XPerience-AOSP-Lollipop/android_device_motorola_msm8960dt-common into HEAD  [klozz]
+cf2ae53  msm8960dt-common: Add GraphicBuffer shim export it later if needed  [klozz]
+86a1c7f  msm8960dt-common: Shim some binaries thermald,qseecomd,time_daemon,rmt_storage binary needs this function "__android_log_loggable" rild needs this symbol "_ZN7android6Parcel13writeString16EPKtj"  [klozz]
+   * device/qcom/common/
+58bf7c3  extractors: Set INITIAL_COPYRIGHT_YEAR  [Michael Bestas]
+   * frameworks/av/
+e690119  libstagefright: Restore AOSP's handling of 24/32-bit wav files  [Christopher R. Palmer]
+   * kernel/motorola/ghost/
+3ebd80e  drivers: gpu: Sync with google sources and use commits from here https://github.com/AdrianDC/android_kernel_sony_msm8960t/commits/cm-14.1/drivers/gpu/msm  [klozz]
+   * packages/apps/Recorder/
+8e9a287  Recorder: grant permissions to read opened files to apps started from notifications  [Joey Rizzoli]
+29a86fe  Recorder: tmp app icon  [Joey Rizzoli]
+5231b70  Recorder: update gradle plugin  [Joey Rizzoli]
+   * packages/apps/Snap/
+a425da8  Snap: store module index  [Ethan Chen]
+   * packages/services/Telecomm/
+51d6bb0  CallAudioModeStateMachineTest: fix compilation  [Simon Shields]
