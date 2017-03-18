@@ -1,0 +1,294 @@
+====================
+     03-18-2017
+====================
+
+   * build/
+f0e4b3c  Revert "we going to change to new kys Revert "update keys""  [klozz]
+d9b3abd  Revert "ota: Remove cruft we don't care about"  [klozz]
+   * device/motorola/addison/
+75e712a  Add more IMS/RIL blobs  [klozz]
+f7ddc0a  audio: Switch to xml audio policy  [klozz]
+fdb24d2  livedisplay: Map Color profiles  [klozz]
+54bc28b  qdcm: Add back Comfort mode  [klozz]
+72b1878  Move here qdcm configuration  [klozz]
+7e212c5  audio_effects: Don't depend on outdated and source closed qcom drivers  [klozz]
+   * device/motorola/athene/
+87582d6  Fix tethering for 1644/1625  [klozz]
+5bb742b  athene: fix video recording  [klozz]
+eee323f  athene: fix extract-files.sh  [klozz]
+   * device/motorola/harpia/
+382c410  Merge remote-tracking branch 'upstream' into xpe-11.1  [klozz]
+   * device/motorola/merlin/
+5b22ef4  Merge remote-tracking branch 'upstream' into xpe-11.1  [klozz]
+   * device/motorola/msm8916-common/
+cb68559  msm8916-common: Set camera permissions device specific  [klozz]
+   * device/motorola/osprey/
+13b2c55  some cleans in the repo  [klozz]
+d423ee7  osprey: Featurize Flash LED  [klozz]
+   * frameworks/base/
+4ae1bc0  remove duplicated shits FUCK OF  [klozz]
+4b7060e  SingleHandWindow: Allow locking the rotation to 180°  [klozz]
+680df5f  Add tile information to ACTION_QS_TILE_PREFERENCES intent  [klozz]
+bb572a1  PackageManager: Always let UID 0 start FallbackHome  [klozz]
+6f1c8f2  SystemUI: Dismiss keyguard on boot if disabled by current profile  [klozz]
+423856e  Automatic translation import  [klozz]
+ac079f5  Fix intermittent slowness in resolver activity towards end of day.  [klozz]
+   * kernel/motorola/ghost/
+25c5029  xperience_adreno: fix static declaration of 'msm_unregister_domain' follows non-static declaration when the declaration is a non static  [klozz]
+1734c7b  kgsl:iommu:Fix header of xpe  [klozz]
+4ed18f9  msm: scm: Add scm_call_atomic3  [klozz]
+e980a5e  add adreno registers from xpe  [klozz]
+34e8a9e  ARM: Add support for 64 bit register reads/writes Add macros to read and write to 64 bit registers.  [klozz]
+7d4d143  fix build since we added new driver of adreno  [klozz]
+c888249  gpu: msm: add configs from new adreno driver from mako  [klozz]
+d213499  some iommu changes  [klozz]
+   * kernel/motorola/msm8952/
+e647ab0  Merge remote-tracking branch 'upstream' into xpe-11.1  [klozz]
+   * kernel/motorola/msm8953/
+676f6ba  Merge remote-tracking branch 'upstream' into xpe-11.1  [klozz]
+   * manifest/
+68b7736  track custom tiles  [GitHub]
+   * packages/apps/Bluetooth/
+d3c06ce  Revert "Introduced Active device for volume updates and volume update in pause state"  [Abhisek Devkota]
+ff3d0d8  Bluetooth: AIRPLANE_MODE_ON has moved  [Dan Pasanen]
+   * packages/apps/Dialer/
+019704c  Dialer: AIRPLANE_MODE_ON has moved  [Dan Pasanen]
+   * packages/apps/RainbowUnicorn/
+22bc7e0  update translations  [klozz]
+   * packages/apps/Settings/
+d30feca  AppOpsDetails: Check app permissions safely  [klozz]
+c6ed5ad  Automatic translation import  [klozz]
+d1fc5a3  Fix possible NPE on SIM settings shutdown.  [klozz]
+5d9d189  Clean up SIM enable toggle implementation  [klozz]
+7125321  Settings: port manual provisiong support  [klozz]
+a193223  Automatic translation import  [klozz]
+2de3374  Automatic translation import  [klozz]
+ca49e75  Settings: Add overlay for hiding wifi region code  [klozz]
+   * packages/apps/XPeUpdater/
+0c49d91  Collapse header even when scrolling out of header  [klozz]
+bba30c1  UpdateSettings: UI fixes when download completed  [klozz]
+   * packages/services/Telephony/
+f6c9974  Telephony: AIRPLANE_MODE_ON has moved  [Dan Pasanen]
+   * system/core/
+af67611  init: Don't update recovery on boot  [klozz]
+   * vendor/XPe/
+c2b952a  repopick: encode commit subjects in utf-8 for printing  [klozz]
+3df5588  xpe: build custom tiles app  [klozz]
+d74ca07  overlay: Disable recovery updates  [klozz]
+2bd589a  apns: Remove proxy for the "TIM WAP" APN  [klozz]
+   * vendor/motorola/
+7c34b4e  clark: kang drm from bullhead  [klozz]
+12eb89f  addison: Additional RIL blobs  [klozz]
+86008ff  addison: Regenerate makefile  [klozz]
+ef5f4bf  addison: Move qdcm configuration to device tree  [klozz]
+54cabd7  addison: Drop qcom audio effects libs  [klozz]
+
+====================
+     03-17-2017
+====================
+
+   * kernel/motorola/msm8953/
+652253a  prima: Wait for clear filter request's response from firmware  [Alberto97]
+9f97fbb  wlan: Fix buffer overflow in WLANSAP_Set_WPARSNIes()  [Alberto97]
+593e855  wlan: On SSR, update SAP operating band, start and end channels  [Alberto97]
+457305c  wlan: SAP: During SSR, don't check for logp in progress  [Alberto97]
+de0b531  wlan: Add buf len check in wlan_hdd_cfg80211_testmode  [Alberto97]
+   * packages/apps/CustomTiles/
+d37eb8d  CustomTiles: support direct boot  [Dan Pasanen]
+98197a0  CustomTiles: remove compass tile  [Dan Pasanen]
+
+====================
+     03-16-2017
+====================
+
+   * hardware/qcom/fm/
+aa10afe  Automatic translation import  [Abhisek Devkota]
+   * kernel/motorola/msm8953/
+9be2c9b  uid_sys_stats: fix typo in init  [Alberto97]
+d2306a4  uid_sys_stats: change to use rt_mutex  [Alberto97]
+bc8f5ce  ANDROID: sdcardfs: Fix gid issue  [Alberto97]
+0af18ed  ANDROID: sdcardfs: Use tabs instead of spaces in multiuser.h  [Alberto97]
+9997048  ANDROID: sdcardfs: Remove uninformative prints  [Alberto97]
+a6b0dfb  ANDROID: sdcardfs: move path_put outside of spinlock  [Alberto97]
+ca2b6d3  ANDROID: sdcardfs: Use case insensitive hash function  [Alberto97]
+034893c  ANDROID: sdcardfs: declare MODULE_ALIAS_FS  [Alberto97]
+8486876  ANDROID: sdcardfs: Get the blocksize from the lower fs  [Alberto97]
+0de6fab  ANDROID: sdcardfs: Use d_invalidate instead of drop_recurisve  [Alberto97]
+8f8d4184  ANDROID: sdcardfs: Switch to internal case insensitive compare  [Alberto97]
+fee8bd2  ANDROID: sdcardfs: Use spin_lock_nested  [Alberto97]
+87bca24  ANDROID: sdcardfs: Replace get/put with d_lock  [Alberto97]
+feb8f31  ANDROID: sdcardfs: rate limit warning print  [Alberto97]
+ee65c4f  ANDROID: sdcardfs: Fix case insensitive lookup  [Alberto97]
+9a03ce3  usb: gadget: f_accessory: Fix for UsbAccessory clean unbind.  [Alberto97]
+73911b7  input: evdev: Move wake_lock_destroy call  [Alberto97]
+611228f  UPSTREAM staging: ion: Fix error handling in ion_buffer_create  [Alberto97]
+40c0a6f  ANDROID: uid_sys_stats: account for fsync syscalls  [Alberto97]
+75c3729  ANDROID: sched: add a counter to track fsync  [Alberto97]
+f968740  ANDROID: uid_sys_stats: fix negative write bytes.  [Alberto97]
+96616b5  ANDROID: uid_sys_stats: remove unnecessary code in procstat switch  [Alberto97]
+484aaa7  ANDROID: uid_sys_stats: return full size when state is not changed.  [Alberto97]
+d4c90a1  ANDROID: uid_sys_stats: allow writing same state  [Alberto97]
+f24a369  ANDROID: uid_sys_stats: rename uid_cputime.c to uid_sys_stats.c  [Alberto97]
+0c396de  ANDROID: uid_cputime: add per-uid IO usage accounting  [Alberto97]
+b59092e  UPSTREAM: USB: cypress_m8: add endpoint sanity check  [Alberto97]
+bd709dd  UPSTREAM: USB: iowarrior: fix oops with malicious USB descriptors  [Alberto97]
+4d7ef0c  UPSTREAM: USB: usb_driver_claim_interface: add sanity checking  [Alberto97]
+6567200  cpufreq: interactive governor drops bits in time calculation  [Alberto97]
+3a26f72  usb: gadget: audio_source function depends on SND_PCM  [Alberto97]
+   * packages/apps/AudioFX/
+886a58b  Automatic translation import  [Abhisek Devkota]
+   * packages/apps/Bluetooth/
+7e2fa3a  Automatic translation import  [Abhisek Devkota]
+   * packages/apps/Browser/
+d7af013  Automatic translation import  [Abhisek Devkota]
+   * packages/apps/Calendar/
+3b9a669  Automatic translation import  [Abhisek Devkota]
+   * packages/apps/Camera2/
+3cdfa24  Automatic translation import  [Abhisek Devkota]
+   * packages/apps/CellBroadcastReceiver/
+7017de6  Automatic translation import  [Abhisek Devkota]
+   * packages/apps/CertInstaller/
+80a7820  Automatic translation import  [Abhisek Devkota]
+   * packages/apps/DeskClock/
+729ee00  Automatic translation import  [Abhisek Devkota]
+   * packages/apps/Dialer/
+4641f2e  Automatic translation import  [Abhisek Devkota]
+   * packages/apps/Eleven/
+c0bf8fe  Automatic translation import  [Abhisek Devkota]
+   * packages/apps/Email/
+4154e90  Automatic translation import  [Abhisek Devkota]
+   * packages/apps/EmergencyInfo/
+f228c4a  Automatic translation import  [Abhisek Devkota]
+   * packages/apps/ExactCalculator/
+64af117  Automatic translation import  [Abhisek Devkota]
+   * packages/apps/FMRadio/
+f83a5d7  Automatic translation import  [Abhisek Devkota]
+   * packages/apps/Gallery2/
+6b1bcb3  Automatic translation import  [Abhisek Devkota]
+   * packages/apps/Gello/
+649f53d  Automatic translation import  [Abhisek Devkota]
+   * packages/apps/LockClock/
+c34eae7  res: use selectableItemBackgroundBorderless for refresh button background  [Dan Pasanen]
+a0f028d  Automatic translation import  [Abhisek Devkota]
+   * packages/apps/ManagedProvisioning/
+c858db8  Automatic translation import  [Abhisek Devkota]
+   * packages/apps/Messaging/
+9a9364f  Automatic translation import  [Abhisek Devkota]
+   * packages/apps/Nfc/
+fce8ec8  Automatic translation import  [Abhisek Devkota]
+   * packages/apps/PackageInstaller/
+2e2f0b2  Automatic translation import  [Abhisek Devkota]
+   * packages/apps/Recorder/
+3c64f0c  Automatic translation import  [Abhisek Devkota]
+   * packages/apps/Snap/
+91d6eab  Automatic translation import  [Abhisek Devkota]
+   * packages/apps/Stk/
+f91e479  Automatic translation import  [Abhisek Devkota]
+   * packages/apps/Trebuchet/
+e97e772  Automatic translation import  [Abhisek Devkota]
+   * packages/apps/TvSettings/
+4b1d8f7  Automatic translation import  [Abhisek Devkota]
+   * packages/apps/UnifiedEmail/
+cb0495f  Automatic translation import  [Abhisek Devkota]
+   * packages/inputmethods/LatinIME/
+65903e0  Automatic translation import  [Abhisek Devkota]
+   * packages/providers/DownloadProvider/
+e84d41d  Automatic translation import  [Abhisek Devkota]
+   * packages/providers/MediaProvider/
+1261e19  Automatic translation import  [Abhisek Devkota]
+   * packages/providers/TelephonyProvider/
+04f4aad  Automatic translation import  [Abhisek Devkota]
+   * packages/providers/WeatherProvider/
+558d3e5  Automatic translation import  [Abhisek Devkota]
+   * packages/resources/devicesettings/
+5a5b9c5  Automatic translation import  [Abhisek Devkota]
+   * packages/screensavers/Basic/
+a8e56f3  Automatic translation import  [Abhisek Devkota]
+   * packages/services/Telecomm/
+7a17066  Automatic translation import  [Abhisek Devkota]
+   * packages/services/Telephony/
+b79dedc  Automatic translation import  [Abhisek Devkota]
+fa7bd0c  Telephony: Fix "Redirect to roaming SIM network setting(Dual SIM)"  [Michael W]
+   * packages/wallpapers/LivePicker/
+8a005bf  Automatic translation import  [Abhisek Devkota]
+   * vendor/cmsdk/samples/weatherproviderservice/WundergroundWeatherProvider/
+3aa2136  Automatic translation import  [Abhisek Devkota]
+   * vendor/cmsdk/samples/weatherproviderservice/YahooWeatherProvider/
+d581a44  Automatic translation import  [Abhisek Devkota]
+   * vendor/wingtech/
+8e1a03d  wt88047: Update qcrilmsgtunnel.apk  [nicknitewolf]
+9f35a10  wt88047: Use athene graphics blobs  [nicknitewolf]
+
+====================
+     03-15-2017
+====================
+
+   * kernel/motorola/msm8916/
+29dcd3d  remove alessa from merlin it won't work fine.  [klozz]
+
+====================
+     03-14-2017
+====================
+
+   * build/
+cd4c894  Avoid adding an extra slash if OUT_DIR_COMMON_BASE ends in a slash  [klozz]
+3db1e6e  build: core: Remove BUILD_TINY_ANDROID checks  [klozz]
+   * device/cyanogen/msm8916-common/
+e643d4d  move to lineage  [GitHub]
+   * device/motorola/msm8226-common/
+76962dd  Revert "overlay: Enable IP reachability monitor"  [klozz]
+53249aa  msm8226-common: Switch to zImage-dtb  [klozz]
+ba5ff2c  msm8226-common: Set INITIAL_COPYRIGHT_YEAR  [klozz]
+a01299f  libsensors: Close file descriptors in case of write error  [klozz]
+   * device/motorola/msm8916-common/
+56371bc  msm8916-common: Drop liboemcrypto  [klozz]
+   * device/wingtech/wt88047/
+eaae268  move to lineage  [GitHub]
+   * frameworks/av/
+e52a71a  Conditionally revert "CameraService: Allow HAL to handle video buffer duped FD's."  [klozz]
+   * frameworks/base/
+45d4ea7  remove duplicated strings  [klozz]
+ede5c30  Revert "Wifi: Introduce a config parameter for IpReachabilityMonitor"  [klozz]
+994dc50  Automatic translation import  [klozz]
+dd7ad7f  camera: Make secondary camera package list opt out  [klozz]
+641de9a  VolumeDialog: Fix mismerge  [klozz]
+   * hardware/cyanogen/
+6e2dfc6  livedisplay: SDM: Fix display mode handling  [Rashed Abdel-Tawab]
+   * hardware/qcom/media-caf/msm8974/
+4ff5e65  mm-video-v4l2: vdec: Fix makefile derp introduced in d443c0d  [Ashwin Ramesh]
+   * kernel/motorola/msm8226/
+27c86ef  Merge remote-tracking branch 'upstream' into xpe-11.1  [klozz]
+   * kernel/motorola/msm8916/
+91c59da  Merge remote-tracking branch 'xpe/xpe-11.1' into xpe-11.1  [klozz]
+ef93ce9  Merge remote-tracking branch 'upstream' into xpe-11.1  [klozz]
+   * kernel/motorola/msm8952/
+e1fb9c3  UPSTREAM: staging: ion: Fix error handling in ion_buffer_create  [rahulsnair]
+9dc5423  binder: use group leader instead of open thread  [rahulsnair]
+a578293  usb: gadget: f_accessory: Fix for UsbAccessory clean unbind.  [rahulsnair]
+6571175  crypto: arm - ignore generated SHA2 assembly files  [rahulsnair]
+5219283  UPSTREAM: drivers: android: correct the size of struct binder_uintptr_t for BC_DEAD_BINDER_DONE  [rahulsnair]
+4fa6b48  cpufreq: interactive governor drops bits in time calculation  [rahulsnair]
+   * packages/apps/Settings/
+dda91ee  Add Pocket Judge togle  [klozz]
+   * system/core/
+ba3aebc  rootdir: init.rc: Fix for "add_tid_to_cgroup failed to write" warnings  [klozz]
+   * vendor/XPe/
+11c14a2  add lettuce as supported device  [klozz]
+eb920c7  Xperia™ Home 10.2.A.2.40 beta  [klozz]
+4311d07  Merge remote-tracking branch 'xpe/xpe-11.1' into xpe  [klozz]
+adb0648  Add TvSettings to common tv config. This is required for all ATV builds. SUW will crash looking up the wifi activity is it isn't installed.  [klozz]
+0ac31d3  vendor: Add templates for proprietary extraction scripts  [klozz]
+df401e6  extract_utils: Fix locale issue with sort  [klozz]
+2a28568  qcom: Automatically set TARGET_USES_COLOR_METADATA for msm8996/8  [klozz]
+44b50df  xpe : update Fastweb apn  [klozz]
+1f4acf9  apns: Add Perfectum  [klozz]
+43413dc  xpe: build: tasks: Remove BUILD_TINY_ANDROID check  [klozz]
+d203b4b  extract-utils: Fix handling of pulling src:dest pairs from dumps  [klozz]
+0a79483  Disable quick pulldown by default  [klozz]
+ba17026  vendor: remove old apns symlink  [klozz]
+eb2e9cd  backuptool: Preserve the SELinux context of the files  [klozz]
+3fe8dee  backuptool: Don't rely on the order of the elements in the list  [klozz]
+   * vendor/motorola/
+311349e  msm8916-common: Drop liboemcrypto  [klozz]
+95fb0d4  msm8226: Regenerate makefiles  [klozz]
+73bd5fb  shamu: Update blobs to N6F26U  [klozz]
