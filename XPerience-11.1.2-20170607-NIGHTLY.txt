@@ -1,0 +1,278 @@
+====================
+     06-07-2017
+====================
+
+   * art/
+51efd24  ART: add AArch32 support for rint intrinsics  [klozz]
+6cb134f  Add ARM support for `floor` and `ceil` intrinsics.  [klozz]
+130c9f6  Add ARM support for VRINT<X> instructions.  [klozz]
+4f8e2da  DO NOT MERGE: Update `ArmInstructionSetFeatures` to track ARMv8-A.  [klozz]
+025da98  Avoid use of pthread_getschedparam (except on the Mac)  [klozz]
+b5a39ba  [BACKPORT] Lower daemons priority to 124 (art).  [klozz]
+41e4ae2  ARM64: Improve code generated to spill/restore for slow paths.  [klozz]
+e810556  art: build: Fix defines for USE_DEX2OAT_DEBUG  [klozz]
+3a33140  Avoid using memcpy for object header in ConcurrentCopying::Copy  [klozz]
+c77afea  Reduce unnecessary read barriers in GC  [klozz]
+eaf9729  Background full compaction for CC.  [klozz]
+7044a5d  Add fast path to arm64 READ_BARRIER macro  [klozz]
+c7af227  Re-enable evacuation of recently allocated regions  [klozz]
+5f5a237  Clean up JNI calling convention callee saves.  [klozz]
+60c76ee  Fix a DCHECK failure in Arm64RelativePatcher with read barrier.  [klozz]
+3def912  ARM: Try to emit branches early to save memory.  [klozz]
+d36e7ab  Try to avoid allocation when interning strings.  [klozz]
+b0dea46  ArraySet without type check does not need read barrier.  [klozz]
+e9071e5  ARM: Embed constants in add/sub-long.  [klozz]
+be82897  ARM: Embed 0.0 in VCMP.  [klozz]
+5cb1d6c  Align method code rather than method header in oat files.  [klozz]
+5e2cfd8  ARM/ARM64: Improve Mterp */lit8 assembly.  [klozz]
+f34834c  ARM64: Add comment to mterp int-to-long.  [klozz]
+6d680cb  ARM64: More mterp improvements.  [klozz]
+7fa4fbe  Revert "Revert "ART: Add Mterp export pc poison testing mode""  [klozz]
+fdf0acf  ARM64/x86-64: Fix mterp fill-array-data-payload pointer calculation.  [klozz]
+6362f80  ARM64: Fix mterp switch table pointer calculation.  [klozz]
+f66d7d8  ARM64: Improve mterp cmpl/cmpg.  [klozz]
+7fba438  ARM64: Improve Mterp.  [klozz]
+1f10fd3  ARM64: Shorter fast-path for read barrier field load.  [klozz]
+9b56ab6  ARM: Shorter fast-path for read barrier field load.  [klozz]
+c3a695d  ARM: Use 64-bit literals for LoadDImmediate().  [klozz]
+24e8464  ARM: Remove unnecessary VMOV from float/double-to-int.  [klozz]
+7304abd  Refactor handling of input records.  [klozz]
+a3aefb2  Mark concrete HIR instructions as FINAL.  [klozz]
+067a01a  Intrinsify String.length() and String.isEmpty() as HIR.  [klozz]
+db35ca0  Re-enable most intrinsics with read barriers.  [klozz]
+820a76f  Clean up String.indexOf() intrinsics.  [klozz]
+3bf1c8a  Improve String.indexOf() intrinsics.  [klozz]
+7d13be2  Fix ARM & ARM64 UnsafeGetObject intrinsics with read barriers.  [klozz]
+f26bbea  Apply String.equals() optimizations on arm, arm64 and x86-64.  [klozz]
+b53243b  runtime: Add missing instruction set features for our Kryo target  [klozz]
+83bfdf2  ARM: Add vldm/vstm assembler support.  [klozz]
+e404fe7  ARM: Fix shifted register offset mem address mode for load signed.  [klozz]
+c32dfa7  Thumb2: Clean up 16-bit LDR/STR detection.  [klozz]
+fd4b46d  ARM64: Use the zero register in the parallel-move resolver.  [klozz]
+086ab0b  ARM64: Improve code generated to spill/restore for slow paths.  [klozz]
+c2b6c34  Math Round Intrinsic Implementations For Java8.  [klozz]
+9de13ac  Integer.bitCount and Long.bitCount intrinsics for ARM  [klozz]
+437c53e  ARM assembler support for VCNT and VPADDL.  [klozz]
+de5a8d9  ARM64: Ensure stricter alignment when loading and storing register pairs  [klozz]
+a122026  Optimize away useless masking operations on shift amounts.  [klozz]
+ac0011a  ARM: Improve String.getCharsNoCheck intrinsic.  [klozz]
+d6b9f4b  ARM64: Improve String.getCharsNoCheck intrinsic.  [klozz]
+9374b0b  Add missing calls to `RecordSimplification()`.  [klozz]
+79884e3  ARM: Add new String.compareTo intrinsic.  [klozz]
+fc9f79c  ARM64: Move BIC after branch in StringCompareTo intrinsic.  [klozz]
+1453103  ARM64: Add new String.compareTo intrinsic.  [klozz]
+5dc831b  ARM(64): Implement the isInfinite intrinsics  [klozz]
+   * build/
+3c528d4  Fix typos  [klozz]
+e5560f5  arch: rever this for now (it causes issues with fio)  [klozz]
+6b2f74b  build: condition cortex-a53-835769 workaround for the linker  [klozz]
+32a28ed  build: condition A53 errata workarounds in RenderScript  [klozz]
+5807b83  core: combo: armv8-a: specific kryo tuning  [klozz]
+b52dcc2  core: add a variant for kryo armv7-neon  [klozz]
+ef30c02  build: take ARM erratum cortex-a53-835769 into our hands  [klozz]
+a2cca64  build: dynamically fix ARM erratum cortex-a53-843419  [klozz]
+f7223c5  build: use optimal CPU configuration for ARMv8 CPUs  [klozz]
+c67a56c  Redirect subprocess stderr to stdout in verbose mode.  [klozz]
+1c5c33c  Merge tag 'android-7.1.2_r17' into xpe-11.1  [klozz]
+a4d8966  apicheck_msg_current: Don't do this in xperience  [klozz]
+   * device/motorola/addison/
+ad58077  addison: add AEP support config This change exposes the support for Android extension pack (AEP) in the graphics driver and Change the GLES version string to 3.2 We support GLES version 3.2 so change it to use the 3.2 API  [klozz]
+af38785  addison: fstab: Add zramstreams  [klozz]
+   * device/motorola/athene/
+e7eb2d1  athene: drop custom dtbTool  [klozz]
+7851647  athene: drop net_raw from per_mgr service  [klozz]
+f6f705b  athene: Add NET_BIND_SERVICE for cnss-daemon  [klozz]
+4f8c1b6  athene: Add fs_config support for custom binary  [klozz]
+67f6e12  athene: Change the GLES version string to 3.2  [klozz]
+b0218de  athene: Add AEP support config file  [klozz]
+10a49bc  athene: Set LED trigger only for charger mode  [klozz]
+12d4494  athene: cleanup camera.hal1.packagelist prop  [klozz]
+8e8f72d  athene: add and build camera wrapper  [klozz]
+450c4e2  athene: disable HAL3  [klozz]
+41b5db5  athene: update qcom parser value  [klozz]
+8802b4c  athene: disable qcom aac encoder  [klozz]
+   * device/motorola/cedric/
+2ae9517  cedric: add zramstreams like Athene and addison.  [klozz]
+27d6401  cedric: add only info on device.mk  [klozz]
+d2a1339  cedric: Create missing symlinks  [klozz]
+8234dde  cedric: CameraWrapper : remove unused params  [klozz]
+f96a6b8  cedric: track media codecs/profiles * from cedric stock NPP25.137-33  [klozz]
+   * device/xiaomi/msm8956-common/
+4af0330  track own kernel  [GitHub]
+bf33496  kenzo: Add zram 512mb and zramstreams  [klozz]
+   * external/chromium-webview/
+9a58fc2  Update webviews  [Luca Stefani]
+   * frameworks/av/
+5bbc287  HLS: force audio/video both to start from IDR position  [klozz]
+4921e82  stagefright: don't assume 16 bit format  [klozz]
+   * frameworks/base/
+2008276  fingerprint: Speed up wake-and-unlock scenario  [klozz]
+da13ceb  KernelCpuSpeedReader: Account for missing sysfs nodes  [klozz]
+0b93ec9  Revert "KernelCpuSpeedReader: Account for missing sysfs nodes"  [klozz]
+468eeb7  QS: Remove listeners only if added  [klozz]
+0b4a46d  Merge tag 'android-7.1.2_r17' into xpe-11.1  [klozz]
+51be835  SystemUI: Remove trailing whitespace on high_accuracy_description  [klozz]
+337801d  Add support for page theme color to WebView and WebChromeClient.  [klozz]
+6b15ddb  Double tap to sleep anywhere on the lock screen [1/3]  [klozz]
+0b63a6e  base: Disable Lockscreen Media Art [1/3]  [klozz]
+2e93775  fw: Don't consume home key press when KEY_ACTION_SLEEP is used  [klozz]
+   * frameworks/native/
+215aafd  Merge tag 'android-7.1.2_r17' into xpe-11.1  [klozz]
+   * kernel/motorola/msm8952/
+7782008  enable missing ascarex  [GitHub]
+c5dcb60  fixes  [GitHub]
+   * kernel/motorola/msm8953/
+925180b  bpf: don't let ldimm64 leak map addresses on unprivileged  [klozz]
+3eca423  ext4: fix data exposure after a crash  [klozz]
+   * manifest/
+31e5f03  track own jemalloc  [GitHub]
+eb4c03e  track own art  [GitHub]
+4d3e9c0  track own webp and webrtc  [GitHub]
+5aa2718  manifest: android-7.1.2_r8 -> android-7.1.2_r17  [GitHub]
+   * packages/apps/Settings/
+8dbf099  Double tap to sleep anywhere on the lock screen [2/3]  [klozz]
+d172596  Settings: Disable Lockscreen Media Art [2/3]  [klozz]
+   * packages/apps/TvSettings/
+3ddceec  Settings: Implement ADB over network  [Dan Pasanen]
+bf8bc80  Settings: Add intent to launch LineageOS platlogo upon multiple taps  [Dan Pasanen]
+0165eb8  settings: Add advanced reboot switch  [Dan Pasanen]
+e1c67c5  Settings: Set root access options appropriately  [Dan Pasanen]
+253b262  settings: Add developer setting for root access  [Dan Pasanen]
+f4e82a3  Use more descriptive strings for add accessory page  [Dan Pasanen]
+3733c2b  About: Add LineageOS Updates  [Dan Pasanen]
+0fe2e3b  Add build date (ro.build.date from build.prop) to About screen.  [Dan Pasanen]
+18c18a9  One does not simply become a Developer  [Dan Pasanen]
+34001b8  Add LineageOS version to the About screen  [Dan Pasanen]
+   * system/core/
+2197a2a  libcutils:fix after 7.1.2_r17 merge  [klozz]
+9d4439b  Merge tag 'android-7.1.2_r17' into xpe-11.1  [klozz]
+   * system/sepolicy/
+af6777c  Allow recovery to alter / on userdebug/eng builds  [klozz]
+c19e7c3  Add policy to fix interfacer derp on boot  [klozz]
+   * vendor/XPe/
+fb95b0a  XPerience 11.1.2_r18 Ãªmis(tempestad) CodeName  [klozz]
+   * vendor/cmsdk/
+dec3dd2  Double tap to sleep anywhere on lock screen [3/3]  [klozz]
+8e7a9dc  cmsdk: Disable Lockscreen Media Art [3/3]  [klozz]
+
+====================
+     06-06-2017
+====================
+
+   * external/stagefright-plugins/
+05bf4e7  ffmpeg-extractor: StageFright supports Opus files  [Christopher R. Palmer]
+11bc5a2  Revert "FFmpegExtractor: Don't use our extractor when we agree with StageFright"  [Christopher R. Palmer]
+   * libcore/
+b162f5e  Merge tag 'android-7.1.2_r17' into cm-14.1  [Dan Pasanen]
+   * packages/apps/Bluetooth/
+9d274ac  BluetoothOppTransferActivity: fix after ad46f6a52d7240ed1e2127c4263a5cbcf454df09  [Dan Pasanen]
+9efb588  Merge tag 'android-7.1.2_r17' into cm-14.1  [Dan Pasanen]
+   * packages/apps/Gallery2/
+95cb32b  Increase the size of the tiles when decoding images  [Dan Pasanen]
+   * packages/apps/Jelly/
+e28fd6c  Jelly: Add HTTP auth login support  [Luca Stefani]
+   * system/bt/
+aa31852  Merge tag 'android-7.1.2_r17' into cm-14.1  [Dan Pasanen]
+   * vendor/xiaomi/
+e7a8fbb  natrium: Update blobs from latest 7.0 release  [luk1337]
+94e098a  scorpio: Update to MIUI 7.6.5 dev blobs  [Bruno Martins]
+6004bda  gemini: Move OIS lib from common to device  [Bruno Martins]
+9ab5369  msm8996-common / gemini: Update to MIUI 7.6.5 dev blobs  [Bruno Martins]
+f5aef73  lithium: Update to MIUI 7.6.5 dev blobs  [Bruno Martins]
+
+====================
+     06-05-2017
+====================
+
+   * device/lenovo/karate/
+19bf3cc  karate: Add keylayout  [klozz]
+1b967dc  Karate: add idc update config of bluetooth  [klozz]
+c764852  karate: kang root dir bluetooth and overlay from https://github.com/DroidThug/android_device_lenovo_karate  [klozz]
+39ff643  karate:add leia firmware  [klozz]
+d7a1546  karate: update blob list * the list was shamelessly kanged from tenshi * some blobs differ/don't exist * reciprocate by updating the blob list * also add IMS blobs since the device does ship with it  [klozz]
+bcf09e4  karate: import proprietary extraction scripts from tenshi  [klozz]
+dc51dfa  karate: now can use kernel source * Add OTA device from https://github.com/DroidThug/android_device_lenovo_karate/blob/cm-13.0/BoardConfig.mk * add missing audio files  [klozz]
+cc099f1  karate: propagate karate's props  [klozz]
+5cf88cb  karate: import system.prop from msm8937_32  [klozz]
+f796680  karate: add sensor configs and thermal conf from stock  [klozz]
+af8b53d  karate: GPS config  [klozz]
+c493b46  karate add IPA from cedric  [klozz]
+28737b0  Karate: Add audio configs and Display calibration files  [klozz]
+   * device/wingtech/wt88047/
+3bdfe0d  use lineage kernel for now  [GitHub]
+   * hardware/qcom/display-caf/msm8996/
+92fa2ea  Merge tag 'LA.UM.5.5.r1-04700-8x96.0' into HEAD  [Luca Stefani]
+   * kernel/lenovo/msm8937/
+3d544b7  rename defconfig  [GitHub]
+   * packages/apps/AudioFX/
+6850778  AudioFX: Sign with platform key  [Arne Coucheron]
+   * packages/apps/Jelly/
+7ac5399  Add support for WebViews that provide the site's theme color.  [Danny Baumann]
+   * packages/services/Telephony/
+6ba71dd  VoicemailSettingsActivity: Fix some NPEs  [Arne Coucheron]
+   * vendor/lenovo/
+d66c836  remove unneded we have this on device tree  [GitHub]
+bf6fc06  Merge remote-tracking branch 'DroidThug/vendor_lenovo' into xpe-11.1  [klozz]
+   * vendor/xiaomi/
+ab0844e  capricorn: Update blobs from latest 7.0 release  [LuK1337]
+ebcbdbb  capricorn: Update QFingerprintService app  [LuK1337]
+ec5bcc4  capricorn: Update QFingerprintService app  [LuK1337]
+
+====================
+     06-04-2017
+====================
+
+   * bootable/recovery-twrp/
+4a2a191  adbbackup: write smaller reads less than 512 bytes  [Dees Troy]
+   * vendor/xiaomi/
+61c45f6  capricorn: Update QFingerprintService app  [LuK1337]
+
+====================
+     06-03-2017
+====================
+
+   * bootable/recovery-twrp/
+05c2de4  Fix various memory errors  [Ayke van Laethem]
+   * device/lenovo/karate/
+3233481  karate: Add readme  [klozz]
+b589a82  karate: initial definitions on xpe  [klozz]
+5110aa4  karate: we have fingerprint  [klozz]
+e1a7e6d  kate: add device related config based on thorium_32  [klozz]
+aa0f36b  karate: add android filestystem config  [klozz]
+0bd54fe  karate: More boardconfig additions  [klozz]
+6e2bdae  Karate: initial boardconfig  [klozz]
+   * device/motorola/addison/
+0bbd5ec  CMActions: Switch to fingerprint sleep  [klozz]
+   * device/motorola/cedric/
+cdfff84  Revert "cedric: Don't use prebuilt ril blobs"  [klozz]
+   * device/samsung/d2-common/
+67000ba  Revert "d2: Update camera wrapper flags for new wrapper"  [Paul Keith]
+   * frameworks/base/
+178bef8  Revert "Revert "WindowManagerService: Tweak the animations""  [klozz]
+   * hardware/samsung/
+ab9abf6  liblights: Fix variable button brightness code  [Paul Keith]
+   * kernel/motorola/msm8226/
+11c1e78  TCP_Ascarex: Initial bringup of my modified tcp congestion called ascarex  [klozz]
+   * kernel/motorola/msm8916/
+1e78635  TCP_Ascarex: Initial bringup of my modified tcp congestion called ascarex  [klozz]
+   * kernel/motorola/msm8952/
+bce2db0  TCP_Ascarex: Initial bringup of my modified tcp congestion called ascarex  [klozz]
+   * kernel/motorola/msm8953/
+263e7d4  TCP_Ascarex: Initial bringup of my modified tcp congestion called ascarex  [klozz]
+e173feb  addison: Drop homebutton  [klozz]
+addd512  drivers: input: fpc1020: Allow enabling KeyEvents dynamically  [klozz]
+   * kernel/xiaomi/msm8956/
+635f97a  ipv6/dccp: do not inherit ipv6_mc_list from parent  [TheStrix]
+f9262e7  sctp: do not inherit ipv6_{mc|ac|fl}_list from parent  [TheStrix]
+0353e43  ipv6: Prevent overrun when parsing v6 header options  [TheStrix]
+   * packages/apps/CMParts/
+e6aeccb  Set android:configChanges for .PartsActivity  [klozz]
+06882e7  CMParts: remove extra padding from app light preference  [klozz]
+   * packages/apps/RainbowUnicorn/
+c5c333d  Update translations  [klozz]
+   * packages/apps/Settings/
+f8307c7  update translations  [klozz]
+   * packages/apps/XPeUpdater/
+1fd5158  updater:show the correct version  [klozz]
+   * vendor/xiaomi/
+076f482  libra: remove unnecessary blobs  [Michael Bestas]
