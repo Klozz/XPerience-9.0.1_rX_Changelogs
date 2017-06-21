@@ -1,0 +1,111 @@
+====================
+     06-20-2017
+====================
+
+   * build/
+81c4e5c  ota:fix identation  [klozz]
+cd19bca  Merge remote-tracking branch 'xpe/xpe-11.1' into xpe-11.1  [klozz]
+a3dd95a  ota: Add some info (visual info)  [GitHub]
+32d6b66  envsetup.sh:Stop jack server At the end of the compilation.  [klozz]
+887b4b0  Clean option: deviceclean  [klozz]
+d25aaf0  Don't build tests in normal builds  [klozz]
+   * frameworks/base/
+748b30c  Fix lag when opening an entry from the Settings left drawer  [klozz]
+5f864fa  FingerprintUnlockController: Change wakelock timeout from 15s to 10s  [klozz]
+1202c87  Partially revert: OnTheSpot:Disable Safe Headset Volume Prompt  [klozz]
+b012e59  OnTheSpot: Add missing framework  [klozz]
+0424058  CPUIfoService:update CPUInfoService like OmniROM  [klozz]
+ed939e3  On the spot preferences : Disable Safe Headset Volume Prompt  [klozz]
+a90f051  OnTheSpot: Allow removal of immersive messages  [klozz]
+0ae1cc6  MountService: Don't run benchmarks after trimming  [klozz]
+9557e96  ActivityManagerService: Allow faster app switching.  [GitHub]
+2540a12  Frameworks: Fix Null Pointer Issue  [klozz]
+   * hardware/qcom/display/
+f3072db  hwcomposer: Fix regression in hwc_sync  [Michael Bestas]
+   * hardware/qcom/display-caf/apq8084/
+38e457c  hwcomposer: Fix regression in hwc_sync  [Michael Bestas]
+   * hardware/qcom/display-caf/msm8916/
+6700612  hwcomposer: Fix regression in hwc_sync  [Michael Bestas]
+   * hardware/qcom/display-caf/msm8974/
+24176c9  hwcomposer: Fix regression in hwc_sync  [Michael Bestas]
+   * hardware/qcom/display-caf/msm8994/
+023758b  hwcomposer: Fix regression in hwc_sync  [Michael Bestas]
+   * packages/apps/Settings/
+67b85ea  OnTheSpot: Fix Featurepreferences set to System it was moved from secure.  [klozz]
+   * system/core/
+c6baa19  Silence spammy logs from camera blobs (AEC_PORT and mm-camera)  [klozz]
+267ea31  updated host  [klozz]
+b2da8ae  update host  [klozz]
+   * vendor/XPe/
+22a6de9  XPe:Add XPerienceWallpapers  [klozz (TeamMEX)]
+a4bff0d  common: fix display version  [GitHub]
+
+====================
+     06-19-2017
+====================
+
+   * hardware/samsung/
+e95e9c3  liblights: Fix fast blinking notification LEDs.  [Simon Shields]
+   * kernel/xiaomi/msm8956/
+7c99a50  ascarex: Fix build issue  [klozz]
+   * packages/apps/OmniClock/
+af42994  Automatic translation import  [maxwen]
+
+====================
+     06-18-2017
+====================
+
+   * device/motorola/athene/
+4d16a6e  athene: Set changes of performance  [klozz]
+   * hardware/qcom/bt-caf/
+6473ddb  Merge tag 'LA.UM.5.5.r1-04900-8x96.0' into HEAD  [Luca Stefani]
+   * kernel/motorola/msm8952/
+cb105fc  mm: Set aggressive read_ahead size for bootup We will reset the value for all affected block devices from ramdisk once boot is completed.  [klozz]
+   * kernel/xiaomi/msm8956/
+8c49468  TCP_Ascarex: Initial bringup of my modified tcp congestion called ascarex  [klozz]
+   * packages/apps/XPeUpdater/
+0c4738a  update translations  [klozz]
+8e68a82  revert some blocking things  [klozz]
+5d154dd  XPeUpdater: Track the correct android version change the url  [klozz]
+
+====================
+     06-17-2017
+====================
+
+   * bootable/recovery-twrp/
+9efbe76  Fix incorrect 'unlink' return value check  [Dees Troy]
+56cf564  twrpDigest refactor  [Ethan Yonker]
+   * device/qcom/common/
+374796d  power-8952: Enable MPCTLV3  [klozz]
+ade232a  power: Use the correct opcode for STOR_CLK_SCALE_DIS  [klozz]
+   * frameworks/base/
+1a9cc87  Aapt2: Fix png leak  [klozz]
+dbdad5e  SymbolComparator operator() is missing const  [klozz]
+12f4295  Adopt lockscreen shortcut hint from AOSP  [klozz]
+cd10472  NfcTile: make sure NFC adapter is always available when needed  [klozz]
+   * packages/apps/CMParts/
+d65b3b8  CMParts: update for Weather Plugins distribution  [klozz]
+   * packages/apps/Settings/
+f700074  Settings: Fix automatic hotspot turn off summary  [klozz]
+   * packages/apps/XPeUpdater/
+60d70b3  CMUpdater: some fixes  [klozz]
+6d95d99  CMUpdater: Block incompatible updates  [klozz]
+33bb6c7  CMUpdater: Fix build type in displayed list of updates  [klozz]
+8ae2f15  CMUpdater: Build type abstraction cleanup  [klozz]
+5039646  Remove toolbar menu background  [klozz]
+   * vendor/samsung/
+3257917  apq8084-common: Update libpn547_fw.so to FW version 08.01.1F  [Luca Stefani]
+
+====================
+     06-16-2017
+====================
+
+   * hardware/qcom/audio-caf/msm8996/
+074ff06  Merge tag 'LA.UM.5.5.r1-04900-8x96.0' into HEAD  [Luca Stefani]
+   * hardware/ril/
+5758b0e  ril: fix a memory leak.  [Michael Bestas]
+   * hardware/ril-caf/
+588e49d  ril: fix a memory leak.  [Michael Bestas]
+   * packages/apps/WallpaperPicker/
+5b27292  Fix bad wallpaper preview image format  [Michael Bestas]
+
