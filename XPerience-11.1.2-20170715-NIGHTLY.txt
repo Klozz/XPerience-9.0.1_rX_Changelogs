@@ -1,0 +1,106 @@
+====================
+     07-15-2017
+====================
+
+   * device/xiaomi/mido/
+55c3af9  mido: camera: Revert ov13855 blobs to pre 7.5.25 state (7.4.24)  [klozz]
+0549dd4  mido: camera: squash update for camera HAL with compatible commits  [klozz]
+9235e2d  mido: camera: HACK to make OSS hal work with camera blobs  [klozz]
+65aa399  mido: camera: Fixes to OSS camera hal to build in LineageOS tree  [klozz]
+ed9b4dd  mido: camera: Import oss camera HAL  [klozz]
+b8e33df  mido: add qcom_common dependencies  [klozz]
+   * device/xiaomi/rolex/
+551c978  remove consumerIR(1)  [klozz]
+b38276c  remove consumerIR  [klozz]
+d343568  remove some unused init script  [klozz]
+6dae55e  rolex: Add dependencies  [klozz]
+490cd2c  rolex: SystemSync is a SyncService in China so remove it.  [klozz]
+f351701  rolex: boardconfig cleanup.  [klozz]
+e04baf2  rolex: move to the correct adreno version  [klozz]
+1bf8090  rolex: add gms clientid  [klozz]
+749af4c  Birng some XPerience love <3 we can continue your work :)  [klozz]
+fe203cc  update kernel  [ze00]
+6411928  added some missing file...  [noiver]
+c6449ec  Initialize commit  [noiver]
+   * frameworks/native/
+7e27356  Revert "Sensor: Add minimum delay check in SensorDevice"  [klozz]
+   * hardware/qcom/audio-caf/msm8996/
+f8fcd59  Merge tag 'LA.UM.5.5.r1-05300-8x96.0' into HEAD  [Luca Stefani]
+   * hardware/qcom/display-caf/msm8996/
+3005091  Merge tag 'LA.UM.5.5.r1-05300-8x96.0' into HEAD  [Luca Stefani]
+   * hardware/qcom/media-caf/msm8996/
+0273a64  Merge tag 'LA.UM.5.5.r1-05300-8x96.0' into HEAD  [Luca Stefani]
+   * vendor/xiaomi/
+3ae5efd  rolex: Remove consumerIR  [klozz]
+c44a2b8  Rolex: Initial bringup  [klozz]
+
+====================
+     07-14-2017
+====================
+
+   * packages/apps/Jelly/
+4d40bf7  Jelly: Remove unneeded parameter type in addResult  [Luca Stefani]
+69f2dad  Jelly: Remove redundant character escape  [Luca Stefani]
+55f3a05  Jelly: Make suggestion provider "None" translatable  [Luca Stefani]
+c3794c5  Hide Sheet Menu after clicking on an entry  [Luca Stefani]
+4e7e82e  Jelly: Query an already ordered favorite list  [Luca Stefani]
+
+====================
+     07-13-2017
+====================
+
+   * bionic/
+a4f0ba2  [AArch64] Optimized memcmp  [klozz]
+   * frameworks/av/
+6236fad  cameraservice: device1: Fix "slow" legacy HALs  [klozz]
+   * frameworks/base/
+dea2f56  Automatic translation import  [klozz]
+15d50b0  PowerManagerService: add a config to light up buttons only when pressed  [klozz]
+bb0c431  FlashlightTile: Retry opening camera later on if it failed before  [klozz]
+1a3dc13  Fix wrong array index bound in NotificationUsageStats  [klozz]
+   * manifest/
+6d87d6d  Track gcc toolchains from AOSPA more updated.  [GitHub]
+   * packages/apps/OmniClock/
+1974453  Automatic translation import  [maxwen]
+   * packages/apps/Settings/
+a3b7a60  Bring back some physical keyboard settings  [klozz]
+   * packages/apps/Snap/
+5c51d47  Revert some permissions related changes  [Arne Coucheron]
+0dbf891  Add overlay for restarting camera preview for additional cameras  [Rashed Abdel-Tawab]
+   * system/core/
+72188aa  logcat: Add missing newline to read failure  [klozz]
+75e5ed1  init.rc: setup console-ramoops-0  [klozz]
+a115382  healthd: check console-ramoops-0  [klozz]
+34875ee  fs_mgr: check console-ramoops-0  [klozz]
+   * vendor/XPe/
+12b3687  xpe:config:remove cameraone from vendor and move again to respective device  [klozz]
+ab420ed  Fix how the unofficial versions are assigned  [klozz]
+58b7c73  MotCamera: this app is a privileged module (system/priv-app)  [klozz]
+c285876  CameraOne:Add support to add Motorola camera * Moto Camera currently wants DND access on video recording   which is granted only when installed as system app.  [klozz]
+b9e3161  Merge remote-tracking branch 'xpe/xpe-11.1' into xpe-11.1  [klozz]
+18c6c90  qcom: Enable TARGET_USES_QCOM_MM_AUDIO  [klozz]
+ad1a71b  repopick: don't bail on drafts  [klozz]
+836349f  sensitive_pn: Enter full list of Indian MCC codes  [klozz]
+5eeea95  sensitive_pn: Enter full list of GB MCC codes  [klozz]
+23a41eb  sensitive_pn: Enter full list of US MCC codes  [klozz]
+3afccf0  update magisk and magisk manager to v13.1  [klozz]
+   * vendor/xiaomi/
+75a5a4a  mido: camera: Revert ov13855 blobs to pre 7.5.25 state (7.4.24)  [Anik khan]
+0600f74  mido: drop Camera HAL blobs, use OSS  [Anik khan]
+
+====================
+     07-12-2017
+====================
+
+   * packages/apps/Jelly/
+6934a68  Jelly: use Google as default all the things  [Dan Pasanen]
+   * prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/
+a5351d2  Update prebuilt GCC to build 4168537.  [Lennart Wieboldt]
+   * prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/
+4aeb413  Update prebuilt GCC to build 4168537.  [Lennart Wieboldt]
+
+====================
+     07-11-2017
+====================
+
+
