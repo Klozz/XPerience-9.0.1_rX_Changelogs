@@ -1,0 +1,118 @@
+====================
+     07-20-2017
+====================
+
+   * external/zlib/
+e7e588b  Define ZLIB_CONST to add constness.  [klozz]
+151d634  Update zlib to 1.2.11  [klozz]
+ab25edd  zlib: Degrade Z_BLOCK only when last flush was Z_BLOCK  [klozz]
+7074c6b  Cache s->ins_h in a scalar while looping. This makes a big difference on long repeated inputs.  [klozz]
+21a9dfa  add xpe to the version  [klozz]
+21842c9  zlib: enable advanced compiler features  [klozz]
+   * frameworks/base/
+9225ae6  GC in heapDumpFinished to cleanup hprof fd  [klozz]
+1ea600c  BootReceiver: check console-ramoops-0  [klozz]
+28895bd  PowerProfile: allow overriding default power profile  [klozz]
+   * manifest/
+9ce53ee  remove unused external  [GitHub]
+7bc0b65  track own zlib  [GitHub]
+   * packages/apps/Jelly/
+54d8d10  Jelly: Remove unused variable in SearchBarController  [Luca Stefani]
+063d6a9  Jelly: Use proper popup background attr  [Luca Stefani]
+ca27881  Jelly: Add "search in page" feature  [Luca Stefani]
+   * vendor/XPe/
+8fd083b  update magisk to 13.1 and magisk manager to 5.1.1 add support to build kernel from source if u have predefined a prebuilt kernel  [klozz]
+
+====================
+     07-19-2017
+====================
+
+   * hardware/qcom/fm/
+165ef42  FM: Use some sane colors  [Arne Coucheron]
+   * kernel/wingtech/msm8916/
+8415dad  defconfig: wt88047: Generate  [nicknitewolf]
+59119dc  drivers: camera_wt88047_v2: Import LA.BR.1.2.4-04410 camera stack  [nicknitewolf]
+0d0d1ab  leds: aw2013: Import Wingtech wt88047 changes  [nicknitewolf]
+c1428388  drivers: power: Import Wingtech wt88047 changes  [nicknitewolf]
+91f8f65  wt88047: ASoC: Fix gpiolib request error  [nicknitewolf]
+1ec7e9d  sound: soc: msm8x16: Fix sound output through headset  [nicknitewolf]
+259968f  sound: soc: Import Wingtech wt88047 changes  [nicknitewolf]
+1a76516  input: ft5x06_ts: Don't perform resume if panel was not yet blanked  [nicknitewolf]
+98adbfe  drivers: input: Import Wingtech wt88047 changes  [nicknitewolf]
+f27b281  ARM: dts: wt88047: Import Wingtech wt88047 board files  [nicknitewolf]
+e876b5d  drivers: wingtech: Add wt88047 product support  [nicknitewolf]
+
+====================
+     07-18-2017
+====================
+
+   * bionic/
+eb38f2c  libc: fix incorrectly named cortex-a73 makefile  [klozz]
+   * device/motorola/athene/
+c9cfc6d  athene: set proper dtbTool custom args  [klozz]
+c12cbd0  athene: switch to oss dtbTool  [klozz]
+5e1f513  athene: Abandon TARGET_UNIFIED_DEVICE flag  [klozz]
+59acf1c  athene: Allow vendor init to override props  [klozz]
+f488d81  athene: drop custom dtbTool  [klozz]
+   * device/motorola/falcon/
+f39dfd5  falcon: Abandon TARGET_UNIFIED_DEVICE flag  [klozz]
+13e8938  falcon: Allow vendor init to override props  [klozz]
+   * device/motorola/msm8226-common/
+8d85c02  msm8226-common: sepolicy: Clean up  [klozz]
+187cc0b  msm8226-common: Grant rmt_storage proper unix perms  [klozz]
+   * device/motorola/peregrine/
+d83a920  peregrine: Abandon TARGET_UNIFIED_DEVICE flag  [klozz]
+ca580ec  peregrine: Allow vendor init to override props  [klozz]
+4d27dae  proprietary-files: Un-pin the camera HAL  [klozz]
+   * kernel/motorola/msm8916/
+2b71057  Merge remote-tracking branch 'upstream' into xpe-11.1  [klozz]
+   * system/core/
+7cc9d7b  init.rc: Fix potential task-throttling for regular tasks  [klozz]
+
+====================
+     07-17-2017
+====================
+
+   * device/motorola/titan/
+74dce92  titan: Abandon TARGET_UNIFIED_DEVICE flag  [mestreian]
+e14844a  titan: Allow vendor init to override props  [mestreian]
+2df4009  proprietary-files: Un-pin the camera HAL  [mestreian]
+9571304  titan: Update extraction scripts for INITIAL_COPYRIGHT_YEAR  [mestreian]
+   * device/xiaomi/rolex/
+8c3676f  rolex: Correct prebuilt kernel  [klozz]
+196aef7  rolex:move to 3.18 based kernel  [klozz]
+51eba3d  remove headers not needed  [klozz]
+a3f1fd0  rolex:add kernel source from kenzo this is only 4 build shits with prebuild maybe we can remove that shitty headers  [klozz]
+f6e710c  DO NOT MERGE: rolex: update media packages  [klozz]
+5f63255  rolex: update kernel headers and build libc with GCC  [klozz]
+0fa755b  DO NOT MERGE: rolex:add more generated files  [klozz]
+3f5d867  rolex:update some camera related headers  [klozz]
+49b7569  rolex:update msm vidc header  [klozz]
+de8b0b8  rolex:Update headers update msm_mdp and msm_mdp_ext to add mdp_destination_scaler_data *scaler datas  [klozz]
+b51fc20  remove headers and update one  [klozz]
+9080d44  sdds  [klozz]
+0f81499  gps: merge branch LA.UM.5.6.r1-05300-89xx.0  [klozz]
+f551516  gps: Import from LA.UM.5.6.r1-01900-89xx.0 release  [klozz]
+9346c4d  Revert "Regenerate kernel headers"  [klozz]
+b95c81b  rolex:update audio flags  [klozz]
+   * kernel/motorola/msm8953/
+851a24a  Merge remote-tracking branch 'xpe/xpe-11.1' into xpe  [klozz]
+fca9660  Addison: Initial bring 4 arm64  [klozz]
+   * kernel/wingtech/msm8916/
+fa4ba2f  defconfig: jalebi/crackling/lettuce/tomato: Set CONFIG_HZ_300=y  [Michael Bestas]
+3e79ea1  defconfig: kipper: Set CONFIG_HZ_100=y  [Michael Bestas]
+   * vendor/XPe/
+806e663  tasks: kernel: Allow to build the Kernel from source with  prebuilt image MIME-Version: 1.0 Content-Type: text/plain; charset=UTF-8 Content-Transfer-Encoding: 8bit  [klozz]
+
+====================
+     07-16-2017
+====================
+
+   * device/xiaomi/rolex/
+21eb22b  Regenerate kernel headers  [klozz]
+   * kernel/leeco/msm8976/
+5fae1b5  Merge pull request #1 from LakshyaTaneja/xpe-11.1  [GitHub]
+2b44efa  fs: readdir: Fix su hide patch for non-iterate filesystems  [LakshyaTaneja]
+   * packages/apps/Gallery2/
+d9f1451  Gallery: Fix potential crash  [Arne Coucheron]
+8af515d  Gallery2: Switch to navigationbar from support libs  [Arne Coucheron]
